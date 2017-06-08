@@ -1,0 +1,37 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: small;
+}
+
+.packet-id-matrix {
+    border-collapse: collapse;
+    white-space: nowrap;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.packet-id-matrix col:first-child {
+    width: 45ex;
+}
+
+.packet-id-matrix col:not(:first-child) {
+    width: 12ex;
+}
+
+.packet-id-matrix tr > *:first-child {
+    text-align: left;
+}
+
+.packet-id-matrix tr > * {
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.packet-id-matrix tr:first-child > th:first-child {
+    border: none;
+}
+
+.packet-id-changed {
+    font-weight: bold;
+}
