@@ -23,30 +23,36 @@ rel_packet = namedtuple(
 
 
 version_urls = {
-    vsn('1.12',      335): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12924',
-    vsn('1.12-pre7', 334): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12918',
-    vsn('1.12-pre6', 333): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12909',
-    vsn('1.12-pre5', 332): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10809',
-    vsn('1.12-pre4', 331): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10804',
-    vsn('1.12-pre3', 330): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10803',
-    vsn('1.12-pre2', 329): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10418',
-    vsn('1.12-pre1', 328): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=9819',
-    vsn('17w18b',    327): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8548',
-    vsn('17w18a',    326): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8546',
-    vsn('17w17b',    325): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8536',
-    vsn('17w17a',    324): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8528',
-    vsn('17w16b',    323): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8519',
-    vsn('17w16a',    322): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8515',
-    vsn('17w15a',    321): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8499',
-    vsn('17w14a',    320): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8490',
-    vsn('17w13b',    319): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8475',
-    vsn('17w13a',    318): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8454',
-    vsn('17w06a',    317): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8414',
-    vsn('1.11.2',    316): 'http://wiki.vg/index.php?title=Protocol&oldid=8543',
+    vsn('1.12.1-pre1', 337): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13267',
+    vsn('17w31a',      336): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13265',
+    vsn('1.12',        335): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12929',
+    vsn('1.12-pre7',   334): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12918',
+    vsn('1.12-pre6',   333): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12909',
+    vsn('1.12-pre5',   332): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10809',
+    vsn('1.12-pre4',   331): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10804',
+    vsn('1.12-pre3',   330): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10803',
+    vsn('1.12-pre2',   329): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10418',
+    vsn('1.12-pre1',   328): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=9819',
+    vsn('17w18b',      327): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8548',
+    vsn('17w18a',      326): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8546',
+    vsn('17w17b',      325): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8536',
+    vsn('17w17a',      324): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8528',
+    vsn('17w16b',      323): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8519',
+    vsn('17w16a',      322): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8515',
+    vsn('17w15a',      321): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8499',
+    vsn('17w14a',      320): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8490',
+    vsn('17w13b',      319): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8475',
+    vsn('17w13a',      318): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8454',
+    vsn('17w06a',      317): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8414',
+    vsn('1.11.2',      316): 'http://wiki.vg/index.php?title=Protocol&oldid=8543',
 }
 
 
 patch = {
+    (vsn('17w13a', 318), pre_packet('Unknown', None, 0x01, True)):
+                         pre_packet('Unknown (serverbound)', None, 0x01, True),
+    (vsn('17w13b', 319), pre_packet('Unknown', None, 0x01, True)):
+                         pre_packet('Unknown (serverbound)', None, 0x01, True),
     (vsn('17w13a', 318), pre_packet('Particle', 0x24, 0x25, False)):
                          pre_packet('Map',      0x24, 0x25, False),
     (vsn('17w13b', 319), pre_packet('Particle', 0x24, 0x25, False)):
@@ -77,10 +83,18 @@ patch = {
                             pre_packet('Map',      0x24, 0x25, False),
 }
 
+def norm_packet_name(name):
+    return {
+        'Confirm Transation (clientbound)': 'Confirm Transaction (clientbound)',
+        'Unlock Recipe':                    'Unlock Recipes',
+        'Advancement Progress':             'Select Advancement Tab',
+        'Recipe Displayed':                 'Prepare Crafting Grid',
+    }.get(name, name)
+
 
 def matrix_html():
     matrix = version_packet_ids()
-    versions = sorted(matrix.keys(), key=lambda v: v.protocol)
+    versions = sorted(matrix.keys(), key=lambda v: v.protocol, reverse=True)
     packet_names = sorted({n for pis in matrix.values() for n in pis.keys()})
 
     print('<!DOCTYPE html>')
@@ -97,27 +111,34 @@ def matrix_html():
 
     print('          <tr> <th></th>', end='')
     for version in versions:
-        print(' <th>%s<br>%s</th>' % (version.name, version.protocol), end='')
+        print(' <th><a href="%s">%s</a><br>%s</th>' % (
+            version_urls[version], version.name, version.protocol), end='')
     print(' </tr>')
 
     for packet_name in packet_names:
         print('          <tr> <th>%s</th>' % packet_name, end='')
-        prev_cell = None
-        for version in versions:
-            if packet_name in matrix[version]:
-                cell = matrix[version][packet_name]
+        for i in range(len(versions)):
+            prev_cell = matrix[versions[i+1]].get(packet_name) \
+                        if i<len(versions)-1 else None
+            if packet_name in matrix[versions[i]]:
+                cell = matrix[versions[i]][packet_name]
                 classes = []
-                if prev_cell and cell.id != prev_cell.id:
-                    classes.append('packet-id-changed')
-                if cell.changed:
-                    classes.append('packet-format-changed')
+                if cell.changed is None:
+                    classes.append('packet-base')
+                elif not prev_cell:
+                    classes.append('packet-added')
+                else:
+                    if cell.id != prev_cell.id:
+                        classes.append('packet-id-changed')
+                    if cell.changed:
+                        classes.append('packet-format-changed')
                 print(' <td%s>0x%02X</td>' % (
                     ' class="%s"' % ' '.join(classes) if classes else '', cell.id),
                     end='')
-                prev_cell = cell
+            elif prev_cell:
+                print(' <td class="packet-removed"></td>')
             else:
                 print(' <td></td>', end='')
-                prev_cell = None
         print('</tr>')
 
     print('      </table>')
@@ -135,7 +156,7 @@ def version_packet_ids():
             assert v == to_v, '%r != %r' % (v, to_v)
             matrix[v] = {}
             seen_names = set()
-            for packet in pre_packets(soup):
+            for packet in pre_packets(soup, v):
                 packet = patch.get((v, packet), packet)
                 if packet is None: continue
                 assert packet.name not in seen_names, \
@@ -150,11 +171,12 @@ def version_packet_ids():
                         '[%s] 0x%02x != matrix[%r][%r].id == 0x%02x' % (
                         v.name, packet.old_id, from_v, packet.name,
                         matrix[from_v][packet.name].id)
-                matrix[v][packet.name] = matrix_id(
-                    id = packet.old_id if packet.new_id is None else packet.new_id,
-                    changed = packet.changed)
+                if packet.new_id is not None:
+                    matrix[v][packet.name] = matrix_id(
+                        id = packet.new_id,
+                        changed = packet.changed)
             for packet, id in matrix[from_v].items():
-                if packet in matrix[v]: continue
+                if packet in seen_names: continue
                 matrix[v][packet] = matrix_id(id=id.id, changed=False)
         elif heading == 'Protocol':
             rel_v = rel_version(soup)
@@ -167,13 +189,6 @@ def version_packet_ids():
         else:
             raise AssertionError('Unrecognised article title: %r' % heading)
     return matrix
-
-
-def norm_packet_name(name):
-    return {
-        'Confirm Transation (clientbound)': 'Confirm Transaction (clientbound)',
-        'Unlock Recipe':                    'Unlock Recipes'
-    }.get(name, name)
 
 
 def get_soup(url):
@@ -209,7 +224,7 @@ def pre_versions(soup):
         ' are expected: %r' % (len(vs), vs))
 
 
-def pre_packets(soup):
+def pre_packets(soup, vsn):
     seen_names = set()
     table = soup.find(id='Packets').findNext('table', class_='wikitable')
     if table is not None:
@@ -229,7 +244,6 @@ def pre_packets(soup):
             if any(int(td.get('colspan', '1')) != 1 for td in tds): continue
 
             changed = tds[cols[c_doc]+1].text.strip() != '(unchanged)'
-            if changed: assert tds[cols[c_doc]+1].text.strip() == 'Pre'
 
             if tds[cols[c_id]].find('ins') and tds[cols[c_id]].find('del'):
                 # Existing packet with changed packet ID.
@@ -242,10 +256,20 @@ def pre_packets(soup):
                 new_id = int(tds[cols[c_id]].text.strip(), 16)
                 assert changed and tds[cols[c_doc]].text.strip() == ''
             else:
-                # Existing packet without changed packet ID.
                 old_id = int(tds[cols[c_id]].text.strip(), 16)
-                new_id = None
+                if 'text-decoration: line-through' in tr.get('style', ''):
+                    # Removed packet.
+                    new_id = None
+                else:
+                    # Existing packet without changed packet ID.
+                    new_id = old_id
                 assert changed and tds[cols[c_doc]].text.strip() == 'Current'
+
+            if changed:
+                expect = '' if new_id is None else 'Pre'
+                assert tds[cols[c_doc]+1].text.strip() == expect, \
+                '[%s] [%s] %r != %r' % (vsn.name, tds[cols[c_name]].text.strip(),
+                                        tds[cols[c_doc]+1].text.strip(), expect)
 
             name = norm_packet_name(tds[cols[c_name]].text.strip())
             yield pre_packet(

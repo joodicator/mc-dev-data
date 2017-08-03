@@ -9,6 +9,8 @@ body {
     table-layout: fixed;
     width: 100%;
     text-align: center;
+    color: black;
+    background-color: white;
 }
 
 .packet-id-matrix col:first-child {
@@ -16,7 +18,7 @@ body {
 }
 
 .packet-id-matrix col:not(:first-child) {
-    width: 12ex;
+    width: 13ex;
 }
 
 .packet-id-matrix tr > *:first-child {
@@ -34,4 +36,25 @@ body {
 
 .packet-id-changed {
     font-weight: bold;
+}
+
+.packet-base {
+    background-color: #BCF;
+}
+
+.packet-added {
+    background-color: #AFA;
+}
+
+.packet-removed::before {
+    content: "—";
+    font-weight: bold;
+}
+
+.packet-removed {
+    background-color: #FAA;
+}
+
+.packet-format-changed {
+    background-color: #FF8;
 }
