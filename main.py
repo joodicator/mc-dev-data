@@ -14,8 +14,8 @@ import re
 MatrixID = namedtuple(
     'MatrixID', ('id', 'changed'))
 MatrixID.__str__ = lambda r: \
-    'MatrixID(id=0x%02X, changed=%r)' \
-    % (r.id, r.changed)
+    'MatrixID(id=%s, changed=%r)' \
+    % (id_str(r.id), r.changed)
 
 Vsn = namedtuple(
     'Vsn', ('name', 'protocol'))
@@ -26,17 +26,22 @@ VersionDiff = namedtuple(
 PrePacket = namedtuple(
     'PrePacket', ('name', 'old_id', 'new_id', 'changed', 'state', 'bound'))
 PrePacket.__str__ = lambda r: \
-    'PrePacket(name=%r, old_id=0x%02X, new_id=0x%02X, changed=%r, state=%r, bound=%r)' \
-    % (r.name, r.old_id, r.new_id, r.changed, r.state, r.bound)
+    'PrePacket(name=%r, old_id=%s, new_id=%s, changed=%r, state=%r, bound=%r)' \
+    % (r.name, id_str(r.old_id), id_str(r.new_id), r.changed, r.state, r.bound)
 
 RelPacket = namedtuple(
     'RelPacket', ('name', 'id', 'state', 'bound'))
 RelPacket.__str__ = lambda r: \
-    'RelPacket(name=%r, id=0x%02X, state=%r, bound=%r)' \
-    % (r.name, r.id, r.state, r.bound)
+    'RelPacket(name=%r, id=%s, state=%r, bound=%r)' \
+    % (r.name, id_str(r.id), r.state, r.bound)
 
 PacketClass = namedtuple(
     'PacketClass', ('name', 'state', 'bound'))
+
+def id_str(id):
+    if isinstance(id, int):
+        return '0x%02X' % id
+    return str(id)
 
 version_urls = {
     Vsn('1.12.1',      338): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13287',
@@ -78,19 +83,74 @@ version_urls = {
     Vsn('16w32b',      302): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8063',
     Vsn('16w32a',      301): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8062',
     Vsn('1.10.2',      210): 'http://wiki.vg/index.php?title=Protocol&oldid=8235',
+    Vsn('1.10-pre2',   205): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7961',
+    Vsn('1.10-pre1',   204): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7950',
+    Vsn('16w21b',      203): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7935',
+    Vsn('16w21a',      202): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7877',
+    Vsn('16w20a',      201): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7859',
     Vsn('1.9.4',       110): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7804',
     Vsn('1.9.2',       109): 'http://wiki.vg/index.php?title=Protocol&oldid=7817',
     Vsn('1.9.1',       108): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7552',
     Vsn('1.9',         107): 'http://wiki.vg/index.php?title=Protocol&oldid=7617',
+    Vsn('1.9-pre4',    106): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7412',
+    Vsn('16w04a',      97):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7374',
+    Vsn('16w02a',      95):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7313',
+    Vsn('15w51b',      94):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7261',
+    Vsn('15w40b',      76):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7122',
+    Vsn('15w38b',      73):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6965',
+    Vsn('15w38a',      72):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6932',
+    Vsn('15w36d',      70):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6925',
+    Vsn('15w36c',      69):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6883',
+#    Vsn('15w35e',      66):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6851',
+#    Vsn('15w35b',      63):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6829',
+#    Vsn('15w34a',      58):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6809',
+#    Vsn('15w33c',      57):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6806',
+#    Vsn('15w33b',      56):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6796',
+#    Vsn('15w33a',      55):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6790',
+#    Vsn('15w32c',      54):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6788',
+#    Vsn('15w32a',      52):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6785',
+#    Vsn('15w31c',      51):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6780',
+#    Vsn('15w31b',      50):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6746',
     Vsn('1.8.9',       47):  'http://wiki.vg/index.php?title=Protocol&oldid=7368',
 }
 
 patch = {
+    (Vsn('1.8.9', 47), RelPacket('Sound Effect', 0x29, 'Play', 'Client')):
+                       RelPacket('Named Sound Effect', 0x29, 'Play', 'Client'),
+    (Vsn('15w36c', 69), PrePacket('Sound Effect', 0x29, 0x29, False, 'Play', 'Client')):
+                        PrePacket('Named Sound Effect', 0x29, 0x29, False, 'Play', 'Client'),
+    (Vsn('15w36d', 70), PrePacket('Sound Effect', 0x29, 0x23, False, 'Play', 'Client')):
+                        PrePacket('Named Sound Effect', 0x29, 0x23, False, 'Play', 'Client'),
+    (Vsn('15w38a', 72), PrePacket('Sound Effect', 0x29, 0x23, False, 'Play', 'Client')):
+                        PrePacket('Named Sound Effect', 0x29, 0x23, False, 'Play', 'Client'),
+    (Vsn('15w38b', 73), PrePacket('Sound Effect', 0x29, 0x23, False, 'Play', 'Client')):
+                        PrePacket('Named Sound Effect', 0x29, 0x23, False, 'Play', 'Client'),
+    (Vsn('15w40b', 76), PrePacket('Sound Effect', 0x29, 0x23, False, 'Play', 'Client')):
+                        PrePacket('Named Sound Effect', 0x29, 0x23, False, 'Play', 'Client'),
+    (Vsn('15w36c', 69), VersionDiff(Vsn('1.8.8', 47), Vsn('15w36c', 69))):
+                        VersionDiff(Vsn('1.8.9', 47), Vsn('15w36c', 69)),
+    (Vsn('15w36d', 70), VersionDiff(Vsn('1.8.8', 47), Vsn('15w36d', 70))):
+                        VersionDiff(Vsn('1.8.9', 47), Vsn('15w36d', 70)),
+    (Vsn('15w38a', 72), VersionDiff(Vsn('1.8.8', 47), Vsn('15w38a', 72))):
+                        VersionDiff(Vsn('1.8.9', 47), Vsn('15w38a', 72)),
+    (Vsn('15w38b', 73), VersionDiff(Vsn('1.8.8', 47), Vsn('15w38b', 73))):
+                        VersionDiff(Vsn('1.8.9', 47), Vsn('15w38b', 73)),
+    (Vsn('15w40b', 76), VersionDiff(Vsn('1.8.8', 47), Vsn('15w40b', 76))):
+                        VersionDiff(Vsn('1.8.9', 47), Vsn('15w40b', 76)),
+    (Vsn('15w51b', 94), PrePacket('Chat Message (serverbound)', 0x02, 0x02, False, 'Play', 'Server')):
+                        PrePacket('Chat Message (serverbound)', 0x01, 0x02, False, 'Play', 'Server'),
+    (Vsn('16w02a', 95), PrePacket('Chat Message (serverbound)', 0x02, 0x02, False, 'Play', 'Server')):
+                        PrePacket('Chat Message (serverbound)', 0x01, 0x02, False, 'Play', 'Server'),
+    (Vsn('15w51b', 94), PrePacket('Named Sound Effect', 0x2F, 0x19, False, 'Play', 'Client')):
+                        PrePacket('Named Sound Effect', 0x29, 0x19, False, 'Play', 'Client'),
+    (Vsn('16w02a', 95), PrePacket('Named Sound Effect', 0x2F, 0x19, True, 'Play', 'Client')):
+                        PrePacket('Named Sound Effect', 0x29, 0x19, True, 'Play', 'Client'),
+    (Vsn('16w04a', 97), PrePacket('Named Sound Effect', 0x2F, 0x19, True, 'Play', 'Client')):
+                        PrePacket('Named Sound Effect', 0x29, 0x19, True, 'Play', 'Client'),
     (Vsn('1.9.1', 108), VersionDiff(Vsn('1.9', 107), Vsn('1.9.1-pre3', 108))):
                         VersionDiff(Vsn('1.9', 107), Vsn('1.9.1', 108)),
     (Vsn('1.9.4', 110), VersionDiff(Vsn('1.9.2', 109), Vsn('1.9.3-pre3', 110))):
                         VersionDiff(Vsn('1.9.2', 109), Vsn('1.9.4', 110)),
-
     (Vsn('17w13a', 318), PrePacket('Unknown', None, 0x01, True, 'Play', 'Server')):
                          PrePacket('Craft Recipe Request', None, 0x01, True, 'Play', 'Server'),
     (Vsn('17w13b', 319), PrePacket('Unknown', None, 0x01, True, 'Play', 'Server')):
@@ -145,16 +205,21 @@ patch = {
 
 
 norm_packet_name_dict = {
-    'Chunk data':                           'Chunk Data',
-    'Entity effect':                        'Entity Effect',
-    'Confirm Transation (clientbound)':     'Confirm Transaction (clientbound)',
-    'Unlock Recipe':                        'Unlock Recipes',
-    'Advancement Progress':                 'Select Advancement Tab',
-    'Recipe Displayed':                     'Crafting Book Data',
-    'Prepare Crafting Grid':                'Craft Recipe Request',
+    'Maps':                             'Map',
+    'Chunk data':                       'Chunk Data',
+    'Entity effect':                    'Entity Effect',
+    'Confirm Transation (clientbound)': 'Confirm Transaction (clientbound)',
+    'Unlock Recipe':                    'Unlock Recipes',
+    'Advancement Progress':             'Select Advancement Tab',
+    'Recipe Displayed':                 'Crafting Book Data',
+    'Prepare Crafting Grid':            'Craft Recipe Request',
+    'Sign Editor Open':                 'Open Sign Editor',
+    'Player List Header/Footer':        'Player List Header And Footer',
+    'Vehicle Move (Serverbound)':       'Vehicle Move (serverbound)',
+    ('Vehicle Move?', 'Server'):        'Vehicle Move (serverbound)',   
 }
 for name in 'Animation', 'Chat Message', 'Keep Alive', 'Plugin Message', \
-'Player Position And Look', 'Held Item Change', 'Close Window', \
+'Player Position And Look', 'Held Item Change', 'Close Window', 'Vehicle Move', \
 'Confirm Transaction', 'Player Abilities', 'Tab-Complete', 'Update Sign':
     norm_packet_name_dict[(name, 'Client')] = '%s (clientbound)' % name
     norm_packet_name_dict[(name, 'Server')] = '%s (serverbound)' % name
@@ -247,7 +312,7 @@ def version_packet_ids():
         soup = get_soup(url)
         heading = soup.find(id='firstHeading').text.strip() 
         if heading == 'Pre-release protocol':
-            vdiff = pre_versions(soup)
+            vdiff = pre_versions(soup, v)
             if (v, vdiff) in patch:
                 used_patches.add((v, vdiff))
                 vdiff = patch[v, vdiff]
@@ -277,7 +342,8 @@ def version_packet_ids():
                            '[%s] %r in matrix[%r]' % (v.name, packet_class, from_v)
                 else:
                     assert packet_class in matrix[from_v], \
-                        '[%s] %r not in matrix[%r]' % (v.name, packet_class, from_v)
+                        '[%s] [0x%02X] %r not in matrix[%r]' % (
+                        v.name, packet.old_id, packet_class, from_v)
                     assert packet.old_id == matrix[from_v][packet_class].id, \
                         '[%s] 0x%02x != matrix[%r][%r].id == 0x%02x' % (
                         v.name, packet.old_id, from_v, packet_class,
@@ -316,12 +382,24 @@ def version_packet_ids():
         else:
             raise AssertionError('Unrecognised article title: %r' % heading)
 
+        state_bound_ids = {}
+        for packet_class, matrix_id in matrix[v].items():
+            key = (packet_class.state, packet_class.bound, matrix_id.id)
+            assert key not in state_bound_ids, '[%s] Duplicate packet ID: ' \
+                '%s is used by packets %r and %r.' % (v.name,
+                '(%s, %s, 0x%02X)' % key, state_bound_ids[key], packet_class.name)
+            state_bound_ids[key] = packet_class.name
+
         unused_patches = set(k for k in patch.keys() if k[0] == v and k not in used_patches)
         if unused_patches:
-            print(used_patches, file=sys.stderr)
             raise AssertionError('Unused patches:\n'
             + '\n'.join('%s -> %s' % (p, patch[p]) for p in unused_patches))
-    
+
+    unused_patches = set(k for k in patch.keys() if k not in used_patches)
+    if unused_patches:
+        raise AssertionError('Unused patches:\n'
+        + '\n'.join('%s -> %s' % (p, patch[p]) for p in unused_patches))
+
     return matrix
 
 
@@ -346,9 +424,10 @@ def get_soup(url):
 
 
 PRE_VER_RE = re.compile(r'(?P<name>\d[^,]*), protocol (?P<protocol>\d+)')
-def pre_versions(soup):
+def pre_versions(soup, vsn):
     vs = []
-    for a in soup.find(id='mw-content-text').find('p').findAll('a'):
+    para = soup.find(id='mw-content-text').find('p', recursive=False)
+    for a in para.findAll('a'):
         m = PRE_VER_RE.match(a.text.strip())
         if m is None: continue
         vs.append(Vsn(
@@ -357,8 +436,8 @@ def pre_versions(soup):
     if len(vs) == 2:
         return VersionDiff(*vs)
     else:
-        raise AssertionError('Found %d versions in first paragraph where 2'
-        ' are expected: %r' % (len(vs), vs))
+        raise AssertionError('[%s] Found %d versions, %r, where 2 are expected'
+            ' in the first paragraph: %s' % (vsn.name, len(vs), vs, para))
 
 
 def pre_packets(soup, vsn):
@@ -404,11 +483,15 @@ def pre_packets(soup, vsn):
                 old_id = int(tds[cols[c_id]].text.strip(), 16)
                 if 'text-decoration: line-through' in tr.get('style', ''):
                     # Removed packet.
+                    assert changed
                     new_id = None
                 else:
                     # Existing packet without changed packet ID.
                     new_id = old_id
-                assert changed and tds[cols[c_doc]].text.strip() == 'Current'
+                assert tds[cols[c_doc]].text.strip() == 'Current', \
+                    '[%s] [%s] not %r or %r != %r' % (vsn.name,
+                    tds[cols[c_name]].text.strip(), changed,
+                    tds[cols[c_doc]].text.strip(), 'Current')
 
             if changed:
                 expect = '' if new_id is None else 'Pre'

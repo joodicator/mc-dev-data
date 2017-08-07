@@ -1,0 +1,4773 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Pre-release protocol - wiki.vg</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pre-release_protocol","wgTitle":"Pre-release protocol","wgCurRevisionId":13288,"wgRevisionId":6965,"wgArticleId":123,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Pre-release_protocol","wgRelevantArticleId":123,"wgRequestId":"1b6daa496ac3fa1af9a36c4f","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@0fqh6g4",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="wiki.vg (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.vg/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="wiki.vg Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Pre-release_protocol rootpage-Pre-release_protocol skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Pre-release protocol</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From wiki.vg</div>
+								<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 16:23, 27 September 2015 by <a href="/index.php?title=User:SurestTexas00&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:SurestTexas00 (page does not exist)"><bdi>SurestTexas00</bdi></a> <span class="mw-usertoollinks">(<a href="/index.php?title=User_talk:SurestTexas00&amp;action=edit&amp;redlink=1" class="new" title="User talk:SurestTexas00 (page does not exist)">talk</a> | <a href="/Special:Contributions/SurestTexas00" title="Special:Contributions/SurestTexas00">contribs</a>)</span> <span class="comment">(<a href="#.7B.7BChange.7C.7CUse_Item.7D.7D">→</a>‎<span dir="auto"><span class="autocomment">{{Change||Use Item}}</span></span>)</span></div><div id="mw-revision-nav">(<a href="/index.php?title=Pre-release_protocol&amp;diff=prev&amp;oldid=6965" title="Pre-release protocol">diff</a>) <a href="/index.php?title=Pre-release_protocol&amp;direction=prev&amp;oldid=6965" title="Pre-release protocol">← Older revision</a> | <a href="/Pre-release_protocol" title="Pre-release protocol">Latest revision</a> (<a href="/index.php?title=Pre-release_protocol&amp;diff=cur&amp;oldid=6965" title="Pre-release protocol">diff</a>) | <a href="/index.php?title=Pre-release_protocol&amp;direction=next&amp;oldid=6965" title="Pre-release protocol">Newer revision →</a> (<a href="/index.php?title=Pre-release_protocol&amp;diff=next&amp;oldid=6965" title="Pre-release protocol">diff</a>)</div></div></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page documents the changes from the <a href="/Protocol" title="Protocol">last stable Minecraft release</a> (currently <a href="/Protocol_version_numbers" title="Protocol version numbers">1.8.8, protocol 47</a>) to the current pre-release (currently <a href="/Protocol_version_numbers" title="Protocol version numbers">15w38b, protocol 73</a>). Note that this page contains bleeding-edge information that may not be completely or correctly documented.
+</p><p>One who wishes to commandeer the merging of this into <a href="/Protocol" title="Protocol">Protocol</a> when an update is made must be sure to respect any changes that may have occurred to the respective packets there.
+</p>
+<h2><span class="mw-headline" id="Contents">Contents</span></h2>
+<h3><span class="mw-headline" id="Data_types">Data types</span></h3>
+<ul><li> <a href="#Chunk_Section">Chunk Section</a></li>
+<li> <a href="#Entity_Metadata">Entity Metadata</a></li></ul>
+<h3><span class="mw-headline" id="Packets">Packets</span></h3>
+<table class="wikitable">
+<tr>
+<th> ID
+</th>
+<th> Packet name
+</th>
+<th colspan="2"> Documentation
+</th></tr>
+<tr>
+<th colspan="4"> Handshaking serverbound
+</th></tr>
+<tr>
+<td> 0x00 </td>
+<td> Handshake </td>
+<td> <a href="/Protocol#Handshake" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Handshake" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<th colspan="4"> Play clientbound
+</th></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0E</del>&#x20;<ins style="background-color: #d9ead3;">0x00</ins> </td>
+<td> Spawn Object </td>
+<td> <a href="/Protocol#Spawn_Object" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Spawn_Object" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x11</del>&#x20;<ins style="background-color: #d9ead3;">0x01</ins> </td>
+<td> Spawn Experience Orb </td>
+<td> <a href="/Protocol#Spawn_Experience_Orb" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x2C</del>&#x20;<ins style="background-color: #d9ead3;">0x02</ins> </td>
+<td> Spawn Global Entity </td>
+<td> <a href="/Protocol#Spawn_Global_Entity" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0F</del>&#x20;<ins style="background-color: #d9ead3;">0x03</ins> </td>
+<td> Spawn Mob </td>
+<td> <a href="/Protocol#Spawn_Mob" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Spawn_Mob" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x10</del>&#x20;<ins style="background-color: #d9ead3;">0x04</ins> </td>
+<td> Spawn Painting </td>
+<td> <a href="/Protocol#Spawn_Painting" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0C</del>&#x20;<ins style="background-color: #d9ead3;">0x05</ins> </td>
+<td> Spawn Player </td>
+<td> <a href="/Protocol#Spawn_Player" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Spawn_Player" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0B</del>&#x20;<ins style="background-color: #d9ead3;">0x06</ins> </td>
+<td> Animation </td>
+<td> <a href="/Protocol#Animation" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x37</del>&#x20;<ins style="background-color: #d9ead3;">0x07</ins> </td>
+<td> Statistics </td>
+<td> <a href="/Protocol#Statistics" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x25</del>&#x20;<ins style="background-color: #d9ead3;">0x08</ins> </td>
+<td> Block Break Animation </td>
+<td> <a href="/Protocol#Block_Break_Animation" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x35</del>&#x20;<ins style="background-color: #d9ead3;">0x09</ins> </td>
+<td> Update Block Entity </td>
+<td> <a href="/Protocol#Update_Block_Entity" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x24</del>&#x20;<ins style="background-color: #d9ead3;">0x0A</ins> </td>
+<td> Block Action </td>
+<td> <a href="/Protocol#Block_Action" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x23</del>&#x20;<ins style="background-color: #d9ead3;">0x0B</ins> </td>
+<td> Block Change </td>
+<td> <a href="/Protocol#Block_Change" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 0x0C </td>
+<td> Boss Bar </td>
+<td>  </td>
+<td> <a href="/Pre-release_protocol#Boss_Bar" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x41</del>&#x20;<ins style="background-color: #d9ead3;">0x0D</ins> </td>
+<td> Server Difficulty </td>
+<td> <a href="/Protocol#Server_Difficulty" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x3A</del>&#x20;<ins style="background-color: #d9ead3;">0x0E</ins> </td>
+<td> Tab-Complete </td>
+<td> <a href="/Protocol#Tab-Complete" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x02</del>&#x20;<ins style="background-color: #d9ead3;">0x0F</ins> </td>
+<td> Chat Message </td>
+<td> <a href="/Protocol#Chat_Message" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x22</del>&#x20;<ins style="background-color: #d9ead3;">0x10</ins> </td>
+<td> Multi Block Change </td>
+<td> <a href="/Protocol#Multi_Block_Change" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x32</del>&#x20;<ins style="background-color: #d9ead3;">0x11</ins> </td>
+<td> Confirm Transaction </td>
+<td> <a href="/Protocol#Confirm_Transaction" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x2E</del>&#x20;<ins style="background-color: #d9ead3;">0x12</ins> </td>
+<td> Close Window </td>
+<td> <a href="/Protocol#Close_Window" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x2D</del>&#x20;<ins style="background-color: #d9ead3;">0x13</ins> </td>
+<td> Open Window </td>
+<td> <a href="/Protocol#Open_Window" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x30</del>&#x20;<ins style="background-color: #d9ead3;">0x14</ins> </td>
+<td> Window Items </td>
+<td> <a href="/Protocol#Window_Items" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x31</del>&#x20;<ins style="background-color: #d9ead3;">0x15</ins> </td>
+<td> Window Property </td>
+<td> <a href="/Protocol#Window_Property" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x2F</del>&#x20;<ins style="background-color: #d9ead3;">0x16</ins> </td>
+<td> Set Slot </td>
+<td> <a href="/Protocol#Set_Slot" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 0x17 </td>
+<td> Set Cooldown </td>
+<td>  </td>
+<td> <a href="/Pre-release_protocol#Set_Cooldown" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x3F</del>&#x20;<ins style="background-color: #d9ead3;">0x18</ins> </td>
+<td> Plugin Message </td>
+<td> <a href="/Protocol#Plugin_Message" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x40</del>&#x20;<ins style="background-color: #d9ead3;">0x19</ins> </td>
+<td> Disconnect </td>
+<td> <a href="/Protocol#Disconnect" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> 0x1A </td>
+<td> Entity Status </td>
+<td> <a href="/Protocol#Entity_Status" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Entity_Status" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x27</del>&#x20;<ins style="background-color: #d9ead3;">0x1B</ins> </td>
+<td> Explosion </td>
+<td> <a href="/Protocol#Explosion" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 0x1C </td>
+<td> Unload Chunk </td>
+<td>  </td>
+<td> <a href="/Pre-release_protocol#Unload_Chunk" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x46</del>&#x20;<ins style="background-color: #d9ead3;">0x1D</ins> </td>
+<td> Set Compression </td>
+<td> <a href="/Protocol#Set_Compression" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x2B</del>&#x20;<ins style="background-color: #d9ead3;">0x1E</ins> </td>
+<td> Change Game State </td>
+<td> <a href="/Protocol#Change_Game_State" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x00</del>&#x20;<ins style="background-color: #d9ead3;">0x1F</ins> </td>
+<td> Keep Alive </td>
+<td> <a href="/Protocol#Keep_Alive" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x21</del>&#x20;<ins style="background-color: #d9ead3;">0x20</ins> </td>
+<td> Chunk Data </td>
+<td> <a href="/Protocol#Chunk_Data" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Chunk_Data" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x28</del>&#x20;<ins style="background-color: #d9ead3;">0x21</ins> </td>
+<td> Effect </td>
+<td> <a href="/Protocol#Effect" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x2A</del>&#x20;<ins style="background-color: #d9ead3;">0x22</ins> </td>
+<td> Particle </td>
+<td> <a href="/Protocol#Particle" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x29</del>&#x20;<ins style="background-color: #d9ead3;">0x23</ins> </td>
+<td> Sound Effect </td>
+<td> <a href="/Protocol#Sound_Effect" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x01</del>&#x20;<ins style="background-color: #d9ead3;">0x24</ins> </td>
+<td> Join Game </td>
+<td> <a href="/Protocol#Join_Game" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x34</del>&#x20;<ins style="background-color: #d9ead3;">0x25</ins> </td>
+<td> Map </td>
+<td> <a href="/Protocol#Map" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Map" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x15</del>&#x20;<ins style="background-color: #d9ead3;">0x26</ins> </td>
+<td> Entity Relative Move </td>
+<td> <a href="/Protocol#Entity_Relative_Move" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x17</del>&#x20;<ins style="background-color: #d9ead3;">0x27</ins> </td>
+<td> Entity Look And Relative Move </td>
+<td> <a href="/Protocol#Entity_Look_And_Relative_Move" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x16</del>&#x20;<ins style="background-color: #d9ead3;">0x28</ins> </td>
+<td> Entity Look </td>
+<td> <a href="/Protocol#Entity_Look" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x14</del>&#x20;<ins style="background-color: #d9ead3;">0x29</ins> </td>
+<td> Entity </td>
+<td> <a href="/Protocol#Entity" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x36</del>&#x20;<ins style="background-color: #d9ead3;">0x2A</ins> </td>
+<td> Open Sign Editor </td>
+<td> <a href="/Protocol#Open_Sign_Editor" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x39</del>&#x20;<ins style="background-color: #d9ead3;">0x2B</ins> </td>
+<td> Player Abilities </td>
+<td> <a href="/Protocol#Player_Abilities" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x42</del>&#x20;<ins style="background-color: #d9ead3;">0x2C</ins> </td>
+<td> Combat Event </td>
+<td> <a href="/Protocol#Combat_Event" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Combat_Event" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x38</del>&#x20;<ins style="background-color: #d9ead3;">0x2D</ins> </td>
+<td> Player List Item </td>
+<td> <a href="/Protocol#Player_List_Item" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x08</del>&#x20;<ins style="background-color: #d9ead3;">0x2E</ins> </td>
+<td> Player Position And Look </td>
+<td> <a href="/Protocol#Player_Position_And_Look" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0A</del>&#x20;<ins style="background-color: #d9ead3;">0x2F</ins> </td>
+<td> Use Bed </td>
+<td> <a href="/Protocol#Use_Bed" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x13</del>&#x20;<ins style="background-color: #d9ead3;">0x30</ins> </td>
+<td> Destroy Entities </td>
+<td> <a href="/Protocol#Destroy_Entities" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x1E</del>&#x20;<ins style="background-color: #d9ead3;">0x31</ins> </td>
+<td> Remove Entity Effect </td>
+<td> <a href="/Protocol#Remove_Entity_Effect" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x48</del>&#x20;<ins style="background-color: #d9ead3;">0x32</ins> </td>
+<td> Resource Pack Send </td>
+<td> <a href="/Protocol#Resource_Pack_Send" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x07</del>&#x20;<ins style="background-color: #d9ead3;">0x33</ins> </td>
+<td> Respawn </td>
+<td> <a href="/Protocol#Respawn" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x19</del>&#x20;<ins style="background-color: #d9ead3;">0x34</ins> </td>
+<td> Entity Head Look </td>
+<td> <a href="/Protocol#Entity_Head_Look" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x44</del>&#x20;<ins style="background-color: #d9ead3;">0x35</ins> </td>
+<td> World Border </td>
+<td> <a href="/Protocol#World_Border" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x43</del>&#x20;<ins style="background-color: #d9ead3;">0x36</ins> </td>
+<td> Camera </td>
+<td> <a href="/Protocol#Camera" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x09</del>&#x20;<ins style="background-color: #d9ead3;">0x37</ins> </td>
+<td> Held Item Change </td>
+<td> <a href="/Protocol#Held_Item_Change" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x3D</del>&#x20;<ins style="background-color: #d9ead3;">0x38</ins> </td>
+<td> Display Scoreboard </td>
+<td> <a href="/Protocol#Display_Scoreboard" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x1C</del>&#x20;<ins style="background-color: #d9ead3;">0x39</ins> </td>
+<td> Entity Metadata </td>
+<td> <a href="/Protocol#Entity_Metadata" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x1B</del>&#x20;<ins style="background-color: #d9ead3;">0x3A</ins> </td>
+<td> Attach Entity </td>
+<td> <a href="/Protocol#Attach_Entity" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x12</del>&#x20;<ins style="background-color: #d9ead3;">0x3B</ins> </td>
+<td> Entity Velocity </td>
+<td> <a href="/Protocol#Entity_Velocity" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x04</del>&#x20;<ins style="background-color: #d9ead3;">0x3C</ins> </td>
+<td> Entity Equipment </td>
+<td> <a href="/Protocol#Entity_Equipment" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Entity_Equipment" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x1F</del>&#x20;<ins style="background-color: #d9ead3;">0x3D</ins> </td>
+<td> Set Experience </td>
+<td> <a href="/Protocol#Set_Experience" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x06</del>&#x20;<ins style="background-color: #d9ead3;">0x3E</ins> </td>
+<td> Update Health </td>
+<td> <a href="/Protocol#Update_Health" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x3B</del>&#x20;<ins style="background-color: #d9ead3;">0x3F</ins> </td>
+<td> Scoreboard Objective </td>
+<td> <a href="/Protocol#Scoreboard_Objective" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x3E</del>&#x20;<ins style="background-color: #d9ead3;">0x40</ins> </td>
+<td> Teams </td>
+<td> <a href="/Protocol#Teams" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Teams" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x3C</del>&#x20;<ins style="background-color: #d9ead3;">0x41</ins> </td>
+<td> Update Score </td>
+<td> <a href="/Protocol#Update_Score" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x05</del>&#x20;<ins style="background-color: #d9ead3;">0x42</ins> </td>
+<td> Spawn Position </td>
+<td> <a href="/Protocol#Spawn_Position" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x03</del>&#x20;<ins style="background-color: #d9ead3;">0x43</ins> </td>
+<td> Time Update </td>
+<td> <a href="/Protocol#Time_Update" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x45</del>&#x20;<ins style="background-color: #d9ead3;">0x44</ins> </td>
+<td> Title </td>
+<td> <a href="/Protocol#Title" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x33</del>&#x20;<ins style="background-color: #d9ead3;">0x45</ins> </td>
+<td> Update Sign </td>
+<td> <a href="/Protocol#Update_Sign" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x47</del>&#x20;<ins style="background-color: #d9ead3;">0x46</ins> </td>
+<td> Player List Header And Footer </td>
+<td> <a href="/Protocol#Player_List_Header_And_Footer" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0D</del>&#x20;<ins style="background-color: #d9ead3;">0x47</ins> </td>
+<td> Collect Item </td>
+<td> <a href="/Protocol#Collect_Item" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x18</del>&#x20;<ins style="background-color: #d9ead3;">0x48</ins> </td>
+<td> Entity Teleport </td>
+<td> <a href="/Protocol#Entity_Teleport" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x20</del>&#x20;<ins style="background-color: #d9ead3;">0x49</ins> </td>
+<td> Entity Properties </td>
+<td> <a href="/Protocol#Entity_Properties" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Entity_Properties" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x1D</del>&#x20;<ins style="background-color: #d9ead3;">0x4A</ins> </td>
+<td> Entity Effect </td>
+<td> <a href="/Protocol#Entity_Effect" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td> 0x26 </td>
+<td> Map Chunk Bulk </td>
+<td> <a href="/Protocol#Map_Chunk_Bulk" title="Protocol">Current</a> </td>
+<td>
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td> 0x49 </td>
+<td> Update Entity NBT </td>
+<td> <a href="/Protocol#Update_Entity_NBT" title="Protocol">Current</a> </td>
+<td>
+</td></tr>
+<tr>
+<th colspan="4"> Play serverbound
+</th></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x14</del>&#x20;<ins style="background-color: #d9ead3;">0x00</ins> </td>
+<td> Tab-Complete </td>
+<td> <a href="/Protocol#Tab-Complete_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> 0x01 </td>
+<td> Chat Message </td>
+<td> <a href="/Protocol#Chat_Message_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x16</del>&#x20;<ins style="background-color: #d9ead3;">0x02</ins> </td>
+<td> Client Status </td>
+<td> <a href="/Protocol#Client_Status" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Client_Status" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x15</del>&#x20;<ins style="background-color: #d9ead3;">0x03</ins> </td>
+<td> Client Settings </td>
+<td> <a href="/Protocol#Client_Settings" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Client_Settings" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0F</del>&#x20;<ins style="background-color: #d9ead3;">0x04</ins> </td>
+<td> Confirm Transaction </td>
+<td> <a href="/Protocol#Confirm_Transaction_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x11</del>&#x20;<ins style="background-color: #d9ead3;">0x05</ins> </td>
+<td> Enchant Item </td>
+<td> <a href="/Protocol#Enchant_Item" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0E</del>&#x20;<ins style="background-color: #d9ead3;">0x06</ins> </td>
+<td> Click Window </td>
+<td> <a href="/Protocol#Click_Window" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0D</del>&#x20;<ins style="background-color: #d9ead3;">0x07</ins> </td>
+<td> Close Window </td>
+<td> <a href="/Protocol#Close_Window_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x17</del>&#x20;<ins style="background-color: #d9ead3;">0x08</ins> </td>
+<td> Plugin Message </td>
+<td> <a href="/Protocol#Plugin_Message_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x02</del>&#x20;<ins style="background-color: #d9ead3;">0x09</ins> </td>
+<td> Use Entity </td>
+<td> <a href="/Protocol#Use_Entity" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Use_Entity" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x00</del>&#x20;<ins style="background-color: #d9ead3;">0x0A</ins> </td>
+<td> Keep Alive </td>
+<td> <a href="/Protocol#Keep_Alive_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x04</del>&#x20;<ins style="background-color: #d9ead3;">0x0B</ins> </td>
+<td> Player Position </td>
+<td> <a href="/Protocol#Player_Position" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x06</del>&#x20;<ins style="background-color: #d9ead3;">0x0C</ins> </td>
+<td> Player Position And Look </td>
+<td> <a href="/Protocol#Player_Position_And_Look_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x05</del>&#x20;<ins style="background-color: #d9ead3;">0x0D</ins> </td>
+<td> Player Look </td>
+<td> <a href="/Protocol#Player_Look" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x03</del>&#x20;<ins style="background-color: #d9ead3;">0x0E</ins> </td>
+<td> Player </td>
+<td> <a href="/Protocol#Player" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x13</del>&#x20;<ins style="background-color: #d9ead3;">0x0F</ins> </td>
+<td> Player Abilities </td>
+<td> <a href="/Protocol#Player_Abilities_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x07</del>&#x20;<ins style="background-color: #d9ead3;">0x10</ins> </td>
+<td> Player Digging </td>
+<td> <a href="/Protocol#Player_Digging" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Player_Digging" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0B</del>&#x20;<ins style="background-color: #d9ead3;">0x11</ins> </td>
+<td> Entity Action </td>
+<td> <a href="/Protocol#Entity_Action" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Entity_Action" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0C</del>&#x20;<ins style="background-color: #d9ead3;">0x12</ins> </td>
+<td> Steer Vehicle </td>
+<td> <a href="/Protocol#Steer_Vehicle" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x19</del>&#x20;<ins style="background-color: #d9ead3;">0x13</ins> </td>
+<td> Resource Pack Status </td>
+<td> <a href="/Protocol#Resource_Pack_Status" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x09</del>&#x20;<ins style="background-color: #d9ead3;">0x14</ins> </td>
+<td> Held Item Change </td>
+<td> <a href="/Protocol#Held_Item_Change_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x10</del>&#x20;<ins style="background-color: #d9ead3;">0x15</ins> </td>
+<td> Creative Inventory Action </td>
+<td> <a href="/Protocol#Creative_Inventory_Action" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x12</del>&#x20;<ins style="background-color: #d9ead3;">0x16</ins> </td>
+<td> Update Sign </td>
+<td> <a href="/Protocol#Update_Sign_2" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Update_Sign" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0A</del>&#x20;<ins style="background-color: #d9ead3;">0x17</ins> </td>
+<td> Animation </td>
+<td> <a href="/Protocol#Animation_2" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Animation" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> 0x18 </td>
+<td> Spectate </td>
+<td> <a href="/Protocol#Spectate" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x08</del>&#x20;<ins style="background-color: #d9ead3;">0x19</ins> </td>
+<td> Player Block Placement </td>
+<td> <a href="/Protocol#Player_Block_Placement" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Player_Block_Placement" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 0x1A </td>
+<td> Use Item </td>
+<td>  </td>
+<td> <a href="/Pre-release_protocol#Use_Item" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<th colspan="4"> Status clientbound
+</th></tr>
+<tr>
+<td> 0x00 </td>
+<td> Response </td>
+<td> <a href="/Protocol#Response" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> 0x01 </td>
+<td> Pong </td>
+<td> <a href="/Protocol#Pong" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<th colspan="4"> Status serverbound
+</th></tr>
+<tr>
+<td> 0x00 </td>
+<td> Request </td>
+<td> <a href="/Protocol#Request" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> 0x01 </td>
+<td> Ping </td>
+<td> <a href="/Protocol#Ping" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<th colspan="4"> Login clientbound
+</th></tr>
+<tr>
+<td> 0x00 </td>
+<td> Disconnect </td>
+<td> <a href="/Protocol#Disconnect_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> 0x01 </td>
+<td> Encryption Request </td>
+<td> <a href="/Protocol#Encryption_Request" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> 0x02 </td>
+<td> Login Success </td>
+<td> <a href="/Protocol#Login_Success" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> 0x03 </td>
+<td> Set Compression </td>
+<td> <a href="/Protocol#Set_Compression_2" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<th colspan="4"> Login serverbound
+</th></tr>
+<tr>
+<td> 0x00 </td>
+<td> Login Start </td>
+<td> <a href="/Protocol#Login_Start" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> 0x01 </td>
+<td> Encryption Response </td>
+<td> <a href="/Protocol#Encryption_Response" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr></table>
+<h2><span class="mw-headline" id="New.2Fmodified_data_types">New/modified data types</span></h2>
+<h3><span class="mw-headline" id="Chunk_Section">Chunk Section</span></h3>
+<p>Format is now:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td> Bits Per Block
+</td>
+<td> Unsigned Byte
+</td>
+<td> How many bits per block in Data Array. If 0, the Palette Length and Palette fields are omitted and the global palette (with 13 bits per block) is used.
+</td></tr>
+<tr>
+<td> Palette Length
+</td>
+<td> Optional VarInt
+</td>
+<td> Length of the following array
+</td></tr>
+<tr>
+<td> Palette
+</td>
+<td> Optional Array of VarInt
+</td>
+<td> Mapping of block state IDs in the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Data_values%23Block_IDs">global palette</a></span> (<code>type = x &gt;&gt; 4</code>, <code>meta = x &amp; 15</code>) to indices of this array
+</td></tr>
+<tr>
+<td> Data Array Length
+</td>
+<td> VarInt
+</td>
+<td> Number of bytes in the following array, divided by 8 (given as such because Notchian implements Data Array as an Array of Long)
+</td></tr>
+<tr>
+<td> Data Array
+</td>
+<td> Byte Array
+</td>
+<td> List of 4096 indices pointing to state IDs in the Palette, followed by padding to round the length up to the next multiple of 8 bytes
+</td></tr>
+<tr>
+<td> Block Light
+</td>
+<td> Byte Array
+</td>
+<td> Half byte per block
+</td></tr>
+<tr>
+<td> Sky Light
+</td>
+<td> Optional Byte Array
+</td>
+<td> Only if in the Overworld; half byte per block
+</td></tr></table>
+<p>Data Array, Block Light, and Sky Light are given for each block with increasing x coordinates, within rows of increasing z coordinates, within layers of increasing y coordinates.
+</p>
+<h3><span class="mw-headline" id="Entity_Metadata">Entity Metadata</span></h3>
+<p>Format is now an array of entries, each of which looks like the following:
+</p>
+<table class="wikitable">
+<tr>
+<th> Name
+</th>
+<th> Type
+</th>
+<th> Meaning
+</th></tr>
+<tr>
+<td> Index
+</td>
+<td> Unsigned Byte
+</td>
+<td> Unique index key determining the meaning of the following value, see the table below. If this is <code>0xff</code> then the it is the end of the Entity Metadata array and no more is read.
+</td></tr>
+<tr>
+<td> Type
+</td>
+<td> Optional Byte Enum
+</td>
+<td> Only if Index is not <code>0xff</code>; the type of the index, see the table below
+</td></tr>
+<tr>
+<td> Value
+</td>
+<td> Optional <i>value of Type</i>
+</td>
+<td> Only if Index is not <code>0xff</code>: the value of the metadata field
+</td></tr></table>
+<table class="wikitable">
+<tr>
+<th> Value of Type field
+</th>
+<th> Type of Value field
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> Byte
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Float
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> String
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> <a href="/Chat" title="Chat">Chat</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 5
+</td>
+<td> <a href="/Slot" class="mw-redirect" title="Slot">Slot</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> Boolean
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> Vector3F (Array of Float)
+</td>
+<td> 3 elements
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> Position
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 9
+</td>
+<td> OptPosition (Boolean + Optional Position)
+</td>
+<td> Position is present if the Boolean is set to true
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> Direction (VarInt)
+</td>
+<td>&#160;???
+</td></tr>
+<tr>
+<td> 11
+</td>
+<td> OptUUID (Boolean + Optional UUID)
+</td>
+<td> UUID is present if the Boolean is set to true
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> BlockID
+</td>
+<td> <code>id &lt;&lt; 4 | data</code>
+</td></tr></table>
+<table class="wikitable">
+<tr>
+<th> Entity class
+</th>
+<th> Index
+</th>
+<th> Type
+</th>
+<th> Meaning
+</th></tr>
+<tr>
+<td rowspan="5"> Entity
+</td>
+<td> 0
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> String
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="4"> AreaEffectCloud <sup>extends Entity</sup>
+</td>
+<td> 5
+</td>
+<td> Float
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Arrow <sup>extends Entity</sup>
+</td>
+<td> 5
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> TippedArrow <sup>extends Arrow</sup>
+</td>
+<td> 6
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="3"> Boat <sup>extends Entity</sup>
+</td>
+<td> 5
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> Float
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> EnderCrystal <sup>extends Entity</sup>
+</td>
+<td> 5
+</td>
+<td> OptPosition
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Fireball <sup>extends Entity</sup>
+</td>
+<td colspan="3"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> WitherSkull <sup>extends Fireball</sup>
+</td>
+<td> 5
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Fireworks <sup>extends Entity</sup>
+</td>
+<td> 5
+</td>
+<td> <a href="/Slot" class="mw-redirect" title="Slot">Slot</a>
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Hanging <sup>extends Entity</sup>
+</td>
+<td colspan="3"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td rowspan="2"> ItemFrame <sup>extends Hanging</sup>
+</td>
+<td> 5
+</td>
+<td> <a href="/Slot" class="mw-redirect" title="Slot">Slot</a>
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Item <sup>extends Entity</sup>
+</td>
+<td> 5
+</td>
+<td> <a href="/Slot" class="mw-redirect" title="Slot">Slot</a>
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="5"> Living <sup>extends Entity</sup>
+</td>
+<td> 5
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> Float
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 9
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="7"> ArmorStand <sup>extends Living</sup>
+</td>
+<td> 10
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 11
+</td>
+<td> Vector3F
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> Vector3F
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> Vector3F
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 14
+</td>
+<td> Vector3F
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 15
+</td>
+<td> Vector3F
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 16
+</td>
+<td> Vector3F
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Insentient <sup>extends Living</sup>
+</td>
+<td> 10
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Ambient <sup>extends Insentient</sup>
+</td>
+<td colspan="3"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> Bat <sup>extends Ambient</sup>
+</td>
+<td> 11
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Creature <sup>extends Insentient</sup>
+</td>
+<td colspan="3"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> Ageable <sup>extends Creature</sup>
+</td>
+<td> 11
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Animal <sup>extends Ageable</sup>
+</td>
+<td colspan="3"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td rowspan="5"> Horse <sup>extends Animal</sup>
+</td>
+<td> 12
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 14
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 15
+</td>
+<td> OptUUID
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 16
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Pig <sup>extends Animal</sup>
+</td>
+<td> 12
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Rabbit <sup>extends Animal</sup>
+</td>
+<td> 12
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Sheep <sup>extends Animal</sup>
+</td>
+<td> 12
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="2"> TameableAnimal <sup>extends Animal</sup>
+</td>
+<td> 12
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> OptUUID
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Ocelot <sup>extends TameableAnimal</sup>
+</td>
+<td> 14
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="3"> Wolf <sup>extends TameableAnimal</sup>
+</td>
+<td> 14
+</td>
+<td> Float
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 15
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 16
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Villager <sup>extends Ageable</sup>
+</td>
+<td> 12
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Golem <sup>extends Creature</sup>
+</td>
+<td colspan="3"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> IronGolem <sup>extends Golem</sup>
+</td>
+<td> 11
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="3"> Shulker <sup>extends Golem</sup>
+</td>
+<td> 11
+</td>
+<td> Direction
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> OptPosition
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Monster <sup>extends Creature</sup>
+</td>
+<td colspan="3"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> Blaze <sup>extends Monster</sup>
+</td>
+<td> 11
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="3"> Creeper <sup>extends Monster</sup>
+</td>
+<td> 11
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="2"> Guardian <sup>extends Monster</sup>
+</td>
+<td> 11
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="2"> Skeleton <sup>extends Monster</sup>
+</td>
+<td> 11
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Spider <sup>extends Monster</sup>
+</td>
+<td> 11
+</td>
+<td> Byte
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Witch <sup>extends Monster</sup>
+</td>
+<td> 11
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="4"> Wither <sup>extends Monster</sup>
+</td>
+<td> 11
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 14
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="3"> Zombie <sup>extends Monster</sup>
+</td>
+<td> 11
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="2"> Enderman <sup>extends Monster</sup>
+</td>
+<td> 11
+</td>
+<td> Block ID
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> EnderDragon <sup>extends Insentient</sup>
+</td>
+<td> 11
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Flying <sup>extends Insentient</sup>
+</td>
+<td colspan="3"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> Ghast <sup>extends Flying</sup>
+</td>
+<td> 11
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> Slime <sup>extends Insentient</sup>
+</td>
+<td> 11
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="6"> Minecart <sup>extends Entity</sup>
+</td>
+<td> 5
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> Float
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 9
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td rowspan="2"> MinecartCommandBlock <sup>extends Minecart</sup>
+</td>
+<td> 11
+</td>
+<td> String
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> <a href="/Chat" title="Chat">Chat</a>
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> MinecartFurnace <sup>extends Minecart</sup>
+</td>
+<td> 11
+</td>
+<td> Boolean
+</td>
+<td> <i>Unknown</i>
+</td></tr>
+<tr>
+<td> TNTPrimed <sup>extends Entity</sup>
+</td>
+<td> 5
+</td>
+<td> VarInt
+</td>
+<td> <i>Unknown</i>
+</td></tr></table>
+<p>Entity classes also recursively use fields from classes they extend.
+</p>
+<h2><span class="mw-headline" id="Handshaking">Handshaking</span></h2>
+<h3><span class="mw-headline" id="Clientbound">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound">Serverbound</span></h3>
+<h4><span class="mw-headline" id="Handshake">Handshake</span></h4>
+<p>This causes the server to switch into the target state.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="4"> 0x00
+</td>
+<td rowspan="4"> Handshaking
+</td>
+<td rowspan="4"> Server
+</td>
+<td> Protocol Version
+</td>
+<td> VarInt
+</td>
+<td> See <a href="/Protocol_version_numbers" title="Protocol version numbers">protocol version numbers</a> (currently <del style="background-color: #f4cccc;">47</del>&#x20;<ins style="background-color: #d9ead3;">73</ins>)
+</td></tr>
+<tr>
+<td> Server Address
+</td>
+<td> String
+</td>
+<td> hostname or IP, e.g. localhost or 127.0.0.1
+</td></tr>
+<tr>
+<td> Server Port
+</td>
+<td> Unsigned Short
+</td>
+<td> default is 25565
+</td></tr>
+<tr>
+<td> Next State
+</td>
+<td> VarInt Enum
+</td>
+<td> 1 for <a href="#Status">status</a>, 2 for <a href="#Login">login</a>
+</td></tr></table>
+<h2><span class="mw-headline" id="Play">Play</span></h2>
+<h3><span class="mw-headline" id="Clientbound_2">Clientbound</span></h3>
+<h4><span class="mw-headline" id="Entity_Equipment">Entity Equipment</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> <del style="background-color: #f4cccc;">0x04</del>&#x20;<ins style="background-color: #d9ead3;">0x3C</ins>
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Client
+</td>
+<td> Entity ID
+</td>
+<td> VarInt
+</td>
+<td> Entity's EID
+</td></tr>
+<tr>
+<td> Slot
+</td>
+<td> <del style="background-color: #f4cccc;">Short</del>&#x20;<ins style="background-color: #d9ead3;">VarInt</ins> Enum
+</td>
+<td> Equipment slot. 0: main hand, <ins style="background-color: #d9ead3;">1: off hand</ins>, <del style="background-color: #f4cccc;">1–4</del>&#x20;<ins style="background-color: #d9ead3;">2–5</ins>: armor slot (2: boots, 3: leggings, 4: chestplate, 5: helmet)
+</td></tr>
+<tr>
+<td> Item
+</td>
+<td> <a href="/Slot_Data" title="Slot Data">Slot</a>
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Spawn_Player">Spawn Player</span></h4>
+<p>This packet is sent by the server when a player comes into visible range, <i>not</i> when a player joins.
+</p><p>This packet must be sent after the <a href="/Protocol#Player_List_Item" title="Protocol">Player List Item</a> (<a href="#Play">Play</a>, 0x38, clientbound) packet that adds the player data for the client to use when spawning a player. If the Player List Item for the player spawned by this packet is not present when this packet arrives, Notchian clients will not spawn the player entity. The Player List Item packet includes skin/cape data.
+</p><p>Servers can, however, safely spawn player entities for players not in visible range. The client appears to handle it correctly.
+</p><p>When in online-mode the UUIDs must be valid and have valid skin blobs, in offline-mode UUID v3 is used.
+</p><p>For NPCs UUID v2 should be used. Note:
+</p>
+<pre>&lt;+Grum&gt; i will never confirm this as a feature you know that&#160;:)
+</pre>
+<p>In an example UUID, <code>xxxxxxxx-xxxx-Yxxx-xxxx-xxxxxxxxxxxx</code>, the UUID version is specified by <code>Y</code>. So, for UUID v3, <code>Y</code> will always be <code>3</code>, and for UUID v2, <code>Y</code> will always be <code>2</code>.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="9"> <del style="background-color: #f4cccc;">0x0C</del>&#x20;<ins style="background-color: #d9ead3;">0x05</ins>
+</td>
+<td rowspan="9"> Play
+</td>
+<td rowspan="9"> Client
+</td>
+<td> Entity ID
+</td>
+<td> VarInt
+</td>
+<td> Player's EID
+</td></tr>
+<tr>
+<td> Player UUID
+</td>
+<td> UUID
+</td>
+<td>
+</td></tr>
+<tr>
+<td> X
+</td>
+<td> Int
+</td>
+<td> Player X as a <a href="/Data_Types#Fixed-point_numbers" class="mw-redirect" title="Data Types">Fixed-Point number</a>
+</td></tr>
+<tr>
+<td> Y
+</td>
+<td> Int
+</td>
+<td> Player Y as a <a href="/Data_Types#Fixed-point_numbers" class="mw-redirect" title="Data Types">Fixed-Point number</a>
+</td></tr>
+<tr>
+<td> Z
+</td>
+<td> Int
+</td>
+<td> Player Z as a <a href="/Data_Types#Fixed-point_numbers" class="mw-redirect" title="Data Types">Fixed-Point number</a>
+</td></tr>
+<tr>
+<td> Yaw
+</td>
+<td> Angle
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Pitch
+</td>
+<td> Angle
+</td>
+<td>
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td> Current Item
+</td>
+<td> Short
+</td>
+<td> The item the player is currently holding. Note that this should be 0 for “no item”, unlike -1 used in other packets.
+</td></tr>
+<tr>
+<td> Metadata
+</td>
+<td> <a href="#Entity_Metadata">Entity Metadata</a>
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Spawn_Object">Spawn Object</span></h4>
+<p>Sent by the server when an object/vehicle is created.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="13"> <del style="background-color: #f4cccc;">0x0E</del>&#x20;<ins style="background-color: #d9ead3;">0x00</ins>
+</td>
+<td rowspan="13"> Play
+</td>
+<td rowspan="13"> Client
+</td>
+<td> Entity ID
+</td>
+<td> VarInt
+</td>
+<td> EID of the object
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Object UUID
+</td>
+<td> UUID
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Type
+</td>
+<td> Byte
+</td>
+<td> The type of object (See <a href="/Entities#Objects" title="Entities">Entities#Objects</a>)
+</td></tr>
+<tr>
+<td> X
+</td>
+<td> Int
+</td>
+<td> X position as a <a href="/Data_Types#Fixed-point_numbers" class="mw-redirect" title="Data Types">Fixed-Point number</a>
+</td></tr>
+<tr>
+<td> Y
+</td>
+<td> Int
+</td>
+<td> Y position as a <a href="/Data_Types#Fixed-point_numbers" class="mw-redirect" title="Data Types">Fixed-Point number</a>
+</td></tr>
+<tr>
+<td> Z
+</td>
+<td> Int
+</td>
+<td> Z position as a <a href="/Data_Types#Fixed-point_numbers" class="mw-redirect" title="Data Types">Fixed-Point number</a>
+</td></tr>
+<tr>
+<td> Pitch
+</td>
+<td> Angle
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Yaw
+</td>
+<td> Angle
+</td>
+<td>
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td> Data
+</td>
+<td> <a href="/Object_Data" title="Object Data">Object Data</a>
+</td>
+<td>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Info
+</td>
+<td> Int
+</td>
+<td> Depends on Type; see <a href="/Object_Data#Meaning_of_int_field" title="Object Data">Object Data#Meaning of int field</a>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Velocity X
+</td>
+<td> Short
+</td>
+<td>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Velocity Y
+</td>
+<td> Short
+</td>
+<td>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Velocity Z
+</td>
+<td> Short
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Spawn_Mob">Spawn Mob</span></h4>
+<p>Sent by the server when a mob entity is spawned.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="13"> <del style="background-color: #f4cccc;">0x0F</del>&#x20;<ins style="background-color: #d9ead3;">0x03</ins>
+</td>
+<td rowspan="13"> Play
+</td>
+<td rowspan="13"> Client
+</td>
+<td> Entity ID
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Entity UUID
+</td>
+<td> UUID
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Type
+</td>
+<td> Unsigned Byte
+</td>
+<td> The type of mob. See <a href="/Entities#Mobs" title="Entities">Entities#Mobs</a>
+</td></tr>
+<tr>
+<td> X
+</td>
+<td> Int
+</td>
+<td> X position as a <a href="/Data_Types#Fixed-point_numbers" class="mw-redirect" title="Data Types">Fixed-Point number</a>
+</td></tr>
+<tr>
+<td> Y
+</td>
+<td> Int
+</td>
+<td> Y position as a <a href="/Data_Types#Fixed-point_numbers" class="mw-redirect" title="Data Types">Fixed-Point number</a>
+</td></tr>
+<tr>
+<td> Z
+</td>
+<td> Int
+</td>
+<td> Z position as a <a href="/Data_Types#Fixed-point_numbers" class="mw-redirect" title="Data Types">Fixed-Point number</a>
+</td></tr>
+<tr>
+<td> Yaw
+</td>
+<td> Angle
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Pitch
+</td>
+<td> Angle
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Head Pitch
+</td>
+<td> Angle
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Velocity X
+</td>
+<td> Short
+</td>
+<td> Same units as <a href="/Protocol#Entity_Velocity" title="Protocol">Entity Velocity</a>
+</td></tr>
+<tr>
+<td> Velocity Y
+</td>
+<td> Short
+</td>
+<td> Same units as <a href="/Protocol#Entity_Velocity" title="Protocol">Entity Velocity</a>
+</td></tr>
+<tr>
+<td> Velocity Z
+</td>
+<td> Short
+</td>
+<td> Same units as <a href="/Protocol#Entity_Velocity" title="Protocol">Entity Velocity</a>
+</td></tr>
+<tr>
+<td> Metadata
+</td>
+<td> <a href="#Entity_Metadata">Entity Metadata</a>
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Entity_Status">Entity Status</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="2"> 0x1A
+</td>
+<td rowspan="2"> Play
+</td>
+<td rowspan="2"> Client
+</td>
+<td> Entity ID
+</td>
+<td> Int
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Entity Status
+</td>
+<td> Byte Enum
+</td>
+<td> See below
+</td></tr></table>
+<table class="wikitable">
+
+<tr>
+<th> Entity Status
+</th>
+<th> Meaning
+</th></tr>
+<tr>
+<td> 1
+</td>
+<td> Sent when resetting a mob spawn minecart's timer — appears to be unused by the client
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Living Entity hurt
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> Living Entity dead
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> Iron Golem throwing up arms
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> Wolf/Ocelot/Horse taming — Spawn “heart” particles
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> Wolf/Ocelot/Horse tamed — Spawn “smoke” particles
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> Wolf shaking water — Trigger the shaking animation
+</td></tr>
+<tr>
+<td> 9
+</td>
+<td> (of self) Eating accepted by server
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> Sheep eating grass
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> Play TNT ignite sound
+</td></tr>
+<tr>
+<td> 11
+</td>
+<td> Iron Golem handing over a rose
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> Villager mating — Spawn “heart” particles
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> Spawn particles indicating that a villager is angry and seeking revenge
+</td></tr>
+<tr>
+<td> 14
+</td>
+<td> Spawn happy particles near a villager
+</td></tr>
+<tr>
+<td> 15
+</td>
+<td> Witch animation — Spawn “magic” particles
+</td></tr>
+<tr>
+<td> 16
+</td>
+<td> Play zombie converting into a villager sound
+</td></tr>
+<tr>
+<td> 17
+</td>
+<td> Firework exploding
+</td></tr>
+<tr>
+<td> 18
+</td>
+<td> Animal in love (ready to mate) — Spawn “heart” particles
+</td></tr>
+<tr>
+<td> 19
+</td>
+<td> Reset squid rotation
+</td></tr>
+<tr>
+<td> 20
+</td>
+<td> Spawn explosion particle — works for some living entities
+</td></tr>
+<tr>
+<td> 21
+</td>
+<td> Play guardian sound — works for every entity
+</td></tr>
+<tr>
+<td> 22
+</td>
+<td> Enables reduced <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Debug_screen">debug</a></span> for players
+</td></tr>
+<tr>
+<td> 23
+</td>
+<td> Disables reduced <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Debug_screen">debug</a></span> for players
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 24–28
+</td>
+<td> Sets <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Server.properties%23op-permission-level">op permission level</a></span> 0–4 for players
+</td></tr></table>
+<h4><span class="mw-headline" id="Entity_Properties">Entity Properties</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th colspan="2"> Field Name
+</th>
+<th colspan="2"> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="6"> <del style="background-color: #f4cccc;">0x20</del>&#x20;<ins style="background-color: #d9ead3;">0x49</ins>
+</td>
+<td rowspan="6"> Play
+</td>
+<td rowspan="6"> Client
+</td>
+<td colspan="2"> Entity ID
+</td>
+<td colspan="2"> VarInt
+</td>
+<td>
+</td></tr>
+<tr>
+<td colspan="2"> Number Of Properties
+</td>
+<td colspan="2"> Int
+</td>
+<td> Number of elements in the following array
+</td></tr>
+<tr>
+<td rowspan="4"> Property
+</td>
+<td> Key
+</td>
+<td rowspan="4"> Array
+</td>
+<td> String
+</td>
+<td> See below
+</td></tr>
+<tr>
+<td> Value
+</td>
+<td> Double
+</td>
+<td> See below
+</td></tr>
+<tr>
+<td> Number Of Modifiers
+</td>
+<td> VarInt
+</td>
+<td> Number of elements in the following array
+</td></tr>
+<tr>
+<td> Modifiers
+</td>
+<td> Array of Modifier Data
+</td>
+<td> Modifier Data defined below
+</td></tr></table>
+<p>Known Key values (see also <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Attribute%23Modifiers">Attribute#Modifiers</a></span>):
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Key
+</th>
+<th> Default
+</th>
+<th> Min
+</th>
+<th> Max
+</th>
+<th> Label
+</th></tr>
+<tr>
+<td> generic.maxHealth
+</td>
+<td> 20.0
+</td>
+<td> 0.0
+</td>
+<td> <del style="background-color: #f4cccc;">Double.MaxValue</del>&#x20;<ins style="background-color: #d9ead3;">1024.0</ins>
+</td>
+<td> Max Health
+</td></tr>
+<tr>
+<td> generic.followRange
+</td>
+<td> 32.0
+</td>
+<td> 0.0
+</td>
+<td> 2048.0
+</td>
+<td> Follow Range
+</td></tr>
+<tr>
+<td> generic.knockbackResistance
+</td>
+<td> 0.0
+</td>
+<td> 0.0
+</td>
+<td> 1.0
+</td>
+<td> Knockback Resistance
+</td></tr>
+<tr>
+<td> generic.movementSpeed
+</td>
+<td> 0.699999988079071
+</td>
+<td> 0.0
+</td>
+<td> <del style="background-color: #f4cccc;">Double.MaxValue</del>&#x20;<ins style="background-color: #d9ead3;">1024.0</ins>
+</td>
+<td> Movement Speed
+</td></tr>
+<tr>
+<td> generic.attackDamage
+</td>
+<td> 2.0
+</td>
+<td> 0.0
+</td>
+<td> <del style="background-color: #f4cccc;">Double.MaxValue</del>&#x20;<ins style="background-color: #d9ead3;">2048.0</ins>
+</td>
+<td> <ins style="background-color: #d9ead3;">Attack Damage</ins>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> generic.attackSpeed
+</td>
+<td> 4.0
+</td>
+<td> 0.0
+</td>
+<td> 1024.0
+</td>
+<td> Attack Speed
+</td></tr>
+<tr>
+<td> horse.jumpStrength
+</td>
+<td> 0.7
+</td>
+<td> 0.0
+</td>
+<td> 2.0
+</td>
+<td> Jump Strength
+</td></tr>
+<tr>
+<td> zombie.spawnReinforcements
+</td>
+<td> 0.0
+</td>
+<td> 0.0
+</td>
+<td> 1.0
+</td>
+<td> Spawn Reinforcements Chance
+</td></tr></table>
+<p><i>Modifier Data</i> structure:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td> UUID
+</td>
+<td> UUID
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Amount
+</td>
+<td> Double
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Operation
+</td>
+<td> Byte
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Chunk_Data">Chunk Data</span></h4>
+<p>Chunk pillars are not unloaded by the client automatically. To unload chunk pillars, <del style="background-color: #f4cccc;">send this packet with Ground-Up Continuous=true and no 16^3 chunks (eg. Primary Bit Mask=0)</del>&#x20;<ins style="background-color: #d9ead3;">send an <a href="#Unload_Chunk">Unload Chunk</a> packet with the chunk's X and Z coordinates</ins>. The server only sends skylight information for chunk pillars in the Overworld, it's up to the client to know in which dimenison the player is currently located. You can also infer this information from the primary bitmask and the amount of uncompressed bytes sent.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="7"> <del style="background-color: #f4cccc;">0x21</del>&#x20;<ins style="background-color: #d9ead3;">0x20</ins>
+</td>
+<td rowspan="7"> Play
+</td>
+<td rowspan="7"> Client
+</td>
+<td> Chunk X
+</td>
+<td> Int
+</td>
+<td> Chunk X coordinate
+</td></tr>
+<tr>
+<td> Chunk Z
+</td>
+<td> Int
+</td>
+<td> Chunk Z coordinate
+</td></tr>
+<tr>
+<td> Ground-Up Continuous
+</td>
+<td> Boolean
+</td>
+<td> This is true if the packet represents all chunk sections in this vertical chunk column, where the Primary Bit Mask specifies exactly which chunk sections are included, and which are air.
+</td></tr>
+<tr>
+<td> Primary Bit Mask
+</td>
+<td> <del style="background-color: #f4cccc;">Unsigned Short</del>&#x20;<ins style="background-color: #d9ead3;">VarInt</ins>
+</td>
+<td> Bitmask with bits set to 1 for every 16×16×16 chunk section whose data follows in the compressed data. The least significant bit represents the chunk section at the bottom of the chunk column (from y=0 to y=15).
+</td></tr>
+<tr>
+<td> Size
+</td>
+<td> VarInt
+</td>
+<td> Size of Data in bytes
+</td></tr>
+<tr>
+<td> Data
+</td>
+<td> Array of <a href="#Chunk_Section">Chunk Section</a>
+</td>
+<td> The length of the array is equal to the number of bits set in Primary Bit Mask.
+</td></tr>
+<tr>
+<td> Biomes
+</td>
+<td> Optional Byte Array
+</td>
+<td> Only if Ground-Up Continuous: biome array, byte per XZ coordinate, 256 bytes total.
+</td></tr></table>
+<h4><span class="mw-headline" id="Unload_Chunk"><ins style="background-color: #d9ead3;">Unload Chunk</ins></span></h4>
+<p>Tells the client to unload a chunk.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="2"> <del style="background-color: #f4cccc;">0x22</del>&#x20;<ins style="background-color: #d9ead3;">0x1C</ins>
+</td>
+<td rowspan="2"> Play
+</td>
+<td rowspan="2"> Client
+</td>
+<td> Chunk X
+</td>
+<td> Int
+</td>
+<td> Chunk X coordinate
+</td></tr>
+<tr>
+<td> Chunk Z
+</td>
+<td> Int
+</td>
+<td> Chunk Z coordinate
+</td></tr></table>
+<h4><span class="mw-headline" id="Multi_Block_Change">Multi Block Change</span></h4>
+<p>Fired whenever 2 or more blocks are changed within the render distance.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th colspan="2"> Field Name
+</th>
+<th colspan="2"> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="6"> <del style="background-color: #f4cccc;">0x22</del>&#x20;<ins style="background-color: #d9ead3;">0x23</ins>
+</td>
+<td rowspan="6"> Play
+</td>
+<td rowspan="6"> Client
+</td>
+<td colspan="2"> Chunk X
+</td>
+<td colspan="2"> Int
+</td>
+<td> Chunk X coordinate
+</td></tr>
+<tr>
+<td colspan="2"> Chunk Z
+</td>
+<td colspan="2"> Int
+</td>
+<td> Chunk Z coordinate
+</td></tr>
+<tr>
+<td colspan="2"> Record Count
+</td>
+<td colspan="2"> VarInt
+</td>
+<td> Number of elements in the following array, i.e. the number of blocks affected
+</td></tr>
+<tr>
+<td rowspan="3"> Record
+</td>
+<td> Horizontal Position
+</td>
+<td rowspan="3"> Array
+</td>
+<td> Unsigned Byte
+</td>
+<td> The 4 most significant bits (<code>0xF0</code>) encode the X coordinate, relative to the chunk. The 4 least significant bits (<code>0x0F</code>) encode the Z coordinate, relative to the chunk.
+</td></tr>
+<tr>
+<td> Y Coordinate
+</td>
+<td> Unsigned Byte
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Block ID
+</td>
+<td> VarInt
+</td>
+<td> The new block state ID for the block as given in the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Data_values%23Block_IDs">global palette</a></span> (<code>type = x &gt;&gt; 4</code>, <code>meta = x &amp; 15</code>)
+</td></tr></table>
+<h4><span class="mw-headline" id="Block_Change">Block Change</span></h4>
+<p>Fired whenever a block is changed within the render distance.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="2"> <del style="background-color: #f4cccc;">0x23</del>&#x20;<ins style="background-color: #d9ead3;">0x24</ins>
+</td>
+<td rowspan="2"> Play
+</td>
+<td rowspan="2"> Client
+</td>
+<td> Location
+</td>
+<td> Position
+</td>
+<td> Block Coordinates
+</td></tr>
+<tr>
+<td> Block ID
+</td>
+<td> VarInt
+</td>
+<td> The new block state ID for the block as given in the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Data_values%23Block_IDs">global palette</a></span> (<code>type = x &gt;&gt; 4</code>, <code>meta = x &amp; 15</code>)
+</td></tr></table>
+<h4><span class="mw-headline" id="Block_Action">Block Action</span></h4>
+<p>This packet is used for a number of things:
+</p>
+<ul><li> Chests opening and closing</li>
+<li> Pistons pushing and pulling</li>
+<li> Note blocks playing</li>
+<li> Updating beacons</li></ul>
+<p>See also: <a href="/Block_Actions" title="Block Actions">Block Actions</a> 
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="4"> <del style="background-color: #f4cccc;">0x24</del>&#x20;<ins style="background-color: #d9ead3;">0x25</ins>
+</td>
+<td rowspan="4"> Play
+</td>
+<td rowspan="4"> Client
+</td>
+<td> Location
+</td>
+<td> Position
+</td>
+<td> Block coordinates
+</td></tr>
+<tr>
+<td> Byte 1
+</td>
+<td> Unsigned Byte
+</td>
+<td> Varies depending on block — see <a href="/Block_Actions" title="Block Actions">Block Actions</a>
+</td></tr>
+<tr>
+<td> Byte 2
+</td>
+<td> Unsigned Byte
+</td>
+<td> Varies depending on block — see <a href="/Block_Actions" title="Block Actions">Block Actions</a>
+</td></tr>
+<tr>
+<td> Block Type
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Block_Break_Animation">Block Break Animation</span></h4>
+<p>0–9 are the displayable destroy stages and each other number means that there is no animation on this coordinate.
+</p><p>You can also set an animation to air! The animation will still be visible.
+</p><p>If you need to display several break animations at the same time you have to give each of them a unique Entity ID.
+</p><p>Also if you set the coordinates to a special block like water etc. it won't show the actual break animation but some other interesting effects. For example, water will lose its transparency.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> <del style="background-color: #f4cccc;">0x25</del>&#x20;<ins style="background-color: #d9ead3;">0x26</ins>
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Client
+</td>
+<td> Entity ID
+</td>
+<td> VarInt
+</td>
+<td> EID for the animation
+</td></tr>
+<tr>
+<td> Location
+</td>
+<td> Position
+</td>
+<td> Block Position
+</td></tr>
+<tr>
+<td> Destroy Stage
+</td>
+<td> Byte
+</td>
+<td> 0–9 to set it, any other value to remove it
+</td></tr></table>
+<h4><span class="mw-headline" id="Map_Chunk_Bulk"><del style="background-color: #f4cccc;">Map Chunk Bulk</del></span></h4>
+<p>Replaced by multiple <a href="#Chunk_Data">Chunk Data</a> packets.
+</p>
+<h4><span class="mw-headline" id="Map">Map</span></h4>
+<p>Updates a rectangular area on a <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Map">map</a></span> item.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th colspan="2"> Field Name
+</th>
+<th colspan="2"> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="13"> <del style="background-color: #f4cccc;">0x34</del>&#x20;<ins style="background-color: #d9ead3;">0x25</ins>
+</td>
+<td rowspan="13"> Play
+</td>
+<td rowspan="13"> Client
+</td>
+<td colspan="2"> Item Damage
+</td>
+<td colspan="2"> VarInt
+</td>
+<td> The damage value (map ID) of the map being modified
+</td></tr>
+<tr>
+<td colspan="2"> Scale
+</td>
+<td colspan="2"> Byte
+</td>
+<td> From 0 for a fully zoomed-in map (1 block per pixel) to 4 for a fully zoomed-out map (16 blocks per pixel)
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td colspan="2"> Tracking Position
+</td>
+<td colspan="2"> Boolean
+</td>
+<td> Specifies whether the icons are shown
+</td></tr>
+<tr>
+<td colspan="2"> Icon Count
+</td>
+<td colspan="2"> VarInt
+</td>
+<td> Number of elements in the following array
+</td></tr>
+<tr>
+<td rowspan="3"> Icon
+</td>
+<td> Direction And Type
+</td>
+<td rowspan="3"> Array
+</td>
+<td> Byte
+</td>
+<td> 0xF0 = Direction, 0x0F = Type
+</td></tr>
+<tr>
+<td> X
+</td>
+<td> Byte
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Z
+</td>
+<td> Byte
+</td>
+<td>
+</td></tr>
+<tr>
+<td colspan="2"> Columns
+</td>
+<td colspan="2"> Byte
+</td>
+<td> Number of columns updated
+</td></tr>
+<tr>
+<td colspan="2"> Rows
+</td>
+<td colspan="2"> Optional Byte
+</td>
+<td> Only if Columns is more than 0; number of rows updated
+</td></tr>
+<tr>
+<td colspan="2"> X
+</td>
+<td colspan="2"> Optional Byte
+</td>
+<td> Only if Columns is more than 0; x offset of the westernmost column
+</td></tr>
+<tr>
+<td colspan="2"> Z
+</td>
+<td colspan="2"> Optional Byte
+</td>
+<td> Only if Columns is more than 0; z offset of the northernmost row
+</td></tr>
+<tr>
+<td colspan="2"> Length
+</td>
+<td colspan="2"> Optional VarInt
+</td>
+<td> Only if Columns is more than 0; length of the following array
+</td></tr>
+<tr>
+<td colspan="2"> Data
+</td>
+<td colspan="2"> Optional Array of Byte Enum
+</td>
+<td> Only if Columns is more than 0; see <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Map_item_format">Map item format</a></span>
+</td></tr></table>
+<h4><span class="mw-headline" id="Teams">Teams</span></h4>
+<p>Creates and updates teams.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="11"> <del style="background-color: #f4cccc;">0x3E</del>&#x20;<ins style="background-color: #d9ead3;">0x40</ins>
+</td>
+<td rowspan="11"> Play
+</td>
+<td rowspan="11"> Client
+</td>
+<td> Team Name
+</td>
+<td> String
+</td>
+<td> A unique name for the team. (Shared with scoreboard).
+</td></tr>
+<tr>
+<td> Mode
+</td>
+<td> Byte Enum
+</td>
+<td> 0: create team, 1: remove team, 2: update team info; 3: add players to team; 4: remove players from team
+</td></tr>
+<tr>
+<td> Team Display Name
+</td>
+<td> Optional String
+</td>
+<td> Only if Mode is 0 or 2.
+</td></tr>
+<tr>
+<td> Team Prefix
+</td>
+<td> Optional String
+</td>
+<td> Only if Mode is 0 or 2. Displayed before the players' name that are part of this team.
+</td></tr>
+<tr>
+<td> Team Suffix
+</td>
+<td> Optional String
+</td>
+<td> Only if Mode is 0 or 2. Displayed after the players' name that are part of this team.
+</td></tr>
+<tr>
+<td> Friendly Fire
+</td>
+<td> Optional Byte
+</td>
+<td> Only if Mode is 0 or 2. 0 for off, 1 for on, 3 for seeing friendly invisibles.
+</td></tr>
+<tr>
+<td> Name Tag Visibility
+</td>
+<td> Optional String
+</td>
+<td> Only if Mode is 0 or 2. <code>always</code>, <code>hideForOtherTeams</code>, <code>hideForOwnTeam</code>, <code>never</code>.
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Collision Rule
+</td>
+<td> Optional String
+</td>
+<td> Only if Mode is 0 or 2. <code>always</code>, <code>hideForOtherTeams</code> <i>(sic)</i>, <code>hideForOwnTeam</code> <i>(sic)</i>, <code>never</code>
+</td></tr>
+<tr>
+<td> Color
+</td>
+<td> Optional Byte
+</td>
+<td> Only if Mode is 0 or 2. Same as <a href="/Chat" title="Chat">Chat</a> colors.
+</td></tr>
+<tr>
+<td> Player Count
+</td>
+<td> Optional VarInt
+</td>
+<td> Only if Mode is 0 or 3 or 4. Number of players in the array.
+</td></tr>
+<tr>
+<td> Players
+</td>
+<td> Optional Array of String
+</td>
+<td> Only if Mode is 0 or 3 or 4. Players to be added/remove from the team. Max 40 characters so may be uuid's later.
+</td></tr></table>
+<h4><span class="mw-headline" id="Combat_Event">Combat Event</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th colspan="2"> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="8"> <del style="background-color: #f4cccc;">0x42</del>&#x20;<ins style="background-color: #d9ead3;">0x2C</ins>
+</td>
+<td rowspan="8"> Play
+</td>
+<td rowspan="8"> Client
+</td>
+<td colspan="2"> Event
+</td>
+<td> VarInt Enum
+</td>
+<td> Determines the layout of the remaining packet
+</td></tr>
+<tr>
+<th> Event
+</th>
+<th> Field Name
+</th>
+<th>
+</th>
+<th>
+</th></tr>
+<tr>
+<td> 0: enter combat
+</td>
+<td> <i>no fields</i>
+</td>
+<td> <i>no fields</i>
+</td>
+<td>
+</td></tr>
+<tr>
+<td rowspan="2"> 1: end combat
+</td>
+<td> Duration
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Entity ID
+</td>
+<td> Int
+</td>
+<td>
+</td></tr>
+<tr>
+<td rowspan="3"> 2: entity dead
+</td>
+<td> Player ID
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Entity ID
+</td>
+<td> Int
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Message
+</td>
+<td> <del style="background-color: #f4cccc;">String</del>&#x20;<ins style="background-color: #d9ead3;"><a href="/Chat" title="Chat">Chat</a></ins>
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Update_Entity_NBT"><del style="background-color: #f4cccc;">Update Entity NBT</del></span></h4>
+<p>Was only used to update boss bars, replaced by <a href="#Boss_Bar">Boss Bar</a> accordingly.
+</p>
+<h4><span class="mw-headline" id="Boss_Bar"><ins style="background-color: #d9ead3;">Boss Bar</ins></span></h4>
+<p>This packet replaces Update Entity NBT packet which has been removed.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th colspan="2"> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="15"> <del style="background-color: #f4cccc;">0x49</del>&#x20;<ins style="background-color: #d9ead3;">0x0C</ins>
+</td>
+<td rowspan="15"> Play
+</td>
+<td rowspan="15"> Client
+</td>
+<td colspan="2"> UUID
+</td>
+<td> UUID
+</td>
+<td> Unique ID for this bar
+</td></tr>
+<tr>
+<td colspan="2"> Action
+</td>
+<td> VarInt Enum
+</td>
+<td> Determines the layout of the remaining packet
+</td></tr>
+<tr>
+<th> Action
+</th>
+<th> Field Name
+</th>
+<th>
+</th>
+<th>
+</th></tr>
+<tr>
+<td rowspan="5"> 0: add
+</td>
+<td> Title
+</td>
+<td> <a href="/Chat" title="Chat">Chat</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Health
+</td>
+<td> Float
+</td>
+<td> From 0 to 1. Values greater than 1 do not crash the client, and start <a rel="nofollow" class="external text" href="https://i.johni0702.de/nA.png">rendering part of a second health bar</a> at around 1.5.
+</td></tr>
+<tr>
+<td> Color
+</td>
+<td> VarInt
+</td>
+<td> Color ID (see below)
+</td></tr>
+<tr>
+<td> Dividers
+</td>
+<td> VarInt
+</td>
+<td> Number of dividers rendered in the bar
+</td></tr>
+<tr>
+<td> Flags
+</td>
+<td> Unsigned Byte
+</td>
+<td> Bit mask: 0x1 should darken sky, 0x2: is dragon bar
+</td></tr>
+<tr>
+<td> 1: remove
+</td>
+<td> <i>no fields</i>
+</td>
+<td> <i>no fields</i>
+</td>
+<td> Removes this boss bar
+</td></tr>
+<tr>
+<td> 2: update health
+</td>
+<td> Health
+</td>
+<td> Float
+</td>
+<td> as above
+</td></tr>
+<tr>
+<td> 3: update title
+</td>
+<td> Title
+</td>
+<td> <a href="/Chat" title="Chat">Chat</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td rowspan="2"> 4: update style
+</td>
+<td> Color
+</td>
+<td> VarInt Enum
+</td>
+<td> Color ID (see below)
+</td></tr>
+<tr>
+<td> Dividers
+</td>
+<td> VarInt
+</td>
+<td> as above
+</td></tr>
+<tr>
+<td> 5: update flags
+</td>
+<td> Flags
+</td>
+<td> Unsigned Byte
+</td>
+<td> as above
+</td></tr>
+</table>
+<table class="wikitable">
+<tr>
+<th> ID
+</th>
+<th> Color
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> Pink(ish)
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Cyan
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Red
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> Lime
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> Yellow
+</td></tr>
+<tr>
+<td> 5
+</td>
+<td> Purple
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> White
+</td></tr></table>
+<h4><span class="mw-headline" id="Set_Cooldown"><ins style="background-color: #d9ead3;">Set Cooldown</ins></span></h4>
+<p>Applies a cooldown period to an item type.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="2"> <del style="background-color: #f4cccc;">0x4A</del>&#x20;<ins style="background-color: #d9ead3;">0x17</ins>
+</td>
+<td rowspan="2"> Play
+</td>
+<td rowspan="2"> Client
+</td>
+<td> Item ID
+</td>
+<td> VarInt
+</td>
+<td> ID of the item to apply a cooldown to.
+</td></tr>
+<tr>
+<td> Cooldown Ticks
+</td>
+<td> VarInt
+</td>
+<td> Number of ticks to apply a cooldown for.
+</td></tr></table>
+<h3><span class="mw-headline" id="Serverbound_2">Serverbound</span></h3>
+<h4><span class="mw-headline" id="Use_Entity">Use Entity</span></h4>
+<p>This packet is sent from the client to the server when the client attacks or right-clicks another entity (a player, minecart, etc).
+</p><p>A Notchian server only accepts this packet if the entity being attacked/used is visible without obstruction and within a 4-unit radius of the player's position.
+</p><p>Note that middle-click in creative mode is interpreted by the client and sent as a <a href="#Creative_Inventory_Action">Creative Inventory Action</a> packet instead.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="6"> <del style="background-color: #f4cccc;">0x02</del>&#x20;<ins style="background-color: #d9ead3;">0x09</ins>
+</td>
+<td rowspan="6"> Play
+</td>
+<td rowspan="6"> Server
+</td>
+<td> Target
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Type
+</td>
+<td> VarInt Enum
+</td>
+<td> 0: interact, 1: attack, 2: interact at
+</td></tr>
+<tr>
+<td> Target X
+</td>
+<td> Optional Float
+</td>
+<td> Only if Type is interact at
+</td></tr>
+<tr>
+<td> Target Y
+</td>
+<td> Optional Float
+</td>
+<td> Only if Type is interact at
+</td></tr>
+<tr>
+<td> Target Z
+</td>
+<td> Optional Float
+</td>
+<td> Only if Type is interact at
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Hand
+</td>
+<td> Optional VarInt Enum
+</td>
+<td> Only if Type is interact or interact at; 0: main hand, 1: off hand
+</td></tr></table>
+<h4><span class="mw-headline" id="Player_Digging">Player Digging</span></h4>
+<p>Sent when the player mines a block. A Notchian server only accepts digging packets with coordinates within a 6-unit radius of the player's position.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> <del style="background-color: #f4cccc;">0x07</del>&#x20;<ins style="background-color: #d9ead3;">0x10</ins>
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Server
+</td>
+<td> Status
+</td>
+<td> Byte Enum
+</td>
+<td> The action the player is taking against the block (see below)
+</td></tr>
+<tr>
+<td> Location
+</td>
+<td> Position
+</td>
+<td> Block position
+</td></tr>
+<tr>
+<td> Face
+</td>
+<td> Byte Enum
+</td>
+<td> The face being hit (see below)
+</td></tr></table>
+<p>Status can be one of seven values:
+</p>
+<table class="wikitable">
+<tr>
+<th> Value
+</th>
+<th> Meaning
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> Started digging
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Cancelled digging
+</td>
+<td> Sent when the player lets go of the Mine Block key (default: left click)
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Finished digging
+</td>
+<td> Sent when the client thinks it is finished
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> Drop item stack
+</td>
+<td> Triggered by using the Drop Item key (default: Q) with the modifier to drop the entire selected stack (default: depends on OS). Location is always set to 0/0/0, Face is always set to -Y.
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> Drop item
+</td>
+<td> Triggered by using the Drop Item key (default: Q). Location is always set to 0/0/0, Face is always set to -Y.
+</td></tr>
+<tr>
+<td> 5
+</td>
+<td> Shoot arrow / finish eating
+</td>
+<td> Location is always set to 0/0/0, Face is always set to Special.
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 6
+</td>
+<td> Swap item in hand
+</td>
+<td> Used to swap or assign an item to the second hand. Location is always set to 0/0/0, Face is always set to -Y.
+</td></tr></table>
+<p>The Face field can be one of the following values, representing the face being hit (or the Special value used for “shoot arrow / finish eating”):
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Value
+</th>
+<th> Offset
+</th>
+<th> Face
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> -Y
+</td>
+<td> Bottom
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> +Y
+</td>
+<td> Top
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> -Z
+</td>
+<td> North
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> +Z
+</td>
+<td> South
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> -X
+</td>
+<td> West
+</td></tr>
+<tr>
+<td> 5
+</td>
+<td> +X
+</td>
+<td> East
+</td></tr>
+<tr>
+<td> 255
+</td>
+<td> —
+</td>
+<td> Special
+</td></tr></table>
+<h4><span class="mw-headline" id="Use_Item"><ins style="background-color: #d9ead3;">Use Item</ins></span></h4>
+<p>Sent when pressing the Use Item key (default: right click) with an item in hand.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="1"> <del style="background-color: #f4cccc;">0x08</del>&#x20;<ins style="background-color: #d9ead3;">0x1A</ins>
+</td>
+<td rowspan="1"> Play
+</td>
+<td rowspan="1"> Server
+</td>
+<td> Hand
+</td>
+<td> VarInt Enum
+</td>
+<td> Hand used for the animation
+</td></tr></table>
+<h4><span class="mw-headline" id="Player_Block_Placement">Player Block Placement</span></h4>
+<table class="wikitable">
+
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="7"> <del style="background-color: #f4cccc;">0x08</del>&#x20;<ins style="background-color: #d9ead3;">0x19</ins>
+</td>
+<td rowspan="7"> Play
+</td>
+<td rowspan="7"> Server
+</td>
+<td> Location
+</td>
+<td> Position
+</td>
+<td> Block position
+</td></tr>
+<tr>
+<td> Face
+</td>
+<td> <del style="background-color: #f4cccc;">Byte</del>&#x20;<ins style="background-color: #d9ead3;">VarInt</ins> Enum
+</td>
+<td> The face on which the block is placed (as documented at <a href="#Player_Digging">Player Digging</a>)
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td> Held Item
+</td>
+<td> <a href="/Slot_Data" title="Slot Data">Slot</a>
+</td>
+<td>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Hand
+</td>
+<td> VarInt Enum
+</td>
+<td> The hand from which the block is placed; 0: main hand, 1: off hand
+</td></tr>
+<tr>
+<td> Cursor Position X
+</td>
+<td> Byte
+</td>
+<td> The position of the crosshair on the block
+</td></tr>
+<tr>
+<td> Cursor Position Y
+</td>
+<td> Byte
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Cursor Position Z
+</td>
+<td> Byte
+</td>
+<td>
+</td></tr></table>
+<p>In normal operation (i.e. placing a block), this packet is sent once, with the values set normally.
+</p><p>This packet has a special case where X, Y, Z, and Direction are all -1. (Note that Y is unsigned so set to 255.) This special packet indicates that the currently held item for the player should have its state updated such as eating food, pulling back bows, using buckets, etc.
+</p><p>Special note on using buckets: When using buckets, the Notchian client might send two packets: first a normal and then a special case. The first normal packet is sent when you're looking at a block (e.g. the water you want to scoop up). This normal packet does not appear to do anything with a Notchian server. The second, special case packet appears to perform the action — based on current position/orientation and with a distance check — it appears that buckets can only be used within a radius of 6 units.
+</p>
+<h4><span class="mw-headline" id="Held_Item_Change">Held Item Change</span></h4>
+<p>Sent when the player changes the slot selection.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="1"> <del style="background-color: #f4cccc;">0x09</del>&#x20;<ins style="background-color: #d9ead3;">0x0A</ins>
+</td>
+<td rowspan="1"> Play
+</td>
+<td rowspan="1"> Server
+</td>
+<td> Slot
+</td>
+<td> Short
+</td>
+<td> The slot which the player has selected (0–8)
+</td></tr></table>
+<h4><span class="mw-headline" id="Animation">Animation</span></h4>
+<p>Sent when the player's arm swings.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="1"> <del style="background-color: #f4cccc;">0x0A</del>&#x20;<ins style="background-color: #d9ead3;">0x17</ins>
+</td>
+<td rowspan="1"> Play
+</td>
+<td rowspan="1"> Server
+</td>
+<td style="background-color: #d9ead3;"> Hand
+</td>
+<td style="background-color: #d9ead3;"> VarInt Enum
+</td>
+<td style="background-color: #d9ead3;"> Hand used for the animation
+</td></tr></table>
+<h4><span class="mw-headline" id="Entity_Action">Entity Action</span></h4>
+<p>Sent at least when crouching, leaving a bed, or sprinting. To send action animation to client use 0x28. The client will send this with Action ID = 3 when “Leave Bed” is clicked.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> <del style="background-color: #f4cccc;">0x0B</del>&#x20;<ins style="background-color: #d9ead3;">0x11</ins>
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Server
+</td>
+<td> Entity ID
+</td>
+<td> VarInt
+</td>
+<td> Player ID
+</td></tr>
+<tr>
+<td> Action ID
+</td>
+<td> VarInt Enum
+</td>
+<td> The ID of the action, see below
+</td></tr>
+<tr>
+<td> Jump Boost
+</td>
+<td> VarInt
+</td>
+<td> Horse jump boost. Ranged from 0 to 100.
+</td></tr></table>
+<p>Action ID can be one of the following values:
+</p>
+<table class="wikitable">
+<tr>
+<th> ID
+</th>
+<th> Action
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> Crouch
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Uncrouch
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Leave bed
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> Start sprinting
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> Stop sprinting
+</td></tr>
+<tr>
+<td> 5
+</td>
+<td> Jump with horse
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td> 6
+</td>
+<td> Open inventory
+</td></tr></table>
+<p>“Open inventory” is now sent via the <a href="#Client_Status">Client Status</a> packet.
+</p>
+<h4><span class="mw-headline" id="Steer_Vehicle">Steer Vehicle</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> <del style="background-color: #f4cccc;">0x0C</del>&#x20;<ins style="background-color: #d9ead3;">0x0D</ins>
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Server
+</td>
+<td> Sideways
+</td>
+<td> Float
+</td>
+<td> Positive to the left of the player
+</td></tr>
+<tr>
+<td> Forward
+</td>
+<td> Float
+</td>
+<td> Positive forward
+</td></tr>
+<tr>
+<td> Flags
+</td>
+<td> Unsigned Byte
+</td>
+<td> Bit mask. 0x1: jump, 0x2: unmount
+</td></tr></table>
+<h4><span class="mw-headline" id="Close_Window">Close Window</span></h4>
+<p>This packet is sent by the client when closing a window.
+</p><p>Notchian clients send a Close Window packet with Window ID 0 to close their inventory even though there is never an <a href="#Open_Window">Open Window</a> packet for the inventory.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">0x0D</del>&#x20;<ins style="background-color: #d9ead3;">0x0E</ins>
+</td>
+<td rowspan="1"> Play
+</td>
+<td rowspan="1"> Server
+</td>
+<td> Window ID
+</td>
+<td> Unsigned Byte
+</td>
+<td> This is the ID of the window that was closed. 0 for player inventory.
+</td></tr></table>
+<h4><span class="mw-headline" id="Click_Window">Click Window</span></h4>
+<p>This packet is sent by the player when it clicks on a slot in a window.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="6"> <del style="background-color: #f4cccc;">0x0E</del>&#x20;<ins style="background-color: #d9ead3;">0x0F</ins>
+</td>
+<td rowspan="6"> Play
+</td>
+<td rowspan="6"> Server
+</td>
+<td> Window ID
+</td>
+<td> Unsigned Byte
+</td>
+<td> The ID of the window which was clicked. 0 for player inventory.
+</td></tr>
+<tr>
+<td> Slot
+</td>
+<td> Short
+</td>
+<td> The clicked slot number, see below
+</td></tr>
+<tr>
+<td> Button
+</td>
+<td> Byte
+</td>
+<td> The button used in the click, see below
+</td></tr>
+<tr>
+<td> Action Number
+</td>
+<td> Short
+</td>
+<td> A unique number for the action, implemented by Notchian as a counter, starting at 1. Used by the server to send back a <a href="/Protocol#Confirm_Transaction" title="Protocol">Confirm Transaction</a>.
+</td></tr>
+<tr>
+<td> Mode
+</td>
+<td> Byte Enum
+</td>
+<td> Inventory operation mode, see below
+</td></tr>
+<tr>
+<td> Clicked item
+</td>
+<td> <a href="/Slot_Data" title="Slot Data">Slot</a>
+</td>
+<td> The clicked slot. Has to be empty (item ID = -1) for drop mode.
+</td></tr></table>
+<p>See <a href="/Inventory" title="Inventory">Inventory</a> for further information about how slots are indexed.
+</p><p>When right-clicking on a stack of items, half the stack will be picked up and half left in the slot. If the stack is an odd number, the half left in the slot will be smaller of the amounts.
+</p><p>The distinct type of click performed by the client is determined by the combination of the Mode and Button fields.
+</p>
+<table class="wikitable">
+<tr>
+<th> Mode
+</th>
+<th> Button
+</th>
+<th> Slot
+</th>
+<th> Trigger
+</th></tr>
+<tr>
+<th rowspan="2"> 0
+</th>
+<td> 0
+</td>
+<td> Normal
+</td>
+<td> Left mouse click
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Normal
+</td>
+<td> Right mouse click
+</td></tr>
+<tr>
+<th rowspan="2"> 1
+</th>
+<td> 0
+</td>
+<td> Normal
+</td>
+<td> Shift + left mouse click
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Normal
+</td>
+<td> Shift + right mouse click <i>(identical behavior)</i>
+</td></tr>
+<tr>
+<th rowspan="5"> 2
+</th>
+<td> 0
+</td>
+<td> Normal
+</td>
+<td> Number key 1
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Normal
+</td>
+<td> Number key 2
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Normal
+</td>
+<td> Number key 3
+</td></tr>
+<tr>
+<td> ⋮
+</td>
+<td> ⋮
+</td>
+<td> ⋮
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> Normal
+</td>
+<td> Number key 9
+</td></tr>
+<tr>
+<th rowspan="1"> 3
+</th>
+<td> 2
+</td>
+<td> Normal
+</td>
+<td> Middle click
+</td></tr>
+<tr>
+<th rowspan="4"> 4
+</th>
+<td> 0
+</td>
+<td> Normal*
+</td>
+<td> Drop key (Q) (* Clicked item is different, see above)
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Normal*
+</td>
+<td> Ctrl + Drop key (Ctrl-Q) <i>(drops full stack)</i>
+</td></tr>
+<tr>
+<td> 0
+</td>
+<td> -999
+</td>
+<td> Left click outside inventory holding nothing <i>(no-op)</i>
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> -999
+</td>
+<td> Right click outside inventory holding nothing <i>(no-op)</i>
+</td></tr>
+<tr>
+<th rowspan="6"> 5
+</th>
+<td> 0
+</td>
+<td> -999
+</td>
+<td> Starting left mouse drag <i>(or middle mouse)</i>
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> -999
+</td>
+<td> Starting right mouse drag
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Normal
+</td>
+<td> Add slot for left-mouse drag
+</td></tr>
+<tr>
+<td> 5
+</td>
+<td> Normal
+</td>
+<td> Add slot for right-mouse drag
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> -999
+</td>
+<td> Ending left mouse drag
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> -999
+</td>
+<td> Ending right mouse drag
+</td></tr>
+<tr>
+<th> 6
+</th>
+<td> 0
+</td>
+<td> Normal
+</td>
+<td> Double click
+</td></tr></table>
+<p>Starting from version 1.5, “painting mode” is available for use in inventory windows. It is done by picking up stack of something (more than 1 item), then holding mouse button (left, right or middle) and dragging held stack over empty (or same type in case of right button) slots. In that case client sends the following to server after mouse button release (omitting first pickup packet which is sent as usual):
+</p>
+<ol><li> packet with mode 5, slot -999, button (0 for left | 4 for right);</li>
+<li> packet for every slot painted on, mode is still 5, button (1 | 5);</li>
+<li> packet with mode 5, slot -999, button (2 | 6);</li></ol>
+<p>If any of the painting packets other than the “progress” ones are sent out of order (for example, a start, some slots, then another start; or a left-click in the middle) the painting status will be reset.
+</p><p>The server will send back a <a href="/Protocol#Confirm_Transaction" title="Protocol">Confirm Transaction</a> packet. If the click was not accepted, the client must reflect that packet before sending more <a href="#Click_Window">Click Window</a> packets, otherwise the server will reject them silently. The Notchian server also sends a <a href="/Protocol#Window_Items" title="Protocol">Window Items</a> packet for the open window and <a href="/Protocol#Set_Slot" title="Protocol">Set Slot</a> packets for the clicked and cursor slot, but only when the click was not accepted, probably to resynchronize client and server.
+</p>
+<h4><span class="mw-headline" id="Confirm_Transaction">Confirm Transaction</span></h4>
+<pre>&lt;SpaceManiac&gt; noooo idea why the serverbound confirm transaction packet exists
+&lt;SpaceManiac&gt; I think it's sent as a response to the clientbound confirm transaction in some situations, but it's fuzzy
+</pre>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> <del style="background-color: #f4cccc;">0x0F</del>&#x20;<ins style="background-color: #d9ead3;">0x10</ins>
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Server
+</td>
+<td> Window ID
+</td>
+<td> Byte
+</td>
+<td> The ID of the window that the action occurred in
+</td></tr>
+<tr>
+<td> Action Number
+</td>
+<td> Short
+</td>
+<td> Every action that is to be accepted has a unique number. This field corresponds to that number.
+</td></tr>
+<tr>
+<td> Accepted
+</td>
+<td> Boolean
+</td>
+<td> Whether the action was accepted
+</td></tr></table>
+<h4><span class="mw-headline" id="Creative_Inventory_Action">Creative Inventory Action</span></h4>
+<p>While the user is in the standard inventory (i.e., not a crafting bench) in Creative mode, the player will send this packet.
+</p><p>Clicking in the creative inventory menu is quite different from non-creative inventory management. Picking up an item with the mouse actually deletes the item from the server, and placing an item into a slot or dropping it out of the inventory actually tells the server to create the item from scratch. (This can be verified by clicking an item that you don't mind deleting, then severing the connection to the server; the item will be nowhere to be found when you log back in.) As a result of this implementation strategy, the "Destroy Item" slot is just a client-side implementation detail that means "I don't intend to recreate this item.". Additionally, the long listings of items (by category, etc.) are a client-side interface for choosing which item to create. Picking up an item from such listings sends no packets to the server; only when you put it somewhere does it tell the server to create the item in that location.
+</p><p>This action can be described as “set inventory slot”. Picking up an item sets the slot to item ID -1. Placing an item into an inventory slot sets the slot to the specified item. Dropping an item (by clicking outside the window) effectively sets slot -1 to the specified item, which causes the server to spawn the item entity, etc.. All other inventory slots are numbered the same as the non-creative inventory (including slots for the 2×2 crafting menu, even though they aren't visible in the vanilla client).
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="2"> <del style="background-color: #f4cccc;">0x10</del>&#x20;<ins style="background-color: #d9ead3;">0x11</ins>
+</td>
+<td rowspan="2"> Play
+</td>
+<td rowspan="2"> Server
+</td>
+<td> Slot
+</td>
+<td> Short
+</td>
+<td> Inventory slot
+</td></tr>
+<tr>
+<td> Clicked Item
+</td>
+<td> <a href="/Slot_Data" title="Slot Data">Slot</a>
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Enchant_Item">Enchant Item</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="2"> <del style="background-color: #f4cccc;">0x11</del>&#x20;<ins style="background-color: #d9ead3;">0x12</ins>
+</td>
+<td rowspan="2"> Play
+</td>
+<td rowspan="2"> Server
+</td>
+<td> Window ID
+</td>
+<td> Byte
+</td>
+<td> The ID of the enchantment table window sent by <a href="/Protocol#Open_Window" title="Protocol">Open Window</a>
+</td></tr>
+<tr>
+<td> Enchantment
+</td>
+<td> Byte
+</td>
+<td> The position of the enchantment on the enchantment table window, starting with 0 as the topmost one
+</td></tr></table>
+<h4><span class="mw-headline" id="Update_Sign">Update Sign</span></h4>
+<p>This message is sent from the client to the server when the “Done” button is pushed after placing a sign.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="5"> <del style="background-color: #f4cccc;">0x12</del>&#x20;<ins style="background-color: #d9ead3;">0x16</ins>
+</td>
+<td rowspan="5"> Play
+</td>
+<td rowspan="5"> Server
+</td>
+<td> Location
+</td>
+<td> Position
+</td>
+<td> Block Coordinates
+</td></tr>
+<tr>
+<td> Line 1
+</td>
+<td> <del style="background-color: #f4cccc;"><a href="/Chat" title="Chat">Chat</a></del>&#x20;<ins style="background-color: #d9ead3;">String</ins>
+</td>
+<td> First line of text in the sign
+</td></tr>
+<tr>
+<td> Line 2
+</td>
+<td> <del style="background-color: #f4cccc;"><a href="/Chat" title="Chat">Chat</a></del>&#x20;<ins style="background-color: #d9ead3;">String</ins>
+</td>
+<td> Second line of text in the sign
+</td></tr>
+<tr>
+<td> Line 3
+</td>
+<td> <del style="background-color: #f4cccc;"><a href="/Chat" title="Chat">Chat</a></del>&#x20;<ins style="background-color: #d9ead3;">String</ins>
+</td>
+<td> Third line of text in the sign
+</td></tr>
+<tr>
+<td> Line 4
+</td>
+<td> <del style="background-color: #f4cccc;"><a href="/Chat" title="Chat">Chat</a></del>&#x20;<ins style="background-color: #d9ead3;">String</ins>
+</td>
+<td> Fourth line of text in the sign
+</td></tr></table>
+<h4><span class="mw-headline" id="Player_Abilities">Player Abilities</span></h4>
+<p>The latter 2 bytes are used to indicate the walking and flying speeds respectively, while the first byte is used to determine the value of 4 booleans.
+</p><p>The vanilla client sends this packet when the player starts/stops flying with the second parameter changed accordingly. All other parameters are ignored by the vanilla server.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> <del style="background-color: #f4cccc;">0x13</del>&#x20;<ins style="background-color: #d9ead3;">0x14</ins>
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Server
+</td>
+<td> Flags
+</td>
+<td> Byte
+</td>
+<td> Bit mask. 0x08: damage disabled (god mode), 0x04: can fly, 0x02: is flying, 0x01: is Creative
+</td></tr>
+<tr>
+<td> Flying Speed
+</td>
+<td> Float
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Walking Speed
+</td>
+<td> Float
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Tab-Complete">Tab-Complete</span></h4>
+<p>Sent when the user presses <i>tab</i> while writing text.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> <del style="background-color: #f4cccc;">0x14</del>&#x20;<ins style="background-color: #d9ead3;">0x15</ins>
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Server
+</td>
+<td> Text
+</td>
+<td> String
+</td>
+<td> All text behind the cursor
+</td></tr>
+<tr>
+<td> Has Position
+</td>
+<td> Boolean
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Looked At Block
+</td>
+<td> Optional Position
+</td>
+<td> The position of the block being looked at. Only sent if Has Position is true.
+</td></tr></table>
+<h4><span class="mw-headline" id="Client_Settings">Client Settings</span></h4>
+<p>Sent when the player connects, or when settings are changed.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="6"> <del style="background-color: #f4cccc;">0x15</del>&#x20;<ins style="background-color: #d9ead3;">0x03</ins>
+</td>
+<td rowspan="6"> Play
+</td>
+<td rowspan="6"> Server
+</td>
+<td> Locale
+</td>
+<td> String
+</td>
+<td> e.g. en_GB
+</td></tr>
+<tr>
+<td> View Distance
+</td>
+<td> Byte
+</td>
+<td> Client-side render distance, in chunks
+</td></tr>
+<tr>
+<td> Chat Mode
+</td>
+<td> <del style="background-color: #f4cccc;">Byte</del>&#x20;<ins style="background-color: #d9ead3;">VarInt</ins> Enum
+</td>
+<td> 0: enabled, 1: commands only, 2: hidden
+</td></tr>
+<tr>
+<td> Chat Colors
+</td>
+<td> Boolean
+</td>
+<td> “Colors” multiplayer setting
+</td></tr>
+<tr>
+<td> Displayed Skin Parts
+</td>
+<td> Unsigned Byte
+</td>
+<td> Skin parts, see note below
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Main Hand
+</td>
+<td> VarInt Enum
+</td>
+<td> 0: Left, 1: Right
+</td></tr></table>
+<p><i>Displayed Skin Parts</i> flags:
+</p>
+<ul><li> Bit 0 (0x01): Cape enabled</li>
+<li> Bit 1 (0x02): Jacket enabled</li>
+<li> Bit 2 (0x04): Left Sleeve enabled</li>
+<li> Bit 3 (0x08): Right Sleeve enabled</li>
+<li> Bit 4 (0x10): Left Pants Leg enabled</li>
+<li> Bit 5 (0x20): Right Pants Leg enabled</li>
+<li> Bit 6 (0x40): Hat enabled</li></ul>
+<p>The most significant bit (bit 7, 0x80) appears to be unused.
+</p>
+<h4><span class="mw-headline" id="Client_Status">Client Status</span></h4>
+<p>Sent when the client is ready to complete login and when the client is ready to respawn after death.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="1"> <del style="background-color: #f4cccc;">0x16</del>&#x20;<ins style="background-color: #d9ead3;">0x02</ins>
+</td>
+<td rowspan="1"> Play
+</td>
+<td rowspan="1"> Server
+</td>
+<td> Action ID
+</td>
+<td> VarInt Enum
+</td>
+<td> See below
+</td></tr></table>
+<p><i>Action ID</i> values:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Action ID
+</th>
+<th> Action
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> Perform respawn
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Request stats
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> <del style="background-color: #f4cccc;"><i>Taking Inventory</i> achievement</del>&#x20;<ins style="background-color: #d9ead3;">Open Inventory</ins>
+</td></tr></table>
+<h4><span class="mw-headline" id="Plugin_Message">Plugin Message</span></h4>
+<p>Mods and plugins can use this to send their data. Minecraft itself uses a number of <a href="/Plugin_channel" class="mw-redirect" title="Plugin channel">plugin channels</a>. These internal channels are prefixed with <code>MC|</code>.
+</p><p>More documentation on this: <a rel="nofollow" class="external free" href="http://dinnerbone.com/blog/2012/01/13/minecraft-plugin-channels-messaging/">http://dinnerbone.com/blog/2012/01/13/minecraft-plugin-channels-messaging/</a>
+</p><p>Note that the length of Data is known from the packet length, so there is no need for a length field of any kind.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="2"> <del style="background-color: #f4cccc;">0x17</del>&#x20;<ins style="background-color: #d9ead3;">0x18</ins>
+</td>
+<td rowspan="2"> Play
+</td>
+<td rowspan="2"> Server
+</td>
+<td> Channel
+</td>
+<td> String
+</td>
+<td> Name of the <a href="/Plugin_channel" class="mw-redirect" title="Plugin channel">plugin channel</a> used to send the data
+</td></tr>
+<tr>
+<td> Data
+</td>
+<td> Byte Array
+</td>
+<td> Any data, depending on the channel. <code>MC|</code> channels are documented <a href="/Plugin_channel" class="mw-redirect" title="Plugin channel">here</a>.
+</td></tr></table>
+<h4><span class="mw-headline" id="Spectate">Spectate</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="1"> <del style="background-color: #f4cccc;">0x18</del>&#x20;<ins style="background-color: #d9ead3;">0x19</ins>
+</td>
+<td rowspan="1"> Play
+</td>
+<td rowspan="1"> Server
+</td>
+<td> Target Player
+</td>
+<td> UUID
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Resource_Pack_Status">Resource Pack Status</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="2"> <del style="background-color: #f4cccc;">0x19</del>&#x20;<ins style="background-color: #d9ead3;">0x1A</ins>
+</td>
+<td rowspan="2"> Play
+</td>
+<td rowspan="2"> Server
+</td>
+<td> Hash
+</td>
+<td> String
+</td>
+<td> The hash sent in the <a href="/Protocol#Resource_Pack_Send" title="Protocol">Resource Pack Send</a> packet.
+</td></tr>
+<tr>
+<td> Result
+</td>
+<td> VarInt Enum
+</td>
+<td> 0: successfully loaded, 1: declined, 2: failed download, 3: accepted
+</td></tr></table>
+<h2><span class="mw-headline" id="Status">Status</span></h2>
+<h3><span class="mw-headline" id="Clientbound_3">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound_3">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Login">Login</span></h2>
+<h3><span class="mw-headline" id="Clientbound_4">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound_4">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20170807180020
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 1.398 seconds
+Real time usage: 3.243 seconds
+Preprocessor visited node count: 6823/1000000
+Preprocessor generated node count: 10390/1000000
+Post‐expand include size: 63956/2097152 bytes
+Template argument size: 21102/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1196.963      1 - -total
+ 56.47%  675.925    115 - Template:PacketList
+ 38.47%  460.472    156 - Template:Change
+  6.46%   77.382      9 - Template:Minecraft_Wiki
+  3.67%   43.927      9 - Template:Plainlink
+  1.26%   15.101      2 - Template:=
+-->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://wiki.vg/index.php?title=Pre-release_protocol&amp;oldid=6965">http://wiki.vg/index.php?title=Pre-release_protocol&amp;oldid=6965</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Pre-release+protocol&amp;returntoquery=oldid%3D6965" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Pre-release+protocol&amp;returntoquery=oldid%3D6965" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/Pre-release_protocol"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk"><span><a href="/Talk:Pre-release_protocol"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/Pre-release_protocol" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Pre-release_protocol&amp;action=edit&amp;oldid=6965"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Pre-release_protocol&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search wiki.vg" title="Search wiki.vg [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Pre-release_protocol" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Pre-release_protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Pre-release_protocol&amp;oldid=6965&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Pre-release_protocol&amp;oldid=6965" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Pre-release_protocol&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share Alike</a> unless otherwise noted.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/wikivg:Privacy_policy" title="wikivg:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wikivg:About" title="wikivg:About">About wiki.vg</a></li>
+											<li id="footer-places-disclaimer"><a href="/wikivg:General_disclaimer" title="wikivg:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons Attribution Share Alike" width="88" height="31"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"]);});</script><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-11145163-13");
+pageTracker._trackPageview();
+</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":3532});});</script>
+	</body>
+</html>

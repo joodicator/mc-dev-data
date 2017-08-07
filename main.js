@@ -70,7 +70,8 @@ window.addEventListener('load', function () {
                 });
             }
 
-            function onclick () {
+            function onclick (ev) {
+                if (ev.target !== ev.currentTarget) return;
                 if (selectedColIndex == index) {
                     selectedColIndex = selectedColElems = null;
                     cells.forEach(function (cell) {

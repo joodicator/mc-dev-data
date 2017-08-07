@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Pre-release protocol - wiki.vg</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pre-release_protocol","wgTitle":"Pre-release protocol","wgCurRevisionId":13288,"wgRevisionId":7950,"wgArticleId":123,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Pre-release_protocol","wgRelevantArticleId":123,"wgRequestId":"3534ee3c481f8d6d1b2b5b72","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@0fqh6g4",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="wiki.vg (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.vg/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="wiki.vg Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Pre-release_protocol rootpage-Pre-release_protocol skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Pre-release protocol</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From wiki.vg</div>
+								<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 18:00, 4 June 2016 by <a href="/User:Paulomart" class="mw-userlink" title="User:Paulomart"><bdi>Paulomart</bdi></a> <span class="mw-usertoollinks">(<a href="/index.php?title=User_talk:Paulomart&amp;action=edit&amp;redlink=1" class="new" title="User talk:Paulomart (page does not exist)">talk</a> | <a href="/Special:Contributions/Paulomart" title="Special:Contributions/Paulomart">contribs</a>)</span> <span class="comment">(Include Player in Metadata)</span></div><div id="mw-revision-nav">(<a href="/index.php?title=Pre-release_protocol&amp;diff=prev&amp;oldid=7950" title="Pre-release protocol">diff</a>) <a href="/index.php?title=Pre-release_protocol&amp;direction=prev&amp;oldid=7950" title="Pre-release protocol">← Older revision</a> | <a href="/Pre-release_protocol" title="Pre-release protocol">Latest revision</a> (<a href="/index.php?title=Pre-release_protocol&amp;diff=cur&amp;oldid=7950" title="Pre-release protocol">diff</a>) | <a href="/index.php?title=Pre-release_protocol&amp;direction=next&amp;oldid=7950" title="Pre-release protocol">Newer revision →</a> (<a href="/index.php?title=Pre-release_protocol&amp;diff=next&amp;oldid=7950" title="Pre-release protocol">diff</a>)</div></div></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page documents the changes from the <a href="/Protocol" title="Protocol">last stable Minecraft release</a> (currently <a href="/Protocol_version_numbers" title="Protocol version numbers">1.9.4, protocol 110</a>) to the current pre-release (currently <a href="/Protocol_version_numbers" title="Protocol version numbers">1.10-pre1, protocol 204</a>). Note that this page contains bleeding-edge information that may not be completely or correctly documented.
+</p><p>One who wishes to commandeer the merging of this into <a href="/Protocol" title="Protocol">Protocol</a> when an update is made must be sure to respect any changes that may have occurred to the respective packets there.
+</p>
+<h2><span class="mw-headline" id="Contents">Contents</span></h2>
+<div style="float:right;"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Contents"><span class="tocnumber">1</span> <span class="toctext">Contents</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Data_types"><span class="tocnumber">1.1</span> <span class="toctext">Data types</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Packets"><span class="tocnumber">1.2</span> <span class="toctext">Packets</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#New.2Fmodified_data_types"><span class="tocnumber">2</span> <span class="toctext">New/modified data types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Mobs"><span class="tocnumber">2.1</span> <span class="toctext">Mobs</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Entity_Metadata"><span class="tocnumber">2.2</span> <span class="toctext">Entity Metadata</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#MC.7CStruct_plugin_channel"><span class="tocnumber">3</span> <span class="toctext">MC|Struct plugin channel</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Handshaking"><span class="tocnumber">4</span> <span class="toctext">Handshaking</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Clientbound"><span class="tocnumber">4.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Serverbound"><span class="tocnumber">4.2</span> <span class="toctext">Serverbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Handshake"><span class="tocnumber">4.2.1</span> <span class="toctext">Handshake</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Play"><span class="tocnumber">5</span> <span class="toctext">Play</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Clientbound_2"><span class="tocnumber">5.1</span> <span class="toctext">Clientbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-14"><a href="#Named_Sound_Effect"><span class="tocnumber">5.1.1</span> <span class="toctext">Named Sound Effect</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Sound_Effect"><span class="tocnumber">5.1.2</span> <span class="toctext">Sound Effect</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Serverbound_2"><span class="tocnumber">5.2</span> <span class="toctext">Serverbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="#Resource_Pack_Status"><span class="tocnumber">5.2.1</span> <span class="toctext">Resource Pack Status</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Status"><span class="tocnumber">6</span> <span class="toctext">Status</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Clientbound_3"><span class="tocnumber">6.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Serverbound_3"><span class="tocnumber">6.2</span> <span class="toctext">Serverbound</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="#Login"><span class="tocnumber">7</span> <span class="toctext">Login</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="#Clientbound_4"><span class="tocnumber">7.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Serverbound_4"><span class="tocnumber">7.2</span> <span class="toctext">Serverbound</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<h3><span class="mw-headline" id="Data_types">Data types</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Packets">Packets</span></h3>
+<table class="wikitable">
+<tr>
+<th> ID
+</th>
+<th> Packet name
+</th>
+<th colspan="2"> Documentation
+</th></tr>
+<tr>
+<th colspan="4"> Handshaking serverbound
+</th></tr>
+<tr>
+<td> 0x00 </td>
+<td> Handshake </td>
+<td> <a href="/Protocol#Handshake" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Handshake" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<th colspan="4"> Play clientbound
+</th></tr>
+<tr>
+<td> 0x19 </td>
+<td> Named Sound Effect </td>
+<td> <a href="/Protocol#Named_Sound_Effect" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Named_Sound_Effect" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> 0x46 </td>
+<td> Sound Effect </td>
+<td> <a href="/Protocol#Sound_Effect" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Sound_Effect" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<th colspan="4"> Play serverbound
+</th></tr>
+<tr>
+<td> 0x16 </td>
+<td> Resource Pack Status </td>
+<td> <a href="/Protocol#Resource_Pack_Status" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Resource_Pack_Status" title="Pre-release protocol">Pre</a>
+</td></tr></table>
+<h2><span class="mw-headline" id="New.2Fmodified_data_types">New/modified data types</span></h2>
+<h3><span class="mw-headline" id="Mobs">Mobs</span></h3>
+<p>Mobs are spawned via <a href="/Protocol#Spawn_Mob" title="Protocol">Spawn Mob</a>. There are two extra mob types in the code that refer to mobs classes that can never spawn: Mob and Monster (they are always subclasses, aka another more specific type).
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Type
+</th>
+<th> Name
+</th>
+<th> x, z
+</th>
+<th> y
+</th></tr>
+<tr>
+<td> 48
+</td>
+<td> Mob
+</td>
+<td> N/A
+</td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 49
+</td>
+<td> Monster
+</td>
+<td> N/A
+</td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 50
+</td>
+<td> Creeper
+</td>
+<td> 0.6
+</td>
+<td> 1.8
+</td></tr>
+<tr>
+<td> 51
+</td>
+<td> Skeleton
+</td>
+<td> 0.6
+</td>
+<td> 1.95
+</td></tr>
+<tr>
+<td> 52
+</td>
+<td> Spider
+</td>
+<td> 1.4
+</td>
+<td> 0.9
+</td></tr>
+<tr>
+<td> 53
+</td>
+<td> Giant Zombie
+</td>
+<td> 0.6 * 6
+</td>
+<td> 1.8 * 6
+</td></tr>
+<tr>
+<td> 54
+</td>
+<td> Zombie
+</td>
+<td> 0.6
+</td>
+<td> 1.8
+</td></tr>
+<tr>
+<td> 55
+</td>
+<td> Slime
+</td>
+<td> 0.51000005 * size
+</td>
+<td> 0.51000005 * size
+</td></tr>
+<tr>
+<td> 56
+</td>
+<td> Ghast
+</td>
+<td> 4
+</td>
+<td> 4
+</td></tr>
+<tr>
+<td> 57
+</td>
+<td> Zombie Pigman
+</td>
+<td> 0.6
+</td>
+<td> 1.8
+</td></tr>
+<tr>
+<td> 58
+</td>
+<td> Enderman
+</td>
+<td> 0.6
+</td>
+<td> 2.9
+</td></tr>
+<tr>
+<td> 59
+</td>
+<td> Cave Spider
+</td>
+<td> 0.7
+</td>
+<td> 0.5
+</td></tr>
+<tr>
+<td> 60
+</td>
+<td> Silverfish
+</td>
+<td> 0.4
+</td>
+<td> 0.3
+</td></tr>
+<tr>
+<td> 61
+</td>
+<td> Blaze
+</td>
+<td> 0.6
+</td>
+<td> 1.8
+</td></tr>
+<tr>
+<td> 62
+</td>
+<td> Magma Cube
+</td>
+<td> 0.51000005 * size
+</td>
+<td> 0.51000005 * size
+</td></tr>
+<tr>
+<td> 63
+</td>
+<td> Ender Dragon
+</td>
+<td> 16.0
+</td>
+<td> 8.0
+</td></tr>
+<tr>
+<td> 64
+</td>
+<td> Wither
+</td>
+<td> 0.9
+</td>
+<td> 3.5
+</td></tr>
+<tr>
+<td> 65
+</td>
+<td> Bat
+</td>
+<td> 0.5
+</td>
+<td> 0.9
+</td></tr>
+<tr>
+<td> 66
+</td>
+<td> Witch
+</td>
+<td> 0.6
+</td>
+<td> 1.8
+</td></tr>
+<tr>
+<td> 67
+</td>
+<td> Endermite
+</td>
+<td> 0.4
+</td>
+<td> 0.3
+</td></tr>
+<tr>
+<td> 68
+</td>
+<td> Guardian
+</td>
+<td> 0.85
+</td>
+<td> 0.85
+</td></tr>
+<tr>
+<td> 69
+</td>
+<td> Shulker
+</td>
+<td> 1
+</td>
+<td> 1
+</td></tr>
+<tr>
+<td> 90
+</td>
+<td> Pig
+</td>
+<td> 0.9
+</td>
+<td> 0.9
+</td></tr>
+<tr>
+<td> 91
+</td>
+<td> Sheep
+</td>
+<td> 0.9
+</td>
+<td> 1.3
+</td></tr>
+<tr>
+<td> 92
+</td>
+<td> Cow
+</td>
+<td> 0.9
+</td>
+<td> 1.3
+</td></tr>
+<tr>
+<td> 93
+</td>
+<td> Chicken
+</td>
+<td> 0.4
+</td>
+<td> 0.7
+</td></tr>
+<tr>
+<td> 94
+</td>
+<td> Squid
+</td>
+<td> 0.95
+</td>
+<td> 0.95
+</td></tr>
+<tr>
+<td> 95
+</td>
+<td> Wolf
+</td>
+<td> 0.6
+</td>
+<td> 0.8
+</td></tr>
+<tr>
+<td> 96
+</td>
+<td> Mooshroom
+</td>
+<td> 0.9
+</td>
+<td> 1.3
+</td></tr>
+<tr>
+<td> 97
+</td>
+<td> Snowman
+</td>
+<td> 0.7
+</td>
+<td> 1.9
+</td></tr>
+<tr>
+<td> 98
+</td>
+<td> Ocelot
+</td>
+<td> 0.6
+</td>
+<td> 0.8
+</td></tr>
+<tr>
+<td> 99
+</td>
+<td> Iron Golem
+</td>
+<td> 1.4
+</td>
+<td> 2.9
+</td></tr>
+<tr>
+<td> 100
+</td>
+<td> Horse
+</td>
+<td> 1.4
+</td>
+<td> 1.6
+</td></tr>
+<tr>
+<td> 101
+</td>
+<td> Rabbit
+</td>
+<td> 0.6
+</td>
+<td> 0.7
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 102
+</td>
+<td> Polar Bear
+</td>
+<td> 1.3
+</td>
+<td> 1.4
+</td></tr>
+<tr>
+<td> 120
+</td>
+<td> Villager
+</td>
+<td> 0.6
+</td>
+<td> 1.8
+</td></tr></table>
+<h3><span class="mw-headline" id="Entity_Metadata">Entity Metadata</span></h3>
+<p>Note that entity metadata is a totally distinct concept from block metadata. All entities must send at least one item of metadata, in most cases this will be the health item.
+</p><p>An Entity Metadata is an array of entries, each of which looks like the following:
+</p>
+<table class="wikitable">
+<tr>
+<th> Name
+</th>
+<th> Type
+</th>
+<th> Meaning
+</th></tr>
+<tr>
+<td> Index
+</td>
+<td> Unsigned Byte
+</td>
+<td> Unique index key determining the meaning of the following value, see the table below. If this is <code>0xff</code> then the it is the end of the Entity Metadata array and no more is read.
+</td></tr>
+<tr>
+<td> Type
+</td>
+<td> Optional Byte Enum
+</td>
+<td> Only if Index is not <code>0xff</code>; the type of the index, see the table below
+</td></tr>
+<tr>
+<td> Value
+</td>
+<td> Optional <i>value of Type</i>
+</td>
+<td> Only if Index is not <code>0xff</code>: the value of the metadata field
+</td></tr></table>
+<table class="wikitable">
+<tr>
+<th> Value of Type field
+</th>
+<th> <a href="/Data_types" title="Data types">Type</a> of Value field
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> Byte
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Float
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> String
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> <a href="/Chat" title="Chat">Chat</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 5
+</td>
+<td> <a href="/Slot" class="mw-redirect" title="Slot">Slot</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> Boolean
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> Rotation
+</td>
+<td> 3 floats: rotation on x, rotation on y, rotation on z
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> <a href="/Data_Types#Position" class="mw-redirect" title="Data Types">Position</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td> 9
+</td>
+<td> OptPosition (Boolean + Optional Position)
+</td>
+<td> Position is present if the Boolean is set to true
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> Direction (VarInt)
+</td>
+<td> (Down = 0, Up = 1, North = 2, South = 3, West = 4, East = 5)
+</td></tr>
+<tr>
+<td> 11
+</td>
+<td> OptUUID (Boolean + Optional UUID)
+</td>
+<td> UUID is present if the Boolean is set to true
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> BlockID (VarInt)
+</td>
+<td> <code>id &lt;&lt; 4 | data</code>
+</td></tr></table>
+<p>Entity classes also recursively use fields from classes they extend.
+</p>
+<table class="wikitable">
+<tr>
+<th> Entity class
+</th>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px" colspan="2">  Meaning
+</th></tr>
+<tr>
+<td rowspan="13"> Entity
+</td>
+<td rowspan="8"> 0
+</td>
+<td rowspan="8"> Byte
+</td>
+<th> Bit Mask </th>
+<th> Meaning
+</th></tr>
+<tr>
+<td> 0x01 </td>
+<td> On Fire
+</td></tr>
+<tr>
+<td> 0x02 </td>
+<td> Crouched
+</td></tr>
+<tr>
+<td> 0x08 </td>
+<td> Sprinting
+</td></tr>
+<tr>
+<td> 0x10 </td>
+<td> Eating/Drinking/Blocking
+</td></tr>
+<tr>
+<td> 0x20 </td>
+<td> Invisible
+</td></tr>
+<tr>
+<td> 0x40 </td>
+<td> Glowing Effect
+</td></tr>
+<tr>
+<td> 0x80 </td>
+<td> Flying with Elytra
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Air
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> String
+</td>
+<td colspan="2"> Custom Name
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Custom Name Visible
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Silent
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 5
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> No Gravity
+</td></tr>
+<tr>
+<td> Potion <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> <a href="/Slot" class="mw-redirect" title="Slot">Slot</a>
+</td>
+<td colspan="2"> Potion which is thrown
+</td></tr>
+<tr>
+<td> FallingBlock <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> <a href="/Data_Types#Position" class="mw-redirect" title="Data Types">Position</a>
+</td>
+<td colspan="2"> Spawn Position
+</td></tr>
+<tr>
+<td rowspan="6"> AreaEffectCloud <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> Float
+</td>
+<td colspan="2"> Radius
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">6</del>&#x20;<ins style="background-color: #d9ead3;">7</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Color (only for mob spell particle)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">7</del>&#x20;<ins style="background-color: #d9ead3;">8</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Ignore radius and show effect as single point, not area
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">8</del>&#x20;<ins style="background-color: #d9ead3;">9</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Particle ID
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 10
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Particle Parameter #1
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 11
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Particle Parameter #2
+</td></tr>
+<tr>
+<td> Arrow <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Is Critical
+</td></tr>
+<tr>
+<td> TippedArrow <sup>extends Arrow</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">6</del>&#x20;<ins style="background-color: #d9ead3;">7</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Color
+</td></tr>
+<tr>
+<td rowspan="6"> Boat <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Time Since Last Hit
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">6</del>&#x20;<ins style="background-color: #d9ead3;">7</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Forward Direction
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">7</del>&#x20;<ins style="background-color: #d9ead3;">8</ins>
+</td>
+<td> Float
+</td>
+<td colspan="2"> Damage Taken
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">8</del>&#x20;<ins style="background-color: #d9ead3;">9</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Type
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">9</del>&#x20;<ins style="background-color: #d9ead3;">10</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Right paddle turning
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">10</del>&#x20;<ins style="background-color: #d9ead3;">11</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Left paddle turning
+</td></tr>
+<tr>
+<td rowspan="2"> EnderCrystal <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> OptPosition
+</td>
+<td colspan="2"> Beam Target
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">6</del>&#x20;<ins style="background-color: #d9ead3;">7</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Show Bottom
+</td></tr>
+<tr>
+<td> Fireball <sup>extends Entity</sup>
+</td>
+<td colspan="4"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> WitherSkull <sup>extends Fireball</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Invulnerable
+</td></tr>
+<tr>
+<td> Fireworks <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> <a href="/Slot" class="mw-redirect" title="Slot">Slot</a>
+</td>
+<td colspan="2"> Firework Info
+</td></tr>
+<tr>
+<td> Hanging <sup>extends Entity</sup>
+</td>
+<td colspan="4"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td rowspan="2"> ItemFrame <sup>extends Hanging</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> <a href="/Slot" class="mw-redirect" title="Slot">Slot</a>
+</td>
+<td colspan="2"> Item
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">6</del>&#x20;<ins style="background-color: #d9ead3;">7</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Rotation
+</td></tr>
+<tr>
+<td> Item <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> <a href="/Slot" class="mw-redirect" title="Slot">Slot</a>
+</td>
+<td colspan="2"> Item
+</td></tr>
+<tr>
+<td rowspan="5"> Living <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Likely used to limit placing blocks from both hands at the same time.
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">6</del>&#x20;<ins style="background-color: #d9ead3;">7</ins>
+</td>
+<td> Float
+</td>
+<td colspan="2"> Health
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">7</del>&#x20;<ins style="background-color: #d9ead3;">8</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Potion Effect Color
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">8</del>&#x20;<ins style="background-color: #d9ead3;">9</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Potion Effect Ambient
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">9</del>&#x20;<ins style="background-color: #d9ead3;">10</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Number of Arrows in Entity
+</td></tr>
+<tr>
+<td rowspan="13"> Player <sup>extends Living</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">10</del>&#x20;<ins style="background-color: #d9ead3;">11</ins>
+</td>
+<td> Float
+</td>
+<td colspan="2"> Additional Hearts
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Score
+</td></tr>
+<tr>
+<td rowspan="10"> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td rowspan="10"> Byte
+</td>
+<td colspan="2"> The Displayed Skin Parts bit mask that is sent in <a href="/Protocol#Client_Settings" title="Protocol">Client Settings</a>
+</td></tr>
+<tr>
+<th> Bit Mask </th>
+<th> Meaning
+</th></tr>
+<tr>
+<td> 0x01 </td>
+<td> Cape enabled
+</td></tr>
+<tr>
+<td> 0x02 </td>
+<td> Jacket enabled
+</td></tr>
+<tr>
+<td> 0x04 </td>
+<td> Left sleeve enabled
+</td></tr>
+<tr>
+<td> 0x08 </td>
+<td> Right sleeve enabled
+</td></tr>
+<tr>
+<td> 0x10 </td>
+<td> Left pants leg enabled
+</td></tr>
+<tr>
+<td> 0x20 </td>
+<td> Right pants leg enabled
+</td></tr>
+<tr>
+<td> 0x40 </td>
+<td> Hat enabled
+</td></tr>
+<tr>
+<td> 0x80 </td>
+<td> <i>Unused</i>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">13</del>&#x20;<ins style="background-color: #d9ead3;">14</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Main hand (0&#160;: Left, 1&#160;: Right)
+</td></tr>
+<tr>
+<td rowspan="8"> ArmorStand <sup>extends Living</sup>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">10</del>&#x20;<ins style="background-color: #d9ead3;">11</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Status bit mask
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Rotation
+</td>
+<td colspan="2"> Head rotation
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> Rotation
+</td>
+<td colspan="2"> Body rotation
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">13</del>&#x20;<ins style="background-color: #d9ead3;">14</ins>
+</td>
+<td> Rotation
+</td>
+<td colspan="2"> Left arm rotation
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">14</del>&#x20;<ins style="background-color: #d9ead3;">15</ins>
+</td>
+<td> Rotation
+</td>
+<td colspan="2"> Right arm rotation
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">15</del>&#x20;<ins style="background-color: #d9ead3;">16</ins>
+</td>
+<td> Rotation
+</td>
+<td colspan="2"> Left leg rotation
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">16</del>&#x20;<ins style="background-color: #d9ead3;">17</ins>
+</td>
+<td> Rotation
+</td>
+<td colspan="2"> Right leg rotation
+</td></tr>
+<tr>
+<td> Insentient <sup>extends Living</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">10</del>&#x20;<ins style="background-color: #d9ead3;">11</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Status bit mask (NoAI, Left handed)
+</td></tr>
+<tr>
+<td> Ambient <sup>extends Insentient</sup>
+</td>
+<td colspan="4"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> Bat <sup>extends Ambient</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Is Hanging
+</td></tr>
+<tr>
+<td> Creature <sup>extends Insentient</sup>
+</td>
+<td colspan="4"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> Ageable <sup>extends Creature</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Baby
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> PolarBear <sup>extends Ageable</sup>
+</td>
+<td> 13
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Standing
+</td></tr>
+<tr>
+<td> Animal <sup>extends Ageable</sup>
+</td>
+<td colspan="4"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td rowspan="5"> Horse <sup>extends Animal</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Status bit mask
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">13</del>&#x20;<ins style="background-color: #d9ead3;">14</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Type
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">14</del>&#x20;<ins style="background-color: #d9ead3;">15</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Variant
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">15</del>&#x20;<ins style="background-color: #d9ead3;">16</ins>
+</td>
+<td> OptUUID
+</td>
+<td colspan="2"> Owner's UUID
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">16</del>&#x20;<ins style="background-color: #d9ead3;">17</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Armor
+</td></tr>
+<tr>
+<td> Pig <sup>extends Animal</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Has Saddle
+</td></tr>
+<tr>
+<td> Rabbit <sup>extends Animal</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Type
+</td></tr>
+<tr>
+<td> Sheep <sup>extends Animal</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Status bit mask
+</td></tr>
+<tr>
+<td rowspan="2"> TameableAnimal <sup>extends Animal</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Status bit mask (sitting, tamed)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">13</del>&#x20;<ins style="background-color: #d9ead3;">14</ins>
+</td>
+<td> OptUUID
+</td>
+<td colspan="2"> Owner's UUID
+</td></tr>
+<tr>
+<td> Ocelot <sup>extends TameableAnimal</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">14</del>&#x20;<ins style="background-color: #d9ead3;">15</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Type
+</td></tr>
+<tr>
+<td rowspan="3"> Wolf <sup>extends TameableAnimal</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">14</del>&#x20;<ins style="background-color: #d9ead3;">15</ins>
+</td>
+<td> Float
+</td>
+<td colspan="2"> Damage Taken (used for tail rotation)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">15</del>&#x20;<ins style="background-color: #d9ead3;">16</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Begging
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">16</del>&#x20;<ins style="background-color: #d9ead3;">17</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Collar Color
+</td></tr>
+<tr>
+<td> Villager <sup>extends Ageable</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Profession (Farmer = 0, Librarian = 1, Priest = 2, Blacksmith = 3, Butcher = 4)
+</td></tr>
+<tr>
+<td> Golem <sup>extends Creature</sup>
+</td>
+<td colspan="4"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> IronGolem <sup>extends Golem</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Is Player Created
+</td></tr>
+<tr>
+<td rowspan="3"> Shulker <sup>extends Golem</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Direction
+</td>
+<td colspan="2"> Facing Direction
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> OptPosition
+</td>
+<td colspan="2"> Attachment Position
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">13</del>&#x20;<ins style="background-color: #d9ead3;">14</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Shield Height
+</td></tr>
+<tr>
+<td> Monster <sup>extends Creature</sup>
+</td>
+<td colspan="4"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> Blaze <sup>extends Monster</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Is On Fire
+</td></tr>
+<tr>
+<td rowspan="3"> Creeper <sup>extends Monster</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> State (-1 = Idle, 1 = Fuse)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Powered
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">13</del>&#x20;<ins style="background-color: #d9ead3;">14</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Ignited
+</td></tr>
+<tr>
+<td rowspan="2"> Guardian <sup>extends Monster</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Status bit mask (elderly, retracting spikes)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Target EID
+</td></tr>
+<tr>
+<td rowspan="2"> Skeleton <sup>extends Monster</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Type <span style="background-color: #d9ead3;">(0 &#61; Default, 1 &#61; Wither, 2 &#61; Stray)</span>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is swinging arms
+</td></tr>
+<tr>
+<td> Spider <sup>extends Monster</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Is Climbing
+</td></tr>
+<tr>
+<td> Witch <sup>extends Monster</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Aggresive
+</td></tr>
+<tr>
+<td rowspan="4"> Wither <sup>extends Monster</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> First Head's Target
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Second Head's Target
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">13</del>&#x20;<ins style="background-color: #d9ead3;">14</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Third Head's Target
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">14</del>&#x20;<ins style="background-color: #d9ead3;">15</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Invulnerable Time
+</td></tr>
+<tr>
+<td rowspan="4"> Zombie <sup>extends Monster</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Baby
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> <del style="background-color: #f4cccc;">Is Villager (Profession)</del>&#x20;<ins style="background-color: #d9ead3;">Zombie Type (0 &#61; Default, 1-5 &#61; Villager Profession, 6 &#61; Husk)</ins>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">13</del>&#x20;<ins style="background-color: #d9ead3;">14</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Converting
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">14</del>&#x20;<ins style="background-color: #d9ead3;">15</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Are Hands Rised Up
+</td></tr>
+<tr>
+<td rowspan="2"> Enderman <sup>extends Monster</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Block ID
+</td>
+<td colspan="2"> Carried Block
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Screaming
+</td></tr>
+<tr>
+<td> EnderDragon <sup>extends Insentient</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Dragon Phase
+</td></tr>
+<tr>
+<td> Flying <sup>extends Insentient</sup>
+</td>
+<td colspan="4"> <i>no additional metadata</i>
+</td></tr>
+<tr>
+<td> Ghast <sup>extends Flying</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Attacking
+</td></tr>
+<tr>
+<td> Slime <sup>extends Insentient</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Size
+</td></tr>
+<tr>
+<td rowspan="6"> Minecart <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Shaking Power
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">6</del>&#x20;<ins style="background-color: #d9ead3;">7</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Shaking Direction
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">7</del>&#x20;<ins style="background-color: #d9ead3;">8</ins>
+</td>
+<td> Float
+</td>
+<td colspan="2"> Shaking Multiplier
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">8</del>&#x20;<ins style="background-color: #d9ead3;">9</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Block ID and Meta
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">9</del>&#x20;<ins style="background-color: #d9ead3;">10</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Block Y Position
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">10</del>&#x20;<ins style="background-color: #d9ead3;">11</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Show Block
+</td></tr>
+<tr>
+<td rowspan="2"> MinecartCommandBlock <sup>extends Minecart</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> String
+</td>
+<td colspan="2"> Command
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">12</del>&#x20;<ins style="background-color: #d9ead3;">13</ins>
+</td>
+<td> <a href="/Chat" title="Chat">Chat</a>
+</td>
+<td colspan="2"> Last Output
+</td></tr>
+<tr>
+<td> MinecartFurnace <sup>extends Minecart</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">11</del>&#x20;<ins style="background-color: #d9ead3;">12</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is Powered
+</td></tr>
+<tr>
+<td> TNTPrimed <sup>extends Entity</sup>
+</td>
+<td> <del style="background-color: #f4cccc;">5</del>&#x20;<ins style="background-color: #d9ead3;">6</ins>
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Fuse Time
+</td></tr></table>
+<h2><span class="mw-headline" id="MC.7CStruct_plugin_channel"><code>MC|Struct</code> plugin channel</span></h2>
+<p><i>Client to server</i>
+</p><p>Sets information about the <del style="background-color: #f4cccc;">inaccessible</del>&#x20;<ins style="background-color: #d9ead3;">new</ins> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Structure_block">Structure block</a></span>.
+</p>
+<table class="wikitable">
+<tr>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td> X </td>
+<td> Int </td>
+<td> Tile entity location
+</td></tr>
+<tr>
+<td> Y </td>
+<td> Int </td>
+<td> Tile entity location
+</td></tr>
+<tr>
+<td> Z </td>
+<td> Int </td>
+<td> Tile entity location
+</td></tr>
+<tr>
+<td> Action
+</td>
+<td> Byte
+</td>
+<td> See below
+</td></tr>
+<tr>
+<td> Mode
+</td>
+<td> String enum
+</td>
+<td> One of "SAVE", "LOAD", "CORNER", "DATA".
+</td></tr>
+<tr>
+<td> Name
+</td>
+<td> String
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Offset X </td>
+<td> Int
+</td>
+<td style="background-color: #d9ead3;">Between -32 and 32
+</td></tr>
+<tr>
+<td> Offset Y </td>
+<td> Int
+</td>
+<td style="background-color: #d9ead3;">Between -32 and 32
+</td></tr>
+<tr>
+<td> Offset Z </td>
+<td> Int
+</td>
+<td style="background-color: #d9ead3;">Between -32 and 32
+</td></tr>
+<tr>
+<td> Size X </td>
+<td> Int
+</td>
+<td style="background-color: #d9ead3;">Between 0 and 32
+</td></tr>
+<tr>
+<td> Size Y </td>
+<td> Int
+</td>
+<td style="background-color: #d9ead3;">Between 0 and 32
+</td></tr>
+<tr>
+<td> Size Z </td>
+<td> Int
+</td>
+<td style="background-color: #d9ead3;">Between 0 and 32
+</td></tr>
+<tr>
+<td> Mirror
+</td>
+<td> String enum
+</td>
+<td> One of "NONE", "LEFT_RIGHT", "FRONT_BACK".
+</td></tr>
+<tr>
+<td> Rotation
+</td>
+<td> String enum
+</td>
+<td> One of "NONE", "CLOCKWISE_90", "CLOCKWISE_180", "COUNTERCLOCKWISE_90".
+</td></tr>
+<tr>
+<td> Metadata
+</td>
+<td> String
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Ignore entities
+</td>
+<td> Boolean
+</td>
+<td>
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;">Show air
+</td>
+<td style="background-color: #d9ead3;">Boolean
+</td>
+<td style="background-color: #d9ead3;">
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;">Show bounding box
+</td>
+<td style="background-color: #d9ead3;">Boolean
+</td>
+<td style="background-color: #d9ead3;">
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;">Integrity
+</td>
+<td style="background-color: #d9ead3;">Float
+</td>
+<td style="background-color: #d9ead3;">Between 0 and 1
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;">Seed
+</td>
+<td style="background-color: #d9ead3;">VarLong
+</td>
+<td style="background-color: #d9ead3;">
+</td></tr></table>
+<p>Possible modes:
+</p>
+<ul><li> 2 - Save the structure</li>
+<li> 3 - Load the structure</li>
+<li> 4 - Detect size</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Handshaking">Handshaking</span></h2>
+<h3><span class="mw-headline" id="Clientbound">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<h4><span class="mw-headline" id="Handshake">Handshake</span></h4>
+<p>This causes the server to switch into the target state.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="4"> 0x00
+</td>
+<td rowspan="4"> Handshaking
+</td>
+<td rowspan="4"> Server
+</td>
+<td> Protocol Version
+</td>
+<td> VarInt
+</td>
+<td> See <a href="/Protocol_version_numbers" title="Protocol version numbers">protocol version numbers</a> (currently <del style="background-color: #f4cccc;">110</del>&#x20;<ins style="background-color: #d9ead3;">204</ins>)
+</td></tr>
+<tr>
+<td> Server Address
+</td>
+<td> String
+</td>
+<td> Hostname or IP, e.g. localhost or 127.0.0.1, that was used to connect.  The Notchian server does not use this information.
+</td></tr>
+<tr>
+<td> Server Port
+</td>
+<td> Unsigned Short
+</td>
+<td> Default is 25565.  The Notchian server does not use this information.
+</td></tr>
+<tr>
+<td> Next State
+</td>
+<td> VarInt Enum
+</td>
+<td> 1 for <a href="#Status">status</a>, 2 for <a href="#Login">login</a>
+</td></tr></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Play">Play</span></h2>
+<h3><span class="mw-headline" id="Clientbound_2">Clientbound</span></h3>
+<h4><span class="mw-headline" id="Named_Sound_Effect">Named Sound Effect</span></h4>
+<dl><dd><i>See also: <a href="#Sound_Effect">#Sound Effect</a></i></dd></dl>
+<p>Used to play a sound effect on the client. Custom sounds may be added by resource packs.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="7"> 0x19
+</td>
+<td rowspan="7"> Play
+</td>
+<td rowspan="7"> Client
+</td>
+<td> Sound Name
+</td>
+<td> String
+</td>
+<td> All sound effect names as of 1.9.0 can be seen <a rel="nofollow" class="external text" href="http://pokechu22.github.io/Burger/1.9.html#sounds">here</a>.
+</td></tr>
+<tr>
+<td> Sound Category
+</td>
+<td> VarInt Enum
+</td>
+<td> The category that this sound will be played from (<a rel="nofollow" class="external text" href="https://gist.github.com/konwboj/7c0c380d3923443e9d55">current categories</a>)
+</td></tr>
+<tr>
+<td> Effect Position X
+</td>
+<td> Int
+</td>
+<td> Effect X multiplied by 8 (<a href="/Data_types#Fixed-point_numbers" title="Data types">fixed-point number</a> with only 3 bits dedicated to the fractional part)
+</td></tr>
+<tr>
+<td> Effect Position Y
+</td>
+<td> Int
+</td>
+<td> Effect Y multiplied by 8 (<a href="/Data_types#Fixed-point_numbers" title="Data types">fixed-point number</a> with only 3 bits dedicated to the fractional part)
+</td></tr>
+<tr>
+<td> Effect Position Z
+</td>
+<td> Int
+</td>
+<td> Effect Z multiplied by 8 (<a href="/Data_types#Fixed-point_numbers" title="Data types">fixed-point number</a> with only 3 bits dedicated to the fractional part)
+</td></tr>
+<tr>
+<td> Volume
+</td>
+<td> Float
+</td>
+<td> 1 is 100%, can be more
+</td></tr>
+<tr>
+<td> Pitch
+</td>
+<td> <del style="background-color: #f4cccc;">Unsigned Byte</del>&#x20;<ins style="background-color: #d9ead3;">Float</ins>
+</td>
+<td> Float between 0.5 and 2.0 by Notchian clients
+</td></tr></table>
+<h4><span class="mw-headline" id="Sound_Effect">Sound Effect</span></h4>
+<p>This packet is used to play a number of hardcoded sound events. For custom sounds, use <a href="#Named_Sound_Effect">Named Sound Effect</a> (<a href="#Play">Play</a>, 0x19, clientbound).
+</p><p><span style="background:#FFF3BD; padding: 1px 5px 3px 5px; border: 1px solid #C4B674;">
+<a href="/File:Warning.png" class="image"><img alt="Warning.png" src="/images/c/cb/Warning.png" width="14" height="14" /></a> Numeric sound effect IDs are liable to change between versions
+</span>
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="7"> 0x46
+</td>
+<td rowspan="7"> Play
+</td>
+<td rowspan="7"> Client
+</td>
+<td> Sound ID
+</td>
+<td> VarInt
+</td>
+<td> ID of hardcoded sound event (<a rel="nofollow" class="external text" href="http://pokechu22.github.io/Burger/1.9.html#sounds">events</a> as of 1.9.0)
+</td></tr>
+<tr>
+<td> Sound Category
+</td>
+<td> VarInt Enum
+</td>
+<td> The category that this sound will be played from (<a rel="nofollow" class="external text" href="https://gist.github.com/konwboj/7c0c380d3923443e9d55">current categories</a>)
+</td></tr>
+<tr>
+<td> Effect Position X
+</td>
+<td> Int
+</td>
+<td> Effect X multiplied by 8 (<a href="/Data_types#Fixed-point_numbers" title="Data types">fixed-point number</a> with only 3 bits dedicated to the fractional part)
+</td></tr>
+<tr>
+<td> Effect Position Y
+</td>
+<td> Int
+</td>
+<td> Effect Y multiplied by 8 (<a href="/Data_types#Fixed-point_numbers" title="Data types">fixed-point number</a> with only 3 bits dedicated to the fractional part)
+</td></tr>
+<tr>
+<td> Effect Position Z
+</td>
+<td> Int
+</td>
+<td> Effect Z multiplied by 8 (<a href="/Data_types#Fixed-point_numbers" title="Data types">fixed-point number</a> with only 3 bits dedicated to the fractional part)
+</td></tr>
+<tr>
+<td> Volume
+</td>
+<td> Float
+</td>
+<td> 1.0 is 100%, capped between 0.0 and 1.0 by Notchian clients
+</td></tr>
+<tr>
+<td> Pitch
+</td>
+<td> <del style="background-color: #f4cccc;">Unsigned Byte</del>&#x20;<ins style="background-color: #d9ead3;">Float</ins>
+</td>
+<td> Float between 0.5 and 2.0 by Notchian clients
+</td></tr></table>
+<h3><span class="mw-headline" id="Serverbound_2">Serverbound</span></h3>
+<h4><span class="mw-headline" id="Resource_Pack_Status">Resource Pack Status</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> 0x16
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Server
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td> Hash
+</td>
+<td> String
+</td>
+<td> The hash sent in the <a href="#Resource_Pack_Send">Resource Pack Send</a> packet.
+</td></tr>
+<tr>
+<td> Result
+</td>
+<td> VarInt Enum
+</td>
+<td> 0: successfully loaded, 1: declined, 2: failed download, 3: accepted
+</td></tr></table>
+<h2><span class="mw-headline" id="Status">Status</span></h2>
+<h3><span class="mw-headline" id="Clientbound_3">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound_3">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Login">Login</span></h2>
+<h3><span class="mw-headline" id="Clientbound_4">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound_4">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20170807191831
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.491 seconds
+Real time usage: 0.507 seconds
+Preprocessor visited node count: 2106/1000000
+Preprocessor generated node count: 3772/1000000
+Post‐expand include size: 21929/2097152 bytes
+Template argument size: 1505/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  209.591      1 - -total
+ 64.61%  135.427     97 - Template:Change
+ 10.16%   21.289      4 - Template:PacketList
+  4.43%    9.285      1 - Template:Minecraft_Wiki
+  2.17%    4.548      1 - Template:Plainlink
+  1.95%    4.097      1 - Template:See_also
+  1.66%    3.479      1 - Template:Warning
+-->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://wiki.vg/index.php?title=Pre-release_protocol&amp;oldid=7950">http://wiki.vg/index.php?title=Pre-release_protocol&amp;oldid=7950</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Pre-release+protocol&amp;returntoquery=oldid%3D7950" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Pre-release+protocol&amp;returntoquery=oldid%3D7950" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/Pre-release_protocol"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk"><span><a href="/Talk:Pre-release_protocol"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/Pre-release_protocol" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Pre-release_protocol&amp;action=edit&amp;oldid=7950"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Pre-release_protocol&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search wiki.vg" title="Search wiki.vg [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Pre-release_protocol" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Pre-release_protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Pre-release_protocol&amp;oldid=7950&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Pre-release_protocol&amp;oldid=7950" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Pre-release_protocol&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share Alike</a> unless otherwise noted.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/wikivg:Privacy_policy" title="wikivg:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wikivg:About" title="wikivg:About">About wiki.vg</a></li>
+											<li id="footer-places-disclaimer"><a href="/wikivg:General_disclaimer" title="wikivg:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons Attribution Share Alike" width="88" height="31"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"]);});</script><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-11145163-13");
+pageTracker._trackPageview();
+</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":679});});</script>
+	</body>
+</html>
