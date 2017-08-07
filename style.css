@@ -3,47 +3,82 @@ body {
     font-size: small;
 }
 
+.packet-id-matrix-container {
+    display: inline-block;
+}
+
 .packet-id-matrix {
     border-collapse: collapse;
     white-space: nowrap;
-    table-layout: fixed;
-    width: 100%;
     text-align: center;
     color: black;
-    background-color: white;
-}
-
-.packet-id-matrix col:first-child {
-    width: 45ex;
-}
-
-.packet-id-matrix col:not(:first-child) {
-    width: 13ex;
-}
-
-.packet-id-matrix tr > *:first-child {
-    text-align: left;
+    table-layout: fixed;
 }
 
 .packet-id-matrix tr > * {
     border: 1px solid black;
     overflow: hidden;
+    background-color: white;
 }
 
-.packet-id-matrix tr:first-child > th:first-child {
-    border: none;
+.packet-id-matrix.top-header {
+    margin-bottom: -1px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.packet-id-matrix.left-header {
+    text-align: left;
+    width: 45ex;
+    position: sticky;
+    left: 0px;
+    z-index: 1;
+}
+
+.packet-id-matrix.left-header td {
+    padding-left: 2px;
+}
+
+.packet-id-matrix.contents {
+    position: absolute;
+}
+
+.packet-id-matrix.top-header col:not(:first-child),
+.packet-id-matrix.contents col:not(:first-child) {
+    width: 13ex;
+}
+
+.packet-id-matrix.top-header col:first-child,
+.packet-id-matrix.contents col:first-child {
+    width: 45ex;
+}
+
+.packet-id-matrix.top-header th:first-child,
+.packet-id-matrix.contents th:first-child {
+    border-top-color: white;
+    border-left: none;
+}
+
+.packet-id-matrix.top-header, .packet-id-matrix.contents {
+    width: 100%;
 }
 
 .packet-id-changed {
     font-weight: bold;
 }
 
+.packet-format-changed {
+    background-color: #FF8 !important;
+}
+
 .packet-base {
-    background-color: #BCF;
+    background-color: #EEF !important;
 }
 
 .packet-added {
-    background-color: #AFA;
+    background-color: #AFA !important;
+    font-weight: bold;
 }
 
 .packet-removed::before {
@@ -52,9 +87,5 @@ body {
 }
 
 .packet-removed {
-    background-color: #FAA;
-}
-
-.packet-format-changed {
-    background-color: #FF8;
+    background-color: #FAA !important;
 }

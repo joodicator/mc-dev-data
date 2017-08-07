@@ -1,0 +1,2608 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Pre-release protocol - wiki.vg</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pre-release_protocol","wgTitle":"Pre-release protocol","wgCurRevisionId":13288,"wgRevisionId":8177,"wgArticleId":123,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Minecraft Modern"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Pre-release_protocol","wgRelevantArticleId":123,"wgRequestId":"2cd9931d9671f6f96aa4d651","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.page.gallery.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@0fqh6g4",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.page.gallery.styles%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="wiki.vg (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.vg/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="wiki.vg Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Pre-release_protocol rootpage-Pre-release_protocol skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Pre-release protocol</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From wiki.vg</div>
+								<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 22:14, 4 October 2016 by <a href="/User:Momothereal" class="mw-userlink" title="User:Momothereal"><bdi>Momothereal</bdi></a> <span class="mw-usertoollinks">(<a href="/index.php?title=User_talk:Momothereal&amp;action=edit&amp;redlink=1" class="new" title="User talk:Momothereal (page does not exist)">talk</a> | <a href="/Special:Contributions/Momothereal" title="Special:Contributions/Momothereal">contribs</a>)</span> <span class="comment">(Entity IDs 48 and 49 were removed)</span></div><div id="mw-revision-nav">(<a href="/index.php?title=Pre-release_protocol&amp;diff=prev&amp;oldid=8177" title="Pre-release protocol">diff</a>) <a href="/index.php?title=Pre-release_protocol&amp;direction=prev&amp;oldid=8177" title="Pre-release protocol">← Older revision</a> | <a href="/Pre-release_protocol" title="Pre-release protocol">Latest revision</a> (<a href="/index.php?title=Pre-release_protocol&amp;diff=cur&amp;oldid=8177" title="Pre-release protocol">diff</a>) | <a href="/index.php?title=Pre-release_protocol&amp;direction=next&amp;oldid=8177" title="Pre-release protocol">Newer revision →</a> (<a href="/index.php?title=Pre-release_protocol&amp;diff=next&amp;oldid=8177" title="Pre-release protocol">diff</a>)</div></div></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page documents the changes from the <a href="/Protocol" title="Protocol">last stable Minecraft release</a> (currently <a href="/Protocol_version_numbers" title="Protocol version numbers">1.10.2, protocol 210</a>) to the current pre-release (currently <a href="/Protocol_version_numbers" title="Protocol version numbers">16w39c, protocol 309</a>). Note that this page contains bleeding-edge information that may not be completely or correctly documented.
+</p><p>One who wishes to commandeer the merging of this into <a href="/Protocol" title="Protocol">Protocol</a> when an update is made must be sure to respect any changes that may have occurred to the respective packets there.
+</p>
+<h2><span class="mw-headline" id="Contents">Contents</span></h2>
+<div style="float:right;"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Contents"><span class="tocnumber">1</span> <span class="toctext">Contents</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Data_types"><span class="tocnumber">1.1</span> <span class="toctext">Data types</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Packets"><span class="tocnumber">1.2</span> <span class="toctext">Packets</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#New.2Fmodified_data_types"><span class="tocnumber">2</span> <span class="toctext">New/modified data types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Objects"><span class="tocnumber">2.1</span> <span class="toctext">Objects</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Mobs"><span class="tocnumber">2.2</span> <span class="toctext">Mobs</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Entity_Metadata"><span class="tocnumber">2.3</span> <span class="toctext">Entity Metadata</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#EvocationIllager"><span class="tocnumber">2.4</span> <span class="toctext">EvocationIllager</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Vex"><span class="tocnumber">2.5</span> <span class="toctext">Vex</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#VindicationIllager"><span class="tocnumber">2.6</span> <span class="toctext">VindicationIllager</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#EvocationFangs"><span class="tocnumber">2.7</span> <span class="toctext">EvocationFangs</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#AbstractSkeleton"><span class="tocnumber">2.8</span> <span class="toctext">AbstractSkeleton</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Skeleton"><span class="tocnumber">2.9</span> <span class="toctext">Skeleton</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Wither_Skeleton"><span class="tocnumber">2.10</span> <span class="toctext">Wither Skeleton</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Stray"><span class="tocnumber">2.11</span> <span class="toctext">Stray</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Zombie"><span class="tocnumber">2.12</span> <span class="toctext">Zombie</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Zombie_Villager"><span class="tocnumber">2.13</span> <span class="toctext">Zombie Villager</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Husk"><span class="tocnumber">2.14</span> <span class="toctext">Husk</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Guardian"><span class="tocnumber">2.15</span> <span class="toctext">Guardian</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#ElderGuardian"><span class="tocnumber">2.16</span> <span class="toctext">ElderGuardian</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#AbstractHorse"><span class="tocnumber">2.17</span> <span class="toctext">AbstractHorse</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Horse"><span class="tocnumber">2.18</span> <span class="toctext">Horse</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#ZombieHorse"><span class="tocnumber">2.19</span> <span class="toctext">ZombieHorse</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#SkeletonHorse"><span class="tocnumber">2.20</span> <span class="toctext">SkeletonHorse</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#ChestedHorse"><span class="tocnumber">2.21</span> <span class="toctext">ChestedHorse</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Donkey"><span class="tocnumber">2.22</span> <span class="toctext">Donkey</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Llama"><span class="tocnumber">2.23</span> <span class="toctext">Llama</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Mule"><span class="tocnumber">2.24</span> <span class="toctext">Mule</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Shulker"><span class="tocnumber">2.25</span> <span class="toctext">Shulker</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-30"><a href="#Inventory"><span class="tocnumber">3</span> <span class="toctext">Inventory</span></a>
+<ul>
+<li class="toclevel-2 tocsection-31"><a href="#Shulker_box"><span class="tocnumber">3.1</span> <span class="toctext">Shulker box</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#Llama_2"><span class="tocnumber">3.2</span> <span class="toctext">Llama</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-33"><a href="#Block_Actions"><span class="tocnumber">4</span> <span class="toctext">Block Actions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-34"><a href="#Shulker_Box_2"><span class="tocnumber">4.1</span> <span class="toctext">Shulker Box</span></a>
+<ul>
+<li class="toclevel-3 tocsection-35"><a href="#Byte_1"><span class="tocnumber">4.1.1</span> <span class="toctext">Byte 1</span></a></li>
+<li class="toclevel-3 tocsection-36"><a href="#Byte_2"><span class="tocnumber">4.1.2</span> <span class="toctext">Byte 2</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-37"><a href="#Handshaking"><span class="tocnumber">5</span> <span class="toctext">Handshaking</span></a>
+<ul>
+<li class="toclevel-2 tocsection-38"><a href="#Clientbound"><span class="tocnumber">5.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#Serverbound"><span class="tocnumber">5.2</span> <span class="toctext">Serverbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-40"><a href="#Handshake"><span class="tocnumber">5.2.1</span> <span class="toctext">Handshake</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-41"><a href="#Play"><span class="tocnumber">6</span> <span class="toctext">Play</span></a>
+<ul>
+<li class="toclevel-2 tocsection-42"><a href="#Clientbound_2"><span class="tocnumber">6.1</span> <span class="toctext">Clientbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-43"><a href="#Spawn_Mob"><span class="tocnumber">6.1.1</span> <span class="toctext">Spawn Mob</span></a></li>
+<li class="toclevel-3 tocsection-44"><a href="#Update_Block_Entity"><span class="tocnumber">6.1.2</span> <span class="toctext">Update Block Entity</span></a></li>
+<li class="toclevel-3 tocsection-45"><a href="#Tab-Complete_.28clientbound.29"><span class="tocnumber">6.1.3</span> <span class="toctext">Tab-Complete (clientbound)</span></a></li>
+<li class="toclevel-3 tocsection-46"><a href="#Entity_Status"><span class="tocnumber">6.1.4</span> <span class="toctext">Entity Status</span></a></li>
+<li class="toclevel-3 tocsection-47"><a href="#Map"><span class="tocnumber">6.1.5</span> <span class="toctext">Map</span></a></li>
+<li class="toclevel-3 tocsection-48"><a href="#Collect_Item"><span class="tocnumber">6.1.6</span> <span class="toctext">Collect Item</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-49"><a href="#Serverbound_2"><span class="tocnumber">6.2</span> <span class="toctext">Serverbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-50"><a href="#Chat_Message_.28serverbound.29"><span class="tocnumber">6.2.1</span> <span class="toctext">Chat Message (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-51"><a href="#Player_Block_Placement"><span class="tocnumber">6.2.2</span> <span class="toctext">Player Block Placement</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-52"><a href="#Status"><span class="tocnumber">7</span> <span class="toctext">Status</span></a>
+<ul>
+<li class="toclevel-2 tocsection-53"><a href="#Clientbound_3"><span class="tocnumber">7.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-54"><a href="#Serverbound_3"><span class="tocnumber">7.2</span> <span class="toctext">Serverbound</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-55"><a href="#Login"><span class="tocnumber">8</span> <span class="toctext">Login</span></a>
+<ul>
+<li class="toclevel-2 tocsection-56"><a href="#Clientbound_4"><span class="tocnumber">8.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-57"><a href="#Serverbound_4"><span class="tocnumber">8.2</span> <span class="toctext">Serverbound</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<h3><span class="mw-headline" id="Data_types">Data types</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Packets">Packets</span></h3>
+<p>No changes so far.
+</p>
+<table class="wikitable">
+<tr>
+<th> ID
+</th>
+<th> Packet name
+</th>
+<th colspan="2"> Documentation
+</th></tr>
+<tr>
+<th colspan="4"> Handshaking serverbound
+</th></tr>
+<tr>
+<td> 0x00 </td>
+<td> Handshake </td>
+<td> <a href="/Protocol#Handshake" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Handshake" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<th colspan="4"> Play clientbound
+</th></tr>
+<tr>
+<td> 0x03 </td>
+<td> Spawn Mob </td>
+<td> <a href="/Protocol#Spawn_Mob" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Spawn_Mob" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> 0x09 </td>
+<td> Update Block Entity </td>
+<td> <a href="/Protocol#Update_Block_Entity" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Update_Block_Entity" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> 0x0E </td>
+<td> Tab-Complete (clientbound) </td>
+<td> <a href="/Protocol#Tab-Complete_.28clientbound.29" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Tab-Complete_.28clientbound.29" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> 0x1B </td>
+<td> Entity Status </td>
+<td> <a href="/Protocol#Entity_Status" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Entity_Status" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> 0x24 </td>
+<td> Map </td>
+<td> <a href="/Protocol#Map" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Map" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> 0x48 </td>
+<td> Collect Item </td>
+<td> <a href="/Protocol#Collect_Item" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Collect_Item" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<th colspan="4"> Play serverbound
+</th></tr>
+<tr>
+<td> 0x02 </td>
+<td> Chat Message (serverbound) </td>
+<td> <a href="/Protocol#Chat_Message_.28serverbound.29" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Chat_Message_.28serverbound.29" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> 0x1C </td>
+<td> Player Block Placement </td>
+<td> <a href="/Protocol#Player_Block_Placement" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Player_Block_Placement" title="Pre-release protocol">Pre</a>
+</td></tr>
+</table>
+<h2><span class="mw-headline" id="New.2Fmodified_data_types">New/modified data types</span></h2>
+<h3><span class="mw-headline" id="Objects">Objects</span></h3>
+<p>Objects are spawned via <a href="/Protocol#Spawn_Object" title="Protocol">Spawn Object</a>. See <a href="/Object_Data" title="Object Data">Object Data</a> for more details.
+</p>
+<table class="wikitable">
+
+<tr>
+<th> ID
+</th>
+<th> Name
+</th>
+<th> x, z
+</th>
+<th> y
+</th></tr>
+<tr>
+<td> 1
+</td>
+<td> Boat
+</td>
+<td> 1.5
+</td>
+<td> 0.6
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Item Stack (<a href="/Slot" class="mw-redirect" title="Slot">Slot</a>)
+</td>
+<td> 0.25
+</td>
+<td> 0.25
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> Area Effect Cloud
+</td>
+<td>&#160;?
+</td>
+<td>&#160;?
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> Minecart
+</td>
+<td> 0.98
+</td>
+<td> 0.7
+</td></tr>
+<tr>
+<td> 50
+</td>
+<td> Activated TNT
+</td>
+<td> 0.98
+</td>
+<td> 0.98
+</td></tr>
+<tr>
+<td> 51
+</td>
+<td> EnderCrystal
+</td>
+<td> 2.0
+</td>
+<td> 2.0
+</td></tr>
+<tr>
+<td> 60
+</td>
+<td> Tipped arrow (projectile; also used for regular arrows)
+</td>
+<td> 0.5
+</td>
+<td> 0.5
+</td></tr>
+<tr>
+<td> 61
+</td>
+<td> Snowball (projectile)
+</td>
+<td> 0.25
+</td>
+<td> 0.25
+</td></tr>
+<tr>
+<td> 62
+</td>
+<td> Egg (projectile)
+</td>
+<td> 0.25
+</td>
+<td> 0.25
+</td></tr>
+<tr>
+<td> 63
+</td>
+<td> FireBall (ghast projectile)
+</td>
+<td> 1.0
+</td>
+<td> 1.0
+</td></tr>
+<tr>
+<td> 64
+</td>
+<td> FireCharge (blaze projectile)
+</td>
+<td> 0.3125
+</td>
+<td> 0.3125
+</td></tr>
+<tr>
+<td> 65
+</td>
+<td> Thrown Enderpearl
+</td>
+<td> 0.25
+</td>
+<td> 0.25
+</td></tr>
+<tr>
+<td> 66
+</td>
+<td> Wither Skull (projectile)
+</td>
+<td> 0.3125
+</td>
+<td> 0.3125
+</td></tr>
+<tr>
+<td> 67
+</td>
+<td> Shulker Bullet
+</td>
+<td> 0.3125
+</td>
+<td> 0.3125
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;">68
+</td>
+<td style="background-color: #d9ead3;">Llama spit
+</td>
+<td style="background-color: #d9ead3;">0.25
+</td>
+<td style="background-color: #d9ead3;">0.25
+</td></tr>
+<tr>
+<td> 70
+</td>
+<td> Falling Objects
+</td>
+<td> 0.98
+</td>
+<td> 0.98
+</td></tr>
+<tr>
+<td> 71
+</td>
+<td> Item frames
+</td>
+<td> varies
+</td>
+<td> varies
+</td></tr>
+<tr>
+<td> 72
+</td>
+<td> Eye of Ender
+</td>
+<td> 0.25
+</td>
+<td> 0.25
+</td></tr>
+<tr>
+<td> 73
+</td>
+<td> Thrown Potion
+</td>
+<td> 0.25
+</td>
+<td> 0.25
+</td></tr>
+<tr>
+<td> 75
+</td>
+<td> Thrown Exp Bottle
+</td>
+<td> 0.25
+</td>
+<td> 0.25
+</td></tr>
+<tr>
+<td> 76
+</td>
+<td> Firework Rocket
+</td>
+<td> 0.25
+</td>
+<td> 0.25
+</td></tr>
+<tr>
+<td> 77
+</td>
+<td> Leash Knot
+</td>
+<td> 0.5
+</td>
+<td> 0.5
+</td></tr>
+<tr>
+<td> 78
+</td>
+<td> ArmorStand
+</td>
+<td> 0.5
+</td>
+<td> 2.0
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;">79
+</td>
+<td style="background-color: #d9ead3;">Evocation Fangs
+</td>
+<td style="background-color: #d9ead3;">0.8
+</td>
+<td style="background-color: #d9ead3;">0.5
+</td></tr>
+<tr>
+<td> 90
+</td>
+<td> Fishing Float
+</td>
+<td> 0.25
+</td>
+<td> 0.25
+</td></tr>
+<tr>
+<td> 91
+</td>
+<td> Spectral Arrow
+</td>
+<td> 0.5
+</td>
+<td> 0.5
+</td></tr>
+<tr>
+<td> 93
+</td>
+<td> Dragon Fireball
+</td>
+<td> 0.3125
+</td>
+<td> 0.3125
+</td></tr></table>
+<p>Since release <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/1.6">1.6</a></span>, all minecarts are spawned with object type 10 and their functionality is then specified in the <a href="/Object_Data#Minecarts_.28id_10.29" title="Object Data">Data field</a> within the packet. Also, their visual appearance may be sent via the <a href="/Protocol#Entity_Metadata" title="Protocol">Entity Metadata</a> packet.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Mobs">Mobs</span></h3>
+<p>Mobs are spawned via <a href="/Protocol#Spawn_Mob" title="Protocol">Spawn Mob</a>. There are two extra mob types in the code that refer to mobs classes that can never spawn: Mob and Monster (they are always subclasses, aka another more specific type).
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Type
+</th>
+<th> Name
+</th>
+<th> x, z
+</th>
+<th> y
+</th>
+<th> ID
+</th></tr>
+<tr style="background-color: #d9ead3;">
+<td> 4
+</td>
+<td> ElderGuardian
+</td>
+<td> 0.85
+</td>
+<td> 0.85
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:elder_guardian</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 5
+</td>
+<td> WitherSkeleton
+</td>
+<td> 0.7
+</td>
+<td> 2.4
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:wither_skeleton</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 6
+</td>
+<td> Stray
+</td>
+<td> 0.6
+</td>
+<td> 1.99
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:stray</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 23
+</td>
+<td> Husk
+</td>
+<td> 0.6
+</td>
+<td> 1.95
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:husk</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 27
+</td>
+<td> ZombieVillager
+</td>
+<td> 0.6
+</td>
+<td> 1.95
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:zombie_villager</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 28
+</td>
+<td> SkeletonHorse
+</td>
+<td> 1.396484
+</td>
+<td> 1.6
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:skeleton_horse</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 29
+</td>
+<td> ZombieHorse
+</td>
+<td> 1.396484
+</td>
+<td> 1.6
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:zombie_horse</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 31
+</td>
+<td> Donkey
+</td>
+<td> 1.396484
+</td>
+<td> 1.6
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:donkey</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 32
+</td>
+<td> Mule
+</td>
+<td> 1.396484
+</td>
+<td> 1.6
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:mule</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 33
+</td>
+<td> EvocationFangs
+</td>
+<td> 0.5
+</td>
+<td> 0.8
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:evocation_fangs</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 34
+</td>
+<td> EvocationIllager
+</td>
+<td> 0.6
+</td>
+<td> 1.95
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:evocation_illager</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 35
+</td>
+<td> Vex
+</td>
+<td> 0.4
+</td>
+<td> 0.8
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:vex</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 36
+</td>
+<td> VindicationIllager
+</td>
+<td> 0.6
+</td>
+<td> 1.95
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:vindication_illager</code>
+</td></tr>
+<tr style="background-color: #f4cccc;">
+<td> 48
+</td>
+<td> Mob
+</td>
+<td> N/A
+</td>
+<td> N/A
+</td>
+<td> N/A
+</td></tr>
+<tr style="background-color: #f4cccc;">
+<td> 49
+</td>
+<td> Monster
+</td>
+<td> N/A
+</td>
+<td> N/A
+</td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 50
+</td>
+<td> Creeper
+</td>
+<td> 0.6
+</td>
+<td> 1.7
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:creeper</code>
+</td></tr>
+<tr>
+<td> 51
+</td>
+<td> Skeleton
+</td>
+<td> 0.6
+</td>
+<td> 1.99
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:skeleton</code>
+</td></tr>
+<tr>
+<td> 52
+</td>
+<td> Spider
+</td>
+<td> 1.4
+</td>
+<td> 0.9
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:spider</code>
+</td></tr>
+<tr>
+<td> 53
+</td>
+<td> <del style="background-color: #f4cccc;">Giant Zombie</del>&#x20;<ins style="background-color: #d9ead3;">Giant</ins>
+</td>
+<td> 0.6 * 6
+</td>
+<td> 1.8 * 6
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:giant</code>
+</td></tr>
+<tr>
+<td> 54
+</td>
+<td> Zombie
+</td>
+<td> 0.6
+</td>
+<td> 1.8
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:zombie</code>
+</td></tr>
+<tr>
+<td> 55
+</td>
+<td> Slime
+</td>
+<td> 0.51000005 * size
+</td>
+<td> 0.51000005 * size
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:slime</code>
+</td></tr>
+<tr>
+<td> 56
+</td>
+<td> Ghast
+</td>
+<td> 4
+</td>
+<td> 4
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:ghast</code>
+</td></tr>
+<tr>
+<td> 57
+</td>
+<td> <del style="background-color: #f4cccc;">Zombie Pigman</del>&#x20;<ins style="background-color: #d9ead3;">PigZombie</ins>
+</td>
+<td> 0.6
+</td>
+<td> 1.8
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:zombie_pigman</code>
+</td></tr>
+<tr>
+<td> 58
+</td>
+<td> Enderman
+</td>
+<td> 0.6
+</td>
+<td> 2.9
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:enderman</code>
+</td></tr>
+<tr>
+<td> 59
+</td>
+<td> <del style="background-color: #f4cccc;">Cave Spider</del>&#x20;<ins style="background-color: #d9ead3;">CaveSpider</ins>
+</td>
+<td> 0.7
+</td>
+<td> 0.5
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:cave_spider</code>
+</td></tr>
+<tr>
+<td> 60
+</td>
+<td> Silverfish
+</td>
+<td> 0.4
+</td>
+<td> 0.3
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:silverfish</code>
+</td></tr>
+<tr>
+<td> 61
+</td>
+<td> Blaze
+</td>
+<td> 0.6
+</td>
+<td> 1.8
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:blaze</code>
+</td></tr>
+<tr>
+<td> 62
+</td>
+<td> <del style="background-color: #f4cccc;">Magma Cube</del>&#x20;<ins style="background-color: #d9ead3;">LavaSlime</ins>
+</td>
+<td> 0.51000005 * size
+</td>
+<td> 0.51000005 * size
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:magma_cube</code>
+</td></tr>
+<tr>
+<td> 63
+</td>
+<td> <del style="background-color: #f4cccc;">Ender Dragon</del>&#x20;<ins style="background-color: #d9ead3;">EnderDragon</ins>
+</td>
+<td> 16.0
+</td>
+<td> 8.0
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:ender_dragon</code>
+</td></tr>
+<tr>
+<td> 64
+</td>
+<td> <del style="background-color: #f4cccc;">Wither</del>&#x20;<ins style="background-color: #d9ead3;">WitherBoss</ins>
+</td>
+<td> 0.9
+</td>
+<td> 3.5
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:wither</code>
+</td></tr>
+<tr>
+<td> 65
+</td>
+<td> Bat
+</td>
+<td> 0.5
+</td>
+<td> 0.9
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:bat</code>
+</td></tr>
+<tr>
+<td> 66
+</td>
+<td> Witch
+</td>
+<td> 0.6
+</td>
+<td> 1.8
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:witch</code>
+</td></tr>
+<tr>
+<td> 67
+</td>
+<td> Endermite
+</td>
+<td> 0.4
+</td>
+<td> 0.3
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:endermite</code>
+</td></tr>
+<tr>
+<td> 68
+</td>
+<td> Guardian
+</td>
+<td> 0.85
+</td>
+<td> 0.85
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:guardian</code>
+</td></tr>
+<tr>
+<td> 69
+</td>
+<td> Shulker
+</td>
+<td> 1
+</td>
+<td> 1
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:shulker</code>
+</td></tr>
+<tr>
+<td> 90
+</td>
+<td> Pig
+</td>
+<td> 0.9
+</td>
+<td> 0.9
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:pig</code>
+</td></tr>
+<tr>
+<td> 91
+</td>
+<td> Sheep
+</td>
+<td> 0.9
+</td>
+<td> 1.3
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:sheep</code>
+</td></tr>
+<tr>
+<td> 92
+</td>
+<td> Cow
+</td>
+<td> 0.9
+</td>
+<td> 1.4
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:cow</code>
+</td></tr>
+<tr>
+<td> 93
+</td>
+<td> Chicken
+</td>
+<td> 0.4
+</td>
+<td> 0.7
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:chicken</code>
+</td></tr>
+<tr>
+<td> 94
+</td>
+<td> Squid
+</td>
+<td> 0.8
+</td>
+<td> 0.8
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:squid</code>
+</td></tr>
+<tr>
+<td> 95
+</td>
+<td> Wolf
+</td>
+<td> 0.6
+</td>
+<td> 0.85
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:wolf</code>
+</td></tr>
+<tr>
+<td> 96
+</td>
+<td> <del style="background-color: #f4cccc;">Mooshroom</del>&#x20;<ins style="background-color: #d9ead3;">MushroomCow</ins>
+</td>
+<td> 0.9
+</td>
+<td> 1.3
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:mooshroom</code>
+</td></tr>
+<tr>
+<td> 97
+</td>
+<td> <del style="background-color: #f4cccc;">Snowman</del>&#x20;<ins style="background-color: #d9ead3;">SnowMan</ins>
+</td>
+<td> 0.7
+</td>
+<td> 1.9
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:snowman</code>
+</td></tr>
+<tr>
+<td> 98
+</td>
+<td> <del style="background-color: #f4cccc;">Ocelot</del>&#x20;<ins style="background-color: #d9ead3;">Ozelot</ins>
+</td>
+<td> 0.6
+</td>
+<td> 0.8
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:ocelot</code>
+</td></tr>
+<tr>
+<td> 99
+</td>
+<td> <del style="background-color: #f4cccc;">Iron Golem</del>&#x20;<ins style="background-color: #d9ead3;">VillagerGolem</ins>
+</td>
+<td> 1.4
+</td>
+<td> 2.7
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:villager_golem</code>
+</td></tr>
+<tr>
+<td> 100
+</td>
+<td> <del style="background-color: #f4cccc;">EntityHorse</del>&#x20;<ins style="background-color: #d9ead3;">Horse</ins>
+</td>
+<td> 1.396484
+</td>
+<td> 1.6
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:horse</code>
+</td></tr>
+<tr>
+<td> 101
+</td>
+<td> Rabbit
+</td>
+<td> 0.4
+</td>
+<td> 0.5
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:rabbit</code>
+</td></tr>
+<tr>
+<td> 102
+</td>
+<td> <del style="background-color: #f4cccc;">Polar Bear</del>&#x20;<ins style="background-color: #d9ead3;">PolarBear</ins>
+</td>
+<td> 1.3
+</td>
+<td> 1.4
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:polar_bear</code>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 103
+</td>
+<td> Llama
+</td>
+<td> 1.3964844
+</td>
+<td> 1.87
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:llama</code>
+</td></tr>
+
+<tr>
+<td> 120
+</td>
+<td> Villager
+</td>
+<td> 0.6
+</td>
+<td> 1.95
+</td>
+<td style="background-color: #d9ead3; text-align: center;"> <code>minecraft:villager</code>
+</td></tr></table>
+<h3><span class="mw-headline" id="Entity_Metadata">Entity Metadata</span></h3>
+<h3><span class="mw-headline" id="EvocationIllager">EvocationIllager</span></h3>
+<p>Extends <a href="#Monster">Monster</a>.
+</p>
+<table class="wikitable" style="background-color: #d9ead3;">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td> 12
+</td>
+<td> Byte
+</td>
+<td> Unknown (Probably hands up animation)
+</td></tr></table>
+<h3><span class="mw-headline" id="Vex">Vex</span></h3>
+<p>Extends <a href="#Monster">Monster</a>.
+</p>
+<table class="wikitable" style="background-color: #d9ead3;">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td rowspan="3"> 12
+</td>
+<td rowspan="3"> Byte
+</td>
+<th> Bit mask
+</th>
+<th> Meaning
+</th></tr>
+<tr style="background-color: #d9ead3;">
+<td> 0x01
+</td>
+<td> Is in attack mode
+</td></tr></table>
+<h3><span class="mw-headline" id="VindicationIllager">VindicationIllager</span></h3>
+<p>Extends <a href="#Monster">Monster</a>.
+</p>
+<table class="wikitable" style="background-color: #d9ead3;">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td rowspan="3"> 12
+</td>
+<td rowspan="3"> Byte
+</td>
+<th> Bit mask
+</th>
+<th> Meaning
+</th></tr>
+<tr style="background-color: #d9ead3;">
+<td> 0x01
+</td>
+<td> Has target (aggressive state)
+</td></tr></table>
+<h3><span class="mw-headline" id="EvocationFangs">EvocationFangs</span></h3>
+<p>Extends <a href="#Entity">Entity</a>.
+</p>
+<h3><span class="mw-headline" id="AbstractSkeleton">AbstractSkeleton</span></h3>
+<p>Extends <a href="#Monster">Monster</a>.
+</p>
+<table class="wikitable" style="background-color: #d9ead3;">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td> 12
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is swinging arms
+</td></tr></table>
+<h3><span class="mw-headline" id="Skeleton">Skeleton</span></h3>
+<p>Extends <a href="#AbstractSkeleton">AbstractSkeleton</a>.
+</p>
+<table class="wikitable" style="background-color: #f4cccc;">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td> 12
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Type (Normal = 0, Wither = 1, Stray = 2)
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is swinging arms (Used to animate arms for melee attacks; only used when the skeleton does not have a bow in its hand)
+</td></tr></table>
+<h3><span class="mw-headline" id="Wither_Skeleton">Wither Skeleton</span></h3>
+<p>Extends <a href="#AbstractSkeleton">AbstractSkeleton</a>.
+</p>
+<h3><span class="mw-headline" id="Stray">Stray</span></h3>
+<p>Extends <a href="#AbstractSkeleton">AbstractSkeleton</a>.
+</p>
+<h3><span class="mw-headline" id="Zombie">Zombie</span></h3>
+<p>Extends <a href="#Monster">Monster</a>.
+</p>
+<table class="wikitable">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td> 12
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is baby
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> <del style="background-color: #f4cccc;">Zombie type (0 for zombie, profession+1 for villagers, 6 for Husk)</del>&#x20;<ins style="background-color: #d9ead3;">Unused</ins>
+</td></tr>
+<tr style="background-color: #f4cccc;">
+<td> 14
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is converting
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc;">15</del>&#x20;<ins style="background-color: #d9ead3;">14</ins>
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Are hands held up
+</td></tr></table>
+<h3><span class="mw-headline" id="Zombie_Villager">Zombie Villager</span></h3>
+<p>Extends <a href="#Zombie">Zombie</a>.
+</p>
+<table class="wikitable">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr style="background-color: #d9ead3;">
+<td> 15
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is converting
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 16
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Profession
+</td></tr></table>
+<h3><span class="mw-headline" id="Husk">Husk</span></h3>
+<p>Extends <a href="#Zombie">Zombie</a>.
+</p>
+<h3><span class="mw-headline" id="Guardian">Guardian</span></h3>
+<p>Extends <a href="#Monster">Monster</a>.
+</p>
+<table class="wikitable">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr style="background-color: #f4cccc;">
+<td rowspan="3"> 12
+</td>
+<td rowspan="3"> Byte
+</td>
+<th> Bit mask
+</th>
+<th> Meaning
+</th></tr>
+<tr style="background-color: #f4cccc;">
+<td> 0x02
+</td>
+<td> is retracting spikes
+</td></tr>
+<tr style="background-color: #f4cccc;">
+<td> 0x04
+</td>
+<td> is elderly
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 12
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Is retracting spikes
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Target EID
+</td></tr></table>
+<h3><span class="mw-headline" id="ElderGuardian">ElderGuardian</span></h3>
+<p>Extends <a href="#Guardian">Guardian</a>.
+</p>
+<h3><span class="mw-headline" id="AbstractHorse">AbstractHorse</span></h3>
+<p>Extends <a href="#Animal">Animal</a>.
+</p>
+<table class="wikitable" style="background-color: #d9ead3;">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td rowspan="9"> 13
+</td>
+<td rowspan="9"> Byte
+</td>
+<th> Bit mask
+</th>
+<th> Meaning
+</th></tr>
+<tr>
+<td> 0x01
+</td>
+<td> <i>Unused</i>
+</td></tr>
+<tr>
+<td> 0x02
+</td>
+<td> Is Tame
+</td></tr>
+<tr>
+<td> 0x04
+</td>
+<td> Is saddled
+</td></tr>
+<tr>
+<td> 0x08
+</td>
+<td> Has Chest
+</td></tr>
+<tr>
+<td> 0x10
+</td>
+<td> Is Bred (not used on the Notchian server; controlled via the unused Bred NBT flag)
+</td></tr>
+<tr>
+<td> 0x20
+</td>
+<td> Is eating
+</td></tr>
+<tr>
+<td> 0x40
+</td>
+<td> Is rearing (on hind legs)
+</td></tr>
+<tr>
+<td> 0x80
+</td>
+<td> Is mouth open
+</td></tr>
+<tr>
+<td> 14
+</td>
+<td> OptUUID
+</td>
+<td colspan="2"> Owner
+</td></tr></table>
+<h3><span class="mw-headline" id="Horse">Horse</span></h3>
+<p>Extends <a href="#AbstractHorse">AbstractHorse</a>.
+</p>
+<table class="wikitable" style="background-color: #d9ead3;">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td> 15
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Variant (Color &amp; Style)
+</td></tr>
+<tr>
+<td> 16
+</td>
+<td> VarInt
+</td>
+<td colspan="2"> Armor
+</td></tr></table>
+<h3><span class="mw-headline" id="ZombieHorse">ZombieHorse</span></h3>
+<p>Extends <a href="#AbstractHorse">AbstractHorse</a>.
+</p>
+<h3><span class="mw-headline" id="SkeletonHorse">SkeletonHorse</span></h3>
+<p>Extends <a href="#AbstractHorse">AbstractHorse</a>.
+</p>
+<h3><span class="mw-headline" id="ChestedHorse">ChestedHorse</span></h3>
+<p>Extends <a href="#AbstractHorse">AbstractHorse</a>.
+</p>
+<table class="wikitable" style="background-color: #d9ead3;">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td> 15
+</td>
+<td> Boolean
+</td>
+<td colspan="2"> Has Chest
+</td></tr></table>
+<h3><span class="mw-headline" id="Donkey">Donkey</span></h3>
+<p>Extends <a href="#ChestedHorse">ChestedHorse</a>.
+</p>
+<h3><span class="mw-headline" id="Llama">Llama</span></h3>
+<p>Extends <a href="#ChestedHorse">ChestedHorse</a>.
+</p>
+<table class="wikitable" style="background-color: #d9ead3;">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td> 16
+</td>
+<td> Integer
+</td>
+<td colspan="2"> Strength (number of columns of 3 slots in the llama's inventory once a chest is equipped)
+</td></tr>
+<tr>
+<td> 17
+</td>
+<td> Integer
+</td>
+<td colspan="2"> Carpet color (a dye color, or -1 if no carpet equipped)
+</td></tr>
+<tr>
+<td> 18
+</td>
+<td> Integer
+</td>
+<td colspan="2"> Variant (0: <code>llama_creamy.png</code>, 1: <code>llama_white.png</code>, 2: <code>llama_brown.png</code>, 3: <code>llama_gray.png</code>)
+</td></tr></table>
+<h3><span class="mw-headline" id="Mule">Mule</span></h3>
+<p>Extends <a href="#ChestedHorse">ChestedHorse</a>.
+</p>
+<h3><span class="mw-headline" id="Shulker">Shulker</span></h3>
+<p>Extends <a href="#Golem">Golem</a>.
+</p>
+<table class="wikitable">
+<tr>
+<th> Index
+</th>
+<th> Type
+</th>
+<th style="width: 250px;" colspan="2"> Meaning
+</th></tr>
+<tr>
+<td> 12
+</td>
+<td> Direction
+</td>
+<td colspan="2"> Facing direction
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> OptPosition
+</td>
+<td colspan="2"> Attachment position
+</td></tr>
+<tr>
+<td> 14
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Shield height
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 15
+</td>
+<td> Byte
+</td>
+<td colspan="2"> Color (dye color, default of purple)
+</td></tr></table>
+<h2><span class="mw-headline" id="Inventory">Inventory</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Window Type
+</th>
+<th> Description
+</th></tr>
+<tr>
+<td> minecraft:chest
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Chest">Chest</a></span>, large chest, or <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Minecart_with_chest">minecart with chest</a></span>
+</td></tr>
+<tr>
+<td> minecraft:crafting_table
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Crafting_table">Crafting table</a></span>
+</td></tr>
+<tr>
+<td> minecraft:furnace
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Furnace">Furnace</a></span>
+</td></tr>
+<tr>
+<td> minecraft:dispenser
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Dispenser">Dispenser</a></span>
+</td></tr>
+<tr>
+<td> minecraft:enchanting_table
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Enchantment_table">Enchantment table</a></span>
+</td></tr>
+<tr>
+<td> minecraft:brewing_stand
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Brewing_stand">Brewing stand</a></span>
+</td></tr>
+<tr>
+<td> minecraft:villager
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Villager">Villager</a></span>
+</td></tr>
+<tr>
+<td> minecraft:beacon
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Beacon">Beacon</a></span>
+</td></tr>
+<tr>
+<td> minecraft:anvil
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Anvil">Anvil</a></span>
+</td></tr>
+<tr>
+<td> minecraft:hopper
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Hopper">Hopper</a></span> or <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Minecart_with_hopper">minecart with hopper</a></span>
+</td></tr>
+<tr>
+<td> minecraft:dropper
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Dropper">Dropper</a></span>
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;"> minecraft:shulker_box
+</td>
+<td style="background-color: #d9ead3;"> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Shulker_box">Shulker box</a></span>
+</td></tr>
+<tr>
+<td> EntityHorse
+</td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Horse">Horse, donkey, or mule</a></span>, <ins style="background-color: #d9ead3;">or <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Llama">Llama</a></span></ins>
+</td></tr></table>
+<h3><span class="mw-headline" id="Shulker_box">Shulker box</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/File:Shulker-box-slots.png" class="image"><img alt="" src="/images/1/1b/Shulker-box-slots.png" width="300" height="285" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/File:Shulker-box-slots.png" class="internal" title="Enlarge"></a></div>Shulker box slots</div></div></div>
+<p>This is the window that is opened when the player right-clicks on a shulker box chest.
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Slot range
+</th>
+<th> Description
+</th></tr>
+<tr>
+<td> 0–26
+</td>
+<td> box slots
+</td></tr>
+<tr>
+<td> 27–53
+</td>
+<td> main inventory
+</td></tr>
+<tr>
+<td> 54–62
+</td>
+<td> hotbar
+</td></tr></table>
+<div style="clear:both"></div>
+<h3><span class="mw-headline" id="Llama_2">Llama</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/File:Llama-strength5-slots.png" class="image"><img alt="" src="/images/4/4b/Llama-strength5-slots.png" width="300" height="283" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/File:Llama-strength5-slots.png" class="internal" title="Enlarge"></a></div>Llama slots</div></div></div>
+<p>The inventory that appears when a tamed llama is right-clicked and has a chest, or when the player's inventory is opened while riding a tamed llama.  Depending on the value of the strength field, the number of chest rows may vary (max is 5, so 15 slots).
+</p><p><span style="background:#FFF3BD; padding: 1px 5px 3px 5px; border: 1px solid #C4B674;">
+<a href="/File:Warning.png" class="image"><img alt="Warning.png" src="/images/c/cb/Warning.png" width="14" height="14" /></a> There still is a saddle slot, even though it cannot be used and is invisible.
+</span>
+</p><p><span style="background:#FFF3BD; padding: 1px 5px 3px 5px; border: 1px solid #C4B674;">
+<a href="/File:Warning.png" class="image"><img alt="Warning.png" src="/images/c/cb/Warning.png" width="14" height="14" /></a> Slot positions within the llama inventory vary - slot 2 may be at (1,0) or at (0,1) depending on the number of columns.
+</span>
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Slot range
+</th>
+<th> Description
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> saddle
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> carpet
+</td></tr>
+<tr>
+<td> 2-(2+3*Strength)
+</td>
+<td> llama inventory
+</td></tr>
+<tr>
+<td> (2+3*Strength)+1-(2+3*Strength)+27
+</td>
+<td> player inventory
+</td></tr>
+<tr>
+<td> (2+3*Strength)+28-(2+3*Strength)+35
+</td>
+<td> hotbar
+</td></tr></table>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="/File:Llama-unchested-slots.png" class="image"><img alt="" src="/images/1/1f/Llama-unchested-slots.png" width="120" height="113" /></a></div></div>
+			<div class="gallerytext">
+<p>Unchested llama
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="/File:Llama-strength1-slots.png" class="image"><img alt="" src="/images/6/6f/Llama-strength1-slots.png" width="120" height="113" /></a></div></div>
+			<div class="gallerytext">
+<p>Llama with strength 1
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="/File:Llama-strength2-slots.png" class="image"><img alt="" src="/images/3/34/Llama-strength2-slots.png" width="120" height="113" /></a></div></div>
+			<div class="gallerytext">
+<p>Llama with strength 2
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="/File:Llama-strength3-slots.png" class="image"><img alt="" src="/images/5/50/Llama-strength3-slots.png" width="120" height="113" /></a></div></div>
+			<div class="gallerytext">
+<p>Llama with strength 3
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="/File:Llama-strength4-slots.png" class="image"><img alt="" src="/images/5/5d/Llama-strength4-slots.png" width="120" height="113" /></a></div></div>
+			<div class="gallerytext">
+<p>Llama with strength 4
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="/File:Llama-strength5-slots.png" class="image"><img alt="" src="/images/4/4b/Llama-strength5-slots.png" width="120" height="113" /></a></div></div>
+			<div class="gallerytext">
+<p>Llama with strength 5
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id="Block_Actions">Block Actions</span></h2>
+<h3><span class="mw-headline" id="Shulker_Box_2">Shulker Box</span></h3>
+<p>Animates the shulker box's shell opening.
+</p>
+<h4><span class="mw-headline" id="Byte_1">Byte 1</span></h4>
+<p>Not used, always 1.
+</p>
+<h4><span class="mw-headline" id="Byte_2">Byte 2</span></h4>
+<p>Number of players who have the shulker box open.  If 0, the shulker box is closed; if 1 or more the shulker box is open.
+</p>
+<h2><span class="mw-headline" id="Handshaking">Handshaking</span></h2>
+<h3><span class="mw-headline" id="Clientbound">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound">Serverbound</span></h3>
+<h4><span class="mw-headline" id="Handshake">Handshake</span></h4>
+<p>This causes the server to switch into the target state.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="4"> 0x00
+</td>
+<td rowspan="4"> Handshaking
+</td>
+<td rowspan="4"> Server
+</td>
+<td> Protocol Version
+</td>
+<td> VarInt
+</td>
+<td> See <a href="/Protocol_version_numbers" title="Protocol version numbers">protocol version numbers</a> (currently <del style="background-color: #f4cccc;">210</del>&#x20;<ins style="background-color: #d9ead3;">309</ins>)
+</td></tr>
+<tr>
+<td> Server Address
+</td>
+<td> String
+</td>
+<td> Hostname or IP, e.g. localhost or 127.0.0.1, that was used to connect.  The Notchian server does not use this information.
+</td></tr>
+<tr>
+<td> Server Port
+</td>
+<td> Unsigned Short
+</td>
+<td> Default is 25565.  The Notchian server does not use this information.
+</td></tr>
+<tr>
+<td> Next State
+</td>
+<td> VarInt Enum
+</td>
+<td> 1 for <a href="#Status">status</a>, 2 for <a href="#Login">login</a>
+</td></tr></table>
+<h2><span class="mw-headline" id="Play">Play</span></h2>
+<h3><span class="mw-headline" id="Clientbound_2">Clientbound</span></h3>
+<h4><span class="mw-headline" id="Spawn_Mob">Spawn Mob</span></h4>
+<p>Sent by the server when a mob entity is spawned.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="13"> 0x03
+</td>
+<td rowspan="13"> Play
+</td>
+<td rowspan="13"> Client
+</td>
+<td> Entity ID
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Entity UUID
+</td>
+<td> UUID
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Type
+</td>
+<td> <del style="background-color: #f4cccc;">Unsigned Byte</del>&#x20;<ins style="background-color: #d9ead3;">VarInt</ins>
+</td>
+<td> The type of mob. See <a href="/Entities#Mobs" title="Entities">Entities#Mobs</a>
+</td></tr>
+<tr>
+<td> X
+</td>
+<td> Double
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Y
+</td>
+<td> Double
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Z
+</td>
+<td> Double
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Yaw
+</td>
+<td> Angle
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Pitch
+</td>
+<td> Angle
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Head Pitch
+</td>
+<td> Angle
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Velocity X
+</td>
+<td> Short
+</td>
+<td> Same units as <a href="#Entity_Velocity">Entity Velocity</a>
+</td></tr>
+<tr>
+<td> Velocity Y
+</td>
+<td> Short
+</td>
+<td> Same units as <a href="#Entity_Velocity">Entity Velocity</a>
+</td></tr>
+<tr>
+<td> Velocity Z
+</td>
+<td> Short
+</td>
+<td> Same units as <a href="#Entity_Velocity">Entity Velocity</a>
+</td></tr>
+<tr>
+<td> Metadata
+</td>
+<td> <a href="/Entities#Entity_Metadata_Format" title="Entities">Entity Metadata</a>
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Update_Block_Entity">Update Block Entity</span></h4>
+<p>Sets tile entity associated with the block at the given location.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> 0x09
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Client
+</td>
+<td> Location
+</td>
+<td> Position
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Action
+</td>
+<td> Unsigned Byte
+</td>
+<td> The type of update to perform, see below
+</td></tr>
+<tr>
+<td> NBT Data
+</td>
+<td> <a href="/NBT" title="NBT">NBT Tag</a>
+</td>
+<td> Data to set.  May be a TAG_END (0), in which case the block entity at the given location is removed (though this is not required since the client will remove the block entity automatically on chunk unload or block removal)
+</td></tr></table>
+<p><i>Action</i> field:
+</p>
+<ul><li> <b>1</b>: Set SpawnPotentials of a mob spawner</li>
+<li> <b>2</b>: Set command block text (command and last execution status)</li>
+<li> <b>3</b>: Set the level, primary, and secondary powers of a beacon</li>
+<li> <b>4</b>: Set rotation and skin of mob head</li>
+<li> <b>5</b>: Set type of flower in flower pot</li>
+<li> <b>6</b>: Set base color and patterns on a banner</li>
+<li> <b>7</b>: Set the data for a Structure tile entity</li>
+<li> <b>8</b>: Set the destination for a end gateway</li>
+<li> <b>9</b>: Set the text on a sign</li>
+<li> <ins style="background-color: #d9ead3;"><b>10</b>: Declare a shulker box (unclear if there is any actual data)</ins></li></ul>
+<h4><span class="mw-headline" id="Tab-Complete_.28clientbound.29">Tab-Complete (clientbound)</span></h4>
+<p>The server responds with a list of auto-completions of the last word sent to it. In the case of regular chat, this is a player username. Command names and parameters are also supported. <del style="background-color: #f4cccc;">The client lists these in the order that they are in the array.</del>&#x20;<ins style="background-color: #d9ead3;">The client sorts these alphabetically before listing them.</ins>
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="2"> 0x0E
+</td>
+<td rowspan="2"> Play
+</td>
+<td rowspan="2"> Client
+</td>
+<td> Count
+</td>
+<td> VarInt
+</td>
+<td> Number of elements in the following array
+</td></tr>
+<tr>
+<td> Matches
+</td>
+<td> Array of String
+</td>
+<td> One eligible command, note that each command is sent separately instead of in a single string, hence the need for Count
+</td></tr></table>
+<h4><span class="mw-headline" id="Entity_Status">Entity Status</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="2"> 0x1B
+</td>
+<td rowspan="2"> Play
+</td>
+<td rowspan="2"> Client
+</td>
+<td> Entity ID
+</td>
+<td> Int
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Entity Status
+</td>
+<td> Byte Enum
+</td>
+<td> See below
+</td></tr></table>
+<table class="wikitable">
+
+<tr>
+<th> Entity Status
+</th>
+<th> Meaning
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> Spawn tipped arrow particle effects
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Reset a mob spawner minecart's timer (unused by the client?)
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Create rabbit running particles
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Entity hurt animation
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> Entity died animation
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> Iron Golem throwing up arms
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> Wolf/Ocelot/Horse taming — Spawn “heart” particles
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> Wolf/Ocelot/Horse tamed — Spawn “smoke” particles
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> Wolf shaking water — Trigger the shaking animation
+</td></tr>
+<tr>
+<td> 9
+</td>
+<td> Mark item use as finished (ie, eating finished, drinking finished)
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> Sheep eating grass
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> Ignite TNT minecart
+</td></tr>
+<tr>
+<td> 11
+</td>
+<td> Iron Golem handing over a rose
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> Villager mating — Spawn “heart” particles
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> Spawn particles indicating that a villager is angry and seeking revenge
+</td></tr>
+<tr>
+<td> 14
+</td>
+<td> Spawn happy particles near a villager
+</td></tr>
+<tr>
+<td> 15
+</td>
+<td> Witch animation — Spawn “magic” particles
+</td></tr>
+<tr>
+<td> 16
+</td>
+<td> Play zombie converting into a villager sound
+</td></tr>
+<tr>
+<td> 17
+</td>
+<td> Firework exploding
+</td></tr>
+<tr>
+<td> 18
+</td>
+<td> Animal in love (ready to mate) — Spawn “heart” particles
+</td></tr>
+<tr>
+<td> 19
+</td>
+<td> Reset squid rotation
+</td></tr>
+<tr>
+<td> 20
+</td>
+<td> Spawn explosion particle — works for some living entities
+</td></tr>
+<tr>
+<td> 21
+</td>
+<td> Play guardian sound — works for every entity
+</td></tr>
+<tr>
+<td> 22
+</td>
+<td> Enables reduced <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Debug_screen">debug</a></span> for the given player
+</td></tr>
+<tr>
+<td> 23
+</td>
+<td> Disables reduced <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Debug_screen">debug</a></span> for the given player
+</td></tr>
+<tr>
+<td> 24–28
+</td>
+<td> Sets the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Server.properties%23op-permission-level">op permission level</a></span> 0–4 for the connected player
+</td></tr>
+<tr>
+<td> 29
+</td>
+<td> Shield block sound
+</td></tr>
+<tr>
+<td> 30
+</td>
+<td> Shield break sound
+</td></tr>
+<tr>
+<td> 31
+</td>
+<td> For a fishing rod bobber, if the hooked entity is this player, tug that player toward the caster of the rod
+</td></tr>
+<tr>
+<td> 32
+</td>
+<td> Armorstand hit sound
+</td></tr>
+<tr>
+<td> 33
+</td>
+<td> Entity hurt due to thorns (play thorns sound, perform normal hurt animation)
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;"> 35
+</td>
+<td style="background-color: #d9ead3;"> Plays the Totem of Undying animation
+</td></tr></table>
+<h4><span class="mw-headline" id="Map">Map</span></h4>
+<p>Updates a rectangular area on a <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Map">map</a></span> item.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th colspan="2"> Field Name
+</th>
+<th colspan="2"> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="13"> 0x24
+</td>
+<td rowspan="13"> Play
+</td>
+<td rowspan="13"> Client
+</td>
+<td colspan="2"> Item Damage
+</td>
+<td colspan="2"> VarInt
+</td>
+<td> The damage value (map ID) of the map being modified
+</td></tr>
+<tr>
+<td colspan="2"> Scale
+</td>
+<td colspan="2"> Byte
+</td>
+<td> From 0 for a fully zoomed-in map (1 block per pixel) to 4 for a fully zoomed-out map (16 blocks per pixel)
+</td></tr>
+<tr>
+<td colspan="2"> Tracking Position
+</td>
+<td colspan="2"> Boolean
+</td>
+<td> Specifies whether the icons are shown
+</td></tr>
+<tr>
+<td colspan="2"> Icon Count
+</td>
+<td colspan="2"> VarInt
+</td>
+<td> Number of elements in the following array
+</td></tr>
+<tr>
+<td rowspan="3"> Icon
+</td>
+<td> Direction And Type
+</td>
+<td rowspan="3"> Array
+</td>
+<td> Byte
+</td>
+<td> 0xF0 = Direction, 0x0F = Type
+</td></tr>
+<tr>
+<td> X
+</td>
+<td> Byte
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Z
+</td>
+<td> Byte
+</td>
+<td>
+</td></tr>
+<tr>
+<td colspan="2"> Columns
+</td>
+<td colspan="2"> Byte
+</td>
+<td> Number of columns updated
+</td></tr>
+<tr>
+<td colspan="2"> Rows
+</td>
+<td colspan="2"> Optional Byte
+</td>
+<td> Only if Columns is more than 0; number of rows updated
+</td></tr>
+<tr>
+<td colspan="2"> X
+</td>
+<td colspan="2"> Optional Byte
+</td>
+<td> Only if Columns is more than 0; x offset of the westernmost column
+</td></tr>
+<tr>
+<td colspan="2"> Z
+</td>
+<td colspan="2"> Optional Byte
+</td>
+<td> Only if Columns is more than 0; z offset of the northernmost row
+</td></tr>
+<tr>
+<td colspan="2"> Length
+</td>
+<td colspan="2"> Optional VarInt
+</td>
+<td> Only if Columns is more than 0; length of the following array
+</td></tr>
+<tr>
+<td colspan="2"> Data
+</td>
+<td colspan="2"> Optional Array of Unsigned Byte
+</td>
+<td> Only if Columns is more than 0; see <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Map_item_format">Map item format</a></span>
+</td></tr></table>
+<p>For icons, a direction of 0 is a vertical icon and increments by 22.5&#176; (360/16).
+</p><p>Types are based off of rows and columns in <code>map_icons.png</code>:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Icon type
+</th>
+<th> Result
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> White arrow (players)
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> Green arrow (item frames)
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Red arrow
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> Blue arrow
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> White cross
+</td></tr>
+<tr>
+<td> 5
+</td>
+<td> Red pointer
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> White circle (off-map players)
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;"> 7
+</td>
+<td style="background-color: #d9ead3;"> Small white circle (far-off-map players)
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;"> 8
+</td>
+<td style="background-color: #d9ead3;"> Mansion
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;"> 9
+</td>
+<td style="background-color: #d9ead3;"> Temple
+</td></tr>
+<tr>
+<td> 10-15
+</td>
+<td> Unused (blue square)
+</td></tr></table>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="Collect_Item">Collect Item</span></h4>
+<p>Sent by the server when someone picks up an item lying on the ground — its sole purpose appears to be the animation of the item flying towards you. It doesn't destroy the entity in the client memory, and it doesn't add it to your inventory. The server only checks for items to be picked up after each <a href="#Player_Position">Player Position</a> (and <a href="#Player_Position_And_Look">Player Position And Look</a>) packet sent by the client.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="3"> 0x48
+</td>
+<td rowspan="3"> Play
+</td>
+<td rowspan="3"> Client
+</td>
+<td> Collected Entity ID
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Collector Entity ID
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr>
+<tr>
+<td style="background-color: #d9ead3;">Pickup Item Count
+</td>
+<td style="background-color: #d9ead3;">VarInt
+</td>
+<td style="background-color: #d9ead3;">Seems to be 1 for XP orbs, otherwise the number of items in the stack.
+</td></tr></table>
+<h3><span class="mw-headline" id="Serverbound_2">Serverbound</span></h3>
+<h4><span class="mw-headline" id="Chat_Message_.28serverbound.29">Chat Message (serverbound)</span></h4>
+<p>Used to send a chat message to the server.  The message may not be longer than <del style="background-color: #f4cccc;">100</del>&#x20;<ins style="background-color: #d9ead3;">256</ins> characters or else the server will kick the client.
+</p><p>If the message starts with a <code>/</code>, the server will attempt to interpret it as a command.  Otherwise, the server will broadcast the same chat message to all players on the server (including the player that sent the message), prepended with player's name.  Specifically, it will respond with a translate <a href="/Chat" title="Chat">chat</a> component, "<code>chat.type.text</code>" with the first parameter set to the display name of the player (including some chat component logic to support clicking the name to send a PM) and the second parameter set to the message.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="1"> 0x02
+</td>
+<td rowspan="1"> Play
+</td>
+<td rowspan="1"> Server
+</td>
+<td> Message
+</td>
+<td> String
+</td>
+<td> The client sends the raw input, not a <a href="/Chat" title="Chat">Chat</a> component
+</td></tr></table>
+<h4><span class="mw-headline" id="Player_Block_Placement">Player Block Placement</span></h4>
+<table class="wikitable">
+
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="6"> 0x1C
+</td>
+<td rowspan="6"> Play
+</td>
+<td rowspan="6"> Server
+</td>
+<td> Location
+</td>
+<td> Position
+</td>
+<td> Block position
+</td></tr>
+<tr>
+<td> Face
+</td>
+<td> VarInt Enum
+</td>
+<td> The face on which the block is placed (as documented at <a href="#Player_Digging">Player Digging</a>)
+</td></tr>
+<tr>
+<td> Hand
+</td>
+<td> VarInt Enum
+</td>
+<td> The hand from which the block is placed; 0: main hand, 1: off hand
+</td></tr>
+<tr>
+<td> Cursor Position X
+</td>
+<td> <del style="background-color: #f4cccc;">Unsigned Byte</del>&#x20;<ins style="background-color: #d9ead3;">Float</ins>
+</td>
+<td> The position of the crosshair on the block, from 0 to 1 increasing from west to east
+</td></tr>
+<tr>
+<td> Cursor Position Y
+</td>
+<td> <del style="background-color: #f4cccc;">Unsigned Byte</del>&#x20;<ins style="background-color: #d9ead3;">Float</ins>
+</td>
+<td> The position of the crosshair on the block, from 0 to 1 increasing from bottom to top
+</td></tr>
+<tr>
+<td> Cursor Position Z
+</td>
+<td> <del style="background-color: #f4cccc;">Unsigned Byte</del>&#x20;<ins style="background-color: #d9ead3;">Float</ins>
+</td>
+<td> The position of the crosshair on the block, from 0 to 1 increasing from north to south
+</td></tr></table>
+<h2><span class="mw-headline" id="Status">Status</span></h2>
+<h3><span class="mw-headline" id="Clientbound_3">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound_3">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Login">Login</span></h2>
+<h3><span class="mw-headline" id="Clientbound_4">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound_4">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20170807004224
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.443 seconds
+Real time usage: 0.850 seconds
+Preprocessor visited node count: 1378/1000000
+Preprocessor generated node count: 2161/1000000
+Post‐expand include size: 12731/2097152 bytes
+Template argument size: 3869/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  309.885      1 - -total
+ 23.72%   73.495     22 - Template:Minecraft_Wiki
+ 22.25%   68.943     23 - Template:Change
+ 16.45%   50.975     22 - Template:Plainlink
+ 16.05%   49.724      9 - Template:PacketList
+  1.78%    5.501      2 - Template:Warning
+  1.30%    4.032      1 - Template:-
+-->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://wiki.vg/index.php?title=Pre-release_protocol&amp;oldid=8177">http://wiki.vg/index.php?title=Pre-release_protocol&amp;oldid=8177</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Category:Minecraft_Modern" title="Category:Minecraft Modern">Minecraft Modern</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Pre-release+protocol&amp;returntoquery=oldid%3D8177" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Pre-release+protocol&amp;returntoquery=oldid%3D8177" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/Pre-release_protocol"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk"><span><a href="/Talk:Pre-release_protocol"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/Pre-release_protocol" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Pre-release_protocol&amp;action=edit&amp;oldid=8177"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Pre-release_protocol&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search wiki.vg" title="Search wiki.vg [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Pre-release_protocol" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Pre-release_protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Pre-release_protocol&amp;oldid=8177&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Pre-release_protocol&amp;oldid=8177" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Pre-release_protocol&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share Alike</a> unless otherwise noted.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/wikivg:Privacy_policy" title="wikivg:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wikivg:About" title="wikivg:About">About wiki.vg</a></li>
+											<li id="footer-places-disclaimer"><a href="/wikivg:General_disclaimer" title="wikivg:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons Attribution Share Alike" width="88" height="31"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"]);});</script><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-11145163-13");
+pageTracker._trackPageview();
+</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":1067});});</script>
+	</body>
+</html>

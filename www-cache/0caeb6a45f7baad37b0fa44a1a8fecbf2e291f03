@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>Protocol - wiki.vg</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Protocol","wgTitle":"Protocol","wgCurRevisionId":8543,"wgRevisionId":8543,"wgArticleId":9,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Protocol Details","Minecraft Modern"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Protocol","wgRelevantArticleId":9,"wgRequestId":"0ec7fa73a918c54110c30cb6","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@0fqh6g4",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Protocol","wgTitle":"Protocol","wgCurRevisionId":13289,"wgRevisionId":7617,"wgArticleId":9,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Protocol Details","Minecraft Modern"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Protocol","wgRelevantArticleId":9,"wgRequestId":"e4aa42c48f4c185dfc61fdf2","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@0fqh6g4",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup","skins.vector.js"]);});</script>
@@ -13,6 +13,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <meta name="ResourceLoaderDynamicStyles" content=""/>
 <link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
 <meta name="generator" content="MediaWiki 1.28.2"/>
+<meta name="robots" content="noindex,nofollow"/>
 <link rel="shortcut icon" href="/favicon.ico"/>
 <link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="wiki.vg (en)"/>
 <link rel="EditURI" type="application/rsd+xml" href="http://wiki.vg/api.php?action=rsd"/>
@@ -29,7 +30,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 			<h1 id="firstHeading" class="firstHeading" lang="en">Protocol</h1>
 									<div id="bodyContent" class="mw-body-content">
 									<div id="siteSub">From wiki.vg</div>
-								<div id="contentSub"></div>
+								<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 19:06, 24 March 2016 by <a href="/User:Fenhl" class="mw-userlink" title="User:Fenhl"><bdi>Fenhl</bdi></a> <span class="mw-usertoollinks">(<a href="/index.php?title=User_talk:Fenhl&amp;action=edit&amp;redlink=1" class="new" title="User talk:Fenhl (page does not exist)">talk</a> | <a href="/Special:Contributions/Fenhl" title="Special:Contributions/Fenhl">contribs</a>)</span> <span class="comment">(<a href="#World_Border">→</a>‎<span dir="auto"><span class="autocomment">World Border: </span> Action in an enum; formatting</span>)</span></div><div id="mw-revision-nav">(<a href="/index.php?title=Protocol&amp;diff=prev&amp;oldid=7617" title="Protocol">diff</a>) <a href="/index.php?title=Protocol&amp;direction=prev&amp;oldid=7617" title="Protocol">← Older revision</a> | <a href="/Protocol" title="Protocol">Latest revision</a> (<a href="/index.php?title=Protocol&amp;diff=cur&amp;oldid=7617" title="Protocol">diff</a>) | <a href="/index.php?title=Protocol&amp;direction=next&amp;oldid=7617" title="Protocol">Newer revision →</a> (<a href="/index.php?title=Protocol&amp;diff=next&amp;oldid=7617" title="Protocol">diff</a>)</div></div></div>
 												<div id="jump-to-nav" class="mw-jump">
 					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
 				</div>
@@ -43,7 +44,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <table cellpadding="0" cellspacing="3" width="100%">
 <tr>
 <td align="left" valign="top" width="100%">
-<p>This article is about the protocol for the latest <b>stable</b> release of Minecraft <b>computer edition</b>. For the computer edition pre-releases, see <a href="/Pre-release_protocol" title="Pre-release protocol">Pre-release protocol</a>. For Pocket Edition, see <a href="/Pocket_Edition_Protocol_Documentation" title="Pocket Edition Protocol Documentation">Pocket Edition Protocol Documentation</a>.
+<p>This article is about the protocol for the latest <b>stable</b> release of Minecraft <b>computer edition</b>. For the computer edition pre-releases, see <a href="/Pre-release_protocol" title="Pre-release protocol">Pre-release protocol</a>. For Pocket Edition, see <a href="/Pocket_Minecraft_Protocol" title="Pocket Minecraft Protocol">Pocket Minecraft Protocol</a>.
 </p>
 </td></tr></table>
 </div>
@@ -155,80 +156,81 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li class="toclevel-3 tocsection-81"><a href="#Spawn_Position"><span class="tocnumber">4.1.68</span> <span class="toctext">Spawn Position</span></a></li>
 <li class="toclevel-3 tocsection-82"><a href="#Time_Update"><span class="tocnumber">4.1.69</span> <span class="toctext">Time Update</span></a></li>
 <li class="toclevel-3 tocsection-83"><a href="#Title"><span class="tocnumber">4.1.70</span> <span class="toctext">Title</span></a></li>
-<li class="toclevel-3 tocsection-84"><a href="#Sound_Effect"><span class="tocnumber">4.1.71</span> <span class="toctext">Sound Effect</span></a></li>
-<li class="toclevel-3 tocsection-85"><a href="#Player_List_Header_And_Footer"><span class="tocnumber">4.1.72</span> <span class="toctext">Player List Header And Footer</span></a></li>
-<li class="toclevel-3 tocsection-86"><a href="#Collect_Item"><span class="tocnumber">4.1.73</span> <span class="toctext">Collect Item</span></a></li>
-<li class="toclevel-3 tocsection-87"><a href="#Entity_Teleport"><span class="tocnumber">4.1.74</span> <span class="toctext">Entity Teleport</span></a></li>
-<li class="toclevel-3 tocsection-88"><a href="#Entity_Properties"><span class="tocnumber">4.1.75</span> <span class="toctext">Entity Properties</span></a></li>
-<li class="toclevel-3 tocsection-89"><a href="#Entity_Effect"><span class="tocnumber">4.1.76</span> <span class="toctext">Entity Effect</span></a></li>
+<li class="toclevel-3 tocsection-84"><a href="#Update_Sign_.28clientbound.29"><span class="tocnumber">4.1.71</span> <span class="toctext">Update Sign (clientbound)</span></a></li>
+<li class="toclevel-3 tocsection-85"><a href="#Sound_Effect"><span class="tocnumber">4.1.72</span> <span class="toctext">Sound Effect</span></a></li>
+<li class="toclevel-3 tocsection-86"><a href="#Player_List_Header_And_Footer"><span class="tocnumber">4.1.73</span> <span class="toctext">Player List Header And Footer</span></a></li>
+<li class="toclevel-3 tocsection-87"><a href="#Collect_Item"><span class="tocnumber">4.1.74</span> <span class="toctext">Collect Item</span></a></li>
+<li class="toclevel-3 tocsection-88"><a href="#Entity_Teleport"><span class="tocnumber">4.1.75</span> <span class="toctext">Entity Teleport</span></a></li>
+<li class="toclevel-3 tocsection-89"><a href="#Entity_Properties"><span class="tocnumber">4.1.76</span> <span class="toctext">Entity Properties</span></a></li>
+<li class="toclevel-3 tocsection-90"><a href="#Entity_Effect"><span class="tocnumber">4.1.77</span> <span class="toctext">Entity Effect</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-90"><a href="#Serverbound_2"><span class="tocnumber">4.2</span> <span class="toctext">Serverbound</span></a>
+<li class="toclevel-2 tocsection-91"><a href="#Serverbound_2"><span class="tocnumber">4.2</span> <span class="toctext">Serverbound</span></a>
 <ul>
-<li class="toclevel-3 tocsection-91"><a href="#Teleport_Confirm"><span class="tocnumber">4.2.1</span> <span class="toctext">Teleport Confirm</span></a></li>
-<li class="toclevel-3 tocsection-92"><a href="#Tab-Complete_.28serverbound.29"><span class="tocnumber">4.2.2</span> <span class="toctext">Tab-Complete (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-93"><a href="#Chat_Message_.28serverbound.29"><span class="tocnumber">4.2.3</span> <span class="toctext">Chat Message (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-94"><a href="#Client_Status"><span class="tocnumber">4.2.4</span> <span class="toctext">Client Status</span></a></li>
-<li class="toclevel-3 tocsection-95"><a href="#Client_Settings"><span class="tocnumber">4.2.5</span> <span class="toctext">Client Settings</span></a></li>
-<li class="toclevel-3 tocsection-96"><a href="#Confirm_Transaction_.28serverbound.29"><span class="tocnumber">4.2.6</span> <span class="toctext">Confirm Transaction (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-97"><a href="#Enchant_Item"><span class="tocnumber">4.2.7</span> <span class="toctext">Enchant Item</span></a></li>
-<li class="toclevel-3 tocsection-98"><a href="#Click_Window"><span class="tocnumber">4.2.8</span> <span class="toctext">Click Window</span></a></li>
-<li class="toclevel-3 tocsection-99"><a href="#Close_Window_.28serverbound.29"><span class="tocnumber">4.2.9</span> <span class="toctext">Close Window (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-100"><a href="#Plugin_Message_.28serverbound.29"><span class="tocnumber">4.2.10</span> <span class="toctext">Plugin Message (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-101"><a href="#Use_Entity"><span class="tocnumber">4.2.11</span> <span class="toctext">Use Entity</span></a></li>
-<li class="toclevel-3 tocsection-102"><a href="#Keep_Alive_.28serverbound.29"><span class="tocnumber">4.2.12</span> <span class="toctext">Keep Alive (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-103"><a href="#Player_Position"><span class="tocnumber">4.2.13</span> <span class="toctext">Player Position</span></a></li>
-<li class="toclevel-3 tocsection-104"><a href="#Player_Position_And_Look_.28serverbound.29"><span class="tocnumber">4.2.14</span> <span class="toctext">Player Position And Look (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-105"><a href="#Player_Look"><span class="tocnumber">4.2.15</span> <span class="toctext">Player Look</span></a></li>
-<li class="toclevel-3 tocsection-106"><a href="#Player"><span class="tocnumber">4.2.16</span> <span class="toctext">Player</span></a></li>
-<li class="toclevel-3 tocsection-107"><a href="#Vehicle_Move_.28serverbound.29"><span class="tocnumber">4.2.17</span> <span class="toctext">Vehicle Move (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-108"><a href="#Steer_Boat"><span class="tocnumber">4.2.18</span> <span class="toctext">Steer Boat</span></a></li>
-<li class="toclevel-3 tocsection-109"><a href="#Player_Abilities_.28serverbound.29"><span class="tocnumber">4.2.19</span> <span class="toctext">Player Abilities (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-110"><a href="#Player_Digging"><span class="tocnumber">4.2.20</span> <span class="toctext">Player Digging</span></a></li>
-<li class="toclevel-3 tocsection-111"><a href="#Entity_Action"><span class="tocnumber">4.2.21</span> <span class="toctext">Entity Action</span></a></li>
-<li class="toclevel-3 tocsection-112"><a href="#Steer_Vehicle"><span class="tocnumber">4.2.22</span> <span class="toctext">Steer Vehicle</span></a></li>
-<li class="toclevel-3 tocsection-113"><a href="#Resource_Pack_Status"><span class="tocnumber">4.2.23</span> <span class="toctext">Resource Pack Status</span></a></li>
-<li class="toclevel-3 tocsection-114"><a href="#Held_Item_Change_.28serverbound.29"><span class="tocnumber">4.2.24</span> <span class="toctext">Held Item Change (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-115"><a href="#Creative_Inventory_Action"><span class="tocnumber">4.2.25</span> <span class="toctext">Creative Inventory Action</span></a></li>
-<li class="toclevel-3 tocsection-116"><a href="#Update_Sign"><span class="tocnumber">4.2.26</span> <span class="toctext">Update Sign</span></a></li>
-<li class="toclevel-3 tocsection-117"><a href="#Animation_.28serverbound.29"><span class="tocnumber">4.2.27</span> <span class="toctext">Animation (serverbound)</span></a></li>
-<li class="toclevel-3 tocsection-118"><a href="#Spectate"><span class="tocnumber">4.2.28</span> <span class="toctext">Spectate</span></a></li>
-<li class="toclevel-3 tocsection-119"><a href="#Player_Block_Placement"><span class="tocnumber">4.2.29</span> <span class="toctext">Player Block Placement</span></a></li>
-<li class="toclevel-3 tocsection-120"><a href="#Use_Item"><span class="tocnumber">4.2.30</span> <span class="toctext">Use Item</span></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toclevel-1 tocsection-121"><a href="#Status"><span class="tocnumber">5</span> <span class="toctext">Status</span></a>
-<ul>
-<li class="toclevel-2 tocsection-122"><a href="#Clientbound_3"><span class="tocnumber">5.1</span> <span class="toctext">Clientbound</span></a>
-<ul>
-<li class="toclevel-3 tocsection-123"><a href="#Response"><span class="tocnumber">5.1.1</span> <span class="toctext">Response</span></a></li>
-<li class="toclevel-3 tocsection-124"><a href="#Pong"><span class="tocnumber">5.1.2</span> <span class="toctext">Pong</span></a></li>
-</ul>
-</li>
-<li class="toclevel-2 tocsection-125"><a href="#Serverbound_3"><span class="tocnumber">5.2</span> <span class="toctext">Serverbound</span></a>
-<ul>
-<li class="toclevel-3 tocsection-126"><a href="#Request"><span class="tocnumber">5.2.1</span> <span class="toctext">Request</span></a></li>
-<li class="toclevel-3 tocsection-127"><a href="#Ping"><span class="tocnumber">5.2.2</span> <span class="toctext">Ping</span></a></li>
+<li class="toclevel-3 tocsection-92"><a href="#Teleport_Confirm"><span class="tocnumber">4.2.1</span> <span class="toctext">Teleport Confirm</span></a></li>
+<li class="toclevel-3 tocsection-93"><a href="#Tab-Complete_.28serverbound.29"><span class="tocnumber">4.2.2</span> <span class="toctext">Tab-Complete (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-94"><a href="#Chat_Message_.28serverbound.29"><span class="tocnumber">4.2.3</span> <span class="toctext">Chat Message (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-95"><a href="#Client_Status"><span class="tocnumber">4.2.4</span> <span class="toctext">Client Status</span></a></li>
+<li class="toclevel-3 tocsection-96"><a href="#Client_Settings"><span class="tocnumber">4.2.5</span> <span class="toctext">Client Settings</span></a></li>
+<li class="toclevel-3 tocsection-97"><a href="#Confirm_Transaction_.28serverbound.29"><span class="tocnumber">4.2.6</span> <span class="toctext">Confirm Transaction (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-98"><a href="#Enchant_Item"><span class="tocnumber">4.2.7</span> <span class="toctext">Enchant Item</span></a></li>
+<li class="toclevel-3 tocsection-99"><a href="#Click_Window"><span class="tocnumber">4.2.8</span> <span class="toctext">Click Window</span></a></li>
+<li class="toclevel-3 tocsection-100"><a href="#Close_Window_.28serverbound.29"><span class="tocnumber">4.2.9</span> <span class="toctext">Close Window (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-101"><a href="#Plugin_Message_.28serverbound.29"><span class="tocnumber">4.2.10</span> <span class="toctext">Plugin Message (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-102"><a href="#Use_Entity"><span class="tocnumber">4.2.11</span> <span class="toctext">Use Entity</span></a></li>
+<li class="toclevel-3 tocsection-103"><a href="#Keep_Alive_.28serverbound.29"><span class="tocnumber">4.2.12</span> <span class="toctext">Keep Alive (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-104"><a href="#Player_Position"><span class="tocnumber">4.2.13</span> <span class="toctext">Player Position</span></a></li>
+<li class="toclevel-3 tocsection-105"><a href="#Player_Position_And_Look_.28serverbound.29"><span class="tocnumber">4.2.14</span> <span class="toctext">Player Position And Look (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-106"><a href="#Player_Look"><span class="tocnumber">4.2.15</span> <span class="toctext">Player Look</span></a></li>
+<li class="toclevel-3 tocsection-107"><a href="#Player"><span class="tocnumber">4.2.16</span> <span class="toctext">Player</span></a></li>
+<li class="toclevel-3 tocsection-108"><a href="#Vehicle_Move_.28serverbound.29"><span class="tocnumber">4.2.17</span> <span class="toctext">Vehicle Move (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-109"><a href="#Steer_Boat"><span class="tocnumber">4.2.18</span> <span class="toctext">Steer Boat</span></a></li>
+<li class="toclevel-3 tocsection-110"><a href="#Player_Abilities_.28serverbound.29"><span class="tocnumber">4.2.19</span> <span class="toctext">Player Abilities (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-111"><a href="#Player_Digging"><span class="tocnumber">4.2.20</span> <span class="toctext">Player Digging</span></a></li>
+<li class="toclevel-3 tocsection-112"><a href="#Entity_Action"><span class="tocnumber">4.2.21</span> <span class="toctext">Entity Action</span></a></li>
+<li class="toclevel-3 tocsection-113"><a href="#Steer_Vehicle"><span class="tocnumber">4.2.22</span> <span class="toctext">Steer Vehicle</span></a></li>
+<li class="toclevel-3 tocsection-114"><a href="#Resource_Pack_Status"><span class="tocnumber">4.2.23</span> <span class="toctext">Resource Pack Status</span></a></li>
+<li class="toclevel-3 tocsection-115"><a href="#Held_Item_Change_.28serverbound.29"><span class="tocnumber">4.2.24</span> <span class="toctext">Held Item Change (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-116"><a href="#Creative_Inventory_Action"><span class="tocnumber">4.2.25</span> <span class="toctext">Creative Inventory Action</span></a></li>
+<li class="toclevel-3 tocsection-117"><a href="#Update_Sign_.28serverbound.29"><span class="tocnumber">4.2.26</span> <span class="toctext">Update Sign (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-118"><a href="#Animation_.28serverbound.29"><span class="tocnumber">4.2.27</span> <span class="toctext">Animation (serverbound)</span></a></li>
+<li class="toclevel-3 tocsection-119"><a href="#Spectate"><span class="tocnumber">4.2.28</span> <span class="toctext">Spectate</span></a></li>
+<li class="toclevel-3 tocsection-120"><a href="#Player_Block_Placement"><span class="tocnumber">4.2.29</span> <span class="toctext">Player Block Placement</span></a></li>
+<li class="toclevel-3 tocsection-121"><a href="#Use_Item"><span class="tocnumber">4.2.30</span> <span class="toctext">Use Item</span></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-128"><a href="#Login"><span class="tocnumber">6</span> <span class="toctext">Login</span></a>
+<li class="toclevel-1 tocsection-122"><a href="#Status"><span class="tocnumber">5</span> <span class="toctext">Status</span></a>
 <ul>
-<li class="toclevel-2 tocsection-129"><a href="#Clientbound_4"><span class="tocnumber">6.1</span> <span class="toctext">Clientbound</span></a>
+<li class="toclevel-2 tocsection-123"><a href="#Clientbound_3"><span class="tocnumber">5.1</span> <span class="toctext">Clientbound</span></a>
 <ul>
-<li class="toclevel-3 tocsection-130"><a href="#Disconnect_.28login.29"><span class="tocnumber">6.1.1</span> <span class="toctext">Disconnect (login)</span></a></li>
-<li class="toclevel-3 tocsection-131"><a href="#Encryption_Request"><span class="tocnumber">6.1.2</span> <span class="toctext">Encryption Request</span></a></li>
-<li class="toclevel-3 tocsection-132"><a href="#Login_Success"><span class="tocnumber">6.1.3</span> <span class="toctext">Login Success</span></a></li>
-<li class="toclevel-3 tocsection-133"><a href="#Set_Compression"><span class="tocnumber">6.1.4</span> <span class="toctext">Set Compression</span></a></li>
+<li class="toclevel-3 tocsection-124"><a href="#Response"><span class="tocnumber">5.1.1</span> <span class="toctext">Response</span></a></li>
+<li class="toclevel-3 tocsection-125"><a href="#Pong"><span class="tocnumber">5.1.2</span> <span class="toctext">Pong</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-134"><a href="#Serverbound_4"><span class="tocnumber">6.2</span> <span class="toctext">Serverbound</span></a>
+<li class="toclevel-2 tocsection-126"><a href="#Serverbound_3"><span class="tocnumber">5.2</span> <span class="toctext">Serverbound</span></a>
 <ul>
-<li class="toclevel-3 tocsection-135"><a href="#Login_Start"><span class="tocnumber">6.2.1</span> <span class="toctext">Login Start</span></a></li>
-<li class="toclevel-3 tocsection-136"><a href="#Encryption_Response"><span class="tocnumber">6.2.2</span> <span class="toctext">Encryption Response</span></a></li>
+<li class="toclevel-3 tocsection-127"><a href="#Request"><span class="tocnumber">5.2.1</span> <span class="toctext">Request</span></a></li>
+<li class="toclevel-3 tocsection-128"><a href="#Ping"><span class="tocnumber">5.2.2</span> <span class="toctext">Ping</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-129"><a href="#Login"><span class="tocnumber">6</span> <span class="toctext">Login</span></a>
+<ul>
+<li class="toclevel-2 tocsection-130"><a href="#Clientbound_4"><span class="tocnumber">6.1</span> <span class="toctext">Clientbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-131"><a href="#Disconnect_.28login.29"><span class="tocnumber">6.1.1</span> <span class="toctext">Disconnect (login)</span></a></li>
+<li class="toclevel-3 tocsection-132"><a href="#Encryption_Request"><span class="tocnumber">6.1.2</span> <span class="toctext">Encryption Request</span></a></li>
+<li class="toclevel-3 tocsection-133"><a href="#Login_Success"><span class="tocnumber">6.1.3</span> <span class="toctext">Login Success</span></a></li>
+<li class="toclevel-3 tocsection-134"><a href="#Set_Compression"><span class="tocnumber">6.1.4</span> <span class="toctext">Set Compression</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-135"><a href="#Serverbound_4"><span class="tocnumber">6.2</span> <span class="toctext">Serverbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-136"><a href="#Login_Start"><span class="tocnumber">6.2.1</span> <span class="toctext">Login Start</span></a></li>
+<li class="toclevel-3 tocsection-137"><a href="#Encryption_Response"><span class="tocnumber">6.2.2</span> <span class="toctext">Encryption Response</span></a></li>
 </ul>
 </li>
 </ul>
@@ -369,15 +371,6 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <td> An integer between -9223372036854775808 and 9223372036854775807
 </td>
 <td> Variable-length data encoding a two's complement signed 64-bit integer; more info in <a href="#VarInt_and_VarLong">their section</a>
-</td></tr>
-<tr>
-<th> Chunk Section
-</th>
-<td> Varies
-</td>
-<td> A 16×16×16 chunk of blocks
-</td>
-<td> See <a href="/SMP_Map_Format" title="SMP Map Format">SMP Map Format</a>
 </td></tr>
 <tr>
 <th> Entity Metadata
@@ -545,94 +538,116 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <table class="wikitable">
 <tr>
 <th> Value </th>
-<th> Hex
+<th> Hex bytes </th>
+<th> Decimal bytes
 </th></tr>
 <tr>
 <td> 0 </td>
-<td> 0x00
+<td> 0x00 </td>
+<td> 0
 </td></tr>
 <tr>
 <td> 1 </td>
-<td> 0x01
+<td> 0x01 </td>
+<td> 1
 </td></tr>
 <tr>
 <td> 2 </td>
-<td> 0x02
+<td> 0x02 </td>
+<td> 2
 </td></tr>
 <tr>
 <td> 127 </td>
-<td> 0x7f
+<td> 0x7f </td>
+<td> 127
 </td></tr>
 <tr>
 <td> 128 </td>
-<td> 0x80 0x01
+<td> 0x80 0x01 </td>
+<td> 128 1
 </td></tr>
 <tr>
 <td> 255 </td>
-<td> 0xff 0x01
+<td> 0xff 0x01 </td>
+<td> 255 1
 </td></tr>
 <tr>
 <td> 2147483647 </td>
-<td> 0xff 0xff 0xff 0xff 0x07
+<td> 0xff 0xff 0xff 0xff 0x07 </td>
+<td> 255 255 255 255 7
 </td></tr>
 <tr>
 <td> -1 </td>
-<td> 0xff 0xff 0xff 0xff 0x0f
+<td> 0xff 0xff 0xff 0xff 0x0f </td>
+<td> 255 255 255 255 15
 </td></tr>
 <tr>
 <td> -2147483648 </td>
-<td> 0x80 0x80 0x80 0x80 0x08
+<td> 0x80 0x80 0x80 0x80 0x08 </td>
+<td> 128 128 128 128 8
 </td></tr></table>
 <p>Sample VarLongs:
 </p>
 <table class="wikitable">
 <tr>
 <th> Value </th>
-<th> Hex
+<th> Hex bytes </th>
+<th> Decimal bytes
 </th></tr>
 <tr>
 <td> 0 </td>
-<td> 0x00
+<td> 0x00 </td>
+<td> 0
 </td></tr>
 <tr>
 <td> 1 </td>
-<td> 0x01
+<td> 0x01 </td>
+<td> 1
 </td></tr>
 <tr>
 <td> 2 </td>
-<td> 0x02
+<td> 0x02 </td>
+<td> 2
 </td></tr>
 <tr>
 <td> 127 </td>
-<td> 0x7f
+<td> 0x7f </td>
+<td> 127
 </td></tr>
 <tr>
 <td> 128 </td>
-<td> 0x80 0x01
+<td> 0x80 0x01 </td>
+<td> 128 1
 </td></tr>
 <tr>
 <td> 255 </td>
-<td> 0xff 0x01
+<td> 0xff 0x01 </td>
+<td> 255 1
 </td></tr>
 <tr>
 <td> 2147483647 </td>
-<td> 0xff 0xff 0xff 0xff 0x07
+<td> 0xff 0xff 0xff 0xff 0x07 </td>
+<td> 255 255 255 255 7
 </td></tr>
 <tr>
 <td> 9223372036854775807 </td>
-<td> 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0x7f
+<td> 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0x7f </td>
+<td> 255 255 255 255 255 255 255 255 127
 </td></tr>
 <tr>
 <td> -1 </td>
-<td> 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0x01
+<td> 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0x01 </td>
+<td> 255 255 255 255 255 255 255 255 255 1
 </td></tr>
 <tr>
 <td> -2147483648 </td>
-<td> 0x80 0x80 0x80 0x80 0xf8 0xff 0xff 0xff 0xff 0x01
+<td> 0x80 0x80 0x80 0x80 0xf8 0xff 0xff 0xff 0xff 0x01 </td>
+<td> 128 128 128 128 248 255 255 255 255 1
 </td></tr>
 <tr>
 <td> -9223372036854775808 </td>
-<td> 0x80 0x80 0x80 0x80 0x80 0x80 0x80 0x80 0x80 0x01
+<td> 0x80 0x80 0x80 0x80 0x80 0x80 0x80 0x80 0x80 0x01 </td>
+<td> 128 128 128 128 128 128 128 128 128 1
 </td></tr></table>
 <h3><span class="mw-headline" id="Position">Position</span></h3>
 <p>64-bit value split in to three parts
@@ -663,11 +678,11 @@ if z &gt;= 2^25 { z -= 2^26 }
 </p><p>Coordinates are often represented as a 32-bit integer, where 5 of the least-significant bits are dedicated to the fractional part, and the rest store the integer part.
 </p><p>Java lacks support for fractional integers directly, but you can represent them as integers. To convert from a double to this integer representation, use the following formulas:
 </p>
-<pre> abs_int = (int)double * 32;
+<pre> abs_int = (int)double * 32.0D;
 </pre>
 <p>And back again:
 </p>
-<pre> double = (double)abs_int / 32;
+<pre> double = (double)abs_int / 32.0D;
 
 </pre>
 <h3><span class="mw-headline" id="Other_definitions">Other definitions</span></h3>
@@ -745,7 +760,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Depends on the connection state and packet ID, see the sections below
 </td></tr></table>
 <h3><span class="mw-headline" id="With_compression">With compression</span></h3>
-<p>Once a <a href="#Set_Compression">Set Compression</a> packet (with a non-negative threshold) is sent, <a href="http://en.wikipedia.org/wiki/Zlib" class="extiw" title="wikipedia:Zlib">zlib</a> compression is enabled for all following packets. The format of a packet changes slighty to include the size of the uncompressed packet.
+<p>Once a <a href="#Set_Compression">Set Compression</a> packet is sent, <a href="http://en.wikipedia.org/wiki/Zlib" class="extiw" title="wikipedia:Zlib">zlib</a> compression is enabled for all following packets. The format of a packet changes slighty to include the size of the uncompressed packet.
 </p>
 <table class="wikitable">
 <tr>
@@ -794,7 +809,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <p>The length given by the Packet Length field is the number of bytes that remain in that packet, including the Data Length field.
 </p><p>If Data Length is set to zero, then the packet is uncompressed; otherwise it is the size of the uncompressed packet.
 </p><p>If compressed, the uncompressed length of (Packet ID + Data) must be equal to or over the threshold set in the packet <a href="#Set_Compression_2">Set Compression</a> (<a href="#Login">Login</a>, 0x03, clientbound), otherwise the receiving party will disconnect.
-</p><p>Compression can be disabled by sending the packet <a href="#Set_Compression">Set Compression</a> (<a href="#Login">Login</a>, 0x03, clientbound) with a negative Threshold, or not sending the Set Compression packet at all.
+</p><p>Compression can be disabled by sending the packet <a href="#Set_Compression_2">Set Compression</a> (<a href="#Login">Login</a>, 0x03, clientbound) with a Threshold of -1.
 </p>
 <h2><span class="mw-headline" id="Handshaking">Handshaking</span></h2>
 <h3><span class="mw-headline" id="Clientbound">Clientbound</span></h3>
@@ -829,21 +844,21 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> VarInt
 </td>
-<td> See <a href="/Protocol_version_numbers" title="Protocol version numbers">protocol version numbers</a> (currently 316 in Minecraft 1.11.2)
+<td> See <a href="/Protocol_version_numbers" title="Protocol version numbers">protocol version numbers</a> (currently 107)
 </td></tr>
 <tr>
 <td> Server Address
 </td>
-<td> String (255)
+<td> String
 </td>
-<td> Hostname or IP, e.g. localhost or 127.0.0.1, that was used to connect.  The Notchian server does not use this information.
+<td> hostname or IP, e.g. localhost or 127.0.0.1 (does this support IPv6?)
 </td></tr>
 <tr>
 <td> Server Port
 </td>
 <td> Unsigned Short
 </td>
-<td> Default is 25565.  The Notchian server does not use this information.
+<td> default is 25565
 </td></tr>
 <tr>
 <td> Next State
@@ -980,17 +995,21 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Short
 </td>
-<td rowspan="3"> Same units as <a href="#Entity_Velocity">Entity Velocity</a>.  Always sent, but only used when Data is greater than 0 (except for some entities which always ignore it; see <a href="/Object_Data" title="Object Data">Object Data</a> for details).
+<td> Same units as <a href="#Entity_Velocity">Entity Velocity</a>.
 </td></tr>
 <tr>
 <td> Velocity Y
 </td>
 <td> Short
+</td>
+<td> Same units as <a href="#Entity_Velocity">Entity Velocity</a>.
 </td></tr>
 <tr>
 <td> Velocity Z
 </td>
 <td> Short
+</td>
+<td> Same units as <a href="#Entity_Velocity">Entity Velocity</a>.
 </td></tr></table>
 <h4><span class="mw-headline" id="Spawn_Experience_Orb">Spawn Experience Orb</span></h4>
 <p>Spawns one or more experience orbs.
@@ -1148,7 +1167,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Type
 </td>
-<td> VarInt
+<td> Unsigned Byte
 </td>
 <td> The type of mob. See <a href="/Entities#Mobs" title="Entities">Entities#Mobs</a>
 </td></tr>
@@ -1262,7 +1281,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Title
 </td>
-<td> String (13)
+<td> String
 </td>
 <td> Name of the painting. Max length 13
 </td></tr>
@@ -1278,310 +1297,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Byte Enum
 </td>
-<td> Direction the painting faces (North = 2, South = 0, West = 1, East = 3)
+<td> Direction the painting faces. 0: north (-z), 1: west (-x), 2: south (+z), 3: east (+x)
 </td></tr></table>
 <p>Calculating the center of an image: given a (width × height) grid of cells, with <code>(0, 0)</code> being the top left corner, the center is <code>(max(0, width / 2 - 1), height / 2)</code>. E.g. <code>(1, 0)</code> for a 2×1 painting, or <code>(1, 2)</code> for a 4×4 painting.
-</p><p>List of paintings by coordinates in <code>paintings_kristoffer_zetterstrand.png</code> (where x and y are in pixels from the top left and width and height are in pixels or 16ths of a block):
-</p>
-<table class="wikitable">
-<tr>
-<th> Name
-</th>
-<th> x
-</th>
-<th> y
-</th>
-<th> width
-</th>
-<th> height
-</th></tr>
-<tr>
-<td> <code>Kebab</code>
-</td>
-<td> 0
-</td>
-<td> 0
-</td>
-<td> 16
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Aztec</code>
-</td>
-<td> 16
-</td>
-<td> 0
-</td>
-<td> 16
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Alban</code>
-</td>
-<td> 32
-</td>
-<td> 0
-</td>
-<td> 16
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Aztec2</code>
-</td>
-<td> 48
-</td>
-<td> 0
-</td>
-<td> 16
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Bomb</code>
-</td>
-<td> 64
-</td>
-<td> 0
-</td>
-<td> 16
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Plant</code>
-</td>
-<td> 80
-</td>
-<td> 0
-</td>
-<td> 16
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Wasteland</code>
-</td>
-<td> 96
-</td>
-<td> 0
-</td>
-<td> 16
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Pool</code>
-</td>
-<td> 0
-</td>
-<td> 32
-</td>
-<td> 32
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Courbet</code>
-</td>
-<td> 32
-</td>
-<td> 32
-</td>
-<td> 32
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Sea</code>
-</td>
-<td> 64
-</td>
-<td> 32
-</td>
-<td> 32
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Sunset</code>
-</td>
-<td> 96
-</td>
-<td> 32
-</td>
-<td> 32
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Creebet</code>
-</td>
-<td> 128
-</td>
-<td> 32
-</td>
-<td> 32
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> <code>Wanderer</code>
-</td>
-<td> 0
-</td>
-<td> 64
-</td>
-<td> 16
-</td>
-<td> 32
-</td></tr>
-<tr>
-<td> <code>Graham</code>
-</td>
-<td> 16
-</td>
-<td> 64
-</td>
-<td> 16
-</td>
-<td> 32
-</td></tr>
-<tr>
-<td> <code>Match</code>
-</td>
-<td> 0
-</td>
-<td> 128
-</td>
-<td> 32
-</td>
-<td> 32
-</td></tr>
-<tr>
-<td> <code>Bust</code>
-</td>
-<td> 32
-</td>
-<td> 128
-</td>
-<td> 32
-</td>
-<td> 32
-</td></tr>
-<tr>
-<td> <code>Stage</code>
-</td>
-<td> 64
-</td>
-<td> 128
-</td>
-<td> 32
-</td>
-<td> 32
-</td></tr>
-<tr>
-<td> <code>Void</code>
-</td>
-<td> 96
-</td>
-<td> 128
-</td>
-<td> 32
-</td>
-<td> 32
-</td></tr>
-<tr>
-<td> <code>SkullAndRoses</code>
-</td>
-<td> 128
-</td>
-<td> 128
-</td>
-<td> 32
-</td>
-<td> 32
-</td></tr>
-<tr>
-<td> <code>Wither</code>
-</td>
-<td> 160
-</td>
-<td> 128
-</td>
-<td> 32
-</td>
-<td> 32
-</td></tr>
-<tr>
-<td> <code>Fighters</code>
-</td>
-<td> 0
-</td>
-<td> 96
-</td>
-<td> 64
-</td>
-<td> 32
-</td></tr>
-<tr>
-<td> <code>Pointer</code>
-</td>
-<td> 0
-</td>
-<td> 192
-</td>
-<td> 64
-</td>
-<td> 64
-</td></tr>
-<tr>
-<td> <code>Pigscene</code>
-</td>
-<td> 64
-</td>
-<td> 192
-</td>
-<td> 64
-</td>
-<td> 64
-</td></tr>
-<tr>
-<td> <code>BurningSkull</code>
-</td>
-<td> 128
-</td>
-<td> 192
-</td>
-<td> 64
-</td>
-<td> 64
-</td></tr>
-<tr>
-<td> <code>Skeleton</code>
-</td>
-<td> 192
-</td>
-<td> 64
-</td>
-<td> 64
-</td>
-<td> 48
-</td></tr>
-<tr>
-<td> <code>DonkeyKong</code>
-</td>
-<td> 192
-</td>
-<td> 112
-</td>
-<td> 64
-</td>
-<td> 48
-</td></tr></table>
-<p>The <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Painting%23Canvases">Minecraft Wiki article on paintings</a></span> also provides a list of painting names to the actual images.
 </p>
 <h4><span class="mw-headline" id="Spawn_Player">Spawn Player</span></h4>
 <p>This packet is sent by the server when a player comes into visible range, <i>not</i> when a player joins.
@@ -1620,7 +1338,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> UUID
 </td>
-<td> See below for notes on <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Server.properties%23online-mode">offline mode</a></span> and NPCs
+<td> See below for notes on <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Serve.properties%23online-mode">offline mode</a></span> and NPCs
 </td></tr>
 <tr>
 <td> X
@@ -1664,8 +1382,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td>
 </td></tr></table>
-<p>When in <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Server.properties%23online-mode">online mode</a></span>, the UUIDs must be valid and have valid skin blobs.
-</p><p>In offline mode, <a href="http://en.wikipedia.org/wiki/Universally_unique_identifier#Versions_3_and_5_.28namespace_name-based.29" class="extiw" title="wikipedia:Universally unique identifier">UUID v3</a> is used with the String <code>OfflinePlayer:&lt;player name&gt;</code>, encoded in UTF-8 (and case-sensitive).
+<p>When in <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Serve.properties%23online-mode">online mode</a></span>, the UUIDs must be valid and have valid skin blobs. In offline mode, UUID v3 is used.
 </p><p>For NPCs UUID v2 should be used. Note:
 </p>
 <pre>&lt;+Grum&gt; i will never confirm this as a feature you know that&#160;:)
@@ -1720,7 +1437,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> 0
 </td>
-<td> Swing main arm
+<td> Swing arm
 </td></tr>
 <tr>
 <td> 1
@@ -1735,7 +1452,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> 3
 </td>
-<td> Swing offhand
+<td> Eat food
 </td></tr>
 <tr>
 <td> 4
@@ -1782,9 +1499,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td rowspan="2"> Array
 </td>
-<td> String (32767)
+<td> String
 </td>
-<td> <a rel="nofollow" class="external free" href="https://gist.github.com/thinkofname/a1842c21a0cf2e1fb5e0">https://gist.github.com/thinkofname/a1842c21a0cf2e1fb5e0</a>
+<td> <a rel="nofollow" class="external free" href="https://gist.github.com/thinkofdeath/a1842c21a0cf2e1fb5e0">https://gist.github.com/thinkofdeath/a1842c21a0cf2e1fb5e0</a>
 </td></tr>
 <tr>
 <td> Value
@@ -1840,7 +1557,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> 0–9 to set it, any other value to remove it
 </td></tr></table>
 <h4><span class="mw-headline" id="Update_Block_Entity">Update Block Entity</span></h4>
-<p>Sets tile entity associated with the block at the given location.
+<p>Essentially a block update on a block entity.
 </p>
 <table class="wikitable">
 <tr>
@@ -1879,25 +1596,26 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> NBT Data
 </td>
-<td> <a href="/NBT" title="NBT">NBT Tag</a>
+<td> Optional <a href="/NBT" title="NBT">NBT Tag</a>
 </td>
-<td> Data to set.  May be a TAG_END (0), in which case the block entity at the given location is removed (though this is not required since the client will remove the block entity automatically on chunk unload or block removal)
+<td> If not present then it's a TAG_END (0)
 </td></tr></table>
 <p><i>Action</i> field:
 </p>
-<ul><li> <b>1</b>: Set data of a mob spawner (everything except for SpawnPotentials: current delay, min/max delay, mob to be spawned, spawn count, spawn range, etc.)</li>
+<ul><li> <b>1</b>: Set SpawnPotentials of a mob spawner</li>
 <li> <b>2</b>: Set command block text (command and last execution status)</li>
 <li> <b>3</b>: Set the level, primary, and secondary powers of a beacon</li>
 <li> <b>4</b>: Set rotation and skin of mob head</li>
 <li> <b>5</b>: Set type of flower in flower pot</li>
-<li> <b>6</b>: Set base color and patterns on a banner</li>
-<li> <b>7</b>: Set the data for a Structure tile entity</li>
-<li> <b>8</b>: Set the destination for a end gateway</li>
-<li> <b>9</b>: Set the text on a sign</li>
-<li> <b>10</b>: Declare a shulker box (unclear if there is any actual data)</li></ul>
+<li> <b>6</b>: Set base color and patterns on a banner</li></ul>
 <h4><span class="mw-headline" id="Block_Action">Block Action</span></h4>
-<p>This packet is used for a number of actions and animations performed by blocks, usually non-persistent.
-</p><p>See <a href="/Block_Actions" title="Block Actions">Block Actions</a> for a list of values.
+<p>This packet is used for a number of things:
+</p>
+<ul><li> Chests opening and closing</li>
+<li> Pistons pushing and pulling</li>
+<li> Note blocks playing</li>
+<li> Updating beacons</li></ul>
+<p>See also: <a href="/Block_Actions" title="Block Actions">Block Actions</a> 
 </p>
 <table class="wikitable">
 <tr>
@@ -1927,14 +1645,14 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Block coordinates
 </td></tr>
 <tr>
-<td> Action ID (Byte 1)
+<td> Byte 1
 </td>
 <td> Unsigned Byte
 </td>
 <td> Varies depending on block — see <a href="/Block_Actions" title="Block Actions">Block Actions</a>
 </td></tr>
 <tr>
-<td> Action Param (Byte 2)
+<td> Byte 2
 </td>
 <td> Unsigned Byte
 </td>
@@ -1945,15 +1663,11 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> VarInt
 </td>
-<td> The block type ID for the block, not including metadata/damage value.  This must match the block at the given coordinates.
+<td> The block type ID for the block, not including metadata/damage value
 </td></tr></table>
 <h4><span class="mw-headline" id="Block_Change">Block Change</span></h4>
 <p>Fired whenever a block is changed within the render distance.
 </p>
-<div style="background:#FFF3BD; padding: 0px 5px 0px 5px; border: 1px solid #C4B674;">
-<p><a href="/File:Warning.png" class="image"><img alt="Warning.png" src="/images/c/cb/Warning.png" width="14" height="14" /></a> Changing a block in a chunk that is not loaded is not a stable action.  The Notchian client currently uses a <i>shared</i> empty chunk which is modified for all block changes in unloaded chunks; while in 1.9 this chunk never renders in older versions the changed block will appear in all copies of the empty chunk.  Servers should avoid sending block changes in unloaded chunks and clients should ignore such packets.
-</p>
-</div>
 <table class="wikitable">
 <tr>
 <th> Packet ID
@@ -2225,7 +1939,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> 0: peaceful, 1: easy, 2: normal, 3: hard
 </td></tr></table>
 <h4><span class="mw-headline" id="Tab-Complete_.28clientbound.29">Tab-Complete (clientbound)</span></h4>
-<p>The server responds with a list of auto-completions of the last word sent to it. In the case of regular chat, this is a player username. Command names and parameters are also supported. The client sorts these alphabetically before listing them.
+<p>The server responds with a list of auto-completions of the last word sent to it. In the case of regular chat, this is a player username. Command names and parameters are also supported.
 </p>
 <table class="wikitable">
 <tr>
@@ -2257,12 +1971,12 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Matches
 </td>
-<td> Array of String (32767)
+<td> Array of String
 </td>
 <td> One eligible command, note that each command is sent separately instead of in a single string, hence the need for Count
 </td></tr></table>
 <h4><span class="mw-headline" id="Chat_Message_.28clientbound.29">Chat Message (clientbound)</span></h4>
-<p>Identifying the difference between Chat/System Message is important as it helps respect the user's chat visibility options. While game info accepts json formatting it will not display, old style §-based formatting works.  See <a href="/Chat#Processing_chat" title="Chat">processing chat</a> for more info about these positions.
+<p>Identifying the difference between Chat/System Message is important as it helps respect the user's chat visibility options. While Position 2 accepts json formatting it will not display, old style formatting works
 </p>
 <table class="wikitable">
 <tr>
@@ -2296,13 +2010,10 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Byte
 </td>
-<td> 0: chat (chat box), 1: system message (chat box), 2: game info (above hotbar).
+<td> 0: chat (chat box), 1: system message (chat box), 2: above hotbar
 </td></tr></table>
 <h4><span class="mw-headline" id="Multi_Block_Change">Multi Block Change</span></h4>
 <p>Fired whenever 2 or more blocks are changed within the same chunk on the same tick.
-</p><p><span style="background:#FFF3BD; padding: 1px 5px 3px 5px; border: 1px solid #C4B674;">
-<a href="/File:Warning.png" class="image"><img alt="Warning.png" src="/images/c/cb/Warning.png" width="14" height="14" /></a> Changing blocks in chunks not loaded by the client is unsafe (see note on <a href="#Block_Change">Block Change</a>).
-</span>
 </p>
 <table class="wikitable">
 <tr>
@@ -2377,7 +2088,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <span class="n">worldZ</span> <span class="o">=</span> <span class="o">(</span><span class="n">horizPos</span> <span class="o">&amp;</span> <span class="mi">15</span><span class="o">)</span> <span class="o">+</span> <span class="o">(</span><span class="n">chunkZ</span> <span class="o">*</span> <span class="mi">16</span><span class="o">);</span>
 </pre></div>
 <h4><span class="mw-headline" id="Confirm_Transaction_.28clientbound.29">Confirm Transaction (clientbound)</span></h4>
-<p>A packet from the server indicating whether a request from the client was accepted, or whether there was a conflict (due to lag).  If the packet was not accepted, the client must respond with a <a href="#Confirm_Transaction_.28serverbound.29">serverbound confirm transaction</a> packet.
+<p>A packet from the server indicating whether a request from the client was accepted, or whether there was a conflict (due to lag).
 </p>
 <table class="wikitable">
 <tr>
@@ -2484,7 +2195,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Window Type
 </td>
-<td> String (32)
+<td> String
 </td>
 <td> The window type to use for display. See <a href="/Inventory" title="Inventory">Inventory</a> for a list.
 </td></tr>
@@ -2628,15 +2339,15 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> 2: Progress arrow
 </td>
-<td> counting from 0 to maximum progress (in-game ticks)
+<td> 0–200 (in-game ticks)
 </td></tr>
 <tr>
 <td> 3: Maximum progress
 </td>
-<td> always 200 on the notchian server
+<td> always 200
 </td></tr>
 <tr>
-<td rowspan="10"> Enchantment Table
+<td rowspan="7"> Enchantment Table
 </td>
 <td> 0: Level requirement for top enchantment slot
 </td>
@@ -2649,48 +2360,37 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> 2: Level requirement for bottom enchantment slot
 </td></tr>
 <tr>
-<td> 3: The enchantment seed
+<td> 3: The seed for generating the enchantments view for the client
 </td>
-<td> Used for drawing the enchantment names (in <a href="http://en.wikipedia.org/wiki/Standard_Galactic_Alphabet" class="extiw" title="wikipedia:Standard Galactic Alphabet">SGA</a>) clientside.  The same seed <i>is</i> used to calculate enchantments, but some of the data isn't sent to the client to prevent easily guessing the entire list (the seed value here is the regular seed bitwise and <code>0xFFFFFFF0</code>).
+<td> Unknown
 </td></tr>
 <tr>
-<td> 4: Enchantment ID shown on mouse hover over top enchantment slot
+<td> 4: Enchantment shown on mouse hover over top enchantment slot
 </td>
 <td rowspan="3"> The enchantment id (set to -1 to hide it)
 </td></tr>
 <tr>
-<td> 5: Enchantment ID shown on mouse hover over middle enchantment slot
+<td> 5: Enchantment shown on mouse hover over middle enchantment slot
 </td></tr>
 <tr>
-<td> 6: Enchantment ID shown on mouse hover over bottom enchantment slot
-</td></tr>
-<tr>
-<td> 7: Enchantment level shown on mouse hover over the top slot
-</td>
-<td rowspan="3"> The enchantment level (1 = I, 2 = II, 6 = VI, etc.), or -1 if no enchant
-</td></tr>
-<tr>
-<td> 8: Enchantment level shown on mouse hover over the middle slot
-</td></tr>
-<tr>
-<td> 9: Enchantment level shown on mouse hover over the bottom slot
+<td> 6: Enchantment shown on mouse hover over bottom enchantment slot
 </td></tr>
 <tr>
 <td rowspan="3"> Beacon
 </td>
 <td> 0: Power level
 </td>
-<td> 0-4, controls what effect buttons are enabled
+<td> Unknown
 </td></tr>
 <tr>
 <td> 1: First potion effect
 </td>
-<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Data_values%23Status_effects">Potion effect ID</a></span> for the first effect, or -1 if no effect
+<td> Unknown
 </td></tr>
 <tr>
 <td> 2: Second potion effect
 </td>
-<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Data_values%23Status_effects">Potion effect ID</a></span> for the second effect, or -1 if no effect
+<td> Unknown
 </td></tr>
 <tr>
 <td> Anvil
@@ -2751,10 +2451,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td>
 </td></tr></table>
 <p>To set the cursor (the item currently dragged with the mouse), use -1 as Window ID and as Slot.
-</p><p>This packet can only be used to edit the hotbar of the player's inventory if window ID is set to 0 (slots 36 through 44).  If the window ID is set to -2, then any slot in the inventory can be used but no add item animation will be played.
 </p>
 <h4><span class="mw-headline" id="Set_Cooldown">Set Cooldown</span></h4>
-<p>Applies a cooldown period to all items with the given type.  Used by the Notchian server with enderpearls.  This packet should be sent when the cooldown starts and also when the cooldown ends (to compensate for lag), although the client will end the cooldown automatically.
+<p>Applies a cooldown period to an item type.
 </p>
 <table class="wikitable">
 <tr>
@@ -2781,17 +2480,16 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> VarInt
 </td>
-<td> Numeric ID of the item to apply a cooldown to.
+<td> ID of the item to apply a cooldown to.
 </td></tr>
 <tr>
 <td> Cooldown Ticks
 </td>
 <td> VarInt
 </td>
-<td> Number of ticks to apply a cooldown for, or 0 to clear the cooldown.
+<td> Number of ticks to apply a cooldown for.
 </td></tr></table>
 <h4><span class="mw-headline" id="Plugin_Message_.28clientbound.29">Plugin Message (clientbound)</span></h4>
-<dl><dd><i>Main article: <a href="/Plugin_channels" title="Plugin channels">Plugin channels</a></i></dd></dl>
 <p>Mods and plugins can use this to send their data. Minecraft itself uses a number of <a href="/Plugin_channel" class="mw-redirect" title="Plugin channel">plugin channels</a>. These internal channels are prefixed with <code>MC|</code>.
 </p><p>More documentation on this: <a rel="nofollow" class="external free" href="http://dinnerbone.com/blog/2012/01/13/minecraft-plugin-channels-messaging/">http://dinnerbone.com/blog/2012/01/13/minecraft-plugin-channels-messaging/</a>
 </p>
@@ -2818,7 +2516,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Channel
 </td>
-<td> String (20)
+<td> String
 </td>
 <td> Name of the <a href="/Plugin_channel" class="mw-redirect" title="Plugin channel">plugin channel</a> used to send the data
 </td></tr>
@@ -2856,9 +2554,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Sound Name
 </td>
-<td> String (256)
+<td> String
 </td>
-<td> All sound effect names as of 1.11.0 can be seen <a rel="nofollow" class="external text" href="http://pokechu22.github.io/Burger/1.11.html#sounds">here</a>.
+<td> All known sound effect names can be seen <a rel="nofollow" class="external text" href="http://pokechu22.github.io/Burger/1.9.html#sounds">here</a>.
 </td></tr>
 <tr>
 <td> Sound Category
@@ -2898,9 +2596,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Pitch
 </td>
-<td> Float
+<td> Unsigned Byte
 </td>
-<td> Float between 0.5 and 2.0 by Notchian clients
+<td> 63 is 100%, can be more
 </td></tr></table>
 <h4><span class="mw-headline" id="Disconnect_.28play.29">Disconnect (play)</span></h4>
 <p>Sent by the server before it disconnects a client. The client assumes that the server has already closed the connection by the time the packet arrives.
@@ -2933,8 +2631,6 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Displayed to the client when the connection terminates.
 </td></tr></table>
 <h4><span class="mw-headline" id="Entity_Status">Entity Status</span></h4>
-<p>Entity statuses generally trigger an animation for an entity.  The available statuses vary by the entity's type (and are available to subclasses of that type as well).
-</p>
 <table class="wikitable">
 <tr>
 <th> Packet ID
@@ -2969,8 +2665,133 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> See below
 </td></tr></table>
-<p>See <a href="/Entities" title="Entities">entities</a> for a list of which statuses are valid for each type of entity.
-</p>
+<table class="wikitable">
+
+<tr>
+<th> Entity Status
+</th>
+<th> Meaning
+</th></tr>
+<tr>
+<td> 1
+</td>
+<td> Sent when resetting a mob spawn minecart's timer — appears to be unused by the client
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> Living Entity hurt
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> Living Entity dead
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> Iron Golem throwing up arms
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> Wolf/Ocelot/Horse taming — Spawn “heart” particles
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> Wolf/Ocelot/Horse tamed — Spawn “smoke” particles
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> Wolf shaking water — Trigger the shaking animation
+</td></tr>
+<tr>
+<td> 9
+</td>
+<td> (of self) Eating accepted by server
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> Sheep eating grass
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> Play TNT ignite sound
+</td></tr>
+<tr>
+<td> 11
+</td>
+<td> Iron Golem handing over a rose
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> Villager mating — Spawn “heart” particles
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> Spawn particles indicating that a villager is angry and seeking revenge
+</td></tr>
+<tr>
+<td> 14
+</td>
+<td> Spawn happy particles near a villager
+</td></tr>
+<tr>
+<td> 15
+</td>
+<td> Witch animation — Spawn “magic” particles
+</td></tr>
+<tr>
+<td> 16
+</td>
+<td> Play zombie converting into a villager sound
+</td></tr>
+<tr>
+<td> 17
+</td>
+<td> Firework exploding
+</td></tr>
+<tr>
+<td> 18
+</td>
+<td> Animal in love (ready to mate) — Spawn “heart” particles
+</td></tr>
+<tr>
+<td> 19
+</td>
+<td> Reset squid rotation
+</td></tr>
+<tr>
+<td> 20
+</td>
+<td> Spawn explosion particle — works for some living entities
+</td></tr>
+<tr>
+<td> 21
+</td>
+<td> Play guardian sound — works for every entity
+</td></tr>
+<tr>
+<td> 22
+</td>
+<td> Enables reduced <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Debug_screen">debug</a></span> for players
+</td></tr>
+<tr>
+<td> 23
+</td>
+<td> Disables reduced <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Debug_screen">debug</a></span> for players
+</td></tr>
+<tr>
+<td> 24–28
+</td>
+<td> Sets <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Server.properties%23op-permission-level">op permission level</a></span> 0–4 for players
+</td></tr></table>
 <h4><span class="mw-headline" id="Explosion">Explosion</span></h4>
 <p>Sent when an explosion occurs (creepers, TNT, and ghast fireballs).
 </p><p>Each block in Records is set to air. Coordinates for each axis in record is int(X) + record.x
@@ -3095,10 +2916,8 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Block coordinate divided by 16, rounded down
 </td></tr></table>
-<p>It is legal to send this packet even if the given chunk is not currently loaded.
-</p>
 <h4><span class="mw-headline" id="Change_Game_State">Change Game State</span></h4>
-<p>Used for a wide variety of game state things, from weather to bed use to game mode to demo messages.
+<p>It appears when a bed can't be used as a spawn point and when the rain state changes.
 </p>
 <table class="wikitable">
 <tr>
@@ -3149,7 +2968,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Invalid Bed
 </td>
-<td> Would be used to switch between messages, but the only used message is 0 for invalid bed
+<td>
 </td></tr>
 <tr>
 <td> 1
@@ -3175,9 +2994,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> 4
 </td>
-<td> Exit end
+<td> Enter credits
 </td>
-<td> 0: Immediately send Client Status of respawn without showing end credits; 1: Show end credits and respawn at the end (or when esc is pressed).  1 is sent if the player has not yet received the "The end?" achievement, while if they do have it 0 is used.
+<td>
 </td></tr>
 <tr>
 <td> 5
@@ -3210,9 +3029,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> 10
 </td>
-<td> Play elder guardian mob appearance (effect and sound)
+<td> Play mob appearance (effect and sound)
 </td>
-<td>
+<td> Unknown
 </td></tr></table>
 <h4><span class="mw-headline" id="Keep_Alive_.28clientbound.29">Keep Alive (clientbound)</span></h4>
 <p>The server will frequently send out a keep-alive, each containing a random ID. The client must respond with the same packet. If the client does not respond to them for over 30 seconds, the server kicks the client. Vice versa, if the server does not send any keep-alives for 20 seconds, the client will disconnect and yields a "Timed out" exception.
@@ -3246,7 +3065,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td></tr></table>
 <h4><span class="mw-headline" id="Chunk_Data">Chunk Data</span></h4>
 <dl><dd><i>See also: <a href="#Unload_Chunk">#Unload Chunk</a></i></dd></dl>
-<p>The server only sends skylight information for chunk pillars in the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Overworld">Overworld</a></span>, it's up to the client to know in which dimenison the player is currently located. You can also infer this information from the primary bitmask and the amount of uncompressed bytes sent.  This packet also sends all block entities in the chunk (though sending them is not required; it is still legal to send them with <a href="#Update_Block_Entity">Update Block Entity</a> later).
+<p>The server only sends skylight information for chunk pillars in the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Overworld">Overworld</a></span>, it's up to the client to know in which dimenison the player is currently located. You can also infer this information from the primary bitmask and the amount of uncompressed bytes sent.
 </p>
 <table class="wikitable">
 <tr>
@@ -3263,11 +3082,11 @@ if z &gt;= 2^25 { z -= 2^26 }
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="9"> 0x20
+<td rowspan="7"> 0x20
 </td>
-<td rowspan="9"> Play
+<td rowspan="7"> Play
 </td>
-<td rowspan="9"> Client
+<td rowspan="7"> Client
 </td>
 <td> Chunk X
 </td>
@@ -3306,7 +3125,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Data
 </td>
-<td> Array of <a href="/SMP_Map_Format" title="SMP Map Format">Chunk Section</a>
+<td> Array of <a href="/SMP_Map_Format" class="mw-redirect" title="SMP Map Format">Chunk Section</a>
 </td>
 <td> The length of the array is equal to the number of bits set in Primary Bit Mask. Chunks are sent bottom-to-top, i.e. the first chunk, if sent, extends from Y=0 to Y=15.
 </td></tr>
@@ -3316,24 +3135,10 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Optional Byte Array
 </td>
 <td> Only if Ground-Up Continuous: biome array, byte per XZ coordinate, 256 bytes total.
-</td></tr>
-<tr>
-<td> Number of block entities
-</td>
-<td> VarInt
-</td>
-<td> Length of the following array
-</td></tr>
-<tr>
-<td> Block entities
-</td>
-<td> Array of <a href="/NBT" title="NBT">NBT Tag</a>
-</td>
-<td> All block entities in the chunk.  Use the x, y, and z tags in the NBT to determine their positions.
 </td></tr></table>
 <h4><span class="mw-headline" id="Effect">Effect</span></h4>
 <p>Sent when a client is to play a sound or particle effect.
-</p><p>By default, the Minecraft client adjusts the volume of sound effects based on distance. The final boolean field is used to disable this, and instead the effect is played from 2 blocks away in the correct direction. Currently this is only used for effect 1023 (wither spawn) and effect 1028 (enderdragon death); it is ignored on other effects.
+</p><p>By default, the Minecraft client adjusts the volume of sound effects based on distance. The final boolean field is used to disable this, and instead the effect is played from 2 blocks away in the correct direction. Currently this is only used for effect 1013 (mob.wither.spawn), and is ignored for any other value by the client.
 </p>
 <table class="wikitable">
 <tr>
@@ -3399,266 +3204,154 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> 1000
 </td>
-<td> Dispenser dispenses
+<td> <code>random.click</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1001
 </td>
-<td> Dispenser fails to dispense
+<td> <code>random.click</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1002
 </td>
-<td> Dispenser shoots
+<td> <code>random.bow</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1003
 </td>
-<td> Ender eye launched
+<td> <code>random.door_open</code> or <code>random.door_close</code> (50/50 chance)
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1004
 </td>
-<td> Firework shot
+<td> <code>random.fizz</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1005
 </td>
-<td> Iron door opened
+<td> Play a music disc.
 </td>
-<td>
+<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Music_Discs">Record ID</a></span>
 </td></tr>
 <tr>
 <td> 1006
 </td>
-<td> Wooden door opened
+<td> <i>not assigned</i>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1007
 </td>
-<td> Wooden trapdoor opened
+<td> <code>mob.ghast.charge</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1008
 </td>
-<td> Fence gate opened
+<td> <code>mob.ghast.fireball</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1009
 </td>
-<td> Fire extinguished
+<td> <code>mob.ghast.fireball</code>, but with a lower volume
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1010
 </td>
-<td> Play record
+<td> <code>mob.zombie.wood</code>
 </td>
-<td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Music_Discs">Record ID</a></span>
+<td>
 </td></tr>
 <tr>
 <td> 1011
 </td>
-<td> Iron door closed
+<td> <code>mob.zombie.metal</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1012
 </td>
-<td> Wooden door closed
+<td> <code>mob.zombie.woodbreak</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1013
 </td>
-<td> Wooden trapdoor closed
+<td> <code>mob.wither.spawn</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1014
 </td>
-<td> Fence gate closed
+<td> <code>mob.wither.shoot</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1015
 </td>
-<td> Ghast warns
+<td> <code>mob.bat.takeoff</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1016
 </td>
-<td> Ghast shoots
+<td> <code>mob.zombie.infect</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1017
 </td>
-<td> Enderdragon shoots
+<td> <code>mob.zombie.unfect</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1018
 </td>
-<td> Blaze shoots
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1019
-</td>
-<td> Zombie attacks wood door
+<td> <code>mob.enderdragon.end</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1020
 </td>
-<td> Zombie attacks iron door
+<td> <code>random.anvil_break</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1021
 </td>
-<td> Zombie breaks wood door
+<td> <code>random.anvil_use</code>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> 1022
 </td>
-<td> Wither breaks block
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1023
-</td>
-<td> Wither spawned
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1024
-</td>
-<td> Wither shoots
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1025
-</td>
-<td> Bat takes off
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1026
-</td>
-<td> Zombie infects
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1027
-</td>
-<td> Zombie villager converted
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1028
-</td>
-<td> Ender dragon death
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1029
-</td>
-<td> Anvil destroyed
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1030
-</td>
-<td> Anvil used
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1031
-</td>
-<td> Anvil landed
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1032
-</td>
-<td> Portal travel
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1033
-</td>
-<td> Chorus flower grown
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1034
-</td>
-<td> Chorus flower died
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1035
-</td>
-<td> Brewing stand brewed
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1036
-</td>
-<td> Iron trapdoor opened
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 1037
-</td>
-<td> Iron trapdoor closed
+<td> <code>random.anvil_land</code>
 </td>
 <td>
 </td></tr>
@@ -3675,16 +3368,16 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> 2001
 </td>
-<td> Block break + block break sound
+<td> Block break
 </td>
 <td> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Data_values">Block ID</a></span>
 </td></tr>
 <tr>
-<td> 2002/2007
+<td> 2002
 </td>
 <td> Splash potion. Particle effect + glass break sound.
 </td>
-<td> <a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Data_values#Potions">Potion ID</a>
+<td> <a rel="nofollow" class="external text" href="http://www.lb-stuff.com/Minecraft/PotionDataValues1.9pre3.txt">Potion ID</a>
 </td></tr>
 <tr>
 <td> 2003
@@ -3703,28 +3396,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> 2005
 </td>
-<td> Bonemeal particles
-</td>
-<td> How many particles to spawn (if set to 0, 15 are spawned)
-</td></tr>
-<tr>
-<td> 2006
-</td>
-<td> Dragon breath
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 3000
-</td>
-<td> End gateway spawn
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 3001
-</td>
-<td> Enderdragon growl
+<td> Spawn “happy villager” effect (green crosses), used for bonemealing vegetation
 </td>
 <td>
 </td></tr></table>
@@ -4119,11 +3791,6 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> sweepattack
 </td>
 <td> 45
-</td></tr>
-<tr>
-<td> fallingdust
-</td>
-<td> 46
 </td></tr></table>
 <h4><span class="mw-headline" id="Join_Game">Join Game</span></h4>
 <p>See <a href="/Protocol_Encryption" title="Protocol Encryption">Protocol Encryption</a> for information on logging in.
@@ -4165,9 +3832,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Dimension
 </td>
-<td> Int Enum
+<td> Byte Enum
 </td>
-<td> -1: Nether, 0: Overworld, 1: End; also, note that this is not a VarInt but instead a regular int.
+<td> -1: Nether, 0: Overworld, 1: End
 </td></tr>
 <tr>
 <td> Difficulty
@@ -4181,12 +3848,12 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Unsigned Byte
 </td>
-<td> Was once used by the client to draw the player list, but now is ignored
+<td> Used by the client to draw the player list
 </td></tr>
 <tr>
 <td> Level Type
 </td>
-<td> String Enum (16)
+<td> String
 </td>
 <td> default, flat, largeBiomes, amplified, default_1_1
 </td></tr>
@@ -4195,7 +3862,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Boolean
 </td>
-<td> If true, a Notchian client shows reduced information on the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Debug_screen">debug screen</a></span>.  For servers in development, this should almost always be false.
+<td> If true, a Notchian client shows reduced information on the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Debug_screen">debug screen</a></span>.
 </td></tr></table>
 <h4><span class="mw-headline" id="Map">Map</span></h4>
 <p>Updates a rectangular area on a <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Map">map</a></span> item.
@@ -4314,71 +3981,6 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td colspan="2"> Optional Array of Unsigned Byte
 </td>
 <td> Only if Columns is more than 0; see <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Map_item_format">Map item format</a></span>
-</td></tr></table>
-<p>For icons, a direction of 0 is a vertical icon and increments by 22.5&#176; (360/16).
-</p><p>Types are based off of rows and columns in <code>map_icons.png</code>:
-</p>
-<table class="wikitable">
-
-<tr>
-<th> Icon type
-</th>
-<th> Result
-</th></tr>
-<tr>
-<td> 0
-</td>
-<td> White arrow (players)
-</td></tr>
-<tr>
-<td> 1
-</td>
-<td> Green arrow (item frames)
-</td></tr>
-<tr>
-<td> 2
-</td>
-<td> Red arrow
-</td></tr>
-<tr>
-<td> 3
-</td>
-<td> Blue arrow
-</td></tr>
-<tr>
-<td> 4
-</td>
-<td> White cross
-</td></tr>
-<tr>
-<td> 5
-</td>
-<td> Red pointer
-</td></tr>
-<tr>
-<td> 6
-</td>
-<td> White circle (off-map players)
-</td></tr>
-<tr>
-<td> 7
-</td>
-<td> Small white circle (far-off-map players)
-</td></tr>
-<tr>
-<td> 8
-</td>
-<td> Mansion
-</td></tr>
-<tr>
-<td> 9
-</td>
-<td> Temple
-</td></tr>
-<tr>
-<td> 10-15
-</td>
-<td> Unused (blue square)
 </td></tr></table>
 <h4><span class="mw-headline" id="Entity_Relative_Move">Entity Relative Move</span></h4>
 <p>This packet is sent by the server when an entity moves less then 8 blocks; if an entity moves more than 8 blocks <a href="#Entity_Teleport">Entity Teleport</a> (<a href="#Play">Play</a>, 0x4A, clientbound) should be sent instead.
@@ -4652,7 +4254,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Absolute rotation on the horizontal axis, in degrees
 </td></tr></table>
 <h4><span class="mw-headline" id="Open_Sign_Editor">Open Sign Editor</span></h4>
-<p>Sent when the client has placed a sign and is allowed to send <a href="#Update_Sign">Update Sign</a>.
+<p>Sent when the client has placed a sign and is allowed to send <a href="#Update_Sign_2">Update Sign</a>.
 </p>
 <table class="wikitable">
 <tr>
@@ -4901,7 +4503,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td colspan="2"> Name
 </td>
-<td colspan="2"> String (16)
+<td colspan="2"> String
 </td>
 <td>
 </td></tr>
@@ -4919,14 +4521,14 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td rowspan="4"> Array
 </td>
-<td> String (32767)
+<td> String
 </td>
 <td>
 </td></tr>
 <tr>
 <td> Value
 </td>
-<td> String (32767)
+<td> String
 </td>
 <td>
 </td></tr>
@@ -4940,7 +4542,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Signature
 </td>
-<td> Optional String (32767)
+<td> Optional String
 </td>
 <td> Only if Is Signed is true
 </td></tr>
@@ -5264,14 +4866,14 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> URL
 </td>
-<td> String (32767)
+<td> String
 </td>
 <td> The URL to the resource pack.
 </td></tr>
 <tr>
 <td> Hash
 </td>
-<td> String (40)
+<td> String
 </td>
 <td> A 40 character hexadecimal and lowercase <a href="http://en.wikipedia.org/wiki/SHA-1" class="extiw" title="wikipedia:SHA-1">SHA-1</a> hash of the resource pack file. (must be lower case in order to work)<br />If it's not a 40 character hexadecimal string, the client will not use it for hash verification and likely waste bandwidth — but it will still treat it as a unique id
 </td></tr></table>
@@ -5317,12 +4919,12 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Unsigned Byte
 </td>
-<td> 0: survival, 1: creative, 2: adventure, 3: spectator. The hardcore flag is not included
+<td> 0: survival, 1: creative, 2: adventure. The hardcore flag is not included
 </td></tr>
 <tr>
 <td> Level Type
 </td>
-<td> String (16)
+<td> String
 </td>
 <td> Same as <a href="#Join_Game">Join Game</a>
 </td></tr></table>
@@ -5640,7 +5242,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Score Name
 </td>
-<td> String (16)
+<td> String
 </td>
 <td> The unique name for the scoreboard to be displayed.
 </td></tr></table>
@@ -5699,11 +5301,11 @@ if z &gt;= 2^25 { z -= 2^26 }
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="2"> 0x3A
+<td rowspan="3"> 0x3A
 </td>
-<td rowspan="2"> Play
+<td rowspan="3"> Play
 </td>
-<td rowspan="2"> Client
+<td rowspan="3"> Client
 </td>
 <td> Attached Entity ID
 </td>
@@ -5926,7 +5528,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Objective Name
 </td>
-<td> String (16)
+<td> String
 </td>
 <td> An unique name for the objective
 </td></tr>
@@ -5940,14 +5542,14 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Objective Value
 </td>
-<td> Optional String (32)
+<td> Optional String
 </td>
 <td> Only if mode is 0 or 2. The text to be displayed for the score
 </td></tr>
 <tr>
 <td> Type
 </td>
-<td> Optional String (16)
+<td> Optional String
 </td>
 <td> Only if mode is 0 or 2. “integer” or “hearts”
 </td></tr></table>
@@ -6019,7 +5621,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td colspan="2"> Team Name
 </td>
-<td> String (16)
+<td> String
 </td>
 <td> A unique name for the team. (Shared with scoreboard).
 </td></tr>
@@ -6035,42 +5637,42 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Team Display Name
 </td>
-<td> String (32)
+<td> String
 </td>
 <td>
 </td></tr>
 <tr>
 <td> Team Prefix
 </td>
-<td> String (16)
+<td> String
 </td>
 <td> Displayed before the names of players that are part of this team
 </td></tr>
 <tr>
 <td> Team Suffix
 </td>
-<td> String (16)
+<td> String
 </td>
 <td> Displayed after the names of players that are part of this team
 </td></tr>
 <tr>
-<td> Friendly Flags
+<td> Friendly Fire
 </td>
-<td> Byte
+<td> Byte Enum
 </td>
-<td> Bit mask. 0x01: Allow friendly fire, 0x02: can see invisible players on same team
+<td> 0 for off, 1 for on, 3 for seeing friendly invisibles
 </td></tr>
 <tr>
 <td> Name Tag Visibility
 </td>
-<td> String Enum (32)
+<td> String Enum
 </td>
 <td> <code>always</code>, <code>hideForOtherTeams</code>, <code>hideForOwnTeam</code>, <code>never</code>
 </td></tr>
 <tr>
 <td> Collision Rule
 </td>
-<td> String Enum (32)
+<td> String Enum
 </td>
 <td> <code>always</code>, <code>pushOtherTeams</code>, <code>pushOwnTeam</code>, <code>never</code>
 </td></tr>
@@ -6079,21 +5681,21 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Byte
 </td>
-<td> For colors, the same <a href="/Chat" title="Chat">Chat</a> colors (0-15).  -1 indicates RESET/no color.
+<td> Same as <a href="/Chat" title="Chat">Chat</a> colors
 </td></tr>
 <tr>
-<td> Entity Count
+<td> Player Count
 </td>
 <td> VarInt
 </td>
 <td> Number of elements in the following array
 </td></tr>
 <tr>
-<td> Entities
+<td> Players
 </td>
-<td> Array of String (40)
+<td> Array of String
 </td>
-<td> Identifiers for the entities in this team.  For players, this is their username; for other entities, it is their UUID.
+<td> Usernames of the players in this team. Maximum 40 characters per entry.
 </td></tr>
 <tr>
 <td> 1: remove team
@@ -6109,42 +5711,42 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Team Display Name
 </td>
-<td> String (32)
+<td> String
 </td>
 <td>
 </td></tr>
 <tr>
 <td> Team Prefix
 </td>
-<td> String (16)
+<td> String
 </td>
-<td> Displayed before the names of entities that are part of this team
+<td> Displayed before the names of players that are part of this team
 </td></tr>
 <tr>
 <td> Team Suffix
 </td>
-<td> String (16)
+<td> String
 </td>
-<td> Displayed after the names of entities that are part of this team
+<td> Displayed after the names of players that are part of this team
 </td></tr>
 <tr>
-<td> Friendly Flags
+<td> Friendly Fire
 </td>
-<td> Byte
+<td> Byte Enum
 </td>
-<td> Bit mask. 0x01: Allow friendly fire, 0x02: can see invisible entities on same team
+<td> 0 for off, 1 for on, 3 for seeing friendly invisibles
 </td></tr>
 <tr>
 <td> Name Tag Visibility
 </td>
-<td> String Enum (32)
+<td> String Enum
 </td>
 <td> <code>always</code>, <code>hideForOtherTeams</code>, <code>hideForOwnTeam</code>, <code>never</code>
 </td></tr>
 <tr>
 <td> Collision Rule
 </td>
-<td> String Enum (32)
+<td> String Enum
 </td>
 <td> <code>always</code>, <code>pushOtherTeams</code>, <code>pushOwnTeam</code>, <code>never</code>
 </td></tr>
@@ -6153,39 +5755,39 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Byte
 </td>
-<td> For colors, the same <a href="/Chat" title="Chat">Chat</a> colors (0-15).  -1 indicates RESET/no color.
+<td> Same as <a href="/Chat" title="Chat">Chat</a> colors
 </td></tr>
 <tr>
 <td rowspan="2"> 3: add players to team
 </td>
-<td> Entity Count
+<td> Player Count
 </td>
 <td> VarInt
 </td>
 <td> Number of elements in the following array
 </td></tr>
 <tr>
-<td> Entities
+<td> Players
 </td>
-<td> Array of String (40)
+<td> Array of String
 </td>
-<td> Identifiers for the entities added.  For players, this is their username; for other entities, it is their UUID.
+<td> Usernames of the added players. Maximum 40 characters per entry.
 </td></tr>
 <tr>
 <td rowspan="2"> 4: remove players from team
 </td>
-<td> Entity Count
+<td> Player Count
 </td>
 <td> VarInt
 </td>
 <td> Number of elements in the following array
 </td></tr>
 <tr>
-<td> Entities
+<td> Players
 </td>
-<td> Array of String (40)
+<td> Array of String
 </td>
-<td> Identifiers for the entities removed.  For players, this is their username; for other entities, it is their UUID.
+<td> Usernames of the removed players. Maximum 40 characters per entry.
 </td></tr></table>
 <h4><span class="mw-headline" id="Update_Score">Update Score</span></h4>
 <p>This is sent to the client when it should update a scoreboard item. 
@@ -6211,11 +5813,11 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td rowspan="4"> Client
 </td>
-<td> Entity Name
+<td> Score Name
 </td>
-<td> String (40)
+<td> String
 </td>
-<td> The entity whose score this is.  For players, this is their username; for other entities, it is their UUID.
+<td> The name of the score to be updated or removed
 </td></tr>
 <tr>
 <td> Action
@@ -6227,7 +5829,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Objective Name
 </td>
-<td> String (16)
+<td> String
 </td>
 <td> The name of the objective the score belongs to
 </td></tr>
@@ -6323,11 +5925,11 @@ if z &gt;= 2^25 { z -= 2^26 }
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="10"> 0x45
+<td rowspan="9"> 0x45
 </td>
-<td rowspan="10"> Play
+<td rowspan="9"> Play
 </td>
-<td rowspan="10"> Client
+<td rowspan="9"> Client
 </td>
 <td colspan="2"> Action
 </td>
@@ -6363,16 +5965,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td>
 </td></tr>
 <tr>
-<td> 2: set action bar
-</td>
-<td> Action bar text
-</td>
-<td> <a href="/Chat" title="Chat">Chat</a>
-</td>
-<td> Behaves the same as with position 2 in <a href="#Chat_Message_.28clientbound.29">Chat Message (clientbound)</a>
-</td></tr>
-<tr>
-<td rowspan="3"> 3: set times and display
+<td rowspan="3"> 2: set times and display
 </td>
 <td> Fade In
 </td>
@@ -6395,7 +5988,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Ticks to spend out, not when to start fading out
 </td></tr>
 <tr>
-<td> 4: hide
+<td> 3: hide
 </td>
 <td> <i>no fields</i>
 </td>
@@ -6404,7 +5997,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td>
 </td></tr>
 <tr>
-<td> 5: reset
+<td> 4: reset
 </td>
 <td> <i>no fields</i>
 </td>
@@ -6415,11 +6008,8 @@ if z &gt;= 2^25 { z -= 2^26 }
 <p>“Hide” makes the title disappear, but if you run times again the same title will appear. “Reset” erases the text.
 </p><p>The title is visible on screen for Fade In + Stay + Fade Out ticks.
 </p>
-<h4><span class="mw-headline" id="Sound_Effect">Sound Effect</span></h4>
-<p>This packet is used to play a number of hardcoded sound events. For custom sounds, use <a href="#Named_Sound_Effect">Named Sound Effect</a> (<a href="#Play">Play</a>, 0x19, clientbound).
-</p><p><span style="background:#FFF3BD; padding: 1px 5px 3px 5px; border: 1px solid #C4B674;">
-<a href="/File:Warning.png" class="image"><img alt="Warning.png" src="/images/c/cb/Warning.png" width="14" height="14" /></a> Numeric sound effect IDs are liable to change between versions
-</span>
+<h4><span class="mw-headline" id="Update_Sign_.28clientbound.29">Update Sign (clientbound)</span></h4>
+<p>This message is sent from the server to the client whenever a sign is discovered or created. This message is NOT sent when a sign is destroyed or unloaded.
 </p>
 <table class="wikitable">
 <tr>
@@ -6436,7 +6026,65 @@ if z &gt;= 2^25 { z -= 2^26 }
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="7"> 0x46
+<td rowspan="5"> 0x46
+</td>
+<td rowspan="5"> Play
+</td>
+<td rowspan="5"> Client
+</td>
+<td> Location
+</td>
+<td> Position
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Line 1
+</td>
+<td> <a href="/Chat" title="Chat">Chat</a>
+</td>
+<td> First line of text in the sign
+</td></tr>
+<tr>
+<td> Line 2
+</td>
+<td> <a href="/Chat" title="Chat">Chat</a>
+</td>
+<td> Second line of text in the sign
+</td></tr>
+<tr>
+<td> Line 3
+</td>
+<td> <a href="/Chat" title="Chat">Chat</a>
+</td>
+<td> Third line of text in the sign
+</td></tr>
+<tr>
+<td> Line 4
+</td>
+<td> <a href="/Chat" title="Chat">Chat</a>
+</td>
+<td> Fourth line of text in the sign
+</td></tr></table>
+<h4><span class="mw-headline" id="Sound_Effect">Sound Effect</span></h4>
+<p>This packet is used to play a number of <a rel="nofollow" class="external text" href="http://pokechu22.github.io/Burger/1.9.html#sounds">hardcoded sound events</a>. For custom sounds, use <a href="#Named_Sound_Effect">Named Sound Effect</a> (<a href="#Play">Play</a>, 0x19, clientbound).
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="7"> 0x47
 </td>
 <td rowspan="7"> Play
 </td>
@@ -6446,7 +6094,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> VarInt
 </td>
-<td> ID of hardcoded sound event (<a rel="nofollow" class="external text" href="http://pokechu22.github.io/Burger/1.11.html#sounds">events</a> as of 1.11.0)
+<td> ID of hardcoded sound event (<a rel="nofollow" class="external text" href="http://pokechu22.github.io/Burger/1.9.html#sounds">events</a>)
 </td></tr>
 <tr>
 <td> Sound Category
@@ -6486,9 +6134,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> Pitch
 </td>
-<td> Float
+<td> Unsigned Byte
 </td>
-<td> Float between 0.5 and 2.0 by Notchian clients
+<td> Float multiplied by 63.5, capped between 0.5 and 2.0 by Notchian clients
 </td></tr></table>
 <h4><span class="mw-headline" id="Player_List_Header_And_Footer">Player List Header And Footer</span></h4>
 <p>This packet may be used by custom servers to display additional information above/below the player list. It is never sent by the Notchian server.
@@ -6508,7 +6156,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="2"> 0x47
+<td rowspan="2"> 0x48
 </td>
 <td rowspan="2"> Play
 </td>
@@ -6545,11 +6193,11 @@ if z &gt;= 2^25 { z -= 2^26 }
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="3"> 0x48
+<td rowspan="2"> 0x49
 </td>
-<td rowspan="3"> Play
+<td rowspan="2"> Play
 </td>
-<td rowspan="3"> Client
+<td rowspan="2"> Client
 </td>
 <td> Collected Entity ID
 </td>
@@ -6563,13 +6211,6 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> VarInt
 </td>
 <td>
-</td></tr>
-<tr>
-<td> Pickup Item Count
-</td>
-<td> VarInt
-</td>
-<td> Seems to be 1 for XP orbs, otherwise the number of items in the stack.
 </td></tr></table>
 <h4><span class="mw-headline" id="Entity_Teleport">Entity Teleport</span></h4>
 <p>This packet is sent by the server when an entity moves more than 4 blocks.
@@ -6589,7 +6230,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="7"> 0x49
+<td rowspan="7"> 0x4A
 </td>
 <td rowspan="7"> Play
 </td>
@@ -6661,7 +6302,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="6"> 0x4A
+<td rowspan="6"> 0x4B
 </td>
 <td rowspan="6"> Play
 </td>
@@ -6687,7 +6328,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td rowspan="4"> Array
 </td>
-<td> String (64)
+<td> String
 </td>
 <td> See below
 </td></tr>
@@ -6870,7 +6511,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="5"> 0x4B
+<td rowspan="5"> 0x4C
 </td>
 <td rowspan="5"> Play
 </td>
@@ -6904,16 +6545,12 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Seconds
 </td></tr>
 <tr>
-<td> Flags
+<td> Particles
 </td>
-<td> Byte
+<td> Byte Enum
 </td>
-<td> Bit field, see below.
+<td> 0: show particles, 1: hide particles, purpose of other values unknown
 </td></tr></table>
-<p>Within flags:
-</p>
-<ul><li> 0x01: Is ambient - was the effect spawned from a beacon?  All beacon-generated effects are ambient.  Ambient effects use a different icon in the HUD (blue border rather than gray).  If all effects on an entity are ambient, the <a href="/Entities#Living" title="Entities">"Is potion effect ambient" living metadata field</a> should be set to true.  Usually should not be enabled.</li>
-<li> 0x02: Show particles - should all particles from this effect be hidden?  Effects with particles hidden are not included in the calculation of the effect color, and are not rendered on the HUD (but are still rendered within the inventory).  Usually should be enabled.</li></ul>
 <h3><span class="mw-headline" id="Serverbound_2">Serverbound</span></h3>
 <h4><span class="mw-headline" id="Teleport_Confirm">Teleport Confirm</span></h4>
 <p>Sent by client as confirmation of <a href="#Player_Position_And_Look_.28clientbound.29">Player Position And Look</a> (<a href="#Play">Play</a>, 0x2E, clientbound).
@@ -6971,7 +6608,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Text
 </td>
-<td> String (32767)
+<td> String
 </td>
 <td> All text behind the cursor (e.g. to the left of the cursor in left-to-right languages like English)
 </td></tr>
@@ -6997,8 +6634,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> The position of the block being looked at. Only sent if Has Position is true.
 </td></tr></table>
 <h4><span class="mw-headline" id="Chat_Message_.28serverbound.29">Chat Message (serverbound)</span></h4>
-<p>Used to send a chat message to the server.  The message may not be longer than 256 characters or else the server will kick the client.
-</p><p>If the message starts with a <code>/</code>, the server will attempt to interpret it as a command.  Otherwise, the server will broadcast the same chat message to all players on the server (including the player that sent the message), prepended with player's name.  Specifically, it will respond with a translate <a href="/Chat" title="Chat">chat</a> component, "<code>chat.type.text</code>" with the first parameter set to the display name of the player (including some chat component logic to support clicking the name to send a PM) and the second parameter set to the message.  See <a href="/Chat#Processing_chat" title="Chat">processing chat</a> for more information.
+<p>The default server will check the message to see if it begins with a '/'. If it doesn't, the username of the sender is prepended and sent to all other clients (including the original sender). If it does, the server assumes it to be a command and attempts to process it. A message longer than 100 characters will cause the server to kick the client. This change was initially done by allowing the client to not slice the message up to 119 (the previous limit), without changes to the server. For this reason, the vanilla server kept the code to cut messages at 119, but this isn't a protocol limitation and can be ignored.
 </p>
 <table class="wikitable">
 <tr>
@@ -7023,9 +6659,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Message
 </td>
-<td> String (256)
+<td> String
 </td>
-<td> The client sends the raw input, not a <a href="/Chat" title="Chat">Chat</a> component
+<td> The client sends the raw input, not <a href="/Chat" title="Chat">Chat</a>
 </td></tr></table>
 <h4><span class="mw-headline" id="Client_Status">Client Status</span></h4>
 <p>Sent when the client is ready to complete login and when the client is ready to respawn after death.
@@ -7107,7 +6743,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Locale
 </td>
-<td> String (7)
+<td> String
 </td>
 <td> e.g. en_GB
 </td></tr>
@@ -7123,7 +6759,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> VarInt Enum
 </td>
-<td> 0: enabled, 1: commands only, 2: hidden.  See <a href="/Chat#Processing_chat" title="Chat">processing chat</a> for more information.
+<td> 0: enabled, 1: commands only, 2: hidden
 </td></tr>
 <tr>
 <td> Chat Colors
@@ -7158,7 +6794,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <p>The most significant bit (bit 7, 0x80) appears to be unused.
 </p>
 <h4><span class="mw-headline" id="Confirm_Transaction_.28serverbound.29">Confirm Transaction (serverbound)</span></h4>
-<p>If a transaction sent by the client was not accepted, the server will reply with a <a href="#Confirm_Transaction_.28clientbound.29">Confirm Transaction (clientbound)</a> packet with the Accepted field set to false. When this happens, the client must send this packet to apologize (as with movement), otherwise the server ignores any successive transactions.
+<p>If a transaction sent by the client was not accepted, the server will reply with a <a href="#Confirm_Transaction">Confirm Transaction</a> (<a href="#Play">Play</a>, 0x32, clientbound) packet with the Accepted field set to false. When this happens, the client must reflect the packet to apologize (as with movement), otherwise the server ignores any successive transactions.
 </p>
 <table class="wikitable">
 <tr>
@@ -7285,7 +6921,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Short
 </td>
-<td> A unique number for the action, implemented by Notchian as a counter, starting at 1. Used by the server to send back a <a href="#Confirm_Transaction_.28clientbound.29">Confirm Transaction (clientbound)</a>.
+<td> A unique number for the action, implemented by Notchian as a counter, starting at 1. Used by the server to send back a <a href="#Confirm_Transaction">Confirm Transaction</a>.
 </td></tr>
 <tr>
 <td> Mode
@@ -7391,7 +7027,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Normal
 </td>
-<td> Middle click, only defined for creative players in non-player inventories.
+<td> Middle click
 </td></tr>
 <tr>
 <th rowspan="4"> 4
@@ -7424,13 +7060,13 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Right click outside inventory holding nothing <i>(no-op)</i>
 </td></tr>
 <tr>
-<th rowspan="9"> 5
+<th rowspan="6"> 5
 </th>
 <td> 0
 </td>
 <td> -999
 </td>
-<td> Starting left mouse drag
+<td> Starting left mouse drag <i>(or middle mouse)</i>
 </td></tr>
 <tr>
 <td> 4
@@ -7438,13 +7074,6 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> -999
 </td>
 <td> Starting right mouse drag
-</td></tr>
-<tr>
-<td> 8
-</td>
-<td> -999
-</td>
-<td> Starting middle mouse drag, only defined for creative players in non-player inventories.  (Note: the vanilla client will still incorrectly send this for non-creative players - see <a rel="nofollow" class="external text" href="https://bugs.mojang.com/browse/MC-46584">MC-46584</a>)
 </td></tr>
 <tr>
 <td> 1
@@ -7461,13 +7090,6 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Add slot for right-mouse drag
 </td></tr>
 <tr>
-<td> 9
-</td>
-<td> Normal
-</td>
-<td> Add slot for middle-mouse drag, only defined for creative players in non-player inventories.  (Note: the vanilla client will still incorrectly send this for non-creative players - see <a rel="nofollow" class="external text" href="https://bugs.mojang.com/browse/MC-46584">MC-46584</a>)
-</td></tr>
-<tr>
 <td> 2
 </td>
 <td> -999
@@ -7480,13 +7102,6 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> -999
 </td>
 <td> Ending right mouse drag
-</td></tr>
-<tr>
-<td> 10
-</td>
-<td> -999
-</td>
-<td> Ending middle mouse drag, only defined for creative players in non-player inventories.  (Note: the vanilla client will still incorrectly send this for non-creative players - see <a rel="nofollow" class="external text" href="https://bugs.mojang.com/browse/MC-46584">MC-46584</a>)
 </td></tr>
 <tr>
 <th> 6
@@ -7503,7 +7118,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <li> packet for every slot painted on, mode is still 5, button (1 | 5);</li>
 <li> packet with mode 5, slot -999, button (2 | 6);</li></ol>
 <p>If any of the painting packets other than the “progress” ones are sent out of order (for example, a start, some slots, then another start; or a left-click in the middle) the painting status will be reset.
-</p><p>The server will send back a <a href="#Confirm_Transaction_.28clientbound.29">Confirm Transaction</a> packet. If the click was not accepted, the client must send a matching <a href="#Confirm_Transaction_.28serverbound.29">serverbound confirm transaction</a> packet before sending more <a href="#Click_Window">Click Window</a> packets, otherwise the server will reject them silently. The Notchian server also sends a <a href="#Window_Items">Window Items</a> packet for the open window and <a href="#Set_Slot">Set Slot</a> packets for the clicked and cursor slot, but only when the click was not accepted, probably to resynchronize client and server.
+</p><p>The server will send back a <a href="#Confirm_Transaction">Confirm Transaction</a> packet. If the click was not accepted, the client must reflect that packet before sending more <a href="#Click_Window">Click Window</a> packets, otherwise the server will reject them silently. The Notchian server also sends a <a href="#Window_Items">Window Items</a> packet for the open window and <a href="#Set_Slot">Set Slot</a> packets for the clicked and cursor slot, but only when the click was not accepted, probably to resynchronize client and server.
 </p>
 <h4><span class="mw-headline" id="Close_Window_.28serverbound.29">Close Window (serverbound)</span></h4>
 <p>This packet is sent by the client when closing a window.
@@ -7537,7 +7152,6 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> This is the ID of the window that was closed. 0 for player inventory.
 </td></tr></table>
 <h4><span class="mw-headline" id="Plugin_Message_.28serverbound.29">Plugin Message (serverbound)</span></h4>
-<dl><dd><i>Main article: <a href="/Plugin_channels" title="Plugin channels">Plugin channels</a></i></dd></dl>
 <p>Mods and plugins can use this to send their data. Minecraft itself uses a number of <a href="/Plugin_channel" class="mw-redirect" title="Plugin channel">plugin channels</a>. These internal channels are prefixed with <code>MC|</code>.
 </p><p>More documentation on this: <a rel="nofollow" class="external free" href="http://dinnerbone.com/blog/2012/01/13/minecraft-plugin-channels-messaging/">http://dinnerbone.com/blog/2012/01/13/minecraft-plugin-channels-messaging/</a>
 </p><p>Note that the length of Data is known only from the packet length, since the packet has no length field of any kind.
@@ -7565,7 +7179,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Channel
 </td>
-<td> String (20)
+<td> String
 </td>
 <td> Name of the <a href="/Plugin_channel" class="mw-redirect" title="Plugin channel">plugin channel</a> used to send the data
 </td></tr>
@@ -7675,15 +7289,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td></tr></table>
 <h4><span class="mw-headline" id="Player_Position">Player Position</span></h4>
 <p>Updates the player's XYZ position on the server.
-</p><p>Checking for moving too fast is achieved like this:
-</p>
-<ul><li> Each server tick, the player's current position is stored</li>
-<li> When a player moves, the changes in x, y, and z coordinates are compared with the positions from the previous tick (&#916;x, &#916;y, &#916;z)</li>
-<li> Total movement distance squared is computed as &#916;x&#178; + &#916;y&#178; + &#916;z&#178;</li>
-<li> The expected movement distance squared is computed as velocityX&#178; + veloctyY&#178; + velocityZ&#178;</li>
-<li> If the total movement distance squared value minus the expected movement distance squared value is more than 100 (300 if the player is using an elytra), they are moving too fast.</li></ul>
-<p>If the player is moving too fast, it will be logged that "&lt;player&gt; moved too quickly! " followed by the change in x, y, and z, and the player will be teleported back to their current (before this packet) serverside position.
-</p><p>Also, if the absolute value of X or the absolute value of Z is a value greater than 3.2×10<sup>7</sup>, or X, Y, or Z are not finite (either positive infinity, negative infinity, or NaN), the client will be kicked for “Invalid move player packet received”.
+</p><p>If the distance between the last known position of the player on the server and the new position set by this packet is greater than 100 units, this will result in the client being kicked for “You moved too quickly&#160;:( (Hacking?)”
+</p><p>If the distance is greater than 10 units, the server will log the warning message "&lt;name&gt; moved too quickly!", followed by two coordinate triples (maybe movement delta?), but will not kick the client.
+</p><p>Also if the fixed-point number of X or Z is set greater than 3.2×10<sup>7</sup> the client will be kicked for “Illegal position”.
 </p>
 <table class="wikitable">
 <tr>
@@ -7717,7 +7325,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Double
 </td>
-<td> Absolute feet position, normally Head Y - 1.62
+<td> Absolute position, normally Head Y - 1.62
 </td></tr>
 <tr>
 <td> Z
@@ -7804,7 +7412,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <p>Updates the direction the player is looking in.
 </p><p>Yaw is measured in degrees, and does not follow classical trigonometry rules. The unit circle of yaw on the XZ-plane starts at (0, 1) and turns counterclockwise, with 90 at (-1, 0), 180 at (0,-1) and 270 at (1, 0). Additionally, yaw is not clamped to between 0 and 360 degrees; any number is valid, including negative numbers and numbers greater than 360.
 </p><p>Pitch is measured in degrees, where 0 is looking straight ahead, -90 is looking straight up, and 90 is looking straight down.
-</p><p>The yaw and pitch of player (in degrees), standing at point (x0, y0, z0) and looking towards point (x, y, z) can be calculated with:
+</p><p>The yaw and pitch of player (in degrees), standing at point (x0, y0, z0) and looking towards point (x, y, z) one can be calculated with:
 </p>
 <pre>dx = x-x0
 dy = y-y0
@@ -7953,8 +7561,6 @@ z =  cos(pitch) * cos(yaw)
 <td> Absolute rotation on the horizontal axis, in degrees
 </td></tr></table>
 <h4><span class="mw-headline" id="Steer_Boat">Steer Boat</span></h4>
-<p>Used to <i>visually</i> update whether boat paddles are turning.  The server will update the <a href="/Entities#Boat" title="Entities">Boat entity metadata</a> to match the values here.
-</p>
 <table class="wikitable">
 <tr>
 <th> Packet ID
@@ -7976,21 +7582,19 @@ z =  cos(pitch) * cos(yaw)
 </td>
 <td rowspan="2"> Server
 </td>
-<td> Right paddle turning
+<td> Unknown
 </td>
 <td> Boolean
 </td>
 <td>
 </td></tr>
 <tr>
-<td> Left paddle turning
+<td> Unknown 2
 </td>
 <td> Boolean
 </td>
 <td>
 </td></tr></table>
-<p>Right paddle turning is set to true when the left button or forward button is held; left paddle turning is set to true when the right button or forward button is set to true.
-</p>
 <h4><span class="mw-headline" id="Player_Abilities_.28serverbound.29">Player Abilities (serverbound)</span></h4>
 <p>The latter 2 bytes are used to indicate the walking and flying speeds respectively, while the first byte is used to determine the value of 4 booleans.
 </p><p>The vanilla client sends this packet when the player starts/stops flying with the Flags parameter changed accordingly. All other parameters are ignored by the vanilla server.
@@ -8037,7 +7641,7 @@ z =  cos(pitch) * cos(yaw)
 <td>
 </td></tr></table>
 <h4><span class="mw-headline" id="Player_Digging">Player Digging</span></h4>
-<p>Sent when the player mines a block. A Notchian server only accepts digging packets with coordinates within a 6-unit radius between the center of the block and 1.5 units from the player's feet (<i>not</i> their eyes).
+<p>Sent when the player mines a block. A Notchian server only accepts digging packets with coordinates within a 6-unit radius of the player's position.
 </p>
 <table class="wikitable">
 <tr>
@@ -8342,8 +7946,6 @@ z =  cos(pitch) * cos(yaw)
 </td>
 <td> Bit mask. 0x1: jump, 0x2: unmount
 </td></tr></table>
-<p>Also known as 'Input' packet.
-</p>
 <h4><span class="mw-headline" id="Resource_Pack_Status">Resource Pack Status</span></h4>
 <table class="wikitable">
 <tr>
@@ -8366,6 +7968,13 @@ z =  cos(pitch) * cos(yaw)
 </td>
 <td rowspan="2"> Server
 </td>
+<td> Hash
+</td>
+<td> String
+</td>
+<td> The hash sent in the <a href="#Resource_Pack_Send">Resource Pack Send</a> packet.
+</td></tr>
+<tr>
 <td> Result
 </td>
 <td> VarInt Enum
@@ -8441,8 +8050,8 @@ z =  cos(pitch) * cos(yaw)
 </td>
 <td>
 </td></tr></table>
-<h4><span class="mw-headline" id="Update_Sign">Update Sign</span></h4>
-<p><span id="Update_Sign_.28serverbound.29"></span>This message is sent from the client to the server when the “Done” button is pushed after placing a sign.
+<h4><span class="mw-headline" id="Update_Sign_.28serverbound.29">Update Sign (serverbound)</span></h4>
+<p>This message is sent from the client to the server when the “Done” button is pushed after placing a sign.
 </p><p>The server only accepts this packet after <a href="#Open_Sign_Editor">Open Sign Editor</a> (<a href="#Play">Play</a>, 0x2A, clientbound), otherwise this packet is silently ignored.
 </p>
 <table class="wikitable">
@@ -8475,28 +8084,28 @@ z =  cos(pitch) * cos(yaw)
 <tr>
 <td> Line 1
 </td>
-<td> String (384)
+<td> String
 </td>
 <td> First line of text in the sign
 </td></tr>
 <tr>
 <td> Line 2
 </td>
-<td> String (384)
+<td> String
 </td>
 <td> Second line of text in the sign
 </td></tr>
 <tr>
 <td> Line 3
 </td>
-<td> String (384)
+<td> String
 </td>
 <td> Third line of text in the sign
 </td></tr>
 <tr>
 <td> Line 4
 </td>
-<td> String (384)
+<td> String
 </td>
 <td> Fourth line of text in the sign
 </td></tr></table>
@@ -8607,26 +8216,26 @@ z =  cos(pitch) * cos(yaw)
 <tr>
 <td> Cursor Position X
 </td>
-<td> Float
+<td> Unsigned Byte
 </td>
-<td> The position of the crosshair on the block, from 0 to 1 increasing from west to east
+<td> The position of the crosshair on the block, from 0 to 15 increasing from west to east
 </td></tr>
 <tr>
 <td> Cursor Position Y
 </td>
-<td> Float
+<td> Unsigned Byte
 </td>
-<td> The position of the crosshair on the block, from 0 to 1 increasing from bottom to top
+<td> The position of the crosshair on the block, from 0 to 15 increasing from bottom to top
 </td></tr>
 <tr>
 <td> Cursor Position Z
 </td>
-<td> Float
+<td> Unsigned Byte
 </td>
-<td> The position of the crosshair on the block, from 0 to 1 increasing from north to south
+<td> The position of the crosshair on the block, from 0 to 15 increasing from north to south
 </td></tr></table>
 <p>In normal operation (i.e. placing a block), this packet is sent once, with the values set normally.
-</p><p>The Cursor Position X/Y/Z fields (also known as in-block coordinates) are calculated using raytracing. The unit corresponds to sixteen pixel in the default resource pack. For example, let's say a slab is being placed against the south face of a full block. The Cursor Position X will be higher if the player was pointing near the right (east) edge of the face, lower if pointing near the left. The Cursor Position Y will be used to determine whether it will appear as a bottom slab (values 0.0–0.5) or as a top slab (values 0.5-1.0). The Cursor Position Z should be 1.0 since the player was looking at the southernmost part of the block.
+</p><p>The Cursor Position X/Y/Z fields (also known as in-block coordinates) are calculated using raytracing. The unit corresponds to one pixel in the default resource pack. For example, let's say a slab is being placed against the south face of a full block. The Cursor Position X will be higher if the player was pointing near the right (east) edge of the face, lower if pointing near the left. The Cursor Position Y will be used to determine whether it will appear as a bottom slab (values 0–7) or as a top slab (values 8–15). The Cursor Position Z should be 15 since the player was looking at the southernmost part of the block.
 </p><p>This packet has a special case where X, Y, Z, and Face are all -1. (Note that Y is unsigned so set to 255.) This special packet indicates that the currently held item for the player should have its state updated such as eating food, pulling back bows, using buckets, etc.
 </p><p>Special note on using buckets: When using buckets, the Notchian client might send two packets: first a normal and then a special case. The first normal packet is sent when you're looking at a block (e.g. the water you want to scoop up). This normal packet does not appear to do anything with a Notchian server. The second, special case packet appears to perform the action — based on current position/orientation and with a distance check — it appears that buckets can only be used within a radius of 6 units.
 </p>
@@ -8687,7 +8296,7 @@ z =  cos(pitch) * cos(yaw)
 </td>
 <td> JSON Response
 </td>
-<td> String (32767)
+<td> String
 </td>
 <td> See <a href="/Server_List_Ping#Response" title="Server List Ping">Server List Ping#Response</a>
 </td></tr></table>
@@ -8781,9 +8390,8 @@ z =  cos(pitch) * cos(yaw)
 <li> Client auth</li>
 <li> C→S: <a href="#Encryption_Response">Encryption Response</a></li>
 <li> Server auth, both enable encryption</li>
-<li> S→C: <a href="#Set_Compression">Set Compression</a> (optional)</li>
-<li> S→C: <a href="#Login_Success">Login Success</a></li></ol>
-<p>Set Compression, if present, must be sent before Login Success. Note that anything sent after Set Compression must use the <a href="#With_compression">Post Compression packet format</a>.
+<li> S→C: <a href="#Login_Success">Login Success</a> and Set Compression</li></ol>
+<p>Login Success and Set Compression can be sent in either order, but anything after Set Compression must use the <a href="#With_compression">Post Compression packet format</a>. The packet ID for Set Compression also depends on the current connection state, and Login Success switches the state to <a href="#Play">play</a>, meaning that the correct packet ID must be used depending on the order chosen.
 </p><p>For unauthenticated and localhost connections (either of the two conditions is enough for an unencrypted connection) there is no encryption. In that case <a href="#Login_Start">Login Start</a> is directly followed by <a href="#Login_Success">Login Success</a>.
 </p><p>See <a href="/Protocol_Encryption" title="Protocol Encryption">Protocol Encryption</a> for details.
 </p>
@@ -8840,7 +8448,7 @@ z =  cos(pitch) * cos(yaw)
 </td>
 <td> Server ID
 </td>
-<td> String (20)
+<td> String
 </td>
 <td> Appears to be empty
 </td></tr>
@@ -8898,22 +8506,20 @@ z =  cos(pitch) * cos(yaw)
 </td>
 <td> UUID
 </td>
-<td> String (36)
+<td> String
 </td>
 <td> Unlike in other packets, this field contains the UUID as a string with hyphens.
 </td></tr>
 <tr>
 <td> Username
 </td>
-<td> String (16)
+<td> String
 </td>
 <td>
 </td></tr></table>
 <p>This packet switches the connection state to <a href="#Play">play</a>.
 </p>
 <h4><span class="mw-headline" id="Set_Compression">Set Compression</span></h4>
-<p>Enables compression.  If compression is enabled, all following packets are encoded in the <a href="#With_compression">compressed packet format</a>.  Negative values will disable compression, meaning the packet format should remain in the <a href="#Without_compression">uncompressed packet format</a>.  However, this packet is entirely optional, and if not sent, compression will also not be enabled (the notchian server does not send the packet when compression is disabled).
-</p>
 <table class="wikitable">
 <tr>
 <th> Packet ID
@@ -8966,9 +8572,9 @@ z =  cos(pitch) * cos(yaw)
 </td>
 <td> Name
 </td>
-<td> String (16)
+<td> String
 </td>
-<td> Player's Username
+<td>
 </td></tr></table>
 <h4><span class="mw-headline" id="Encryption_Response">Encryption Response</span></h4>
 <table class="wikitable">
@@ -9023,37 +8629,33 @@ z =  cos(pitch) * cos(yaw)
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20170607030054
+Cached time: 20170807010949
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.887 seconds
-Real time usage: 2.024 seconds
-Preprocessor visited node count: 1151/1000000
-Preprocessor generated node count: 1873/1000000
-Post‐expand include size: 18548/2097152 bytes
-Template argument size: 4759/2097152 bytes
+CPU time usage: 0.900 seconds
+Real time usage: 2.070 seconds
+Preprocessor visited node count: 1115/1000000
+Preprocessor generated node count: 1753/1000000
+Post‐expand include size: 17621/2097152 bytes
+Template argument size: 4010/2097152 bytes
 Highest expansion depth: 6/40
 Expensive parser function count: 0/100
 -->
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00% 1280.604      1 - -total
- 61.95%  793.301      1 - Data_types
-  3.44%   44.062     24 - Template:Minecraft_Wiki
-  2.20%   28.217     24 - Template:Plainlink
-  0.51%    6.473      3 - Template:Warning2
-  0.47%    6.053      3 - Template:Main
-  0.41%    5.224      1 - Template:Anchor
-  0.41%    5.205      1 - Template:Box
-  0.40%    5.143      2 - Template:See_also
-  0.37%    4.765      3 - Template:Warning
+100.00% 1304.775      1 - -total
+ 60.71%  792.160      1 - Data_types
+  3.25%   42.388     24 - Template:Minecraft_Wiki
+  2.12%   27.697     24 - Template:Plainlink
+  0.45%    5.886      2 - Template:See_also
+  0.39%    5.041      2 - Template:Warning2
+  0.35%    4.621      1 - Template:Box
+  0.34%    4.371      1 - Template:Main
+  0.24%    3.191      1 - Template:Warning
 -->
-
-<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:9-0!*!0!!en!5!* and timestamp 20170607030052 and revision id 8543
- -->
 </div>					<div class="printfooter">
-						Retrieved from "<a dir="ltr" href="http://wiki.vg/index.php?title=Protocol&amp;oldid=8543">http://wiki.vg/index.php?title=Protocol&amp;oldid=8543</a>"					</div>
+						Retrieved from "<a dir="ltr" href="http://wiki.vg/index.php?title=Protocol&amp;oldid=7617">http://wiki.vg/index.php?title=Protocol&amp;oldid=7617</a>"					</div>
 				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/Category:Protocol_Details" title="Category:Protocol Details">Protocol Details</a></li><li><a href="/Category:Minecraft_Modern" title="Category:Minecraft Modern">Minecraft Modern</a></li></ul></div></div>				<div class="visualClear"></div>
 							</div>
 		</div>
@@ -9064,7 +8666,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
 						<h3 id="p-personal-label">Personal tools</h3>
 						<ul>
-							<li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Protocol" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Protocol" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+							<li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Protocol&amp;returntoquery=oldid%3D7617" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Protocol&amp;returntoquery=oldid%3D7617" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
 					</div>
 									<div id="left-navigation">
 										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
@@ -9090,7 +8692,7 @@ Transclusion expansion time report (%,ms,calls,template)
 						<h3 id="p-views-label">Views</h3>
 						<ul>
 															<li id="ca-view" class="selected"><span><a href="/Protocol" >Read</a></span></li>
-															<li id="ca-viewsource"><span><a href="/index.php?title=Protocol&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Protocol&amp;action=edit&amp;oldid=7617"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
 															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Protocol&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
 													</ul>
 					</div>
@@ -9129,14 +8731,13 @@ Transclusion expansion time report (%,ms,calls,template)
 
 			<div class="body">
 									<ul>
-						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Protocol" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Protocol&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Protocol&amp;oldid=8543" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Protocol&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Protocol" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Protocol&amp;oldid=7617&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Protocol&amp;oldid=7617" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Protocol&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
 							</div>
 		</div>
 				</div>
 		</div>
 		<div id="footer" role="contentinfo">
 							<ul id="footer-info">
-											<li id="footer-info-lastmod"> This page was last modified on 2 May 2017, at 19:00.</li>
 											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share Alike</a> unless otherwise noted.</li>
 									</ul>
 							<ul id="footer-places">
@@ -9159,6 +8760,6 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 <script type="text/javascript">
 var pageTracker = _gat._getTracker("UA-11145163-13");
 pageTracker._trackPageview();
-</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":218});});</script>
+</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":2253});});</script>
 	</body>
 </html>
