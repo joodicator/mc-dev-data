@@ -15,12 +15,6 @@ body {
     table-layout: fixed;
 }
 
-.packet-id-matrix tr > * {
-    border: 1px solid black;
-    overflow: hidden;
-    background-color: white;
-}
-
 .packet-id-matrix.top-header {
     position: sticky;
     top: 0px;
@@ -72,24 +66,33 @@ body {
     font-weight: bold;
 }
 
-.packet-format-changed {
-    background-color: #FF8 !important;
+.packet-id-matrix tr > * {
+    border: 1px solid black;
+    overflow: hidden;
+    background-color: white;
 }
 
-.packet-base {
-    background-color: #EEF !important;
+.packet-id-matrix tr.highlight > *,
+.packet-id-matrix tr > *.highlight {
+    background-repeat: repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgHDywjLGFMHgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAADUlEQVQI12NoYGhQAwADKwEnW0bWPwAAAABJRU5ErkJggg==);
 }
 
-.packet-added {
-    background-color: #AFA !important;
-    font-weight: bold;
-}
+.packet-format-changed { background-color: #FF8 !important; }
+.packet-base           { background-color: #EEF !important; }
+.packet-added          { background-color: #AFA !important; font-weight: bold; }
+.packet-removed        { background-color: #FAA !important; }
 
 .packet-removed::before {
-    content: "—";
-    font-weight: bold;
+    content: "—"; font-weight: bold;
 }
 
-.packet-removed {
-    background-color: #FAA !important;
-}
+.packet-state-handshaking.packet-bound-client::before { content: "HC "; color: #888; }
+.packet-state-login.packet-bound-client::before       { content: "LC "; color: #888; }
+.packet-state-play.packet-bound-client::before        { content: "PC "; color: #888; }
+.packet-state-status.packet-bound-client::before      { content: "SC "; color: #888; }
+
+.packet-state-handshaking.packet-bound-server::before { content: "HS "; color: #888; }
+.packet-state-login.packet-bound-server::before       { content: "LS "; color: #888; }
+.packet-state-play.packet-bound-server::before        { content: "PS "; color: #888; }
+.packet-state-status.packet-bound-server::before      { content: "SS "; color: #888; }

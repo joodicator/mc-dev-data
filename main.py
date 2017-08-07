@@ -11,134 +11,136 @@ import sys
 import re
 
 
-matrix_id = namedtuple(
-    'matrix_id', ('id', 'changed'))
-matrix_id.__str__ = lambda r: \
-    'matrix_id(id=0x%02X, changed=%r)' \
+MatrixID = namedtuple(
+    'MatrixID', ('id', 'changed'))
+MatrixID.__str__ = lambda r: \
+    'MatrixID(id=0x%02X, changed=%r)' \
     % (r.id, r.changed)
 
-vsn = namedtuple(
-    'vsn', ('name', 'protocol'))
+Vsn = namedtuple(
+    'Vsn', ('name', 'protocol'))
 
-version_diff = namedtuple(
-    'version_diff', ('old', 'new'))
+VersionDiff = namedtuple(
+    'VersionDiff', ('old', 'new'))
 
-pre_packet = namedtuple(
-    'pre_packet', ('name', 'old_id', 'new_id', 'changed', 'state', 'bound'))
-pre_packet.__str__ = lambda r: \
-    'pre_packet(name=%r, old_id=0x%02X, new_id=0x%02X, changed=%r, state=%r, bound=%r)' \
+PrePacket = namedtuple(
+    'PrePacket', ('name', 'old_id', 'new_id', 'changed', 'state', 'bound'))
+PrePacket.__str__ = lambda r: \
+    'PrePacket(name=%r, old_id=0x%02X, new_id=0x%02X, changed=%r, state=%r, bound=%r)' \
     % (r.name, r.old_id, r.new_id, r.changed, r.state, r.bound)
 
-rel_packet = namedtuple(
-    'rel_packet', ('name', 'id', 'state', 'bound'))
-rel_packet.__str__ = lambda r: \
-    'rel_packet(name=%r, id=0x%02X, state=%r, bound=%r)' \
+RelPacket = namedtuple(
+    'RelPacket', ('name', 'id', 'state', 'bound'))
+RelPacket.__str__ = lambda r: \
+    'RelPacket(name=%r, id=0x%02X, state=%r, bound=%r)' \
     % (r.name, r.id, r.state, r.bound)
 
+PacketClass = namedtuple(
+    'PacketClass', ('name', 'state', 'bound'))
 
 version_urls = {
-    vsn('1.12.1',      338): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13287',
-    vsn('1.12.1-pre1', 337): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13267',
-    vsn('17w31a',      336): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13265',
-    vsn('1.12',        335): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12929',
-    vsn('1.12-pre7',   334): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12918',
-    vsn('1.12-pre6',   333): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12909',
-    vsn('1.12-pre5',   332): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10809',
-    vsn('1.12-pre4',   331): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10804',
-    vsn('1.12-pre3',   330): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10803',
-    vsn('1.12-pre2',   329): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10418',
-    vsn('1.12-pre1',   328): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=9819',
-    vsn('17w18b',      327): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8548',
-    vsn('17w18a',      326): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8546',
-    vsn('17w17b',      325): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8536',
-    vsn('17w17a',      324): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8528',
-    vsn('17w16b',      323): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8519',
-    vsn('17w16a',      322): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8515',
-    vsn('17w15a',      321): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8499',
-    vsn('17w14a',      320): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8490',
-    vsn('17w13b',      319): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8475',
-    vsn('17w13a',      318): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8454',
-    vsn('17w06a',      317): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8414',
-    vsn('1.11.2',      316): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8356',
-    vsn('1.11',        315): 'http://wiki.vg/index.php?title=Protocol&oldid=8405',
-    vsn('1.11-pre1',   314): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8249',
-    vsn('16w44a',      313): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8246',
-    vsn('16w42a',      312): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8225',
-    vsn('16w41a',      311): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8218',
-    vsn('16w40a',      310): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8204',
-    vsn('16w39c',      309): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8177',
-    vsn('16w39b',      308): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8149',
-    vsn('16w39a',      307): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8141',
-    vsn('16w38a',      306): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8118',
-    vsn('16w36a',      305): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8099',
-    vsn('16w35a',      304): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8094',
-    vsn('16w33a',      303): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8084',
-    vsn('16w32b',      302): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8063',
-    vsn('16w32a',      301): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8062',
-    vsn('1.10.2',      210): 'http://wiki.vg/index.php?title=Protocol&oldid=8235',
-    vsn('1.9.4',       110): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7804',
-    vsn('1.9.2',       109): 'http://wiki.vg/index.php?title=Protocol&oldid=7817',
-    vsn('1.9.1',       108): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7552',
-    vsn('1.9',         107): 'http://wiki.vg/index.php?title=Protocol&oldid=7617',
-    vsn('1.8.9',       47):  'http://wiki.vg/index.php?title=Protocol&oldid=7368',
+    Vsn('1.12.1',      338): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13287',
+    Vsn('1.12.1-pre1', 337): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13267',
+    Vsn('17w31a',      336): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13265',
+    Vsn('1.12',        335): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12929',
+    Vsn('1.12-pre7',   334): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12918',
+    Vsn('1.12-pre6',   333): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=12909',
+    Vsn('1.12-pre5',   332): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10809',
+    Vsn('1.12-pre4',   331): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10804',
+    Vsn('1.12-pre3',   330): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10803',
+    Vsn('1.12-pre2',   329): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=10418',
+    Vsn('1.12-pre1',   328): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=9819',
+    Vsn('17w18b',      327): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8548',
+    Vsn('17w18a',      326): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8546',
+    Vsn('17w17b',      325): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8536',
+    Vsn('17w17a',      324): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8528',
+    Vsn('17w16b',      323): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8519',
+    Vsn('17w16a',      322): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8515',
+    Vsn('17w15a',      321): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8499',
+    Vsn('17w14a',      320): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8490',
+    Vsn('17w13b',      319): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8475',
+    Vsn('17w13a',      318): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8454',
+    Vsn('17w06a',      317): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8414',
+    Vsn('1.11.2',      316): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8356',
+    Vsn('1.11',        315): 'http://wiki.vg/index.php?title=Protocol&oldid=8405',
+    Vsn('1.11-pre1',   314): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8249',
+    Vsn('16w44a',      313): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8246',
+    Vsn('16w42a',      312): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8225',
+    Vsn('16w41a',      311): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8218',
+    Vsn('16w40a',      310): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8204',
+    Vsn('16w39c',      309): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8177',
+    Vsn('16w39b',      308): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8149',
+    Vsn('16w39a',      307): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8141',
+    Vsn('16w38a',      306): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8118',
+    Vsn('16w36a',      305): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8099',
+    Vsn('16w35a',      304): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8094',
+    Vsn('16w33a',      303): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8084',
+    Vsn('16w32b',      302): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8063',
+    Vsn('16w32a',      301): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=8062',
+    Vsn('1.10.2',      210): 'http://wiki.vg/index.php?title=Protocol&oldid=8235',
+    Vsn('1.9.4',       110): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7804',
+    Vsn('1.9.2',       109): 'http://wiki.vg/index.php?title=Protocol&oldid=7817',
+    Vsn('1.9.1',       108): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=7552',
+    Vsn('1.9',         107): 'http://wiki.vg/index.php?title=Protocol&oldid=7617',
+    Vsn('1.8.9',       47):  'http://wiki.vg/index.php?title=Protocol&oldid=7368',
 }
 
 patch = {
-    (vsn('1.9.1', 108), version_diff(vsn('1.9', 107), vsn('1.9.1-pre3', 108))):
-                        version_diff(vsn('1.9', 107), vsn('1.9.1', 108)),
-    (vsn('1.9.4', 110), version_diff(vsn('1.9.2', 109), vsn('1.9.3-pre3', 110))):
-                        version_diff(vsn('1.9.2', 109), vsn('1.9.4', 110)),
+    (Vsn('1.9.1', 108), VersionDiff(Vsn('1.9', 107), Vsn('1.9.1-pre3', 108))):
+                        VersionDiff(Vsn('1.9', 107), Vsn('1.9.1', 108)),
+    (Vsn('1.9.4', 110), VersionDiff(Vsn('1.9.2', 109), Vsn('1.9.3-pre3', 110))):
+                        VersionDiff(Vsn('1.9.2', 109), Vsn('1.9.4', 110)),
 
-    (vsn('17w13a', 318), pre_packet('Unknown', None, 0x01, True, 'Play', 'Server')):
-                         pre_packet('Craft Recipe Request', None, 0x01, True, 'Play', 'Server'),
-    (vsn('17w13b', 319), pre_packet('Unknown', None, 0x01, True, 'Play', 'Server')):
-                         pre_packet('Craft Recipe Request', None, 0x01, True, 'Play', 'Server'),
-    (vsn('17w13a', 318), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('17w13b', 319), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('17w14a', 320), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('17w15a', 321), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('17w16a', 322), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('17w16b', 323), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('17w17a', 324), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('17w17b', 325), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('17w18a', 326), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('17w18b', 327), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('1.12-pre1', 328), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                            pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('1.12-pre2', 329), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                            pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('1.12-pre3', 330), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                            pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('1.12-pre4', 331), pre_packet('Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                            pre_packet('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (vsn('17w31a', 336), pre_packet('Craft Recipe Request', 0x01, None, True, 'Play', 'Server')):
+    (Vsn('17w13a', 318), PrePacket('Unknown', None, 0x01, True, 'Play', 'Server')):
+                         PrePacket('Craft Recipe Request', None, 0x01, True, 'Play', 'Server'),
+    (Vsn('17w13b', 319), PrePacket('Unknown', None, 0x01, True, 'Play', 'Server')):
+                         PrePacket('Craft Recipe Request', None, 0x01, True, 'Play', 'Server'),
+    (Vsn('17w13a', 318), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('17w13b', 319), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('17w14a', 320), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('17w15a', 321), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('17w16a', 322), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('17w16b', 323), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('17w17a', 324), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('17w17b', 325), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('17w18a', 326), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('17w18b', 327), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('1.12-pre1', 328), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                            PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('1.12-pre2', 329), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                            PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('1.12-pre3', 330), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                            PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('1.12-pre4', 331), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+                            PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+    (Vsn('17w31a', 336), PrePacket('Craft Recipe Request', 0x01, None, True, 'Play', 'Server')):
                          None,
-    (vsn('17w31a', 336), pre_packet('Unknown (serverbound)', None, 0x12, True, 'Play', 'Server')):
-                         pre_packet('Craft Recipe Request', 0x01, 0x12, True, 'Play', 'Server'),
-    (vsn('17w31a', 336), pre_packet('Unknown (clientbound)', None, 0x2B, True, 'Play', 'Client')):
-                         pre_packet('Craft Recipe Response', None, 0x2B, True, 'Play', 'Client'),
-    (vsn('1.12.1-pre1', 337), pre_packet('Unknown (serverbound)', None, 0x12, True, 'Play', 'Server')):
-                              pre_packet('Craft Recipe Request', 0x01, 0x12, True, 'Play', 'Server'),
-    (vsn('1.12.1-pre1', 337), pre_packet('Unknown (clientbound)', None, 0x2B, True, 'Play', 'Client')):
-                              pre_packet('Craft Recipe Response', None, 0x2B, True, 'Play', 'Client'),
-    (vsn('1.12.1-pre1', 337), pre_packet('Craft Recipe Request', 0x01, None, True, 'Play', 'Server')):
+    (Vsn('17w31a', 336), PrePacket('Unknown (serverbound)', None, 0x12, True, 'Play', 'Server')):
+                         PrePacket('Craft Recipe Request', 0x01, 0x12, True, 'Play', 'Server'),
+    (Vsn('17w31a', 336), PrePacket('Unknown (clientbound)', None, 0x2B, True, 'Play', 'Client')):
+                         PrePacket('Craft Recipe Response', None, 0x2B, True, 'Play', 'Client'),
+    (Vsn('1.12.1-pre1', 337), PrePacket('Unknown (serverbound)', None, 0x12, True, 'Play', 'Server')):
+                              PrePacket('Craft Recipe Request', 0x01, 0x12, True, 'Play', 'Server'),
+    (Vsn('1.12.1-pre1', 337), PrePacket('Unknown (clientbound)', None, 0x2B, True, 'Play', 'Client')):
+                              PrePacket('Craft Recipe Response', None, 0x2B, True, 'Play', 'Client'),
+    (Vsn('1.12.1-pre1', 337), PrePacket('Craft Recipe Request', 0x01, None, True, 'Play', 'Server')):
                               None,
-    (vsn('1.12.1', 338), version_diff(vsn('1.12', 335), vsn('1.12.1-pre1', 338))):
-                         version_diff(vsn('1.12', 335), vsn('1.12.1', 338)),
-    (vsn('1.12.1', 338), pre_packet('Craft Recipe Request', 0x01, None, True, 'Play', 'Server')):
+    (Vsn('1.12.1', 338), VersionDiff(Vsn('1.12', 335), Vsn('1.12.1-pre1', 338))):
+                         VersionDiff(Vsn('1.12', 335), Vsn('1.12.1', 338)),
+    (Vsn('1.12.1', 338), PrePacket('Craft Recipe Request', 0x01, None, True, 'Play', 'Server')):
                          None,
-    (vsn('1.12.1', 338), pre_packet('Craft Recipe Request', None, 0x12, True, 'Play', 'Server')):
-                         pre_packet('Craft Recipe Request', 0x01, 0x12, True, 'Play', 'Server'),
+    (Vsn('1.12.1', 338), PrePacket('Craft Recipe Request', None, 0x12, True, 'Play', 'Server')):
+                         PrePacket('Craft Recipe Request', 0x01, 0x12, True, 'Play', 'Server'),
 }
 
 
@@ -172,7 +174,7 @@ def norm_packet_name(name, state=None, bound=None):
 def matrix_html():
     matrix = version_packet_ids()
     versions = sorted(matrix.keys(), key=lambda v: v.protocol, reverse=True)
-    packet_names = sorted({n for pis in matrix.values() for n in pis.keys()})
+    packet_classes = sorted({p for ids in matrix.values() for p in ids.keys()})
 
     print('<!DOCTYPE html>')
     print('<html>')
@@ -180,6 +182,7 @@ def matrix_html():
     print('        <meta charset="utf-8">')
     print('        <title></title>')
     print('        <link rel="stylesheet" href="style.css">')
+    print('        <script src="main.js" type="text/javascript"></script>')
     print('    </head>')
     print('    <body>')
     print('    <div class="packet-id-matrix-container">')
@@ -195,13 +198,13 @@ def matrix_html():
 
     print('      <table class="packet-id-matrix contents">')
     print('          <colgroup>' + ' <col>'*(len(versions)+1))
-    for packet_name in packet_names:
+    for packet_class in packet_classes:
         print('          <tr> <th></th>', end='')
         for i in range(len(versions)):
-            prev_cell = matrix[versions[i+1]].get(packet_name) \
+            prev_cell = matrix[versions[i+1]].get(packet_class) \
                         if i<len(versions)-1 else None
-            if packet_name in matrix[versions[i]]:
-                cell = matrix[versions[i]][packet_name]
+            if packet_class in matrix[versions[i]]:
+                cell = matrix[versions[i]][packet_class]
                 classes = []
                 if cell.changed is None:
                     classes.append('packet-base')
@@ -225,8 +228,10 @@ def matrix_html():
 
     print('      <table class="packet-id-matrix left-header">')
     print('          <colgroup><col></col></colgroup>')
-    for packet_name in packet_names:
-        print('          <tr><th>%s</th></tr>' % packet_name, end='')
+    for packet_class in packet_classes:
+        print('          <tr><th class="packet-state-%s packet-bound-%s">%s</th></tr>' % (
+            packet_class.state.lower(), packet_class.bound.lower(),
+            packet_class.name), end='')
     print('      </table>')
 
     print('   </div>')
@@ -236,6 +241,7 @@ def matrix_html():
 
 def version_packet_ids():
     used_patches = set()
+    packet_classes = {}
     matrix = {}
     for v, url in sorted(version_urls.items(), key=lambda i: i[0].protocol):
         soup = get_soup(url)
@@ -258,27 +264,35 @@ def version_packet_ids():
                     '[%s] Duplicate packet name:\n%s\n%s' % \
                     (v.name, seen_names[packet.name], packet)
                 seen_names[packet.name] = packet
+
+                packet_class = PacketClass(
+                    name=packet.name, state=packet.state, bound=packet.bound)
+                if packet.name not in packet_classes:
+                    packet_classes[packet.name] = packet_class
+                assert packet_class == packet_classes[packet.name], \
+                    '[%s] %r != %r' % (v.name, packet_class, packet_classes[packet.name])
+
                 if packet.old_id is None:
-                    assert packet.name not in matrix[from_v], \
-                           '[%s] %r in matrix[%r]' % (v.name, packet.name, from_v)
+                    assert packet_class not in matrix[from_v], \
+                           '[%s] %r in matrix[%r]' % (v.name, packet_class, from_v)
                 else:
-                    assert packet.name in matrix[from_v], \
-                        '[%s] %r not in matrix[%r]' % (v.name, packet.name, from_v)
-                    assert packet.old_id == matrix[from_v][packet.name].id, \
+                    assert packet_class in matrix[from_v], \
+                        '[%s] %r not in matrix[%r]' % (v.name, packet_class, from_v)
+                    assert packet.old_id == matrix[from_v][packet_class].id, \
                         '[%s] 0x%02x != matrix[%r][%r].id == 0x%02x' % (
-                        v.name, packet.old_id, from_v, packet.name,
-                        matrix[from_v][packet.name].id)
+                        v.name, packet.old_id, from_v, packet_class,
+                        matrix[from_v][packet_class].id)
                 if packet.new_id is not None:
-                    matrix[v][packet.name] = matrix_id(
+                    matrix[v][packet_class] = MatrixID(
                         id = packet.new_id,
                         changed = packet.changed)
-            for packet, id in matrix[from_v].items():
-                if packet in seen_names: continue
-                matrix[v][packet] = matrix_id(id=id.id, changed=False)
+            for packet_class, id in matrix[from_v].items():
+                if packet_class.name in seen_names: continue
+                matrix[v][packet_class] = id._replace(changed=False)
         elif heading == 'Protocol':
             rel_v = rel_version(soup)
             if rel_v.name is None:
-                rel_v = vsn(v.name, rel_v.protocol)
+                rel_v = Vsn(v.name, rel_v.protocol)
             assert v == rel_v, '%r != %r' % (v, rel_v)
             matrix[v] = {}
             seen_names = {}
@@ -291,7 +305,14 @@ def version_packet_ids():
                     '[%s] Duplicate packet name:\n%s\n%s.' \
                     % (v.name, seen_names[packet.name], packet)
                 seen_names[packet.name] = packet
-                matrix[v][packet.name] = matrix_id(packet.id, None)
+
+                packet_class = PacketClass(
+                    name=packet.name, state=packet.state, bound=packet.bound)
+                if packet.name not in packet_classes:
+                    packet_classes[packet.name] = packet_class
+                assert packet_classes[packet.name] == packet_class
+
+                matrix[v][packet_class] = MatrixID(packet.id, None)
         else:
             raise AssertionError('Unrecognised article title: %r' % heading)
 
@@ -330,11 +351,11 @@ def pre_versions(soup):
     for a in soup.find(id='mw-content-text').find('p').findAll('a'):
         m = PRE_VER_RE.match(a.text.strip())
         if m is None: continue
-        vs.append(vsn(
+        vs.append(Vsn(
             name     = m.group('name'),
             protocol = int(m.group('protocol'))))
     if len(vs) == 2:
-        return version_diff(*vs)
+        return VersionDiff(*vs)
     else:
         raise AssertionError('Found %d versions in first paragraph where 2'
         ' are expected: %r' % (len(vs), vs))
@@ -397,7 +418,7 @@ def pre_packets(soup, vsn):
 
             name = tds[cols[c_name]].text.strip()
             name = norm_packet_name(name, state, bound)
-            yield pre_packet(
+            yield PrePacket(
                 name=name, old_id=old_id, new_id=new_id, changed=changed,
                 state=state, bound=bound)
 
@@ -419,7 +440,7 @@ def rel_packets(soup):
             continue
         name = table.findPreviousSibling('h4').text.strip()
         name = norm_packet_name(name, state, bound)
-        yield rel_packet(name=name, id=id, state=state, bound=bound)
+        yield RelPacket(name=name, id=id, state=state, bound=bound)
 
 
 REL_VER_RE = re.compile(r'\(currently (?P<protocol>\d+)'
@@ -431,7 +452,7 @@ def rel_version(soup):
     td = td.findNextSibling('td')
     m = REL_VER_RE.search(td.text)
     protocol = int(m.group('protocol')) if m.group('protocol') else None
-    return vsn(name=m.group('name'), protocol=protocol)
+    return Vsn(name=m.group('name'), protocol=protocol)
 
 
 if __name__ == '__main__':
