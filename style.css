@@ -22,9 +22,10 @@ body {
 }
 
 .packet-id-matrix.top-header {
-    margin-bottom: -1px;
     position: sticky;
     top: 0px;
+    margin-left: -1px;
+    margin-bottom: -1px;
     z-index: 2;
 }
 
@@ -36,12 +37,9 @@ body {
     z-index: 1;
 }
 
-.packet-id-matrix.left-header td {
-    padding-left: 2px;
-}
-
 .packet-id-matrix.contents {
     position: absolute;
+    margin-left: -1px;
 }
 
 .packet-id-matrix.top-header col:not(:first-child),
@@ -57,7 +55,13 @@ body {
 .packet-id-matrix.top-header th:first-child,
 .packet-id-matrix.contents th:first-child {
     border-top-color: white;
-    border-left: none;
+    border-left-color: white;
+}
+
+.packet-id-matrix.contents th {
+    border-left-color: white;
+    border-top-color: white;
+    border-bottom-color: white;
 }
 
 .packet-id-matrix.top-header, .packet-id-matrix.contents {
