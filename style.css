@@ -38,7 +38,7 @@ body {
 
 .packet-id-matrix.top-header col:not(:first-child),
 .packet-id-matrix.contents col:not(:first-child) {
-    width: 13ex;
+    width: 11ex;
 }
 
 .packet-id-matrix.top-header col:first-child,
@@ -96,3 +96,11 @@ body {
 .packet-state-login.packet-bound-server::before       { content: "LS "; color: #888; }
 .packet-state-play.packet-bound-server::before        { content: "PS "; color: #888; }
 .packet-state-status.packet-bound-server::before      { content: "SS "; color: #888; }
+
+.packet-id-matrix.top-header .pycraft-supported-version { color:#00F; }
+.packet-id-matrix.left-header .pycraft-supported-packet-class { color:#00F; }
+.packet-id-matrix a { color:inherit; }
+
+.packet-id-matrix.contents .packet-present.pycraft-supported-packet-class { color:#F00; }
+.packet-id-matrix.contents .packet-present.pycraft-supported-packet-class.pycraft-supported-version { color:#F0F; }
+.packet-id-matrix.contents .packet-present.pycraft-supported-packet { color:#00F !important; }

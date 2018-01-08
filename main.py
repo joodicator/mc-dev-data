@@ -10,6 +10,10 @@ import os
 import sys
 import re
 
+import minecraft as pycraft
+import minecraft.networking.connection as pycraft_connection
+from minecraft.networking import packets as pycraft_packets
+
 
 MatrixID = namedtuple(
     'MatrixID', ('id', 'changed'))
@@ -44,6 +48,20 @@ def id_str(id):
     return str(id)
 
 version_urls = {
+    Vsn('18w01a',      352): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13576',
+    Vsn('17w50a',      351): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13556',
+    Vsn('17w49b',      350): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13524',
+    Vsn('17w49a',      349): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13516',
+    Vsn('17w48a',      348): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13512',
+    Vsn('17w47b',      347): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13487',
+    Vsn('17w47a',      346): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13476',
+    Vsn('17w46a',      345): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13472',
+    Vsn('17w45b',      344): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13414',
+    Vsn('17w45a',      343): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13413',
+    Vsn('17w43b',      342): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13398',
+    Vsn('17w43a',      341): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13396',
+    Vsn('1.12.2',      340): 'http://wiki.vg/index.php?title=Protocol&oldid=13488',
+    Vsn('1.12.2-pre2', 339): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13355',
     Vsn('1.12.1',      338): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13287',
     Vsn('1.12.1-pre1', 337): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13267',
     Vsn('17w31a',      336): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13265',
@@ -240,6 +258,7 @@ def matrix_html():
     matrix = version_packet_ids()
     versions = sorted(matrix.keys(), key=lambda v: v.protocol, reverse=True)
     packet_classes = sorted({p for ids in matrix.values() for p in ids.keys()})
+    pycraft_classes = pycraft_packet_classes(matrix)
 
     print('<!DOCTYPE html>')
     print('<html>')
@@ -256,8 +275,10 @@ def matrix_html():
     print('          <colgroup>' + ' <col>'*(len(versions)+1))
     print('          <tr> <th></th>', end='')
     for version in versions:
-        print(' <th><a href="%s">%s</a><br>%s</th>' % (
-            version_urls[version], version.name, version.protocol), end='')
+        psv = version.protocol in pycraft.SUPPORTED_PROTOCOL_VERSIONS
+        print(' <th%(c)s><a href="%(u)s" title="%(n)s">%(n)s</a><br>%(v)s</th>'
+            % {'u':version_urls[version], 'n':version.name, 'v':version.protocol,
+               'c':' class="pycraft-supported-version"' if psv else ''}, end='')
     print(' </tr>')
     print('      </table>')
 
@@ -270,7 +291,8 @@ def matrix_html():
                         if i<len(versions)-1 else None
             if packet_class in matrix[versions[i]]:
                 cell = matrix[versions[i]][packet_class]
-                classes = []
+                classes = ['packet-present']
+
                 if cell.changed is None:
                     classes.append('packet-base')
                 if not prev_cell:
@@ -281,6 +303,14 @@ def matrix_html():
                         classes.append('packet-id-changed')
                     if cell.changed:
                         classes.append('packet-format-changed')
+
+                if versions[i].protocol in pycraft.SUPPORTED_PROTOCOL_VERSIONS:
+                    classes.append('pycraft-supported-version')
+                if packet_class in pycraft_classes:
+                    classes.append('pycraft-supported-packet-class')
+                    if versions[i] in pycraft_classes[packet_class]:
+                        classes.append('pycraft-supported-packet')
+
                 print(' <td%s>0x%02X</td>' % (
                     ' class="%s"' % ' '.join(classes) if classes else '', cell.id),
                     end='')
@@ -294,9 +324,12 @@ def matrix_html():
     print('      <table class="packet-id-matrix left-header">')
     print('          <colgroup><col></col></colgroup>')
     for packet_class in packet_classes:
-        print('          <tr><th class="packet-state-%s packet-bound-%s">%s</th></tr>' % (
-            packet_class.state.lower(), packet_class.bound.lower(),
-            packet_class.name), end='')
+        classes = ['packet-state-%s' % packet_class.state.lower(),
+                   'packet-bound-%s' % packet_class.bound.lower()]
+        if packet_class in pycraft_classes:
+            classes.append('pycraft-supported-packet-class')
+        print('          <tr><th class="%s">%s</th></tr>' % (
+            ' '.join(classes), packet_class.name), end='')
     print('      </table>')
 
     print('   </div>')
@@ -304,6 +337,7 @@ def matrix_html():
     print('</html>')
 
 
+# Returns matrix with matrix[version][packet_class] = matrix_id
 def version_packet_ids():
     used_patches = set()
     packet_classes = {}
@@ -401,6 +435,102 @@ def version_packet_ids():
         + '\n'.join('%s -> %s' % (p, patch[p]) for p in unused_patches))
 
     return matrix
+
+
+def pycraft_packet_category(name):
+    return {
+        'Client':      'clientbound',
+        'Server':      'serverbound',
+        'Handshaking': 'handshake',
+    }.get(name, name).lower()
+
+def pycraft_packet_name(name):
+    name = {
+        'Handshake':                              'HandShake',
+        'Chat Message (serverbound)':             'Chat',
+        'Player Position And Look (serverbound)': 'PositionAndLook',
+        'Pong':                                   'PingResponse',
+    }.get(name, name)
+    return '%sPacket' % re.sub(r' +|\([^)]+\)$', '', name)
+
+pycraft_ignore_errors = {
+    "[17w06a] pyCraft: (0x10, 'ChatMessagePacket'), wiki: (0x0F, 'Chat Message (clientbound)')",
+    "[17w06a] pyCraft: (0x10, 'ChatMessagePacket'), wiki: (0x10, 'Multi Block Change')",
+    "[17w06a] pyCraft: (0x0A, 'PluginMessagePacket'), wiki: (0x09, 'Plugin Message (serverbound)')",
+    "[17w06a] pyCraft: (0x0A, 'PluginMessagePacket'), wiki: (0x0A, 'Use Entity')",
+    "[17w13a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w13a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w13b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w13b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w14a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w14a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w15a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w15a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w16a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w16a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w16b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w16b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w17a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w17a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w17b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w17b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w18a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w18a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w18b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w18b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[1.12-pre1] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[1.12-pre1] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[1.12-pre2] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[1.12-pre2] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[1.12-pre3] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[1.12-pre3] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[1.12-pre4] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[1.12-pre4] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity')",
+    "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map')",
+    "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity')",
+    "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map')",
+}
+
+# Returns classes where classes[packet_class] = {ver1, ver2, ...}
+def pycraft_packet_classes(matrix):
+    classes = {}
+    all_packets = set()
+    errors = []
+    for ver, ver_matrix in matrix.items():
+        if ver.protocol not in pycraft.SUPPORTED_PROTOCOL_VERSIONS: continue
+        assert pycraft.SUPPORTED_MINECRAFT_VERSIONS[ver.name] == ver.protocol
+
+        context = pycraft_connection.ConnectionContext()
+        context.protocol_version = ver.protocol
+        packets = {}
+        for bound in 'Client', 'Server':
+            for state in 'Handshaking', 'Login', 'Play', 'Status':
+                module = getattr(pycraft_packets, pycraft_packet_category(bound))
+                module = getattr(module, pycraft_packet_category(state))
+                state_packets = module.get_packets(context)
+                all_packets |= state_packets
+                packets[bound, state] = state_packets
+
+        for packet_class, matrix_id in ver_matrix.items():
+            pycraft_name = pycraft_packet_name(packet_class.name)
+            for packet in packets[packet_class.bound, packet_class.state]:
+                expected = (matrix_id.id, pycraft_packet_name(packet_class.name))
+                actual = (packet.get_id(context), packet.__name__)
+                if all(x != y for (x, y) in zip(actual, expected)): continue
+                if actual != expected:
+                    error = '[%s] pyCraft: (0x%02X, %r), wiki: (0x%02X, %r)' % \
+                            ((ver.name,) + actual + (matrix_id.id, packet_class.name))
+                    if error not in pycraft_ignore_errors: errors.append(error)
+                    continue
+                all_packets.discard(packet)
+                if packet_class not in classes: classes[packet_class] = set()
+                classes[packet_class].add(ver)
+
+    errors.extend('Packet not accounted for: %r' % p for p in all_packets)
+    assert not errors, 'Errors found with pyCraft packets:\n' + '\n'.join(errors)
+
+    return classes
 
 
 cache_dir = os.path.join(os.path.dirname(__file__), 'www-cache')
