@@ -257,11 +257,14 @@ def norm_packet_name(name, state=None, bound=None):
            'Multiple normalisations for %r: %s.' % (name, n_names)
     return n_names.pop() if n_names else name
 
+
 def matrix_html():
-    matrix = version_packet_ids()
+    with get_page('__global__') as page:
+        matrix = version_packet_ids(page)
+        pycraft_classes = pycraft_packet_classes(page)
+
     versions = sorted(matrix.keys(), key=lambda v: v.protocol, reverse=True)
     packet_classes = sorted({p for ids in matrix.values() for p in ids.keys()})
-    pycraft_classes = pycraft_packet_classes(matrix)
 
     print('<!DOCTYPE html>')
     print('<html>')
@@ -340,7 +343,232 @@ def matrix_html():
     print('</html>')
 
 
+def from_page(*page_args, dep=(), no_cache=False, **page_kwds):
+    def from_page_decorator(func):
+        def from_page_func(page, *args, **kwds):
+            refresh = any('-r'+d in sys.argv[1:] for d in from_page_func.depends)
+            if func.__name__ not in page or refresh \
+            and func.__name__ not in page.get('__refreshed__', set()):
+                args = tuple(a(page) for a in page_args) + args
+                kwds.update({k:k(page) for k in page_kwds})
+                result = func(*args, **kwds)
+                if inspect.isgenerator(result):
+                    result = list(result)
+                page[func.__name__] = result
+                if no_cache:
+                    if '__no_cache__' not in page: page['__no_cache__'] = set()
+                    page['__no_cache__'].add(func.__name__)
+                if refresh:
+                    if '__refreshed__' not in page: page['__refreshed__'] = set()
+                    page['__refreshed__'].add(func.__name__)
+            return page[func.__name__]
+
+        from_page_func.depends = {func.__name__}
+        for arg_func in page_args + tuple(page_kwds.keys()) + dep:
+            if arg_func.__name__ == 'from_page_func':
+                from_page_func.depends |= arg_func.depends
+
+        return from_page_func
+
+    return from_page_decorator
+
+
+def get_url_hash(url):
+    return hashlib.new('sha1', url.encode('utf8')).hexdigest()
+
+
+func_cache_dir = os.path.join(os.path.dirname(__file__), 'func-cache')
+unused_func_cache_files = set(os.listdir(func_cache_dir)) - {'.gitignore'}
+warned_unknown_func_cache_keys = set()
+class get_page(object):
+    __slots__ = 'page', 'func_cache_file'
+    def __init__(self, url):
+        url_hash = get_url_hash(url)
+        self.func_cache_file = os.path.join(func_cache_dir, url_hash)
+        if os.path.exists(self.func_cache_file):
+            unused_func_cache_files.discard(url_hash)
+            with open(self.func_cache_file, 'rb') as file:
+                self.page = pickle.load(file)
+            assert isinstance(self.page, dict), repr(self.page)
+            assert self.page['url'] == url, repr(self.page)
+            for key in list(self.page.keys()):
+                if key != 'url' and not inspect.isfunction(globals().get(key)):
+                    if key not in warned_unknown_func_cache_keys:
+                        print('Warning: discarding unknown func-cache key: %r.'
+                              % key, file=sys.stderr)
+                        warned_unknown_func_cache_keys.add(key)
+                    del page[key]
+        else:
+            self.page = {'url': url}
+
+    def __enter__(self):
+        if self.page is None:
+            raise ValueError('get_page.__enter__ called after __exit__.')
+        return self.page
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        try:
+            if (exc_type, exc_val, exc_tb) == (None, None, None):
+                if '__no_cache__' in self.page:
+                    no_cache = self.page.pop('__no_cache__')
+                    for key in no_cache: del self.page[key]
+                if '__refreshed__' in self.page:
+                    del self.page['__refreshed__']
+                with open(self.func_cache_file, 'wb') as file:
+                    pickle.dump(self.page, file)
+        except IOError:
+            traceback.print_exc()
+        finally:
+            self.page = None
+        return False
+
+
+www_cache_dir = os.path.join(os.path.dirname(__file__), 'www-cache')
+unused_www_cache_files = set(os.listdir(www_cache_dir))
+@from_page(lambda page: page['url'], no_cache=True)
+def get_soup(url):
+    url_hash = get_url_hash(url)
+    www_cache_file = os.path.join(www_cache_dir, url_hash)
+    if os.path.exists(www_cache_file):
+        with open(www_cache_file) as file:
+            charset = 'utf8'
+            data = file.read().encode(charset)
+    else:
+        print('Downloading %s...' % url, file=sys.stderr)
+        with urlopen(url) as stream:
+            charset = stream.info().get_param('charset')
+            data = stream.read()
+        with open(www_cache_file, 'w') as file:
+            file.write(data.decode(charset))
+    return BeautifulSoup(data, 'lxml', from_encoding=charset)
+
+
+@from_page(get_soup)
+def first_heading(soup):
+    return soup.find(id='firstHeading').text.strip() 
+
+
+PRE_VER_RE = re.compile(r'(?P<name>\d[^,]*), protocol (?P<protocol>\d+)')
+@from_page(get_soup)
+def pre_versions(soup, vsn):
+    vs = []
+    para = soup.find(id='mw-content-text').find('p', recursive=False)
+    for a in para.findAll('a'):
+        m = PRE_VER_RE.match(a.text.strip())
+        if m is None: continue
+        vs.append(Vsn(
+            name     = m.group('name'),
+            protocol = int(m.group('protocol'))))
+    if len(vs) == 2:
+        return VersionDiff(*vs)
+    else:
+        raise AssertionError('[%s] Found %d versions, %r, where 2 are expected'
+            ' in the first paragraph: %s' % (vsn.name, len(vs), vs, para))
+
+
+@from_page(get_soup)
+def pre_packets(soup, vsn):
+    seen_names = set()
+    table = soup.find(id='Packets').findNext('table', class_='wikitable')
+    if table is not None:
+        cols = {}
+        ncols = 0
+        for th in table.findChild('tr').findChildren('th'):
+            cols[th.text.strip()] = ncols
+            ncols += int(th.get('colspan', '1'))
+
+        c_id, c_name, c_doc = 'ID', 'Packet name', 'Documentation'
+        assert (cols[c_id], cols[c_name], cols[c_doc], ncols) == (0, 1, 2, 4), \
+        '%r != %r' % ((cols[c_id], cols[c_name], cols[c_doc], ncols), (0, 1, 2, 4))
+
+        state, bound = None, None
+        for tr in table.findChildren('tr')[1:]:
+            ths = tr.findChildren('th')
+            if len(ths) == 1 and int(ths[0].get('colspan', '1')) == ncols:
+                match = re.match(r'(\S+) (\S+)bound', ths[0].text.strip())
+                if match:
+                    state = match.group(1).capitalize()
+                    bound = match.group(2).capitalize()
+                    continue
+            tds = tr.findChildren('td')
+            if len(tds) != ncols or any(int(td.get('colspan', '1')) != 1 for td in tds):
+                raise AssertionError('[%s] Unrecognised table row: %s' % (vsn.name, tr))
+
+            changed = tds[cols[c_doc]+1].text.strip() != '(unchanged)'
+
+            if tds[cols[c_id]].find('ins') and tds[cols[c_id]].find('del'):
+                # Existing packet with changed packet ID.
+                old_id = int(tds[cols[c_id]].find('del').text.strip(), 16)
+                new_id = int(tds[cols[c_id]].find('ins').text.strip(), 16)
+                assert tds[cols[c_doc]].text.strip() == 'Current'
+            elif 'background-color: #d9ead3' in tr.get('style', ''):
+                # Newly added packet.
+                old_id = None
+                new_id = int(tds[cols[c_id]].text.strip(), 16)
+                assert changed and tds[cols[c_doc]].text.strip() == ''
+            else:
+                old_id = int(tds[cols[c_id]].text.strip(), 16)
+                if 'text-decoration: line-through' in tr.get('style', ''):
+                    # Removed packet.
+                    assert changed
+                    new_id = None
+                else:
+                    # Existing packet without changed packet ID.
+                    new_id = old_id
+                assert tds[cols[c_doc]].text.strip() == 'Current', \
+                    '[%s] [%s] not %r or %r != %r' % (vsn.name,
+                    tds[cols[c_name]].text.strip(), changed,
+                    tds[cols[c_doc]].text.strip(), 'Current')
+
+            if changed:
+                expect = '' if new_id is None else 'Pre'
+                assert tds[cols[c_doc]+1].text.strip() == expect, \
+                '[%s] [%s] %r != %r' % (vsn.name, tds[cols[c_name]].text.strip(),
+                                        tds[cols[c_doc]+1].text.strip(), expect)
+
+            name = tds[cols[c_name]].text.strip()
+            name = norm_packet_name(name, state, bound)
+            yield PrePacket(
+                name=name, old_id=old_id, new_id=new_id, changed=changed,
+                state=state, bound=bound)
+
+
+@from_page(get_soup)
+def rel_packets(soup):
+    content = soup.find(id='mw-content-text')
+    for table in content.findChildren('table', class_='wikitable'):
+        ths = table.findChildren('tr')[0].findChildren('th')
+        tds = table.findChildren('tr')[1].findChildren('td')
+        id, state, bound = None, None, None
+        for th, td in zip(ths, tds):
+            if th.text.strip() == 'Packet ID':
+                id = int(td.text.strip(), 16)
+            elif th.text.strip() == 'State':
+                state = td.text.strip()
+            elif th.text.strip() == 'Bound To':
+                bound = td.text.strip()
+        if id is None:
+            continue
+        name = table.findPreviousSibling('h4').text.strip()
+        name = norm_packet_name(name, state, bound)
+        yield RelPacket(name=name, id=id, state=state, bound=bound)
+
+
+REL_VER_RE = re.compile(r'\(currently (?P<protocol>\d+)'
+                        r'( in Minecraft (?P<name>\d[^)]*))?\)')
+@from_page(get_soup)
+def rel_version(soup):
+    td = soup.find('td', string=re.compile('^\s*Protocol Version\s*$'))
+    td = td.findNextSibling('td')
+    assert td.text.strip() == 'VarInt'
+    td = td.findNextSibling('td')
+    m = REL_VER_RE.search(td.text)
+    protocol = int(m.group('protocol')) if m.group('protocol') else None
+    return Vsn(name=m.group('name'), protocol=protocol)
+
+
 # Returns matrix with matrix[version][packet_class] = matrix_id
+@from_page(dep=(first_heading,pre_versions,pre_packets,rel_version,rel_packets))
 def version_packet_ids():
     used_patches = set()
     packet_classes = {}
@@ -440,207 +668,6 @@ def version_packet_ids():
     return matrix
 
 
-def soup_from_page(func):
-    def soup_from_page_func(page, *args, **kwds):
-        if func.__name__ not in page:
-            if 'soup' not in page:
-                page['soup'] = get_soup(page['url'])
-            result = func(page['soup'], *args, **kwds)
-            if inspect.isgenerator(result):
-                result = list(result)
-            page[func.__name__] = result
-        return page[func.__name__]
-    return soup_from_page_func
-
-
-@soup_from_page
-def first_heading(soup):
-    return soup.find(id='firstHeading').text.strip() 
-
-
-PRE_VER_RE = re.compile(r'(?P<name>\d[^,]*), protocol (?P<protocol>\d+)')
-@soup_from_page
-def pre_versions(soup, vsn):
-    vs = []
-    para = soup.find(id='mw-content-text').find('p', recursive=False)
-    for a in para.findAll('a'):
-        m = PRE_VER_RE.match(a.text.strip())
-        if m is None: continue
-        vs.append(Vsn(
-            name     = m.group('name'),
-            protocol = int(m.group('protocol'))))
-    if len(vs) == 2:
-        return VersionDiff(*vs)
-    else:
-        raise AssertionError('[%s] Found %d versions, %r, where 2 are expected'
-            ' in the first paragraph: %s' % (vsn.name, len(vs), vs, para))
-
-
-@soup_from_page
-def pre_packets(soup, vsn):
-    seen_names = set()
-    table = soup.find(id='Packets').findNext('table', class_='wikitable')
-    if table is not None:
-        cols = {}
-        ncols = 0
-        for th in table.findChild('tr').findChildren('th'):
-            cols[th.text.strip()] = ncols
-            ncols += int(th.get('colspan', '1'))
-
-        c_id, c_name, c_doc = 'ID', 'Packet name', 'Documentation'
-        assert (cols[c_id], cols[c_name], cols[c_doc], ncols) == (0, 1, 2, 4), \
-        '%r != %r' % ((cols[c_id], cols[c_name], cols[c_doc], ncols), (0, 1, 2, 4))
-
-        state, bound = None, None
-        for tr in table.findChildren('tr')[1:]:
-            ths = tr.findChildren('th')
-            if len(ths) == 1 and int(ths[0].get('colspan', '1')) == ncols:
-                match = re.match(r'(\S+) (\S+)bound', ths[0].text.strip())
-                if match:
-                    state = match.group(1).capitalize()
-                    bound = match.group(2).capitalize()
-                    continue
-            tds = tr.findChildren('td')
-            if len(tds) != ncols or any(int(td.get('colspan', '1')) != 1 for td in tds):
-                raise AssertionError('[%s] Unrecognised table row: %s' % (vsn.name, tr))
-
-            changed = tds[cols[c_doc]+1].text.strip() != '(unchanged)'
-
-            if tds[cols[c_id]].find('ins') and tds[cols[c_id]].find('del'):
-                # Existing packet with changed packet ID.
-                old_id = int(tds[cols[c_id]].find('del').text.strip(), 16)
-                new_id = int(tds[cols[c_id]].find('ins').text.strip(), 16)
-                assert tds[cols[c_doc]].text.strip() == 'Current'
-            elif 'background-color: #d9ead3' in tr.get('style', ''):
-                # Newly added packet.
-                old_id = None
-                new_id = int(tds[cols[c_id]].text.strip(), 16)
-                assert changed and tds[cols[c_doc]].text.strip() == ''
-            else:
-                old_id = int(tds[cols[c_id]].text.strip(), 16)
-                if 'text-decoration: line-through' in tr.get('style', ''):
-                    # Removed packet.
-                    assert changed
-                    new_id = None
-                else:
-                    # Existing packet without changed packet ID.
-                    new_id = old_id
-                assert tds[cols[c_doc]].text.strip() == 'Current', \
-                    '[%s] [%s] not %r or %r != %r' % (vsn.name,
-                    tds[cols[c_name]].text.strip(), changed,
-                    tds[cols[c_doc]].text.strip(), 'Current')
-
-            if changed:
-                expect = '' if new_id is None else 'Pre'
-                assert tds[cols[c_doc]+1].text.strip() == expect, \
-                '[%s] [%s] %r != %r' % (vsn.name, tds[cols[c_name]].text.strip(),
-                                        tds[cols[c_doc]+1].text.strip(), expect)
-
-            name = tds[cols[c_name]].text.strip()
-            name = norm_packet_name(name, state, bound)
-            yield PrePacket(
-                name=name, old_id=old_id, new_id=new_id, changed=changed,
-                state=state, bound=bound)
-
-
-@soup_from_page
-def rel_packets(soup):
-    content = soup.find(id='mw-content-text')
-    for table in content.findChildren('table', class_='wikitable'):
-        ths = table.findChildren('tr')[0].findChildren('th')
-        tds = table.findChildren('tr')[1].findChildren('td')
-        id, state, bound = None, None, None
-        for th, td in zip(ths, tds):
-            if th.text.strip() == 'Packet ID':
-                id = int(td.text.strip(), 16)
-            elif th.text.strip() == 'State':
-                state = td.text.strip()
-            elif th.text.strip() == 'Bound To':
-                bound = td.text.strip()
-        if id is None:
-            continue
-        name = table.findPreviousSibling('h4').text.strip()
-        name = norm_packet_name(name, state, bound)
-        yield RelPacket(name=name, id=id, state=state, bound=bound)
-
-
-REL_VER_RE = re.compile(r'\(currently (?P<protocol>\d+)'
-                        r'( in Minecraft (?P<name>\d[^)]*))?\)')
-@soup_from_page
-def rel_version(soup):
-    td = soup.find('td', string=re.compile('^\s*Protocol Version\s*$'))
-    td = td.findNextSibling('td')
-    assert td.text.strip() == 'VarInt'
-    td = td.findNextSibling('td')
-    m = REL_VER_RE.search(td.text)
-    protocol = int(m.group('protocol')) if m.group('protocol') else None
-    return Vsn(name=m.group('name'), protocol=protocol)
-
-
-func_cache_dir = os.path.join(os.path.dirname(__file__), 'func-cache')
-unused_func_cache_files = set(os.listdir(func_cache_dir))
-warned_unknown_func_cache_keys = set()
-class get_page(object):
-    __slots__ = 'page', 'func_cache_file'
-    def __init__(self, url):
-        url_hash = hashlib.new('sha1', url.encode('utf8')).hexdigest()
-        self.func_cache_file = os.path.join(func_cache_dir, url_hash)
-        if os.path.exists(self.func_cache_file):
-            unused_func_cache_files.discard(url_hash)
-            unused_www_cache_files.discard(url_hash)
-            with open(self.func_cache_file, 'rb') as file:
-                self.page = pickle.load(file)
-            assert isinstance(self.page, dict), repr(self.page)
-            assert self.page['url'] == url, repr(self.page)
-            for key in list(self.page.keys()):
-                if key != 'url' and not inspect.isfunction(globals().get(key)):
-                    if key not in warned_unknown_func_cache_keys:
-                        print('Warning: discarding unknown func-cache key: %r.'
-                              % key, file=sys.stderr)
-                        warned_unknown_func_cache_keys.add(key)
-                    del page[key]
-        else:
-            self.page = {'url': url}
-
-    def __enter__(self):
-        if self.page is None:
-            raise ValueError('get_page.__enter__ called after __exit__.')
-        return self.page
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        try:
-            if (exc_type, exc_val, exc_tb) == (None, None, None):
-                if 'soup' in self.page:
-                    del self.page['soup']
-                with open(self.func_cache_file, 'wb') as file:
-                    pickle.dump(self.page, file)
-        except IOError:
-            traceback.print_exc()
-        finally:
-            self.page = None
-        return False
-
-
-www_cache_dir = os.path.join(os.path.dirname(__file__), 'www-cache')
-unused_www_cache_files = set(os.listdir(www_cache_dir))
-def get_soup(url):
-    url_hash = hashlib.new('sha1', url.encode('utf8')).hexdigest()
-    www_cache_file = os.path.join(www_cache_dir, url_hash)
-    if os.path.exists(www_cache_file):
-        with open(www_cache_file) as file:
-            charset = 'utf8'
-            data = file.read().encode(charset)
-        unused_www_cache_files.discard(url_hash)
-    else:
-        print('Downloading %s...' % url, file=sys.stderr)
-        with urlopen(url) as stream:
-            charset = stream.info().get_param('charset')
-            data = stream.read()
-        with open(www_cache_file, 'w') as file:
-            file.write(data.decode(charset))
-    return BeautifulSoup(data, 'lxml', from_encoding=charset)
-
-
 def pycraft_packet_category(name):
     return {
         'Client':      'clientbound',
@@ -700,6 +727,7 @@ pycraft_ignore_errors = {
 
 
 # Returns classes where classes[packet_class] = {ver1, ver2, ...}
+@from_page(version_packet_ids)
 def pycraft_packet_classes(matrix):
     classes = {}
     all_packets = set()
@@ -742,10 +770,13 @@ def pycraft_packet_classes(matrix):
 
 if __name__ == '__main__':
     matrix_html()
+
+    for vsn, url in version_urls.items():
+        unused_func_cache_files.discard(get_url_hash(url))
+        unused_www_cache_files.discard(get_url_hash(url))
     if unused_www_cache_files:
         print('Unused www-cache files:', file=sys.stderr)
         print('  ' + ' '.join(sorted(unused_www_cache_files)), file=sys.stderr)
-    if unused_func_cache_files - {'.gitignore'}:
+    if unused_func_cache_files:
         print('Unused func-cache files:', file=sys.stderr)
         print('  ' + ' '.join(sorted(unused_func_cache_files)), file=sys.stderr)
-
