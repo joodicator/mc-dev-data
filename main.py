@@ -4,8 +4,11 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 from contextlib import closing
 from collections import namedtuple
+import traceback
 import hashlib
 import os.path
+import inspect
+import pickle
 import os
 import sys
 import re
@@ -343,91 +346,91 @@ def version_packet_ids():
     packet_classes = {}
     matrix = {}
     for v, url in sorted(version_urls.items(), key=lambda i: i[0].protocol):
-        soup = get_soup(url)
-        heading = soup.find(id='firstHeading').text.strip() 
-        if heading == 'Pre-release protocol':
-            vdiff = pre_versions(soup, v)
-            if (v, vdiff) in patch:
-                used_patches.add((v, vdiff))
-                vdiff = patch[v, vdiff]
-            from_v, to_v = vdiff
-            assert v == to_v, '%r != %r' % (v, to_v)
-            matrix[v] = {}
-            seen_names = {}
-            for packet in pre_packets(soup, v):
-                if (v, packet) in patch:
-                    used_patches.add((v, packet))
-                    packet = patch[v, packet]
-                if packet is None: continue
-                assert packet.name not in seen_names, \
-                    '[%s] Duplicate packet name:\n%s\n%s' % \
-                    (v.name, seen_names[packet.name], packet)
-                seen_names[packet.name] = packet
+        with get_page(url) as page:
+            heading = first_heading(page)
+            if heading == 'Pre-release protocol':
+                vdiff = pre_versions(page, v)
+                if (v, vdiff) in patch:
+                    used_patches.add((v, vdiff))
+                    vdiff = patch[v, vdiff]
+                from_v, to_v = vdiff
+                assert v == to_v, '%r != %r' % (v, to_v)
+                matrix[v] = {}
+                seen_names = {}
+                for packet in pre_packets(page, v):
+                    if (v, packet) in patch:
+                        used_patches.add((v, packet))
+                        packet = patch[v, packet]
+                    if packet is None: continue
+                    assert packet.name not in seen_names, \
+                        '[%s] Duplicate packet name:\n%s\n%s' % \
+                        (v.name, seen_names[packet.name], packet)
+                    seen_names[packet.name] = packet
 
-                packet_class = PacketClass(
-                    name=packet.name, state=packet.state, bound=packet.bound)
-                if packet.name not in packet_classes:
-                    packet_classes[packet.name] = packet_class
-                assert packet_class == packet_classes[packet.name], \
-                    '[%s] %r != %r' % (v.name, packet_class, packet_classes[packet.name])
+                    packet_class = PacketClass(
+                        name=packet.name, state=packet.state, bound=packet.bound)
+                    if packet.name not in packet_classes:
+                        packet_classes[packet.name] = packet_class
+                    assert packet_class == packet_classes[packet.name], \
+                        '[%s] %r != %r' % (v.name, packet_class, packet_classes[packet.name])
 
-                if packet.old_id is None:
-                    assert packet_class not in matrix[from_v], \
-                           '[%s] %r in matrix[%r]' % (v.name, packet_class, from_v)
-                else:
-                    assert packet_class in matrix[from_v], \
-                        '[%s] [0x%02X] %r not in matrix[%r]' % (
-                        v.name, packet.old_id, packet_class, from_v)
-                    assert packet.old_id == matrix[from_v][packet_class].id, \
-                        '[%s] 0x%02x != matrix[%r][%r].id == 0x%02x' % (
-                        v.name, packet.old_id, from_v, packet_class,
-                        matrix[from_v][packet_class].id)
-                if packet.new_id is not None:
-                    matrix[v][packet_class] = MatrixID(
-                        id = packet.new_id,
-                        changed = packet.changed)
-            for packet_class, id in matrix[from_v].items():
-                if packet_class.name in seen_names: continue
-                matrix[v][packet_class] = id._replace(changed=False)
-        elif heading == 'Protocol':
-            rel_v = rel_version(soup)
-            if rel_v.name is None:
-                rel_v = Vsn(v.name, rel_v.protocol)
-            assert v == rel_v, '%r != %r' % (v, rel_v)
-            matrix[v] = {}
-            seen_names = {}
-            for packet in rel_packets(soup):
-                if (v, packet) in patch:
-                    used_patches.add((v, packet))
-                    packet = patch[v, packet]
-                if packet is None: continue
-                assert packet.name not in seen_names, \
-                    '[%s] Duplicate packet name:\n%s\n%s.' \
-                    % (v.name, seen_names[packet.name], packet)
-                seen_names[packet.name] = packet
+                    if packet.old_id is None:
+                        assert packet_class not in matrix[from_v], \
+                               '[%s] %r in matrix[%r]' % (v.name, packet_class, from_v)
+                    else:
+                        assert packet_class in matrix[from_v], \
+                            '[%s] [0x%02X] %r not in matrix[%r]' % (
+                            v.name, packet.old_id, packet_class, from_v)
+                        assert packet.old_id == matrix[from_v][packet_class].id, \
+                            '[%s] 0x%02x != matrix[%r][%r].id == 0x%02x' % (
+                            v.name, packet.old_id, from_v, packet_class,
+                            matrix[from_v][packet_class].id)
+                    if packet.new_id is not None:
+                        matrix[v][packet_class] = MatrixID(
+                            id = packet.new_id,
+                            changed = packet.changed)
+                for packet_class, id in matrix[from_v].items():
+                    if packet_class.name in seen_names: continue
+                    matrix[v][packet_class] = id._replace(changed=False)
+            elif heading == 'Protocol':
+                rel_v = rel_version(page)
+                if rel_v.name is None:
+                    rel_v = Vsn(v.name, rel_v.protocol)
+                assert v == rel_v, '%r != %r' % (v, rel_v)
+                matrix[v] = {}
+                seen_names = {}
+                for packet in rel_packets(page):
+                    if (v, packet) in patch:
+                        used_patches.add((v, packet))
+                        packet = patch[v, packet]
+                    if packet is None: continue
+                    assert packet.name not in seen_names, \
+                        '[%s] Duplicate packet name:\n%s\n%s.' \
+                        % (v.name, seen_names[packet.name], packet)
+                    seen_names[packet.name] = packet
 
-                packet_class = PacketClass(
-                    name=packet.name, state=packet.state, bound=packet.bound)
-                if packet.name not in packet_classes:
-                    packet_classes[packet.name] = packet_class
-                assert packet_classes[packet.name] == packet_class
+                    packet_class = PacketClass(
+                        name=packet.name, state=packet.state, bound=packet.bound)
+                    if packet.name not in packet_classes:
+                        packet_classes[packet.name] = packet_class
+                    assert packet_classes[packet.name] == packet_class
 
-                matrix[v][packet_class] = MatrixID(packet.id, None)
-        else:
-            raise AssertionError('Unrecognised article title: %r' % heading)
+                    matrix[v][packet_class] = MatrixID(packet.id, None)
+            else:
+                raise AssertionError('Unrecognised article title: %r' % heading)
 
-        state_bound_ids = {}
-        for packet_class, matrix_id in matrix[v].items():
-            key = (packet_class.state, packet_class.bound, matrix_id.id)
-            assert key not in state_bound_ids, '[%s] Duplicate packet ID: ' \
-                '%s is used by packets %r and %r.' % (v.name,
-                '(%s, %s, 0x%02X)' % key, state_bound_ids[key], packet_class.name)
-            state_bound_ids[key] = packet_class.name
+            state_bound_ids = {}
+            for packet_class, matrix_id in matrix[v].items():
+                key = (packet_class.state, packet_class.bound, matrix_id.id)
+                assert key not in state_bound_ids, '[%s] Duplicate packet ID: ' \
+                    '%s is used by packets %r and %r.' % (v.name,
+                    '(%s, %s, 0x%02X)' % key, state_bound_ids[key], packet_class.name)
+                state_bound_ids[key] = packet_class.name
 
-        unused_patches = set(k for k in patch.keys() if k[0] == v and k not in used_patches)
-        if unused_patches:
-            raise AssertionError('Unused patches:\n'
-            + '\n'.join('%s -> %s' % (p, patch[p]) for p in unused_patches))
+            unused_patches = set(k for k in patch.keys() if k[0] == v and k not in used_patches)
+            if unused_patches:
+                raise AssertionError('Unused patches:\n'
+                + '\n'.join('%s -> %s' % (p, patch[p]) for p in unused_patches))
 
     unused_patches = set(k for k in patch.keys() if k not in used_patches)
     if unused_patches:
@@ -437,123 +440,26 @@ def version_packet_ids():
     return matrix
 
 
-def pycraft_packet_category(name):
-    return {
-        'Client':      'clientbound',
-        'Server':      'serverbound',
-        'Handshaking': 'handshake',
-    }.get(name, name).lower()
-
-def pycraft_packet_name(name):
-    name = {
-        'Handshake':                              'HandShake',
-        'Chat Message (serverbound)':             'Chat',
-        'Player Position And Look (serverbound)': 'PositionAndLook',
-        'Pong':                                   'PingResponse',
-    }.get(name, name)
-    return '%sPacket' % re.sub(r' +|\([^)]+\)$', '', name)
-
-pycraft_ignore_errors = {
-    "[17w06a] pyCraft: (0x10, 'ChatMessagePacket'), wiki: (0x0F, 'Chat Message (clientbound)')",
-    "[17w06a] pyCraft: (0x10, 'ChatMessagePacket'), wiki: (0x10, 'Multi Block Change')",
-    "[17w06a] pyCraft: (0x0A, 'PluginMessagePacket'), wiki: (0x09, 'Plugin Message (serverbound)')",
-    "[17w06a] pyCraft: (0x0A, 'PluginMessagePacket'), wiki: (0x0A, 'Use Entity')",
-    "[17w13a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[17w13a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[17w13b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[17w13b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[17w14a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[17w14a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[17w15a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[17w15a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[17w16a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[17w16a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[17w16b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[17w16b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[17w17a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[17w17a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[17w17b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[17w17b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[17w18a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[17w18a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[17w18b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[17w18b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[1.12-pre1] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[1.12-pre1] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[1.12-pre2] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[1.12-pre2] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[1.12-pre3] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[1.12-pre3] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[1.12-pre4] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
-    "[1.12-pre4] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity')",
-    "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map')",
-    "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity')",
-    "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map')",
-}
-
-# Returns classes where classes[packet_class] = {ver1, ver2, ...}
-def pycraft_packet_classes(matrix):
-    classes = {}
-    all_packets = set()
-    errors = []
-    for ver, ver_matrix in matrix.items():
-        if ver.protocol not in pycraft.SUPPORTED_PROTOCOL_VERSIONS: continue
-        assert pycraft.SUPPORTED_MINECRAFT_VERSIONS[ver.name] == ver.protocol
-
-        context = pycraft_connection.ConnectionContext()
-        context.protocol_version = ver.protocol
-        packets = {}
-        for bound in 'Client', 'Server':
-            for state in 'Handshaking', 'Login', 'Play', 'Status':
-                module = getattr(pycraft_packets, pycraft_packet_category(bound))
-                module = getattr(module, pycraft_packet_category(state))
-                state_packets = module.get_packets(context)
-                all_packets |= state_packets
-                packets[bound, state] = state_packets
-
-        for packet_class, matrix_id in ver_matrix.items():
-            pycraft_name = pycraft_packet_name(packet_class.name)
-            for packet in packets[packet_class.bound, packet_class.state]:
-                expected = (matrix_id.id, pycraft_packet_name(packet_class.name))
-                actual = (packet.get_id(context), packet.__name__)
-                if all(x != y for (x, y) in zip(actual, expected)): continue
-                if actual != expected:
-                    error = '[%s] pyCraft: (0x%02X, %r), wiki: (0x%02X, %r)' % \
-                            ((ver.name,) + actual + (matrix_id.id, packet_class.name))
-                    if error not in pycraft_ignore_errors: errors.append(error)
-                    continue
-                all_packets.discard(packet)
-                if packet_class not in classes: classes[packet_class] = set()
-                classes[packet_class].add(ver)
-
-    errors.extend('Packet not accounted for: %r' % p for p in all_packets)
-    assert not errors, 'Errors found with pyCraft packets:\n' + '\n'.join(errors)
-
-    return classes
+def soup_from_page(func):
+    def soup_from_page_func(page, *args, **kwds):
+        if func.__name__ not in page:
+            if 'soup' not in page:
+                page['soup'] = get_soup(page['url'])
+            result = func(page['soup'], *args, **kwds)
+            if inspect.isgenerator(result):
+                result = list(result)
+            page[func.__name__] = result
+        return page[func.__name__]
+    return soup_from_page_func
 
 
-cache_dir = os.path.join(os.path.dirname(__file__), 'www-cache')
-unused_cache_files = set(os.listdir(cache_dir))
-def get_soup(url):
-    url_hash = hashlib.new('sha1', url.encode('utf8')).hexdigest()
-    cache_file = os.path.join(cache_dir, url_hash)
-    if os.path.exists(cache_file):
-        with open(cache_file) as file:
-            charset = 'utf8'
-            data = file.read().encode(charset)
-        unused_cache_files.discard(url_hash)
-    else:
-        print('Downloading %s...' % url, file=sys.stderr)
-        with urlopen(url) as stream:
-            charset = stream.info().get_param('charset')
-            data = stream.read()
-        with open(cache_file, 'w') as file:
-            file.write(data.decode(charset))
-    return BeautifulSoup(data, 'lxml', from_encoding=charset)
+@soup_from_page
+def first_heading(soup):
+    return soup.find(id='firstHeading').text.strip() 
 
 
 PRE_VER_RE = re.compile(r'(?P<name>\d[^,]*), protocol (?P<protocol>\d+)')
+@soup_from_page
 def pre_versions(soup, vsn):
     vs = []
     para = soup.find(id='mw-content-text').find('p', recursive=False)
@@ -570,6 +476,7 @@ def pre_versions(soup, vsn):
             ' in the first paragraph: %s' % (vsn.name, len(vs), vs, para))
 
 
+@soup_from_page
 def pre_packets(soup, vsn):
     seen_names = set()
     table = soup.find(id='Packets').findNext('table', class_='wikitable')
@@ -636,6 +543,7 @@ def pre_packets(soup, vsn):
                 state=state, bound=bound)
 
 
+@soup_from_page
 def rel_packets(soup):
     content = soup.find(id='mw-content-text')
     for table in content.findChildren('table', class_='wikitable'):
@@ -658,6 +566,7 @@ def rel_packets(soup):
 
 REL_VER_RE = re.compile(r'\(currently (?P<protocol>\d+)'
                         r'( in Minecraft (?P<name>\d[^)]*))?\)')
+@soup_from_page
 def rel_version(soup):
     td = soup.find('td', string=re.compile('^\s*Protocol Version\s*$'))
     td = td.findNextSibling('td')
@@ -668,8 +577,175 @@ def rel_version(soup):
     return Vsn(name=m.group('name'), protocol=protocol)
 
 
+func_cache_dir = os.path.join(os.path.dirname(__file__), 'func-cache')
+unused_func_cache_files = set(os.listdir(func_cache_dir))
+warned_unknown_func_cache_keys = set()
+class get_page(object):
+    __slots__ = 'page', 'func_cache_file'
+    def __init__(self, url):
+        url_hash = hashlib.new('sha1', url.encode('utf8')).hexdigest()
+        self.func_cache_file = os.path.join(func_cache_dir, url_hash)
+        if os.path.exists(self.func_cache_file):
+            unused_func_cache_files.discard(url_hash)
+            unused_www_cache_files.discard(url_hash)
+            with open(self.func_cache_file, 'rb') as file:
+                self.page = pickle.load(file)
+            assert isinstance(self.page, dict), repr(self.page)
+            assert self.page['url'] == url, repr(self.page)
+            for key in list(self.page.keys()):
+                if key != 'url' and not inspect.isfunction(globals().get(key)):
+                    if key not in warned_unknown_func_cache_keys:
+                        print('Warning: discarding unknown func-cache key: %r.'
+                              % key, file=sys.stderr)
+                        warned_unknown_func_cache_keys.add(key)
+                    del page[key]
+        else:
+            self.page = {'url': url}
+
+    def __enter__(self):
+        if self.page is None:
+            raise ValueError('get_page.__enter__ called after __exit__.')
+        return self.page
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        try:
+            if (exc_type, exc_val, exc_tb) == (None, None, None):
+                if 'soup' in self.page:
+                    del self.page['soup']
+                with open(self.func_cache_file, 'wb') as file:
+                    pickle.dump(self.page, file)
+        except IOError:
+            traceback.print_exc()
+        finally:
+            self.page = None
+        return False
+
+
+www_cache_dir = os.path.join(os.path.dirname(__file__), 'www-cache')
+unused_www_cache_files = set(os.listdir(www_cache_dir))
+def get_soup(url):
+    url_hash = hashlib.new('sha1', url.encode('utf8')).hexdigest()
+    www_cache_file = os.path.join(www_cache_dir, url_hash)
+    if os.path.exists(www_cache_file):
+        with open(www_cache_file) as file:
+            charset = 'utf8'
+            data = file.read().encode(charset)
+        unused_www_cache_files.discard(url_hash)
+    else:
+        print('Downloading %s...' % url, file=sys.stderr)
+        with urlopen(url) as stream:
+            charset = stream.info().get_param('charset')
+            data = stream.read()
+        with open(www_cache_file, 'w') as file:
+            file.write(data.decode(charset))
+    return BeautifulSoup(data, 'lxml', from_encoding=charset)
+
+
+def pycraft_packet_category(name):
+    return {
+        'Client':      'clientbound',
+        'Server':      'serverbound',
+        'Handshaking': 'handshake',
+    }.get(name, name).lower()
+
+
+def pycraft_packet_name(name):
+    name = {
+        'Handshake':                              'HandShake',
+        'Chat Message (serverbound)':             'Chat',
+        'Player Position And Look (serverbound)': 'PositionAndLook',
+        'Pong':                                   'PingResponse',
+    }.get(name, name)
+    return '%sPacket' % re.sub(r' +|\([^)]+\)$', '', name)
+
+
+pycraft_ignore_errors = {
+    "[17w06a] pyCraft: (0x10, 'ChatMessagePacket'), wiki: (0x0F, 'Chat Message (clientbound)')",
+    "[17w06a] pyCraft: (0x10, 'ChatMessagePacket'), wiki: (0x10, 'Multi Block Change')",
+    "[17w06a] pyCraft: (0x0A, 'PluginMessagePacket'), wiki: (0x09, 'Plugin Message (serverbound)')",
+    "[17w06a] pyCraft: (0x0A, 'PluginMessagePacket'), wiki: (0x0A, 'Use Entity')",
+    "[17w13a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w13a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w13b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w13b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w14a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w14a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w15a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w15a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w16a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w16a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w16b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w16b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w17a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w17a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w17b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w17b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w18a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w18a] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[17w18b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[17w18b] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[1.12-pre1] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[1.12-pre1] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[1.12-pre2] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[1.12-pre2] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[1.12-pre3] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[1.12-pre3] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[1.12-pre4] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
+    "[1.12-pre4] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
+    "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity')",
+    "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map')",
+    "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity')",
+    "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map')",
+}
+
+
+# Returns classes where classes[packet_class] = {ver1, ver2, ...}
+def pycraft_packet_classes(matrix):
+    classes = {}
+    all_packets = set()
+    errors = []
+    for ver, ver_matrix in matrix.items():
+        if ver.protocol not in pycraft.SUPPORTED_PROTOCOL_VERSIONS: continue
+        assert pycraft.SUPPORTED_MINECRAFT_VERSIONS[ver.name] == ver.protocol
+
+        context = pycraft_connection.ConnectionContext()
+        context.protocol_version = ver.protocol
+        packets = {}
+        for bound in 'Client', 'Server':
+            for state in 'Handshaking', 'Login', 'Play', 'Status':
+                module = getattr(pycraft_packets, pycraft_packet_category(bound))
+                module = getattr(module, pycraft_packet_category(state))
+                state_packets = module.get_packets(context)
+                all_packets |= state_packets
+                packets[bound, state] = state_packets
+
+        for packet_class, matrix_id in ver_matrix.items():
+            pycraft_name = pycraft_packet_name(packet_class.name)
+            for packet in packets[packet_class.bound, packet_class.state]:
+                expected = (matrix_id.id, pycraft_packet_name(packet_class.name))
+                actual = (packet.get_id(context), packet.__name__)
+                if all(x != y for (x, y) in zip(actual, expected)): continue
+                if actual != expected:
+                    error = '[%s] pyCraft: (0x%02X, %r), wiki: (0x%02X, %r)' % \
+                            ((ver.name,) + actual + (matrix_id.id, packet_class.name))
+                    if error not in pycraft_ignore_errors: errors.append(error)
+                    continue
+                all_packets.discard(packet)
+                if packet_class not in classes: classes[packet_class] = set()
+                classes[packet_class].add(ver)
+
+    errors.extend('Packet not accounted for: %r' % p for p in all_packets)
+    assert not errors, 'Errors found with pyCraft packets:\n' + '\n'.join(errors)
+
+    return classes
+
+
 if __name__ == '__main__':
     matrix_html()
-    if unused_cache_files:
-        print('Unused cache files:', file=sys.stderr)
-        print(' '.join(sorted(unused_cache_files)), file=sys.stderr)
+    if unused_www_cache_files:
+        print('Unused www-cache files:', file=sys.stderr)
+        print('  ' + ' '.join(sorted(unused_www_cache_files)), file=sys.stderr)
+    if unused_func_cache_files - {'.gitignore'}:
+        print('Unused func-cache files:', file=sys.stderr)
+        print('  ' + ' '.join(sorted(unused_func_cache_files)), file=sys.stderr)
+
