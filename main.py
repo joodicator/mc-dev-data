@@ -338,6 +338,14 @@ def matrix_html():
             ' '.join(classes), packet_class.name), end='')
     print('      </table>')
 
+    print('      <table class="packet-id-matrix legend">')
+    print('          <tr><th>')
+    print('              <div class="spacer">&nbsp;<br>&nbsp;</div>', end='')
+    print(              '<div class="text">Key</div>', end='')
+    print(              '<div class="spacer">&nbsp;<br>&nbsp;</div>')
+    print('          </th></tr>')
+    print('      </table>')
+
     print('   </div>')
     print('   </body>')
     print('</html>')

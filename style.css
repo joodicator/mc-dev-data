@@ -1,6 +1,7 @@
 body {
     font-family: Verdana, sans-serif;
     font-size: small;
+    margin: 0;
 }
 
 .packet-id-matrix-container {
@@ -15,10 +16,30 @@ body {
     table-layout: fixed;
 }
 
+.packet-id-matrix.legend {
+    width: 45ex;
+    position: fixed;
+    top: 0px; left: 0px;
+    z-index: 3;
+}
+
+.packet-id-matrix.legend th {
+    font-weight: normal;
+}
+
+.packet-id-matrix.legend th > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.packet-id-matrix.legend th > div.spacer {
+    position: relative;
+    right: 100%;
+}
+
 .packet-id-matrix.top-header {
     position: sticky;
     top: 0px;
-    margin-left: -1px;
     margin-bottom: -1px;
     z-index: 2;
 }
@@ -33,7 +54,6 @@ body {
 
 .packet-id-matrix.contents {
     position: absolute;
-    margin-left: -1px;
 }
 
 .packet-id-matrix.top-header col:not(:first-child),
@@ -46,16 +66,12 @@ body {
     width: 45ex;
 }
 
-.packet-id-matrix.top-header th:first-child,
-.packet-id-matrix.contents th:first-child {
-    border-top-color: white;
-    border-left-color: white;
+.packet-id-matrix.legend th, .packet-id-matrix.top-header th {
+    border-top-width: 0;
 }
 
-.packet-id-matrix.contents th {
-    border-left-color: white;
-    border-top-color: white;
-    border-bottom-color: white;
+.packet-id-matrix th:first-child {
+    border-left-width: 0;
 }
 
 .packet-id-matrix.top-header, .packet-id-matrix.contents {
