@@ -54,6 +54,7 @@ def id_str(id):
     return str(id)
 
 version_urls = {
+    Vsn('18w02a',      353): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13582',
     Vsn('18w01a',      352): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13576',
     Vsn('17w50a',      351): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13556',
     Vsn('17w49b',      350): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13524',
