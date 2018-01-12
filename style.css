@@ -4,11 +4,11 @@ body {
     margin: 0;
 }
 
-.packet-id-matrix-container {
+.pkt-grid-container {
     display: inline-block;
 }
 
-.packet-id-matrix {
+.pkt-grid {
     border-collapse: collapse;
     white-space: nowrap;
     text-align: center;
@@ -16,107 +16,175 @@ body {
     table-layout: fixed;
 }
 
-.packet-id-matrix.legend {
-    width: 45ex;
-    position: fixed;
-    top: 0px; left: 0px;
-    z-index: 3;
-}
-
-.packet-id-matrix.legend th {
-    font-weight: normal;
-}
-
-.packet-id-matrix.legend th > div {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.packet-id-matrix.legend th > div.spacer {
-    position: relative;
-    right: 100%;
-}
-
-.packet-id-matrix.top-header {
+.pkt-grid.top-header {
     position: sticky;
     top: 0px;
     margin-bottom: -1px;
     z-index: 2;
 }
 
-.packet-id-matrix.left-header {
+.pkt-grid.left-header {
     text-align: left;
-    width: 45ex;
     position: sticky;
     left: 0px;
     z-index: 1;
 }
 
-.packet-id-matrix.contents {
+.pkt-grid.contents {
     position: absolute;
 }
 
-.packet-id-matrix.top-header col:not(:first-child),
-.packet-id-matrix.contents col:not(:first-child) {
+.pkt-grid.top-header col:not(:first-child),
+.pkt-grid.contents col:not(:first-child) {
     width: 11ex;
 }
 
-.packet-id-matrix.top-header col:first-child,
-.packet-id-matrix.contents col:first-child {
+.pkt-grid col:first-child {
     width: 45ex;
 }
 
-.packet-id-matrix.legend th, .packet-id-matrix.top-header th {
+.pkt-grid.legend-min th, .pkt-grid.top-header th {
     border-top-width: 0;
 }
 
-.packet-id-matrix th:first-child {
+.pkt-grid th:first-child {
     border-left-width: 0;
 }
 
-.packet-id-matrix.top-header, .packet-id-matrix.contents {
+.pkt-grid.top-header, .pkt-grid.contents {
     width: 100%;
 }
 
-.packet-id-changed {
+.pkt-id-chg {
     font-weight: bold;
 }
 
-.packet-id-matrix tr > * {
+.pkt-grid tr > *, .legend .l-sample {
     border: 1px solid black;
     overflow: hidden;
     background-color: white;
 }
 
-.packet-id-matrix tr.highlight > *,
-.packet-id-matrix tr > *.highlight {
+.pkt-grid tr.highlight > *,
+.pkt-grid tr > *.highlight {
     background-repeat: repeat;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgHDywjLGFMHgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAADUlEQVQI12NoYGhQAwADKwEnW0bWPwAAAABJRU5ErkJggg==);
 }
 
-.packet-format-changed { background-color: #FF8 !important; }
-.packet-base           { background-color: #EEF !important; }
-.packet-added          { background-color: #AFA !important; font-weight: bold; }
-.packet-removed        { background-color: #FAA !important; }
+.pkt-fmt-chg { background-color: #FF8 !important; }
+.pkt-base    { background-color: #EEF !important; }
+.pkt-added   { background-color: #AFA !important; font-weight: bold; }
+.pkt-removed { background-color: #FAA !important; }
 
-.packet-removed::before {
+.pkt-removed::before {
     content: "—"; font-weight: bold;
 }
 
-.packet-state-handshaking.packet-bound-client::before { content: "HC "; color: #888; }
-.packet-state-login.packet-bound-client::before       { content: "LC "; color: #888; }
-.packet-state-play.packet-bound-client::before        { content: "PC "; color: #888; }
-.packet-state-status.packet-bound-client::before      { content: "SC "; color: #888; }
+.pkt-grid.legend-min {
+    position: fixed;
+    top: 0px; left: 0px;
+    z-index: 3;
+    color: #888;
+}
 
-.packet-state-handshaking.packet-bound-server::before { content: "HS "; color: #888; }
-.packet-state-login.packet-bound-server::before       { content: "LS "; color: #888; }
-.packet-state-play.packet-bound-server::before        { content: "PS "; color: #888; }
-.packet-state-status.packet-bound-server::before      { content: "SS "; color: #888; }
+.pkt-grid.legend-min th {
+    font-weight: normal;
+    padding-left: 1em;
+}
 
-.packet-id-matrix.top-header .pycraft-supported-version { color:#00F; }
-.packet-id-matrix.left-header .pycraft-supported-packet-class { color:#00F; }
-.packet-id-matrix a { color:inherit; }
+.pkt-grid.legend-min th > div {
+    display: inline-block;
+    vertical-align: middle;
+}
 
-.packet-id-matrix.contents .packet-present.pycraft-supported-packet-class { color:#F00; }
-.packet-id-matrix.contents .packet-present.pycraft-supported-packet-class.pycraft-supported-version { color:#F0F; }
-.packet-id-matrix.contents .packet-present.pycraft-supported-packet { color:#00F !important; }
+.pkt-grid.legend-min th > .l-text::before {
+    content: "Show Key";
+    font-size: smaller;
+}
+
+.pkt-grid.legend-min th > .l-spacer {
+    position: relative;
+    right: 100%;
+}
+
+.legend {
+    position: fixed;
+    left: 0px; top:0px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 2px 0 5px 5px;
+    z-index: 3;
+    display: none;
+}
+
+.legend-min:hover ~ .legend, .legend:hover, .legend.l-visible {
+    display: initial;
+}
+
+.legend.l-hidden {
+    display: none !important;
+}
+
+.legend .l-header {
+    color: #888;
+    padding-bottom: 2px;
+}
+
+.legend .l-column {
+    display: inline-block;
+    margin-bottom: 1px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.legend .l-sample {
+    display: inline-block;
+    width: 6.5ex;
+    vertical-align: bottom;
+    margin-bottom: -1px;
+}
+
+.legend .l-pkt-id, .legend .l-version { text-align: center; }
+.legend .l-pkt-cls, .legend .l-version { font-weight: bold; }
+.legend .l-pkt-cls::before { content:"XX "; visibility:hidden }
+
+.state-handshaking.bound-client::before { content: "HC "; color: #888; }
+.state-login.bound-client::before       { content: "LC "; color: #888; }
+.state-play.bound-client::before        { content: "PC "; color: #888; }
+.state-status.bound-client::before      { content: "SC "; color: #888; }
+
+.state-handshaking.bound-server::before { content: "HS "; color: #888; }
+.state-login.bound-server::before       { content: "LS "; color: #888; }
+.state-play.bound-server::before        { content: "PS "; color: #888; }
+.state-status.bound-server::before      { content: "SS "; color: #888; }
+
+.l-state::before, .l-bound::before, .l-bound::after {
+    color: #888; font-weight: bold;
+}
+.l-bound::before { content: "X"; visibility: hidden; }
+.l-state-handshaking::before { content: "H"; }
+.l-state-login::before       { content: "L"; }
+.l-state-play::before        { content: "P"; }
+.l-state-status::before      { content: "S"; }
+.l-bound-client::after  { content: "C"; }
+.l-bound-server::after  { content: "S"; }
+
+.pkt-grid-container a { color:inherit; }
+
+.pkt-grid.top-header  .pycraft-version,   .l-version.pycraft-version,
+.pkt-grid.left-header .pycraft-pkt-cls, .l-pkt-cls.pycraft-pkt-cls {
+    color: #00F;
+}
+
+.pkt-grid.contents .pkt-present.pycraft-pkt-cls,
+.l-pkt-id.pycraft-pkt-cls {
+    color: #F00;
+}
+.pkt-grid.contents .pkt-present.pycraft-pkt-cls.pycraft-version,
+.l-pkt-id.pycraft-pkt-cls.pycraft-version {
+    color: #F0F;
+}
+.pkt-grid.contents .pkt-present.pycraft-pkt,
+.l-pkt-id.pycraft-pkt {
+    color: #00F !important;
+}

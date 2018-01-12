@@ -1,9 +1,17 @@
+Array.forEach = Array.forEach || function () {
+    var that = arguments[0];
+    var args = Array.prototype.slice.call(arguments, 1);
+    return Array.prototype.forEach.apply(that, args);
+};
+
 window.addEventListener('load', function () {
      Array.forEach(document.getElementsByClassName(
-     'packet-id-matrix-container'), function (div) {
+     'pkt-grid-container'), function (div) {
         var left = div.getElementsByClassName('left-header')[0];
         var top = div.getElementsByClassName('top-header')[0];
         var main = div.getElementsByClassName('contents')[0];
+        var legend_min = div.getElementsByClassName('legend-min')[0];
+        var legend = div.getElementsByClassName('legend')[0];
 
         var selectedRowIndex = null;
         var selectedRowElems = null;
@@ -99,6 +107,23 @@ window.addEventListener('load', function () {
                 var cell = tr.children[index];
                 cells.push(cell);
             });
+        });
+
+        legend.classList.add('l-hidden');
+        legend_min.onmouseenter = legend_min.onclick = function () {
+            legend.classList.replace('l-hidden', 'l-visible');
+        };
+        legend.onclick = legend.onmouseleave = function () {
+            legend.classList.replace('l-visible', 'l-hidden');
+            legend_min.onmouseenter = null;
+            window.setTimeout(function () {
+                legend_min.onmouseenter = legend_min.onclick;
+            }, 100);
+        };
+        Array.forEach(legend.getElementsByTagName('a'), function (a) {
+            a.onclick = function (ev) {
+                ev.stopPropagation();
+            };
         });
     });
 });
