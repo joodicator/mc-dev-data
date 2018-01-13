@@ -867,6 +867,20 @@ def pycraft_packet_classes(matrix):
 
 
 if __name__ == '__main__':
+    all_args = ['-r%s' % key for key, val in globals().items() if
+                inspect.isfunction(val) and val.__name__ == 'from_page_func']
+
+    if '-h' in sys.argv[1:] or '--help' in sys.argv[1:]:
+        print('Usage: main.py [-h|--help]', file=sys.stderr)
+        for arg in all_args:
+            print('               [%s]' % arg, file=sys.stderr)
+        sys.exit(0)
+
+    for arg in sys.argv[1:]:
+        if arg not in all_args:
+            print('Unrecognised argument: %s' % arg, file=sys.stderr)
+            sys.exit(2)
+
     matrix_html()
 
     for vsn, url in version_urls.items():
