@@ -28,6 +28,7 @@ body {
     position: sticky;
     left: 0px;
     z-index: 1;
+    width: 40ex;
 }
 
 .pkt-grid.contents {
@@ -36,11 +37,11 @@ body {
 
 .pkt-grid.top-header col:not(:first-child),
 .pkt-grid.contents col:not(:first-child) {
-    width: 11ex;
+    width: 10ex;
 }
 
 .pkt-grid col:first-child {
-    width: 45ex;
+    width: 40ex;
 }
 
 .pkt-grid.legend-min th, .pkt-grid.top-header th {
@@ -187,4 +188,8 @@ body {
 .pkt-grid.contents .pkt-present.pycraft-pkt,
 .l-pkt-id.pycraft-pkt {
     color: #00F !important;
+}
+
+.pkt-grid.contents td > a {
+    text-decoration: none !important;
 }

@@ -21,11 +21,11 @@ from minecraft.networking import packets as pycraft_packets
 PACKET_STATE_VALUES = 'Handshaking', 'Login', 'Play', 'Status'
 PACKET_BOUND_VALUES = 'Client', 'Server'
 
-MatrixID = namedtuple(
-    'MatrixID', ('id', 'changed'))
-MatrixID.__str__ = lambda r: \
-    'MatrixID(id=%s, changed=%r)' \
-    % (id_str(r.id), r.changed)
+class MatrixID(namedtuple('MatrixID', ('id', 'changed', 'html', 'url'))):
+    def __new__(cls, id, changed=None, html=None, url=None):
+        return super(MatrixID, cls).__new__(cls, id, changed, html, url)
+    def __repr__(r):
+        return 'MatrixID(id=%s, changed=%r)' % (id_str(r.id), r.changed)
 
 Vsn = namedtuple(
     'Vsn', ('name', 'protocol'))
@@ -33,17 +33,36 @@ Vsn = namedtuple(
 VersionDiff = namedtuple(
     'VersionDiff', ('old', 'new'))
 
-PrePacket = namedtuple(
-    'PrePacket', ('name', 'old_id', 'new_id', 'changed', 'state', 'bound'))
-PrePacket.__str__ = lambda r: \
-    'PrePacket(name=%r, old_id=%s, new_id=%s, changed=%r, state=%r, bound=%r)' \
-    % (r.name, id_str(r.old_id), id_str(r.new_id), r.changed, r.state, r.bound)
+class PrePacket(namedtuple('PrePacket', (
+'name', 'old_id', 'new_id', 'changed', 'state', 'bound', 'html', 'url'))):
+    __slots__ = ()
+    def __new__(cls, name, old_id, new_id, changed, state, bound, html=None, url=None):
+        return super(PrePacket, cls).__new__(cls,
+            name, old_id, new_id, changed, state, bound, html, url)
+    def __eq__(self, other):
+        if not isinstance(other, PrePacket): return False
+        return super(PrePacket, self._reduce()).__eq__(other._reduce())
+    def __hash__(self):
+        return super(PrePacket, self._reduce()).__hash__()
+    def _reduce(self):
+        return self._replace(html=None, url=None)
+    def __repr__(r):
+        return 'PrePacket(name=%r, old_id=%s, new_id=%s, changed=%r, state=%r, bound=%r)' \
+        % (r.name, id_str(r.old_id), id_str(r.new_id), r.changed, r.state, r.bound)
 
-RelPacket = namedtuple(
-    'RelPacket', ('name', 'id', 'state', 'bound'))
-RelPacket.__str__ = lambda r: \
-    'RelPacket(name=%r, id=%s, state=%r, bound=%r)' \
-    % (r.name, id_str(r.id), r.state, r.bound)
+class RelPacket(namedtuple('RelPacket', ('name', 'id', 'state', 'bound', 'url'))):
+    def __new__(cls, name, id, state, bound, url=None):
+        return super(RelPacket, cls).__new__(cls, name, id, state, bound, url)
+    def __eq__(self, other):
+        if not isinstance(other, RelPacket): return False
+        return super(RelPacket, self._reduce()).__eq__(other._reduce())
+    def __hash__(self):
+        return super(RelPacket, self._reduce()).__hash__()
+    def _reduce(self):
+        return self._replace(url=None)
+    def __repr__(r):
+        return 'RelPacket(name=%r, id=%s, state=%r, bound=%r)' \
+               % (r.name, id_str(r.id), r.state, r.bound)
 
 PacketClass = namedtuple(
     'PacketClass', ('name', 'state', 'bound'))
@@ -54,6 +73,29 @@ def id_str(id):
     return str(id)
 
 version_urls = {
+    Vsn('18w20c',      377): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13917',
+    Vsn('18w20b',      376): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13913',
+    Vsn('18w20a',      375): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13910',
+    Vsn('18w19b',      374): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13905',
+    Vsn('18w19a',      373): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13896',
+    Vsn('18w16a',      372): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13891',
+    Vsn('18w15a',      371): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13824',
+    Vsn('18w14b',      370): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13744',
+    Vsn('18w14a',      369): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13741',
+    Vsn('18w11a',      368): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13724',
+    Vsn('18w10d',      367): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13702',
+    Vsn('18w10c',      366): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13699',
+    Vsn('18w10b',      365): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13693',
+    Vsn('18w10a',      364): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13692',
+    Vsn('18w09a',      363): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13671',
+    Vsn('18w08b',      362): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13666',
+    Vsn('18w08a',      361): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13662',
+    Vsn('18w07c',      360): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13658',
+    Vsn('18w07b',      359): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13653',
+    Vsn('18w07a',      358): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13648',
+    Vsn('18w06a',      357): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13636',
+    Vsn('18w05a',      356): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13628',
+    Vsn('18w03b',      355): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13623',
     Vsn('18w02a',      353): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13582',
     Vsn('18w01a',      352): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13576',
     Vsn('17w50a',      351): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13556',
@@ -180,33 +222,33 @@ patch = {
                          PrePacket('Craft Recipe Request', None, 0x01, True, 'Play', 'Server'),
     (Vsn('17w13b', 319), PrePacket('Unknown', None, 0x01, True, 'Play', 'Server')):
                          PrePacket('Craft Recipe Request', None, 0x01, True, 'Play', 'Server'),
-    (Vsn('17w13a', 318), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('17w13a', 318), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                          PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('17w13b', 319), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('17w13b', 319), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                          PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('17w14a', 320), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('17w14a', 320), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                          PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('17w15a', 321), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('17w15a', 321), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                          PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('17w16a', 322), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('17w16a', 322), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                          PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('17w16b', 323), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('17w16b', 323), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                          PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('17w17a', 324), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('17w17a', 324), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                          PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('17w17b', 325), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('17w17b', 325), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                          PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('17w18a', 326), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('17w18a', 326), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                          PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('17w18b', 327), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('17w18b', 327), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                          PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('1.12-pre1', 328), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('1.12-pre1', 328), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                             PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('1.12-pre2', 329), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('1.12-pre2', 329), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                             PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('1.12-pre3', 330), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('1.12-pre3', 330), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                             PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
-    (Vsn('1.12-pre4', 331), PrePacket('Particle', 0x24, 0x25, False, 'Play', 'Client')):
+    (Vsn('1.12-pre4', 331), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
                             PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w31a', 336), PrePacket('Craft Recipe Request', 0x01, None, True, 'Play', 'Server')):
                          None,
@@ -236,12 +278,14 @@ norm_packet_name_dict = {
     'Confirm Transation (clientbound)': 'Confirm Transaction (clientbound)',
     'Unlock Recipe':                    'Unlock Recipes',
     'Advancement Progress':             'Select Advancement Tab',
-    'Recipe Displayed':                 'Crafting Book Data',
+    'Recipe Displayed':                 'Recipe Book Data',
+    'Crafting Book Data':               'Recipe Book Data',
     'Prepare Crafting Grid':            'Craft Recipe Request',
     'Sign Editor Open':                 'Open Sign Editor',
     'Player List Header/Footer':        'Player List Header And Footer',
     'Vehicle Move (Serverbound)':       'Vehicle Move (serverbound)',
-    ('Vehicle Move?', 'Server'):        'Vehicle Move (serverbound)',   
+    ('Vehicle Move?', 'Server'):        'Vehicle Move (serverbound)',
+    'Particle':                         'Spawn Particle',
 }
 for name in 'Animation', 'Chat Message', 'Keep Alive', 'Plugin Message', \
 'Player Position And Look', 'Held Item Change', 'Close Window', 'Vehicle Move', \
@@ -321,9 +365,10 @@ def matrix_html():
                     if versions[i] in pycraft_classes[packet_class]:
                         classes.append('pycraft-pkt')
 
-                print(' <td%s>0x%02X</td>' % (
-                    ' class="%s"' % ' '.join(classes) if classes else '', cell.id),
-                    end='')
+                content = '0x%02X' % cell.id
+                if cell.url: content = '<a href="%s">%s</a>' % (cell.url, content)
+                print(' <td%s>%s</td>' % (' class="%s"' % ' '.join(classes)
+                      if classes else '', content), end='')
             elif prev_cell:
                 print(' <td class="pkt-removed"></td>')
             else:
@@ -332,7 +377,7 @@ def matrix_html():
     print('      </table>')
 
     print('      <table class="pkt-grid left-header">')
-    print('          <colgroup><col></col></colgroup>')
+    print('          <colgroup> <col> </colgroup>')
     for packet_class in packet_classes:
         classes = ['state-%s' % packet_class.state.lower(),
                    'bound-%s' % packet_class.bound.lower()]
@@ -345,6 +390,7 @@ def matrix_html():
     print('      <table class="pkt-grid legend-min">')
     print('          <colgroup> <col></col> </colgroup>')
     print('          <tr><th>')
+    print(              '<div class="l-spacer">&nbsp;<br>&nbsp;</div>')
     print('              <div class="l-text"></div>', end='')
     print(              '<div class="l-spacer">&nbsp;<br>&nbsp;</div>')
     print('          </th></tr>')
@@ -564,6 +610,19 @@ def pre_versions(soup, vsn):
             ' in the first paragraph: %s' % (vsn.name, len(vs), vs, para))
 
 
+patch_links = {
+    (Vsn('15w51b', 94),  '#Vehicle_Move.3F'):   None,
+    (Vsn('15w51b', 94),  '#Steer_Boat'):        None,
+    (Vsn('16w02a', 95),  '#Steer_Boat'):        None,
+    (Vsn('1.9.4', 110),  '#Chunk_data'):        '#Chunk_Data',
+    (Vsn('17w13a', 318), '#Advancements'):      None,
+    (Vsn('17w13a', 318), '#Unlock_Recipe'):     None,
+    (Vsn('17w13a', 318), '#Unknown'):           None,
+    (Vsn('17w13a', 318), '#Recipe_Displayed'):  None,
+    (Vsn('17w13a', 318), '#Use_Item'):          None,
+    (Vsn('17w13b', 319), '#Recipe_Displayed'):  '#Recipe_displayed',
+}
+
 @from_page(get_soup)
 def pre_packets(soup, vsn):
     seen_names = set()
@@ -624,15 +683,39 @@ def pre_packets(soup, vsn):
                 '[%s] [%s] %r != %r' % (vsn.name, tds[cols[c_name]].text.strip(),
                                         tds[cols[c_doc]+1].text.strip(), expect)
 
+            if changed and new_id is not None:
+                a = tds[cols[c_doc]+1].find('a')
+                assert a is not None, '[%s] [%s] No <a> found in %s' % (
+                    vsn.name, tds[cols[c_name]].text.strip(), tds[cols[c_doc]+1])
+                parts = tds[cols[c_doc]+1].find('a').get('href').split('#', 1)
+                assert len(parts) == 2 and parts[0] == '/Pre-release_protocol', \
+                    '[%s] [%s] %s' % (vsn.name, tds[cols[c_name]].text.strip(), parts)
+                frag = '#' + parts[1]
+                frag = patch_links.get((vsn, frag), frag)
+                if frag is not None:
+                    head = soup.find(id=frag[1:])
+                    assert head is not None, \
+                           '[%s] Cannot find #%s.' % (vsn.name, parts[1])
+                    html = []
+                    for el in head.find_parent('h4').next_siblings:
+                        if el.name in ('h4', 'h3', 'h2', 'h1'): break
+                        el_str = el.get_text() if hasattr(el, 'get_text') else str(el)
+                        if el_str.strip(): html.append(el)
+                    html = ''.join(str(el) for el in html)
+                    html = hashlib.sha1(html.encode('utf8')).hexdigest()
+                    url = version_urls[vsn] + frag
+            else:
+                html, url = None, None
+
             name = tds[cols[c_name]].text.strip()
             name = norm_packet_name(name, state, bound)
             yield PrePacket(
                 name=name, old_id=old_id, new_id=new_id, changed=changed,
-                state=state, bound=bound)
+                state=state, bound=bound, html=html, url=url)
 
 
 @from_page(get_soup)
-def rel_packets(soup):
+def rel_packets(soup, vsn):
     content = soup.find(id='mw-content-text')
     for table in content.findChildren('table', class_='wikitable'):
         ths = table.findChildren('tr')[0].findChildren('th')
@@ -647,9 +730,10 @@ def rel_packets(soup):
                 bound = td.text.strip()
         if id is None:
             continue
-        name = table.findPreviousSibling('h4').text.strip()
-        name = norm_packet_name(name, state, bound)
-        yield RelPacket(name=name, id=id, state=state, bound=bound)
+        head = table.findPreviousSibling('h4')
+        name = norm_packet_name(head.text.strip(), state, bound)
+        url = '%s#%s' % (version_urls[vsn], head.find('span')['id'])
+        yield RelPacket(name=name, id=id, state=state, bound=bound, url=url)
 
 
 REL_VER_RE = re.compile(r'\(currently (?P<protocol>\d+)'
@@ -671,6 +755,7 @@ def version_packet_ids():
     used_patches = set()
     packet_classes = {}
     matrix = {}
+    prev_v = None
     for v, url in sorted(version_urls.items(), key=lambda i: i[0].protocol):
         with get_page(url) as page:
             heading = first_heading(page)
@@ -712,12 +797,17 @@ def version_packet_ids():
                             v.name, packet.old_id, from_v, packet_class,
                             matrix[from_v][packet_class].id)
                     if packet.new_id is not None:
+                        changed = packet.changed
+                        if changed and packet.html and prev_v:
+                            prev = matrix[prev_v].get(packet_class)
+                            if prev and prev.html == packet.html: changed = False
                         matrix[v][packet_class] = MatrixID(
-                            id = packet.new_id,
-                            changed = packet.changed)
+                            id=packet.new_id, changed=changed,
+                            html=packet.html, url=packet.url if changed else None)
                 for packet_class, id in matrix[from_v].items():
                     if packet_class.name in seen_names: continue
-                    matrix[v][packet_class] = id._replace(changed=False)
+                    matrix[v][packet_class] = id._replace(
+                        changed=False, html=None, url=None)
             elif heading == 'Protocol':
                 rel_v = rel_version(page)
                 if rel_v.name is None:
@@ -725,7 +815,7 @@ def version_packet_ids():
                 assert v == rel_v, '%r != %r' % (v, rel_v)
                 matrix[v] = {}
                 seen_names = {}
-                for packet in rel_packets(page):
+                for packet in rel_packets(page, v):
                     if (v, packet) in patch:
                         used_patches.add((v, packet))
                         packet = patch[v, packet]
@@ -741,7 +831,7 @@ def version_packet_ids():
                         packet_classes[packet.name] = packet_class
                     assert packet_classes[packet.name] == packet_class
 
-                    matrix[v][packet_class] = MatrixID(packet.id, None)
+                    matrix[v][packet_class] = MatrixID(id=packet.id, url=packet.url)
             else:
                 raise AssertionError('Unrecognised article title: %r' % heading)
 
@@ -757,6 +847,8 @@ def version_packet_ids():
             if unused_patches:
                 raise AssertionError('Unused patches:\n'
                 + '\n'.join('%s -> %s' % (p, patch[p]) for p in unused_patches))
+
+        prev_v = v
 
     unused_patches = set(k for k in patch.keys() if k not in used_patches)
     if unused_patches:
@@ -867,8 +959,8 @@ def pycraft_packet_classes(matrix):
 
 
 if __name__ == '__main__':
-    all_args = ['-r%s' % key for key, val in globals().items() if
-                inspect.isfunction(val) and val.__name__ == 'from_page_func']
+    all_args = sorted('-r%s' % key for key, val in globals().items() if
+               inspect.isfunction(val) and val.__name__ == 'from_page_func')
 
     if '-h' in sys.argv[1:] or '--help' in sys.argv[1:]:
         print('Usage: main.py [-h|--help]', file=sys.stderr)
