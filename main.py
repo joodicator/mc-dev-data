@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-from bs4 import BeautifulSoup
+import bs4
+import bs4.element
+
 from urllib.request import urlopen
 from contextlib import closing
 from collections import namedtuple
@@ -12,6 +14,7 @@ import pickle
 import os
 import sys
 import re
+import math
 
 import minecraft as pycraft
 import minecraft.networking.connection as pycraft_connection
@@ -73,6 +76,15 @@ def id_str(id):
     return str(id)
 
 version_urls = {
+    Vsn('1.13',        393): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14132',
+    Vsn('1.13-pre10',  392): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14126',
+    Vsn('1.13-pre9',   391): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14124',
+    Vsn('1.13-pre8',   390): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14117',
+    Vsn('1.13-pre7',   389): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14107',
+    Vsn('1.13-pre6',   388): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14095',
+    Vsn('1.13-pre5',   387): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14088',
+    Vsn('1.13-pre4',   386): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14072',
+    Vsn('1.13-pre3',   385): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14045',
     Vsn('1.13-pre2',   384): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14030',
     Vsn('1.13-pre1',   383): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13971',
     Vsn('18w22c',      382): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=13965',
@@ -279,20 +291,23 @@ patch = {
 
 
 norm_packet_name_dict = {
-    'Maps':                             'Map',
-    'Chunk data':                       'Chunk Data',
-    'Entity effect':                    'Entity Effect',
-    'Confirm Transation (clientbound)': 'Confirm Transaction (clientbound)',
-    'Unlock Recipe':                    'Unlock Recipes',
-    'Advancement Progress':             'Select Advancement Tab',
-    'Recipe Displayed':                 'Recipe Book Data',
-    'Crafting Book Data':               'Recipe Book Data',
-    'Prepare Crafting Grid':            'Craft Recipe Request',
-    'Sign Editor Open':                 'Open Sign Editor',
-    'Player List Header/Footer':        'Player List Header And Footer',
-    'Vehicle Move (Serverbound)':       'Vehicle Move (serverbound)',
-    ('Vehicle Move?', 'Server'):        'Vehicle Move (serverbound)',
-    'Particle':                         'Spawn Particle',
+    'Maps':                                 'Map',
+    'Chunk data':                           'Chunk Data',
+    'Entity effect':                        'Entity Effect',
+    'Confirm Transation (clientbound)':     'Confirm Transaction (clientbound)',
+    'Unlock Recipe':                        'Unlock Recipes',
+    'Advancement Progress':                 'Select Advancement Tab',
+    'Recipe Displayed':                     'Recipe Book Data',
+    'Crafting Book Data':                   'Recipe Book Data',
+    'Prepare Crafting Grid':                'Craft Recipe Request',
+    'Sign Editor Open':                     'Open Sign Editor',
+    'Player List Header/Footer':            'Player List Header And Footer',
+    'Vehicle Move (Serverbound)':           'Vehicle Move (serverbound)',
+    ('Vehicle Move?', 'Server'):            'Vehicle Move (serverbound)',
+    'Particle':                             'Spawn Particle',
+    'Plugin message (serverbound)':         'Plugin Message (serverbound)',
+    'Login Plugin Message (clientbound)':   'Login Plugin Request',
+    'Login Plugin Message (serverbound)':   'Login Plugin Response',
 }
 for name in 'Animation', 'Chat Message', 'Keep Alive', 'Plugin Message', \
 'Player Position And Look', 'Held Item Change', 'Close Window', 'Vehicle Move', \
@@ -443,7 +458,7 @@ def matrix_html():
     print('             </div>')
     print('             <div class="l-item">')
     print('                 <div class="l-sample l-pkt-id pkt-fmt-chg">0x00</div>')
-    print('                 Format changed')
+    print('                 Format <abbr title="(possibly)">changed</abbr>')
     print('             </div>')
     print('             <div class="l-item">')
     print('                 <div class="l-sample l-pkt-id pkt-base">0x00</div>')
@@ -497,7 +512,13 @@ def matrix_html():
 def from_page(*page_args, dep=(), no_cache=False, **page_kwds):
     def from_page_decorator(func):
         def from_page_func(page, *args, **kwds):
-            refresh = any('-r'+d in sys.argv[1:] for d in from_page_func.depends)
+            refresh = False
+            if any(dep in refresh_names for dep in from_page_func.depends):
+                bound_args = inspect.signature(func).bind(*(page_args+args), **kwds)
+                vsn = bound_args.arguments.get('vsn')
+                refresh = not vsn or (vsn.protocol >= refresh_min_proto and \
+                                      vsn.protocol <= refresh_max_proto)
+
             if func.__name__ not in page or refresh \
             and func.__name__ not in page.get('__refreshed__', set()):
                 args = tuple(a(page) for a in page_args) + args
@@ -512,6 +533,7 @@ def from_page(*page_args, dep=(), no_cache=False, **page_kwds):
                 if refresh:
                     if '__refreshed__' not in page: page['__refreshed__'] = set()
                     page['__refreshed__'].add(func.__name__)
+
             return page[func.__name__]
 
         from_page_func.depends = {func.__name__}
@@ -591,7 +613,7 @@ def get_soup(url):
             data = stream.read()
         with open(www_cache_file, 'w') as file:
             file.write(data.decode(charset))
-    return BeautifulSoup(data, 'lxml', from_encoding=charset)
+    return bs4.BeautifulSoup(data, 'lxml', from_encoding=charset)
 
 
 @from_page(get_soup)
@@ -618,16 +640,27 @@ def pre_versions(soup, vsn):
 
 
 patch_links = {
-    (Vsn('15w51b', 94),  '#Vehicle_Move.3F'):   None,
-    (Vsn('15w51b', 94),  '#Steer_Boat'):        None,
-    (Vsn('16w02a', 95),  '#Steer_Boat'):        None,
-    (Vsn('1.9.4', 110),  '#Chunk_data'):        '#Chunk_Data',
-    (Vsn('17w13a', 318), '#Advancements'):      None,
-    (Vsn('17w13a', 318), '#Unlock_Recipe'):     None,
-    (Vsn('17w13a', 318), '#Unknown'):           None,
-    (Vsn('17w13a', 318), '#Recipe_Displayed'):  None,
-    (Vsn('17w13a', 318), '#Use_Item'):          None,
-    (Vsn('17w13b', 319), '#Recipe_Displayed'):  '#Recipe_displayed',
+    (Vsn('15w51b', 94),  '#Vehicle_Move.3F'):           None,
+    (Vsn('15w51b', 94),  '#Steer_Boat'):                None,
+    (Vsn('16w02a', 95),  '#Steer_Boat'):                None,
+    (Vsn('1.9.4', 110),  '#Chunk_data'):                '#Chunk_Data',
+    (Vsn('17w13a', 318), '#Advancements'):              None,
+    (Vsn('17w13a', 318), '#Unlock_Recipe'):             None,
+    (Vsn('17w13a', 318), '#Unknown'):                   None,
+    (Vsn('17w13a', 318), '#Recipe_Displayed'):          None,
+    (Vsn('17w13a', 318), '#Use_Item'):                  None,
+    (Vsn('17w13b', 319), '#Recipe_Displayed'):          '#Recipe_displayed',
+    (None, '#Plugin_message_.28serverbound.29'):        '#Plugin_Message_.28serverbound.29',
+    (Vsn('1.13-pre3', 385), '#Login_Plugin_Message_.28clientbound.29'):
+                                                        '#Login_Plugin_Message_.28clientbound.29',
+    (Vsn('1.13-pre3', 385), '#Login_Plugin_Message_.28serverbound.29'):
+                                                        '#Login_Plugin_Message_.28serverbound.29',
+    (Vsn('1.13-pre4', 386), '#Login_Plugin_Message_.28clientbound.29'):
+                                                        '#Login_Plugin_Message_.28clientbound.29',
+    (Vsn('1.13-pre4', 386), '#Login_Plugin_Message_.28serverbound.29'):
+                                                        '#Login_Plugin_Message_.28serverbound.29',
+    (None, '#Login_Plugin_Message_.28clientbound.29'):  '#Login_Plugin_Request',
+    (None, '#Login_Plugin_Message_.28serverbound.29'):  '#Login_Plugin_Response',
 }
 
 @from_page(get_soup)
@@ -648,7 +681,7 @@ def pre_packets(soup, vsn):
         state, bound = None, None
         for tr in table.findChildren('tr')[1:]:
             ths = tr.findChildren('th')
-            if len(ths) == 1 and int(ths[0].get('colspan', '1')) == ncols:
+            if len(ths) == 1 and abs(int(ths[0].get('colspan', '1')) - ncols) <= 1:
                 match = re.match(r'(\S+) (\S+)bound', ths[0].text.strip())
                 if match:
                     state = match.group(1).capitalize()
@@ -690,6 +723,9 @@ def pre_packets(soup, vsn):
                 '[%s] [%s] %r != %r' % (vsn.name, tds[cols[c_name]].text.strip(),
                                         tds[cols[c_doc]+1].text.strip(), expect)
 
+            name = tds[cols[c_name]].text.strip()
+            name = norm_packet_name(name, state, bound)
+
             if changed and new_id is not None:
                 a = tds[cols[c_doc]+1].find('a')
                 assert a is not None, '[%s] [%s] No <a> found in %s' % (
@@ -698,24 +734,32 @@ def pre_packets(soup, vsn):
                 assert len(parts) == 2 and parts[0] == '/Pre-release_protocol', \
                     '[%s] [%s] %s' % (vsn.name, tds[cols[c_name]].text.strip(), parts)
                 frag = '#' + parts[1]
-                frag = patch_links.get((vsn, frag), frag)
+                frag = patch_links.get((vsn, frag), patch_links.get((None, frag), frag))
                 if frag is not None:
                     head = soup.find(id=frag[1:])
                     assert head is not None, \
-                           '[%s] Cannot find #%s.' % (vsn.name, parts[1])
+                           '[%s] Cannot find "%s".' % (vsn.name, frag)
                     html = []
                     for el in head.find_parent('h4').next_siblings:
                         if el.name in ('h4', 'h3', 'h2', 'h1'): break
-                        el_str = el.get_text() if hasattr(el, 'get_text') else str(el)
-                        if el_str.strip(): html.append(el)
-                    html = ''.join(str(el) for el in html)
+                        if isinstance(el, bs4.element.Tag):
+                            html.extend(el.stripped_strings)
+                        elif type(el) in (bs4.element.NavigableString,
+                                          bs4.element.PreformattedString):
+                            html.append(str(el).strip())
+                        else:
+                            assert isinstance(el, bs4.element.PageElement), repr(el)
+                    html = ''.join(html).replace(id_str(new_id), '{packet-id}')
+                    if name == 'Handshake':
+                        html = re.sub(r'See\s*protocol version numbers\s*\(currently.*?\)',
+                                      '{proto-ver}', html)
+                    #if name == 'Login Plugin Response':
+                    #    __import__('pdb').set_trace()
                     html = hashlib.sha1(html.encode('utf8')).hexdigest()
                     url = version_urls[vsn] + frag
             else:
                 html, url = None, None
 
-            name = tds[cols[c_name]].text.strip()
-            name = norm_packet_name(name, state, bound)
             yield PrePacket(
                 name=name, old_id=old_id, new_id=new_id, changed=changed,
                 state=state, bound=bound, html=html, url=url)
@@ -879,6 +923,8 @@ def pycraft_packet_name(name):
         'Chat Message (serverbound)':             'Chat',
         'Player Position And Look (serverbound)': 'PositionAndLook',
         'Pong':                                   'PingResponse',
+        'Login Plugin Request':                   'PluginRequest',
+        'Login Plugin Response':                  'PluginResponse',
     }.get(name, name)
     return '%sPacket' % re.sub(r' +|\([^)]+\)$', '', name)
 
@@ -965,18 +1011,32 @@ def pycraft_packet_classes(matrix):
     return classes
 
 
+refresh_names = set()
+refresh_min_proto, refresh_min_proto_arg = -math.inf, '--r-min-proto='
+refresh_max_proto, refresh_max_proto_arg =  math.inf, '--r-max-proto='
+for arg in sys.argv[1:]:
+    if arg.startswith(refresh_min_proto_arg):
+        refresh_min_proto = int(arg[len(refresh_min_proto_arg):])
+    elif arg.startswith(refresh_max_proto_arg):
+        refresh_max_proto = int(arg[len(refresh_max_proto_arg):])
+    elif arg.startswith('-r'):
+        refresh_names.add(arg[2:])
+
 if __name__ == '__main__':
-    all_args = sorted('-r%s' % key for key, val in globals().items() if
-               inspect.isfunction(val) and val.__name__ == 'from_page_func')
+    nullary_args = sorted('-r%s' % key for key, val in globals().items() if
+                   inspect.isfunction(val) and val.__name__ == 'from_page_func')
+    unary_args = (refresh_min_proto_arg, refresh_max_proto_arg)
 
     if '-h' in sys.argv[1:] or '--help' in sys.argv[1:]:
         print('Usage: main.py [-h|--help]', file=sys.stderr)
-        for arg in all_args:
+        for arg in nullary_args:
             print('               [%s]' % arg, file=sys.stderr)
+        for arg in unary_args:
+            print('               [%s...]' % arg, file=sys.stderr)
         sys.exit(0)
 
     for arg in sys.argv[1:]:
-        if arg not in all_args:
+        if all(not arg.startswith(a) for a in unary_args) and arg not in nullary_args:
             print('Unrecognised argument: %s' % arg, file=sys.stderr)
             sys.exit(2)
 
