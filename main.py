@@ -1149,7 +1149,7 @@ if __name__ == '__main__':
               'The possible RFLAGS are:', file=sys.stderr)
         for _, arg, doc in sorted(args):
             print(' '*3 + '\33[1m%s\33[0m' % arg, file=sys.stderr)
-            for line in doc.split('\n'): print(' '*6 + line)
+            for line in doc.split('\n'): print(' '*6 + line, file=sys.stderr)
         sys.exit(0)
 
     for arg in sys.argv[1:]:
