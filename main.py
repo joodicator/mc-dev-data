@@ -25,19 +25,22 @@ PACKET_STATE_VALUES = 'Handshaking', 'Login', 'Play', 'Status'
 PACKET_BOUND_VALUES = 'Client', 'Server'
 
 class MatrixID(namedtuple('MatrixID', ('id', 'changed', 'html', 'url'))):
+    """Represents an individual cell in the matrix of packet IDs
+       per protocol version per packet; used to generate a <td> element."""
     def __new__(cls, id, changed=None, html=None, url=None):
         return super(MatrixID, cls).__new__(cls, id, changed, html, url)
     def __repr__(r):
         return 'MatrixID(id=%s, changed=%r)' % (id_str(r.id), r.changed)
 
-Vsn = namedtuple(
-    'Vsn', ('name', 'protocol'))
+Vsn = namedtuple('Vsn', ('name', 'protocol'))
+Vsn.__doc__ = "Represents a named Minecraft version with a protocol number."
 
-VersionDiff = namedtuple(
-    'VersionDiff', ('old', 'new'))
+VersionDiff = namedtuple('VersionDiff', ('old', 'new'))
+VersionDiff.__doc__ = "Represents two Minecraft versions being compared."
 
 class PrePacket(namedtuple('PrePacket', (
 'name', 'old_id', 'new_id', 'changed', 'state', 'bound', 'html', 'url'))):
+    """Represents a packet extracted from a pre-release protocol wiki page."""
     __slots__ = ()
     def __new__(cls, name, old_id, new_id, changed, state, bound, html=None, url=None):
         return super(PrePacket, cls).__new__(cls,
@@ -54,6 +57,7 @@ class PrePacket(namedtuple('PrePacket', (
         % (r.name, id_str(r.old_id), id_str(r.new_id), r.changed, r.state, r.bound)
 
 class RelPacket(namedtuple('RelPacket', ('name', 'id', 'state', 'bound', 'url'))):
+    """Represents a packet extracted from a release protocol wiki page."""
     def __new__(cls, name, id, state, bound, url=None):
         return super(RelPacket, cls).__new__(cls, name, id, state, bound, url)
     def __eq__(self, other):
@@ -67,14 +71,21 @@ class RelPacket(namedtuple('RelPacket', ('name', 'id', 'state', 'bound', 'url'))
         return 'RelPacket(name=%r, id=%s, state=%r, bound=%r)' \
                % (r.name, id_str(r.id), r.state, r.bound)
 
-PacketClass = namedtuple(
-    'PacketClass', ('name', 'state', 'bound'))
+PacketClass = namedtuple('PacketClass', ('name', 'state', 'bound'))
+PacketClass.__doc__ = "The label of a row in the packet ID matrix. "\
+                      "Represents a class of version-packet-IDs which are "\
+                      "conceptually associated with the same 'packet'." \
 
 def id_str(id):
+    """Returns the canonical string representation of a packet ID."""
     if isinstance(id, int):
         return '0x%02X' % id
     return str(id)
 
+
+"""A dict mapping each Minecraft version to the URL of the corresponding
+   pre-release or release wiki page. Pre-release pages are preferred, when
+   available, as they contain more information about protocol changes."""
 version_urls = {
     Vsn('1.13',        393): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14132',
     Vsn('1.13-pre10',  392): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14126',
@@ -187,6 +198,7 @@ version_urls = {
     Vsn('15w38a',      72):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6932',
     Vsn('15w36d',      70):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6925',
     Vsn('15w36c',      69):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6883',
+# These commented-out pages use a format that isn't supported by the current parser:
 #    Vsn('15w35e',      66):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6851',
 #    Vsn('15w35b',      63):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6829',
 #    Vsn('15w34a',      58):  'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=6809',
@@ -200,6 +212,9 @@ version_urls = {
     Vsn('1.8.9',       47):  'http://wiki.vg/index.php?title=Protocol&oldid=7368',
 }
 
+
+"""A dict mapping (version, data) tuples to a new data object containing
+   corrections to mistakes or inconsistencies present in the old wiki pages."""
 patch = {
     (Vsn('1.8.9', 47), RelPacket('Sound Effect', 0x29, 'Play', 'Client')):
                        RelPacket('Named Sound Effect', 0x29, 'Play', 'Client'),
@@ -290,6 +305,9 @@ patch = {
 }
 
 
+"""A dict mapping variations on certain packet names to the canonical name.
+   Instead of just a name, the key may also be a `(name, context)' pair,
+   where `context' is one of PACKET_STATE_VALUES or PACKET_BOUND_VALUES."""
 norm_packet_name_dict = {
     'Maps':                                 'Map',
     'Chunk data':                           'Chunk Data',
@@ -319,6 +337,9 @@ for name in 'Disconnect', 'Set Compression':
     norm_packet_name_dict[(name, 'Play')] = '%s (play)' % name
 
 def norm_packet_name(name, state=None, bound=None):
+    """Return the normalised version of a given packet name, optionally in
+       the context of a given game state (one of PACKET_STATE_VALUES) and
+       direction (one of PACKET_BOUND_VALUES)."""
     n_names = set()
     for query in (name, (name, state), (name, bound)):
         if query in norm_packet_name_dict:
@@ -329,6 +350,8 @@ def norm_packet_name(name, state=None, bound=None):
 
 
 def matrix_html():
+    """Print to stdout an HTML document displaying the matrix of packet IDs
+       with each row giving a packet class and each column giving a version."""
     with get_page('__global__') as page:
         matrix = version_packet_ids(page)
         pycraft_classes = pycraft_packet_classes(page)
@@ -509,7 +532,26 @@ def matrix_html():
     print('</html>')
 
 
-def from_page(*page_args, dep=(), no_cache=False, **page_kwds):
+def from_page(*page_args, dep=(), no_cache=False, rdoc=None, doc_order=0, **page_kwds):
+    """A decorator for functions whose arguments and return values may be,
+       retrieved from and saved in a global cache, in the context of a `page',
+       which is a subdivision of the cache, usually specific to a wiki page.
+
+       For each function argument whose value is computed by another @from_page
+       function, say `f', `page_args' or `page_kwds' should contain `f' in the
+       corresponding position.
+
+       Any other @from_page functions whose outputs are used by the function
+       must be explicitly declared as dependencies in the `dep' tuple. (This
+       is only necessary when these data are explicitly retrieved from the
+       the cache by the function, e.g. using `get_page'.)
+
+       If `no_cache' is given as `True', the output won't be saved to disk
+       between runs, but will be cached in memory during each run.
+
+       If `rdoc' is given, it should be a string documenting the corresponding
+       RFLAG given in the command-line help.
+    """
     def from_page_decorator(func):
         def from_page_func(page, *args, **kwds):
             refresh = False
@@ -541,6 +583,10 @@ def from_page(*page_args, dep=(), no_cache=False, **page_kwds):
             if arg_func.__name__ == 'from_page_func':
                 from_page_func.depends |= arg_func.depends
 
+        from_page_func.__doc__ = func.__doc__
+        from_page_func.rdoc = rdoc
+        from_page_func.doc_order = doc_order
+        from_page_func.refreshable = not no_cache
         return from_page_func
 
     return from_page_decorator
@@ -554,6 +600,24 @@ func_cache_dir = os.path.join(os.path.dirname(__file__), 'func-cache')
 unused_func_cache_files = set(os.listdir(func_cache_dir)) - {'.gitignore'}
 warned_unknown_func_cache_keys = set()
 class get_page(object):
+    """A context manager for code operating on data stored in the func-cache.
+       The func-cache is a mapping from arbitrary string keys (given by `url')
+       to dicts mapping further keys to cached data items.
+
+       The `url's are usually the URLs of wiki pages, but may also be the
+       string '__global__' for data which are not particular to a wiki page.
+       The dict keys are usually the names of the @from_page functions that
+       their corresponding values are calculated with, or may also be special
+       double-underscored names giving metadata used by the cache system.
+
+       On entry, this context manager produces the dict corresponding to the
+       given key, which is referred to as the `page'. This value may be given
+       as the first argument to functions decorated with @from_page, which will
+       then operate in the context of the selected `url'.
+
+       On exit, this context manager saves the selected cache section again to
+       disk.
+    """
     __slots__ = 'page', 'func_cache_file'
     def __init__(self, url):
         url_hash = get_url_hash(url)
@@ -600,6 +664,11 @@ www_cache_dir = os.path.join(os.path.dirname(__file__), 'www-cache')
 unused_www_cache_files = set(os.listdir(www_cache_dir))
 @from_page(lambda page: page['url'], no_cache=True)
 def get_soup(url):
+    """Return a BeautifulSoup instance giving the parsed HTML structure
+       of the selected page. If the page does not exist in www-cache,
+       it is downloaded first and saved there. It is intended that the
+       www-cache is permanent and kept under version control, to reduce
+       load on the wiki's web server."""
     url_hash = get_url_hash(url)
     www_cache_file = os.path.join(www_cache_dir, url_hash)
     if os.path.exists(www_cache_file):
@@ -616,14 +685,20 @@ def get_soup(url):
     return bs4.BeautifulSoup(data, 'lxml', from_encoding=charset)
 
 
-@from_page(get_soup)
+@from_page(get_soup, rdoc=
+    "Recalculate first_heading(). Give if its code has changed.")
 def first_heading(soup):
+    """The text of the element with id "firstHeading" on this page. This is
+       used to identify the type (e.g. release or pre-release) of page."""
     return soup.find(id='firstHeading').text.strip() 
 
 
 PRE_VER_RE = re.compile(r'(?P<name>\d[^,]*), protocol (?P<protocol>\d+)')
-@from_page(get_soup)
+@from_page(get_soup, rdoc=
+    "Recalculate pre_versions(). Give if its code has changed.")
 def pre_versions(soup, vsn):
+    """Return a VersionDiff instance containing the old and new versions
+       being compared in this pre-release protocol wiki page."""
     vs = []
     para = soup.find(id='mw-content-text').find('p', recursive=False)
     for a in para.findAll('a'):
@@ -639,6 +714,10 @@ def pre_versions(soup, vsn):
             ' in the first paragraph: %s' % (vsn.name, len(vs), vs, para))
 
 
+"""A dict mapping `(version, url_fragment)' pairs to corrected URL fragments,
+   to patch errors occurring in section hyperlinks. If `version' is None, the
+   corresponding patch applies to all versions. If the value is None, the link
+   is declared to have no corresponding section on the page."""
 patch_links = {
     (Vsn('15w51b', 94),  '#Vehicle_Move.3F'):           None,
     (Vsn('15w51b', 94),  '#Steer_Boat'):                None,
@@ -663,8 +742,12 @@ patch_links = {
     (None, '#Login_Plugin_Message_.28serverbound.29'):  '#Login_Plugin_Response',
 }
 
-@from_page(get_soup)
+@from_page(get_soup, rdoc=
+    'Recalculate pre_packets(). Give if its code has changed.')
 def pre_packets(soup, vsn):
+    """Returns an iterator over the `PrePacket' instance for each packet documented
+       on this pre-release protocol wiki page. `vsn' should be the canonical `Vsn'
+       instance associated with this page."""
     seen_names = set()
     table = soup.find(id='Packets').findNext('table', class_='wikitable')
     if table is not None:
@@ -765,8 +848,12 @@ def pre_packets(soup, vsn):
                 state=state, bound=bound, html=html, url=url)
 
 
-@from_page(get_soup)
+@from_page(get_soup, rdoc=
+    'Recalculate rel_packets(). Give if its code has changed.')
 def rel_packets(soup, vsn):
+    """Return an iterator over the `RelPacket' instance for each packet
+       documented on this release protocol wiki page. `vsn' should be the
+       canonical `Vsn' instance associated with this page."""
     content = soup.find(id='mw-content-text')
     for table in content.findChildren('table', class_='wikitable'):
         ths = table.findChildren('tr')[0].findChildren('th')
@@ -789,8 +876,11 @@ def rel_packets(soup, vsn):
 
 REL_VER_RE = re.compile(r'\(currently (?P<protocol>\d+)'
                         r'( in Minecraft (?P<name>\d[^)]*))?\)')
-@from_page(get_soup)
+@from_page(get_soup, rdoc=
+    'Recalculate rel_version(). Give if its code has changed.')
 def rel_version(soup):
+    """Return a `Vsn' instance giving the Minecraft and protocol version
+       specified on this release protocol wiki page."""
     td = soup.find('td', string=re.compile('^\s*Protocol Version\s*$'))
     td = td.findNextSibling('td')
     assert td.text.strip() == 'VarInt'
@@ -801,8 +891,13 @@ def rel_version(soup):
 
 
 # Returns matrix with matrix[version][packet_class] = matrix_id
-@from_page(dep=(first_heading,pre_versions,pre_packets,rel_version,rel_packets))
+@from_page(dep=(first_heading,pre_versions,pre_packets,rel_version,rel_packets),
+    rdoc='Recalculate the packet ID matrix. Give if the version_urls dict\n'
+         'or the code of version_packet_ids() have been changed.', doc_order=-2)
 def version_packet_ids():
+    """Return a dict mapping `Vsn' instances to dicts mapping `PacketClass'
+       instances to `MatrixID' instances, giving the matrix of packet IDs as
+       they vary across packets and across protocol versions."""
     used_patches = set()
     packet_classes = {}
     matrix = {}
@@ -910,6 +1005,8 @@ def version_packet_ids():
 
 
 def pycraft_packet_category(name):
+    """Given a packet category from PACKET_STATE_VALUES or PACKET_BOUND_VALUES,
+       return the corresponding identifier in pyCraft's naming conventions."""
     return {
         'Client':      'clientbound',
         'Server':      'serverbound',
@@ -918,6 +1015,8 @@ def pycraft_packet_category(name):
 
 
 def pycraft_packet_name(name):
+    """Given the canonical name of a packet according to this script, return
+       the name of the corresponding packet class in pyCraft."""
     name = {
         'Handshake':                              'HandShake',
         'Chat Message (serverbound)':             'Chat',
@@ -929,6 +1028,9 @@ def pycraft_packet_name(name):
     return '%sPacket' % re.sub(r' +|\([^)]+\)$', '', name)
 
 
+"""A set of error strings regarding discrepancies between pyCraft and the wiki
+   data which are declared to not be of critical importance, and will be
+   ignored instead of causing the process to fail."""
 pycraft_ignore_errors = {
     "[17w06a] pyCraft: (0x10, 'ChatMessagePacket'), wiki: (0x0F, 'Chat Message (clientbound)')",
     "[17w06a] pyCraft: (0x10, 'ChatMessagePacket'), wiki: (0x10, 'Multi Block Change')",
@@ -969,9 +1071,13 @@ pycraft_ignore_errors = {
 }
 
 
-# Returns classes where classes[packet_class] = {ver1, ver2, ...}
-@from_page(version_packet_ids)
+@from_page(version_packet_ids, rdoc=
+    'Recalculate pyCraft data. Give if the local pyCraft version\n'
+    'or the code of pycraft_packet_classes() have changed.', doc_order=-1)
 def pycraft_packet_classes(matrix):
+    """Returns a dict mapping `PacketClass' instances to sets of `Ver` instances
+       giving the protocol versions for which each packet class is supported by
+       the locally installed version of the pyCraft library."""
     classes = {}
     all_packets = set()
     errors = []
@@ -1023,16 +1129,27 @@ for arg in sys.argv[1:]:
         refresh_names.add(arg[2:])
 
 if __name__ == '__main__':
-    nullary_args = sorted('-r%s' % key for key, val in globals().items() if
-                   inspect.isfunction(val) and val.__name__ == 'from_page_func')
-    unary_args = (refresh_min_proto_arg, refresh_max_proto_arg)
-
+    args = [
+        (val.doc_order, '-r%s' % key, val.rdoc)
+        for (key, val) in globals().items() if inspect.isfunction(val)
+        and getattr(val, 'refreshable', False)
+    ] + [
+        (1, refresh_min_proto_arg + 'VER',
+         'Recalculate only for protocol versions >= this value.'),
+        (2, refresh_max_proto_arg + 'VER',
+         'Recalculate only for protocol versions <= this value.'),
+    ]
     if '-h' in sys.argv[1:] or '--help' in sys.argv[1:]:
-        print('Usage: main.py [-h|--help]', file=sys.stderr)
-        for arg in nullary_args:
-            print('               [%s]' % arg, file=sys.stderr)
-        for arg in unary_args:
-            print('               [%s...]' % arg, file=sys.stderr)
+        print('Usage: main.py [-h|--help] [RFLAGS...]\n\n'
+              'This script generates and prints to stdout the contents of index.htm.\n'
+              'To save time, much intermediate data is saved under the "func-cache" directory.\n'
+              'When the script or source data are changed, RFLAGS may be given to tell which\n'
+              'data need to be recalculated. Alternatively, the entire func-cache may be\n'
+              'deleted, to recalculate everything.\n\n'
+              'The possible RFLAGS are:', file=sys.stderr)
+        for _, arg, doc in sorted(args):
+            print(' '*3 + '\33[1m%s\33[0m' % arg, file=sys.stderr)
+            for line in doc.split('\n'): print(' '*6 + line)
         sys.exit(0)
 
     for arg in sys.argv[1:]:
