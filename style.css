@@ -53,7 +53,7 @@ body {
 }
 
 .pkt-grid.top-header, .pkt-grid.contents {
-    width: 100%;
+    width: 0;
 }
 
 .pkt-id-chg {
@@ -73,13 +73,12 @@ body {
 }
 
 .pkt-fmt-chg { background-color: #FF8 !important; }
-.pkt-base    { background-color: #EEF !important; }
+.pkt-chg-unk { background-color: #EEF !important; }
 .pkt-added   { background-color: #AFA !important; font-weight: bold; }
 .pkt-removed { background-color: #FAA !important; }
 
-.pkt-removed::before {
-    content: "—"; font-weight: bold;
-}
+.pkt-removed::before { content: "—"; font-weight: bold; }
+.pkt-not-present::before { content: "\A0"; }
 
 .pkt-grid.legend-min {
     position: fixed;
