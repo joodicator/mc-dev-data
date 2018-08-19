@@ -8,7 +8,7 @@ from .pycraft_util import pycraft_packet_classes
 __all__ = ('matrix_html',)
 
 
-def matrix_html(show_versions=None):
+def matrix_html(show_versions=None, pycraft_only=False):
     """Print to stdout an HTML document displaying the matrix of packet IDs
        with each row giving a packet class and each column giving a version."""
     with get_page('__global__') as page:
@@ -19,7 +19,8 @@ def matrix_html(show_versions=None):
     if show_versions is None: show_versions = versions
 
     packet_classes = sorted({p for ids in matrix.values() for p in ids.keys()
-                             if any(p in matrix[v] for v in show_versions)})
+                             if any(p in matrix[v] for v in show_versions)
+                             and not pycraft_only or p in pycraft_classes})
 
     print('<!DOCTYPE html>')
     print('<html>')
