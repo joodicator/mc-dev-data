@@ -45,7 +45,7 @@ if __name__ == '__main__':
               'the func-cache may be deleted, to recalculate everything.\n'
               '\n'
               'The possible RFLAGS are:', file=sys.stderr)
-        for _, arg, doc in sorted(args):
+        for _, arg, doc in sorted(a for a in args if a[0] is not None):
             print(' '*3 + '\33[1m%s\33[0m' % arg, file=sys.stderr)
             for line in doc.split('\n'): print(' '*6 + line, file=sys.stderr)
         sys.exit(0)
