@@ -14,18 +14,6 @@ refresh_min_proto, refresh_min_proto_arg = -math.inf, '--r-min-proto='
 refresh_max_proto, refresh_max_proto_arg =  math.inf, '--r-max-proto='
 
 if __name__ == '__main__':
-    args = [
-        (val.doc_order, '-r%s' % key, val.rdoc)
-        for (key, val) in get_cacheable().items()
-        if getattr(val, 'refreshable', False)
-    ] + [
-        (1, refresh_min_proto_arg + 'VER',
-         'Recalculate only for protocol versions >= this value.'),
-        (2, refresh_max_proto_arg + 'VER',
-         'Recalculate only for protocol versions <= this value.'),
-        (None, '-p', ''), (None, '--pycraft-only', ''),
-    ]
-
     if '-h' in sys.argv[1:] or '--help' in sys.argv[1:]:
         print('Usage: main.py [-h|--help] [-p|--pycraft-only] [VERSIONS...] [RFLAGS...]\n'
               '\n'
@@ -45,7 +33,18 @@ if __name__ == '__main__':
               'the func-cache may be deleted, to recalculate everything.\n'
               '\n'
               'The possible RFLAGS are:', file=sys.stderr)
-        for _, arg, doc in sorted(a for a in args if a[0] is not None):
+
+        rflags = [
+            (val.doc_order, '-r%s' % key, val.rdoc)
+            for (key, val) in get_cacheable().items()
+            if getattr(val, 'refreshable', False)
+        ] + [
+            (1, refresh_min_proto_arg + 'VER',
+             'Recalculate only for protocol versions >= this value.'),
+            (2, refresh_max_proto_arg + 'VER',
+             'Recalculate only for protocol versions <= this value.')
+        ]
+        for _, arg, doc in sorted(a for a in rflags if a[0] is not None):
             print(' '*3 + '\33[1m%s\33[0m' % arg, file=sys.stderr)
             for line in doc.split('\n'): print(' '*6 + line, file=sys.stderr)
         sys.exit(0)

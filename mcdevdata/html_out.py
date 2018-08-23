@@ -20,7 +20,7 @@ def matrix_html(show_versions=None, pycraft_only=False):
 
     packet_classes = sorted({p for ids in matrix.values() for p in ids.keys()
                              if any(p in matrix[v] for v in show_versions)
-                             and not pycraft_only or p in pycraft_classes})
+                             and (not pycraft_only or p in pycraft_classes)})
 
     print('<!DOCTYPE html>')
     print('<html>')

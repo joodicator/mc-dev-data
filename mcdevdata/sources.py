@@ -7,6 +7,8 @@ __all__ = ('version_urls',)
    pre-release or release wiki page. Pre-release pages are preferred, when
    available, as they contain more information about protocol changes."""
 version_urls = {
+    Vsn('1.13.1',      401): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14264',
+    Vsn('1.13.1-pre2', 400): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14261',
     Vsn('1.13.1-pre1', 399): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14255',
     Vsn('18w33a',      398): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14252',
     Vsn('18w32a',      397): 'http://wiki.vg/index.php?title=Pre-release_protocol&oldid=14247',
