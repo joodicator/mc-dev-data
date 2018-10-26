@@ -95,7 +95,9 @@ def version_packet_ids():
                         name=packet.name, state=packet.state, bound=packet.bound)
                     if packet.name not in packet_classes:
                         packet_classes[packet.name] = packet_class
-                    assert packet_classes[packet.name] == packet_class
+                    assert packet_classes[packet.name] == packet_class, \
+                        '[%s] %r != %r' % (v.name,
+                        packet_classes[packet.name], packet_class)
 
                     matrix[v][packet_class] = MatrixID(
                         id=packet.id, base_ver=v, changed=False)
