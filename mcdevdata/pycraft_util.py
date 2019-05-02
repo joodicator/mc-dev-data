@@ -42,12 +42,12 @@ def pycraft_packet_classes(matrix):
                 expected = (matrix_id.id, pycraft_packet_name(packet_class.name))
                 actual = (packet.get_id(context), packet.__name__)
                 if all(x != y for (x, y) in zip(actual, expected)): continue
+                all_packets.discard(packet)
                 if actual != expected:
                     error = '[%s] pyCraft: (0x%02X, %r), wiki: (0x%02X, %r)' % \
                             ((ver.name,) + actual + (matrix_id.id, packet_class.name))
                     if error not in pycraft_ignore_errors: errors.append(error)
                     continue
-                all_packets.discard(packet)
                 if packet_class not in classes: classes[packet_class] = set()
                 classes[packet_class].add(ver)
 
