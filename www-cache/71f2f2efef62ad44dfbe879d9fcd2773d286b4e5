@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>Protocol - wiki.vg</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Protocol","wgTitle":"Protocol","wgCurRevisionId":14388,"wgRevisionId":14388,"wgArticleId":9,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Protocol Details","Minecraft Modern"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Protocol","wgRelevantArticleId":9,"wgRequestId":"8ab8463ec6d9ce235da5c333","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@12oj1re",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Protocol","wgTitle":"Protocol","wgCurRevisionId":14643,"wgRevisionId":14643,"wgArticleId":9,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Protocol Details","Minecraft Modern"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Protocol","wgRelevantArticleId":9,"wgRequestId":"4b5985f13e1f51805258d4b3","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1phgxx5",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup","skins.vector.js"]);});</script>
@@ -16,7 +16,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <meta name="robots" content="noindex,nofollow"/>
 <link rel="shortcut icon" href="/favicon.ico"/>
 <link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="wiki.vg (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="http://wiki.vg/api.php?action=rsd"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.vg/api.php?action=rsd"/>
 <link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
 <link rel="alternate" type="application/atom+xml" title="wiki.vg Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
 </head>
@@ -30,7 +30,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 			<h1 id="firstHeading" class="firstHeading" lang="en">Protocol</h1>
 									<div id="bodyContent" class="mw-body-content">
 									<div id="siteSub">From wiki.vg</div>
-								<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 18:06, 26 October 2018 by <a href="/index.php?title=User:Joo&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Joo (page does not exist)"><bdi>Joo</bdi></a> <span class="mw-usertoollinks">(<a href="/index.php?title=User_talk:Joo&amp;action=edit&amp;redlink=1" class="new" title="User talk:Joo (page does not exist)">talk</a> | <a href="/Special:Contributions/Joo" title="Special:Contributions/Joo">contribs</a>)</span> <span class="comment">(Fix: Login Plugin Response has &quot;bound to&quot; as &quot;Client&quot;.)</span></div><div id="mw-revision-nav">(<a href="/index.php?title=Protocol&amp;diff=prev&amp;oldid=14388" title="Protocol">diff</a>) <a href="/index.php?title=Protocol&amp;direction=prev&amp;oldid=14388" title="Protocol">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+								<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 06:52, 30 March 2019 by <a href="/User:TimmyRS" class="mw-userlink" title="User:TimmyRS"><bdi>TimmyRS</bdi></a> <span class="mw-usertoollinks">(<a href="/index.php?title=User_talk:TimmyRS&amp;action=edit&amp;redlink=1" class="new" title="User talk:TimmyRS (page does not exist)">talk</a> | <a href="/Special:Contributions/TimmyRS" title="Special:Contributions/TimmyRS">contribs</a>)</span> <span class="comment">(<a href="#Player_Abilities_.28clientbound.29">→</a>‎<span dir="auto"><span class="autocomment">Player Abilities (clientbound): </span> Add default values</span>)</span></div><div id="mw-revision-nav">(<a href="/index.php?title=Protocol&amp;diff=prev&amp;oldid=14643" title="Protocol">diff</a>) <a href="/index.php?title=Protocol&amp;direction=prev&amp;oldid=14643" title="Protocol">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
 												<div id="jump-to-nav" class="mw-jump">
 					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
 				</div>
@@ -50,7 +50,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 </div>
 </td></tr></table>
 <p>This page presents a dissection of the current <b><a rel="nofollow" class="external text" href="https://minecraft.net/">Minecraft</a> protocol</b>.
-</p><p>If you're having trouble, check out the <a href="/Protocol_FAQ" title="Protocol FAQ">FAQ</a> or ask for help in the IRC channel <a rel="nofollow" class="external text" href="irc://irc.freenode.net/mcdevs">#mcdevs on chat.freenode.net</a> (<a rel="nofollow" class="external text" href="http://wiki.vg/MCDevs">More Information</a>).
+</p><p>If you're having trouble, check out the <a href="/Protocol_FAQ" title="Protocol FAQ">FAQ</a> or ask for help in the IRC channel <a rel="nofollow" class="external text" href="ircs://chat.freenode.net:6697/mcdevs">#mcdevs on chat.freenode.net</a> (<a rel="nofollow" class="external text" href="http://wiki.vg/MCDevs">More Information</a>).
 </p><p><b>Note:</b> While you may use the contents of this page without restriction to create servers, clients, bots, etc… you still need to provide attribution to #mcdevs if you copy any of the contents of this page for publication elsewhere.
 </p><p>The changes between versions may be viewed at <a href="/Protocol_History" title="Protocol History">Protocol History</a>.
 </p>
@@ -126,7 +126,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li class="toclevel-3 tocsection-49"><a href="#Effect"><span class="tocnumber">4.1.36</span> <span class="toctext">Effect</span></a></li>
 <li class="toclevel-3 tocsection-50"><a href="#Particle_2"><span class="tocnumber">4.1.37</span> <span class="toctext">Particle</span></a></li>
 <li class="toclevel-3 tocsection-51"><a href="#Join_Game"><span class="tocnumber">4.1.38</span> <span class="toctext">Join Game</span></a></li>
-<li class="toclevel-3 tocsection-52"><a href="#Map"><span class="tocnumber">4.1.39</span> <span class="toctext">Map</span></a></li>
+<li class="toclevel-3 tocsection-52"><a href="#Map_Data"><span class="tocnumber">4.1.39</span> <span class="toctext">Map Data</span></a></li>
 <li class="toclevel-3 tocsection-53"><a href="#Entity"><span class="tocnumber">4.1.40</span> <span class="toctext">Entity</span></a></li>
 <li class="toclevel-3 tocsection-54"><a href="#Entity_Relative_Move"><span class="tocnumber">4.1.41</span> <span class="toctext">Entity Relative Move</span></a></li>
 <li class="toclevel-3 tocsection-55"><a href="#Entity_Look_And_Relative_Move"><span class="tocnumber">4.1.42</span> <span class="toctext">Entity Look And Relative Move</span></a></li>
@@ -136,7 +136,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li class="toclevel-3 tocsection-59"><a href="#Craft_Recipe_Response"><span class="tocnumber">4.1.46</span> <span class="toctext">Craft Recipe Response</span></a></li>
 <li class="toclevel-3 tocsection-60"><a href="#Player_Abilities_.28clientbound.29"><span class="tocnumber">4.1.47</span> <span class="toctext">Player Abilities (clientbound)</span></a></li>
 <li class="toclevel-3 tocsection-61"><a href="#Combat_Event"><span class="tocnumber">4.1.48</span> <span class="toctext">Combat Event</span></a></li>
-<li class="toclevel-3 tocsection-62"><a href="#Player_List_Item"><span class="tocnumber">4.1.49</span> <span class="toctext">Player List Item</span></a></li>
+<li class="toclevel-3 tocsection-62"><a href="#Player_Info"><span class="tocnumber">4.1.49</span> <span class="toctext">Player Info</span></a></li>
 <li class="toclevel-3 tocsection-63"><a href="#Face_Player"><span class="tocnumber">4.1.50</span> <span class="toctext">Face Player</span></a></li>
 <li class="toclevel-3 tocsection-64"><a href="#Player_Position_And_Look_.28clientbound.29"><span class="tocnumber">4.1.51</span> <span class="toctext">Player Position And Look (clientbound)</span></a></li>
 <li class="toclevel-3 tocsection-65"><a href="#Use_Bed"><span class="tocnumber">4.1.52</span> <span class="toctext">Use Bed</span></a></li>
@@ -2158,7 +2158,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </p>
 <h4><span class="mw-headline" id="Spawn_Player">Spawn Player</span></h4>
 <p>This packet is sent by the server when a player comes into visible range, <i>not</i> when a player joins.
-</p><p>This packet must be sent after the <a href="#Player_List_Item">Player List Item</a> packet that adds the player data for the client to use when spawning a player. If the Player List Item for the player spawned by this packet is not present when this packet arrives, Notchian clients will not spawn the player entity. The Player List Item packet includes skin/cape data.
+</p><p>This packet must be sent after the <a href="#Player_Info">Player Info</a> packet that adds the player data for the client to use when spawning a player. If the Player Info for the player spawned by this packet is not present when this packet arrives, Notchian clients will not spawn the player entity. The Player Info packet includes skin/cape data.
 </p><p>Servers can, however, safely spawn player entities for players not in visible range. The client appears to handle it correctly.
 </p>
 <table class="wikitable">
@@ -2369,9 +2369,9 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> See below
 </td></tr>
 <tr>
-<td> Value
+<td colspan="2"> Value
 </td>
-<td> VarInt
+<td colspan="2"> VarInt
 </td>
 <td> The amount to set it to
 </td></tr></table>
@@ -3381,18 +3381,25 @@ if z &gt;= 2^25 { z -= 2^26 }
 </th>
 <th> Bound To
 </th>
-<th> Field Name
+<th colspan="2"> Field Name
 </th>
-<th> Field Type
+<th colspan="2"> Field Type
 </th>
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="7"> 0x10
+<td rowspan="8"> 0x10
 </td>
-<td rowspan="7"> Play
+<td rowspan="8"> Play
 </td>
-<td rowspan="7"> Client
+<td rowspan="8"> Client
+</td></tr>
+<tr>
+<td colspan="2"> ID
+</td>
+<td colspan="2"> VarInt
+</td>
+<td> Transaction ID
 </td></tr>
 <tr>
 <td colspan="2"> Start
@@ -3766,7 +3773,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <tr>
 <td> 4: Enchantment ID shown on mouse hover over top enchantment slot
 </td>
-<td rowspan="3"> The enchantment id (set to -1 to hide it)
+<td rowspan="3"> The enchantment id (set to -1 to hide it), see below for values
 </td></tr>
 <tr>
 <td> 5: Enchantment ID shown on mouse hover over middle enchantment slot
@@ -3820,6 +3827,254 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> 1: Fuel time
 </td>
 <td> 0 - 20, with 0 making the arrow empty, and 20 making the arrow full
+</td></tr></table>
+<p>For an enchanting table, the following numerical IDs are used:
+</p>
+<table class="wikitable">
+<tr>
+<th> Numerical ID
+</th>
+<th> Enchantment ID
+</th>
+<th> Enchantment Name
+</th></tr>
+<tr>
+<td> 0
+</td>
+<td> minecraft:protection
+</td>
+<td> Protection
+</td></tr>
+<tr>
+<td> 1
+</td>
+<td> minecraft:fire_protection
+</td>
+<td> Fire Protection
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> minecraft:feather_falling
+</td>
+<td> Feather Falling
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> minecraft:blast_protection
+</td>
+<td> Blast Protection
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> minecraft:projectile_protection
+</td>
+<td> Projectile Protection
+</td></tr>
+<tr>
+<td> 5
+</td>
+<td> minecraft:respiration
+</td>
+<td> Respiration
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> minecraft:aqua_affinity
+</td>
+<td> Aqua Affinity
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> minecraft:thorns
+</td>
+<td> Thorns
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> minecraft:depth_strider
+</td>
+<td> Depth Strider
+</td></tr>
+<tr>
+<td> 9
+</td>
+<td> minecraft:frost_walker
+</td>
+<td> Frost Walker
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> minecraft:binding_curse
+</td>
+<td> Curse of Binding
+</td></tr>
+<tr>
+<td> 11
+</td>
+<td> minecraft:sharpness
+</td>
+<td> Sharpness
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> minecraft:smite
+</td>
+<td> Smite
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> minecraft:bane_of_arthropods
+</td>
+<td> Bane of Arthropods
+</td></tr>
+<tr>
+<td> 14
+</td>
+<td> minecraft:knockback
+</td>
+<td> Knockback
+</td></tr>
+<tr>
+<td> 15
+</td>
+<td> minecraft:fire_aspect
+</td>
+<td> Fire Aspect
+</td></tr>
+<tr>
+<td> 16
+</td>
+<td> minecraft:looting
+</td>
+<td> Looting
+</td></tr>
+<tr>
+<td> 17
+</td>
+<td> minecraft:sweeping
+</td>
+<td> Sweeping Edge
+</td></tr>
+<tr>
+<td> 18
+</td>
+<td> minecraft:efficiency
+</td>
+<td> Efficiency
+</td></tr>
+<tr>
+<td> 19
+</td>
+<td> minecraft:silk_touch
+</td>
+<td> Silk Touch
+</td></tr>
+<tr>
+<td> 20
+</td>
+<td> minecraft:unbreaking
+</td>
+<td> Unbreaking
+</td></tr>
+<tr>
+<td> 21
+</td>
+<td> minecraft:fortune
+</td>
+<td> Fortune
+</td></tr>
+<tr>
+<td> 22
+</td>
+<td> minecraft:power
+</td>
+<td> Power
+</td></tr>
+<tr>
+<td> 23
+</td>
+<td> minecraft:punch
+</td>
+<td> Punch
+</td></tr>
+<tr>
+<td> 24
+</td>
+<td> minecraft:flame
+</td>
+<td> Flame
+</td></tr>
+<tr>
+<td> 25
+</td>
+<td> minecraft:infinity
+</td>
+<td> Infinity
+</td></tr>
+<tr>
+<td> 26
+</td>
+<td> minecraft:luck_of_the_sea
+</td>
+<td> Luck of the Sea
+</td></tr>
+<tr>
+<td> 27
+</td>
+<td> minecraft:lure
+</td>
+<td> Lure
+</td></tr>
+<tr>
+<td> 28
+</td>
+<td> minecraft:loyalty
+</td>
+<td> Loyalty
+</td></tr>
+<tr>
+<td> 29
+</td>
+<td> minecraft:impaling
+</td>
+<td> Impaling
+</td></tr>
+<tr>
+<td> 30
+</td>
+<td> minecraft:riptide
+</td>
+<td> Riptide
+</td></tr>
+<tr>
+<td> 31
+</td>
+<td> minecraft:channeling
+</td>
+<td> Channeling
+</td></tr>
+<tr>
+<td> 32
+</td>
+<td> minecraft:mending
+</td>
+<td> Mending
+</td></tr>
+<tr>
+<td> 33
+</td>
+<td> minecraft:vanishing_curse
+</td>
+<td> Curse of Vanishing
 </td></tr></table>
 <h4><span class="mw-headline" id="Set_Slot">Set Slot</span></h4>
 <p>Sent by the server when an item in a slot (in a window) is added/removed.
@@ -4360,6 +4615,11 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Time in ticks for the sky to fade
 </td></tr>
 <tr>
+<td> 9
+</td>
+<td> Play pufferfish sting sound
+</td></tr>
+<tr>
 <td> 10
 </td>
 <td> Play elder guardian mob appearance (effect and sound)
@@ -4437,11 +4697,11 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Chunk coordinate (block coordinate divided by 16, rounded down)
 </td></tr>
 <tr>
-<td> Ground-Up Continuous
+<td> Full chunk
 </td>
 <td> Boolean
 </td>
-<td> See <a href="/Chunk_Format#Ground-up_continuous" title="Chunk Format">Chunk Format</a>
+<td> See <a href="/Chunk_Format#Full_chunk" title="Chunk Format">Chunk Format</a>
 </td></tr>
 <tr>
 <td> Primary Bit Mask
@@ -5109,7 +5369,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> If true, a Notchian client shows reduced information on the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Debug_screen">debug screen</a></span>.  For servers in development, this should almost always be false.
 </td></tr></table>
-<h4><span class="mw-headline" id="Map">Map</span></h4>
+<h4><span class="mw-headline" id="Map_Data">Map Data</span></h4>
 <p>Updates a rectangular area on a <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Map">map</a></span> item.
 </p>
 <table class="wikitable">
@@ -5151,7 +5411,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td colspan="2"> Boolean
 </td>
-<td> Specifies whether the icons are shown
+<td> Specifies whether player and item frame icons are shown
 </td></tr>
 <tr>
 <td colspan="2"> Icon Count
@@ -5161,7 +5421,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> Number of elements in the following array
 </td></tr>
 <tr>
-<td rowspan="5"> Icon
+<td rowspan="6"> Icon
 </td>
 <td> Type
 </td>
@@ -5176,14 +5436,14 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Byte
 </td>
-<td>
+<td> Map coordinates: -128 for furthest left, +127 for furthest right
 </td></tr>
 <tr>
 <td> Z
 </td>
 <td> Byte
 </td>
-<td>
+<td> Map coordinates: -128 for highest, +127 for lowest
 </td></tr>
 <tr>
 <td> Direction
@@ -5766,14 +6026,14 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td> Float
 </td>
-<td>
+<td> 0.05 by default
 </td></tr>
 <tr>
 <td> Field of View Modifier
 </td>
 <td> Float
 </td>
-<td> Modifies the field of view, like a speed potion. A Notchian server will use the same value as the movement speed (send in the <a href="/Protocol#Entity_Properties" title="Protocol">Entity Properties</a> packet).
+<td> Modifies the field of view, like a speed potion. A Notchian server will use the same value as the movement speed sent in the <a href="/Protocol#Entity_Properties" title="Protocol">Entity Properties</a> packet, which defaults to 0.1 for players.
 </td></tr></table>
 <p>About the flags:
 </p>
@@ -5889,7 +6149,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 </td>
 <td>
 </td></tr></table>
-<h4><span class="mw-headline" id="Player_List_Item">Player List Item</span></h4>
+<h4><span class="mw-headline" id="Player_Info">Player Info</span></h4>
 <p>Sent by the server to update the user list (&lt;tab&gt; in the client).
 </p>
 <table class="wikitable">
@@ -7943,7 +8203,7 @@ if z &gt;= 2^25 { z -= 2^26 }
 <td> To remove the footer, send a empty translatable component: {"translate":""}
 </td></tr></table>
 <h4><span class="mw-headline" id="Collect_Item">Collect Item</span></h4>
-<p>Sent by the server when someone picks up an item lying on the ground — its sole purpose appears to be the animation of the item flying towards you. It doesn't destroy the entity in the client memory, and it doesn't add it to your inventory. The server only checks for items to be picked up after each <a href="#Player_Position">Player Position</a> (and <a href="#Player_Position_And_Look">Player Position And Look</a>) packet sent by the client. The collector entity can be any entity, it does not have to be a player.
+<p>Sent by the server when someone picks up an item lying on the ground — its sole purpose appears to be the animation of the item flying towards you. It doesn't destroy the entity in the client memory, and it doesn't add it to your inventory. The server only checks for items to be picked up after each <a href="#Player_Position">Player Position</a> (and <a href="#Player_Position_And_Look">Player Position And Look</a>) packet sent by the client. The collector entity can be any entity; it does not have to be a player. The collected entity also can be any entity, but the Notchian server only uses this for items, experience orbs, and the different varieties of arrows.
 </p>
 <table class="wikitable">
 <tr>
@@ -10261,14 +10521,14 @@ z =  cos(pitch) * cos(yaw)
 </td>
 <td rowspan="2"> Server
 </td>
-<td> Right paddle turning
+<td> Left paddle turning
 </td>
 <td> Boolean
 </td>
 <td>
 </td></tr>
 <tr>
-<td> Left paddle turning
+<td> Right paddle turning
 </td>
 <td> Boolean
 </td>
@@ -10358,7 +10618,7 @@ z =  cos(pitch) * cos(yaw)
 <td> Affects the amount of items processed; true if shift is down when clicked
 </td></tr></table>
 <h4><span class="mw-headline" id="Player_Abilities_.28serverbound.29">Player Abilities (serverbound)</span></h4>
-<p>The latter 2 bytes are used to indicate the walking and flying speeds respectively, while the first byte is used to determine the value of 4 booleans.
+<p>The latter 2 fields are used to indicate the walking and flying speeds respectively, while the first field is used to determine the value of 4 booleans.
 </p><p>The vanilla client sends this packet when the player starts/stops flying with the Flags parameter changed accordingly. All other parameters are ignored by the vanilla server.
 </p>
 <table class="wikitable">
@@ -10826,11 +11086,11 @@ z =  cos(pitch) * cos(yaw)
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="2"> 0x1D
+<td rowspan="1"> 0x1D
 </td>
-<td rowspan="2"> Play
+<td rowspan="1"> Play
 </td>
-<td rowspan="2"> Server
+<td rowspan="1"> Server
 </td>
 <td> Result
 </td>
@@ -10986,11 +11246,11 @@ z =  cos(pitch) * cos(yaw)
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="11"> 0x22
+<td rowspan="5"> 0x22
 </td>
-<td rowspan="11"> Play
+<td rowspan="5"> Play
 </td>
-<td rowspan="11"> Server
+<td rowspan="5"> Server
 </td></tr>
 <tr>
 <td> Location
@@ -11115,11 +11375,11 @@ z =  cos(pitch) * cos(yaw)
 <th> Notes
 </th></tr>
 <tr>
-<td rowspan="22"> 0x25
+<td rowspan="17"> 0x25
 </td>
-<td rowspan="22"> Play
+<td rowspan="17"> Play
 </td>
-<td rowspan="22"> Server
+<td rowspan="17"> Server
 </td></tr>
 <tr>
 <td> Location
@@ -11903,11 +12163,11 @@ z =  cos(pitch) * cos(yaw)
 
 <!-- 
 NewPP limit report
-Cached time: 20181026180611
+Cached time: 20190502010833
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.968 seconds
-Real time usage: 1.016 seconds
+CPU time usage: 0.497 seconds
+Real time usage: 1.963 seconds
 Preprocessor visited node count: 1227/1000000
 Preprocessor generated node count: 1965/1000000
 Post‐expand include size: 23675/2097152 bytes
@@ -11918,22 +12178,22 @@ Expensive parser function count: 0/100
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  121.671      1 - -total
- 35.38%   43.043     22 - Template:Minecraft_Wiki
- 22.27%   27.097     22 - Template:Plainlink
- 16.42%   19.981      1 - Data_types
-  5.93%    7.211      1 - Template:Box
-  5.55%    6.747      2 - Template:See_also
-  5.50%    6.686      4 - Template:Main
-  5.35%    6.510      5 - Template:Warning2
-  4.89%    5.946      3 - Template:Warning
-  4.53%    5.517      1 - Template:Anchor
+100.00% 1584.412      1 - -total
+ 64.71% 1025.332      1 - Data_types
+  1.48%   23.499     22 - Template:Minecraft_Wiki
+  1.13%   17.889     22 - Template:Plainlink
+  0.67%   10.613      2 - Template:See_also
+  0.21%    3.298      5 - Template:Warning2
+  0.18%    2.920      4 - Template:Main
+  0.16%    2.599      1 - Template:Box
+  0.16%    2.551      1 - Template:Anchor
+  0.13%    2.011      3 - Template:Warning
 -->
 
-<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:9-0!*!0!!en!5!* and timestamp 20181026180610 and revision id 14388
+<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:9-0!*!0!!en!5!* and timestamp 20190502010831 and revision id 14643
  -->
 </div>					<div class="printfooter">
-						Retrieved from "<a dir="ltr" href="http://wiki.vg/index.php?title=Protocol&amp;oldid=14388">http://wiki.vg/index.php?title=Protocol&amp;oldid=14388</a>"					</div>
+						Retrieved from "<a dir="ltr" href="https://wiki.vg/index.php?title=Protocol&amp;oldid=14643">https://wiki.vg/index.php?title=Protocol&amp;oldid=14643</a>"					</div>
 				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/Category:Protocol_Details" title="Category:Protocol Details">Protocol Details</a></li><li><a href="/Category:Minecraft_Modern" title="Category:Minecraft Modern">Minecraft Modern</a></li></ul></div></div>				<div class="visualClear"></div>
 							</div>
 		</div>
@@ -11944,7 +12204,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
 						<h3 id="p-personal-label">Personal tools</h3>
 						<ul>
-							<li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Protocol&amp;returntoquery=oldid%3D14388" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Protocol&amp;returntoquery=oldid%3D14388" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+							<li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Protocol&amp;returntoquery=oldid%3D14643" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Protocol&amp;returntoquery=oldid%3D14643" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
 					</div>
 									<div id="left-navigation">
 										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
@@ -12009,14 +12269,14 @@ Transclusion expansion time report (%,ms,calls,template)
 
 			<div class="body">
 									<ul>
-						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Protocol" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Protocol&amp;oldid=14388&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Protocol&amp;oldid=14388" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Protocol&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Protocol" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Protocol&amp;oldid=14643&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Protocol&amp;oldid=14643" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Protocol&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
 							</div>
 		</div>
 				</div>
 		</div>
 		<div id="footer" role="contentinfo">
 							<ul id="footer-info">
-											<li id="footer-info-lastmod"> This page was last modified on 26 October 2018, at 18:06.</li>
+											<li id="footer-info-lastmod"> This page was last modified on 30 March 2019, at 06:52.</li>
 											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share Alike</a> unless otherwise noted.</li>
 									</ul>
 							<ul id="footer-places">
@@ -12039,6 +12299,6 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 <script type="text/javascript">
 var pageTracker = _gat._getTracker("UA-11145163-13");
 pageTracker._trackPageview();
-</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":190});});</script>
+</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":106});});</script>
 	</body>
 </html>

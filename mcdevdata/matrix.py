@@ -100,7 +100,7 @@ def version_packet_ids():
                         packet_classes[packet.name], packet_class)
 
                     matrix[v][packet_class] = MatrixID(
-                        id=packet.id, base_ver=v, changed=False)
+                        id=packet.id, base_ver=v, changed=False, url=packet.url)
             else:
                 raise AssertionError('Unrecognised article title: %r' % heading)
 

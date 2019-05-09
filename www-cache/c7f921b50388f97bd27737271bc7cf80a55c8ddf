@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Pre-release protocol - wiki.vg</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pre-release_protocol","wgTitle":"Pre-release protocol","wgCurRevisionId":14723,"wgRevisionId":14381,"wgArticleId":123,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Minecraft Modern"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Pre-release_protocol","wgRelevantArticleId":123,"wgRequestId":"8d419b421e5d6bc5860f41fc","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1phgxx5",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="wiki.vg (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.vg/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="wiki.vg Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Pre-release_protocol rootpage-Pre-release_protocol skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Pre-release protocol</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From wiki.vg</div>
+								<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 10:02, 26 October 2018 by <a href="/index.php?title=User:Creeper123123321&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Creeper123123321 (page does not exist)"><bdi>Creeper123123321</bdi></a> <span class="mw-usertoollinks">(<a href="/index.php?title=User_talk:Creeper123123321&amp;action=edit&amp;redlink=1" class="new" title="User talk:Creeper123123321 (page does not exist)">talk</a> | <a href="/Special:Contributions/Creeper123123321" title="Special:Contributions/Creeper123123321">contribs</a>)</span> <span class="comment">(unknown tags are entity tags)</span></div><div id="mw-revision-nav">(<a href="/index.php?title=Pre-release_protocol&amp;diff=prev&amp;oldid=14381" title="Pre-release protocol">diff</a>) <a href="/index.php?title=Pre-release_protocol&amp;direction=prev&amp;oldid=14381" title="Pre-release protocol">← Older revision</a> | <a href="/Pre-release_protocol" title="Pre-release protocol">Latest revision</a> (<a href="/index.php?title=Pre-release_protocol&amp;diff=cur&amp;oldid=14381" title="Pre-release protocol">diff</a>) | <a href="/index.php?title=Pre-release_protocol&amp;direction=next&amp;oldid=14381" title="Pre-release protocol">Newer revision →</a> (<a href="/index.php?title=Pre-release_protocol&amp;diff=next&amp;oldid=14381" title="Pre-release protocol">diff</a>)</div></div></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page documents the changes from the <a href="/Protocol" title="Protocol">last stable Minecraft release</a> (currently <a href="/Protocol_version_numbers" title="Protocol version numbers">1.13.2, protocol 404</a>) to the current pre-release (currently <a href="/Protocol_version_numbers" title="Protocol version numbers">18w43b, protocol 441</a>). Note that this page contains bleeding-edge information that may not be completely or correctly documented.
+</p><p>One who wishes to commandeer the merging of this into <a href="/Protocol" title="Protocol">Protocol</a> when an update is made must be sure to respect any changes that may have occurred to the respective packets there.
+</p>
+<h2><span class="mw-headline" id="Contents">Contents</span></h2>
+<div style="float:right;"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Contents"><span class="tocnumber">1</span> <span class="toctext">Contents</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Data_types"><span class="tocnumber">1.1</span> <span class="toctext">Data types</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Packets"><span class="tocnumber">1.2</span> <span class="toctext">Packets</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#New.2Fmodified_data_types"><span class="tocnumber">2</span> <span class="toctext">New/modified data types</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Entity_Metadata"><span class="tocnumber">3</span> <span class="toctext">Entity Metadata</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Mobs"><span class="tocnumber">3.1</span> <span class="toctext">Mobs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Block_Actions"><span class="tocnumber">4</span> <span class="toctext">Block Actions</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Play"><span class="tocnumber">5</span> <span class="toctext">Play</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Clientbound"><span class="tocnumber">5.1</span> <span class="toctext">Clientbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Chunk_Data"><span class="tocnumber">5.1.1</span> <span class="toctext">Chunk Data</span></a>
+<ul>
+<li class="toclevel-4 tocsection-11"><a href="#Data_structure"><span class="tocnumber">5.1.1.1</span> <span class="toctext">Data structure</span></a></li>
+<li class="toclevel-4 tocsection-12"><a href="#Chunk_Section_structure"><span class="tocnumber">5.1.1.2</span> <span class="toctext">Chunk Section structure</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-13"><a href="#Entity_Sound_Effect"><span class="tocnumber">5.1.2</span> <span class="toctext">Entity Sound Effect</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Tags"><span class="tocnumber">5.1.3</span> <span class="toctext">Tags</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Update_Light"><span class="tocnumber">5.1.4</span> <span class="toctext">Update Light</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Serverbound"><span class="tocnumber">5.2</span> <span class="toctext">Serverbound</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Handshaking"><span class="tocnumber">6</span> <span class="toctext">Handshaking</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#Clientbound_2"><span class="tocnumber">6.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Serverbound_2"><span class="tocnumber">6.2</span> <span class="toctext">Serverbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-20"><a href="#Handshake"><span class="tocnumber">6.2.1</span> <span class="toctext">Handshake</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="#Status"><span class="tocnumber">7</span> <span class="toctext">Status</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="#Clientbound_3"><span class="tocnumber">7.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Serverbound_3"><span class="tocnumber">7.2</span> <span class="toctext">Serverbound</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#Login"><span class="tocnumber">8</span> <span class="toctext">Login</span></a>
+<ul>
+<li class="toclevel-2 tocsection-25"><a href="#Clientbound_4"><span class="tocnumber">8.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Serverbound_4"><span class="tocnumber">8.2</span> <span class="toctext">Serverbound</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<h3><span class="mw-headline" id="Data_types">Data types</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Packets">Packets</span></h3>
+<table class="wikitable">
+<tr>
+<th> ID
+</th>
+<th> Packet name
+</th>
+<th colspan="2"> Documentation
+</th></tr>
+<tr>
+<th colspan="4"> Handshaking serverbound
+</th></tr>
+<tr>
+<td> 0x00 </td>
+<td> Handshake </td>
+<td> <a href="/Protocol#Handshake" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Handshake" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<th colspan="4"> Play clientbound
+</th></tr>
+<tr>
+<td> 0x22 </td>
+<td> Chunk Data </td>
+<td> <a href="/Protocol#Chunk_Data" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Chunk_Data" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 0x4E </td>
+<td> Entity Sound Effect </td>
+<td>  </td>
+<td> <a href="/Pre-release_protocol#Entity_Sound_Effect" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc; text-decoration: line-through;">0x4E</del>&#x20;<ins style="background-color: #d9ead3;">0x4F</ins> </td>
+<td> Player List Header And Footer </td>
+<td> <a href="/Protocol#Player_List_Header_And_Footer" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc; text-decoration: line-through;">0x4F</del>&#x20;<ins style="background-color: #d9ead3;">0x50</ins> </td>
+<td> Collect Item </td>
+<td> <a href="/Protocol#Collect_Item" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc; text-decoration: line-through;">0x50</del>&#x20;<ins style="background-color: #d9ead3;">0x51</ins> </td>
+<td> Entity Teleport </td>
+<td> <a href="/Protocol#Entity_Teleport" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc; text-decoration: line-through;">0x51</del>&#x20;<ins style="background-color: #d9ead3;">0x52</ins> </td>
+<td> Advancements </td>
+<td> <a href="/Protocol#Advancements" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc; text-decoration: line-through;">0x52</del>&#x20;<ins style="background-color: #d9ead3;">0x53</ins> </td>
+<td> Entity Properties </td>
+<td> <a href="/Protocol#Entity_Properties" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc; text-decoration: line-through;">0x53</del>&#x20;<ins style="background-color: #d9ead3;">0x54</ins> </td>
+<td> Entity Effect </td>
+<td> <a href="/Protocol#Entity_Effect" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc; text-decoration: line-through;">0x54</del>&#x20;<ins style="background-color: #d9ead3;">0x55</ins> </td>
+<td> Declare Recipes </td>
+<td> <a href="/Protocol#Declare_Recipes" title="Protocol">Current</a> </td>
+<td> (unchanged)
+</td></tr>
+<tr>
+<td> <del style="background-color: #f4cccc; text-decoration: line-through;">0x55</del>&#x20;<ins style="background-color: #d9ead3;">0x56</ins> </td>
+<td> Tags </td>
+<td> <a href="/Protocol#Tags" title="Protocol">Current</a> </td>
+<td> <a href="/Pre-release_protocol#Tags" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> 0x57 </td>
+<td> Update Light </td>
+<td>  </td>
+<td> <a href="/Pre-release_protocol#Update_Light" title="Pre-release protocol">Pre</a>
+</td></tr></table>
+<h2><span class="mw-headline" id="New.2Fmodified_data_types">New/modified data types</span></h2>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Entity_Metadata">Entity Metadata</span></h2>
+<h3><span class="mw-headline" id="Mobs">Mobs</span></h3>
+<p>Entity IDs have shifted with the addition of some new mobs.
+</p>
+<h2><span class="mw-headline" id="Block_Actions">Block Actions</span></h2>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Play">Play</span></h2>
+<h3><span class="mw-headline" id="Clientbound">Clientbound</span></h3>
+<h4><span class="mw-headline" id="Chunk_Data">Chunk Data</span></h4>
+<dl><dd><i>Main article: <a href="/Chunk_Format" title="Chunk Format">Chunk Format</a></i></dd>
+<dd><i>See also: <a href="#Unload_Chunk">#Unload Chunk</a></i></dd></dl>
+<p>The server only sends skylight information for chunk pillars in the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Overworld">Overworld</a></span>, it's up to the client to know in which dimenison the player is currently located. You can also infer this information from the primary bitmask and the amount of uncompressed bytes sent.  This packet also sends all block entities in the chunk (though sending them is not required; it is still legal to send them with <a href="#Update_Block_Entity">Update Block Entity</a> later).
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="8"> 0x22
+</td>
+<td rowspan="8"> Play
+</td>
+<td rowspan="8"> Client
+</td>
+<td> Chunk X
+</td>
+<td> Int
+</td>
+<td> Chunk coordinate (block coordinate divided by 16, rounded down)
+</td></tr>
+<tr>
+<td> Chunk Z
+</td>
+<td> Int
+</td>
+<td> Chunk coordinate (block coordinate divided by 16, rounded down)
+</td></tr>
+<tr>
+<td> Ground-Up Continuous
+</td>
+<td> Boolean
+</td>
+<td> See <a href="/Chunk_Format#Ground-up_continuous" title="Chunk Format">Chunk Format</a>
+</td></tr>
+<tr>
+<td> Primary Bit Mask
+</td>
+<td> VarInt
+</td>
+<td> Bitmask with bits set to 1 for every 16×16×16 chunk section whose data is included in Data. The least significant bit represents the chunk section at the bottom of the chunk column (from y=0 to y=15).
+</td></tr>
+<tr>
+<td> Size
+</td>
+<td> VarInt
+</td>
+<td> Size of Data in bytes
+</td></tr>
+<tr>
+<td> Data
+</td>
+<td> Byte array
+</td>
+<td> See <a href="/Chunk_Format#Data_structure" title="Chunk Format">data structure</a> in Chunk Format
+</td></tr>
+<tr>
+<td> Number of block entities
+</td>
+<td> VarInt
+</td>
+<td> Number of elements in the following array
+</td></tr>
+<tr>
+<td> Block entities
+</td>
+<td> Array of <a href="/NBT" title="NBT">NBT Tag</a>
+</td>
+<td> All block entities in the chunk.  Use the x, y, and z tags in the NBT to determine their positions.
+</td></tr></table>
+<h5><span class="mw-headline" id="Data_structure">Data structure</span></h5>
+<p>The data section of the packet contains most of the useful data for the chunk.
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td> Data
+</td>
+<td> Array of <a href="#Chunk_Section_structure">Chunk Section</a>
+</td>
+<td> The number of elements in the array is equal to the number of bits set in Primary Bit Mask. Sections are sent bottom-to-top, i.e. the first section, if sent, extends from Y=0 to Y=15.
+</td></tr>
+<tr>
+<td> Biomes
+</td>
+<td> Optional Int Array
+</td>
+<td> Only sent if Ground-Up Continuous is true; 256 entries if present
+</td></tr></table>
+<h5><span class="mw-headline" id="Chunk_Section_structure">Chunk Section structure</span></h5>
+<p>A Chunk Section is defined in terms of other <a href="/Data_types" title="Data types">data types</a>. A Chunk Section consists of the following fields:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr style="background-color: #d9ead3;">
+<td> Block count
+</td>
+<td> Short
+</td>
+<td> Number of non-air blocks present in the chunk section, for lighting purposes.  "Non-air" is defined as any block other than air, cave air, and void air (in particular, note that fluids such as water are still counted).
+</td></tr>
+<tr>
+<td> Bits Per Block
+</td>
+<td> Unsigned Byte
+</td>
+<td> Determines how many bits are used to encode a block. Note that not all numbers are valid here.
+</td></tr>
+<tr>
+<td> Palette
+</td>
+<td> Varies
+</td>
+<td> See below for the format.
+</td></tr>
+<tr>
+<td> Data Array Length
+</td>
+<td> VarInt
+</td>
+<td> Number of longs in the following array
+</td></tr>
+<tr>
+<td> Data Array
+</td>
+<td> Array of Long
+</td>
+<td> Compacted list of 4096 indices pointing to state IDs in the Palette
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td> Block Light
+</td>
+<td> Byte Array
+</td>
+<td> Half byte per block
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td> Sky Light
+</td>
+<td> Optional Byte Array
+</td>
+<td> Only if in the Overworld; half byte per block
+</td></tr></table>
+<p>Data Array<del style="background-color: #f4cccc; text-decoration: line-through;">, Block Light, and Sky Light are</del>&#x20;<ins style="background-color: #d9ead3;">is</ins> given for each block with increasing x coordinates, within rows of increasing z coordinates, within layers of increasing y coordinates.  <del style="background-color: #f4cccc; text-decoration: line-through;">For the half-byte light arrays, even-indexed items (those with an even x coordinate, starting at 0) are packed into the <i>low bits</i>, odd-indexed into the <i>high bits</i>.</del>
+</p>
+<h4><span class="mw-headline" id="Entity_Sound_Effect">Entity Sound Effect</span></h4>
+<p>Plays a sound effect from an entity.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="5"> 0x4E
+</td>
+<td rowspan="5"> Play
+</td>
+<td rowspan="5"> Client
+</td>
+<td> Sound ID
+</td>
+<td> VarInt
+</td>
+<td> ID of hardcoded sound event (<a rel="nofollow" class="external text" href="https://pokechu22.github.io/Burger/1.13.2.html#sounds">events</a> as of 1.13.2)
+</td></tr>
+<tr>
+<td> Sound Category
+</td>
+<td> VarInt Enum
+</td>
+<td> The category that this sound will be played from (<a rel="nofollow" class="external text" href="https://gist.github.com/konwboj/7c0c380d3923443e9d55">current categories</a>)
+</td></tr>
+<tr>
+<td> Entity ID
+</td>
+<td> VarInt
+</td>
+<td>
+</td></tr>
+<tr>
+<td> Volume
+</td>
+<td> Float
+</td>
+<td> 1.0 is 100%, capped between 0.0 and 1.0 by Notchian clients
+</td></tr>
+<tr>
+<td> Pitch
+</td>
+<td> Float
+</td>
+<td> Float between 0.5 and 2.0 by Notchian clients
+</td></tr></table>
+<h4><span class="mw-headline" id="Tags">Tags</span></h4>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="4"> 0x55
+</td>
+<td rowspan="4"> Play
+</td>
+<td rowspan="4"> Client
+</td>
+<td> Block Tags
+</td>
+<td> (See below)
+</td>
+<td> IDs are block IDs
+</td></tr>
+<tr>
+<td> Item Tags
+</td>
+<td> (See below)
+</td>
+<td> IDs are item IDs
+</td></tr>
+<tr>
+<td> Fluid Tags
+</td>
+<td> (See below)
+</td>
+<td> IDs are fluid IDs
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td> Entity Tags
+</td>
+<td> (See below)
+</td>
+<td> IDs are entity type IDs
+</td></tr></table>
+<h4><span class="mw-headline" id="Update_Light">Update Light</span></h4>
+<p>Updates light levels for a chunk.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="6"> 0x57
+</td>
+<td rowspan="6"> Play
+</td>
+<td rowspan="6"> Client
+</td>
+<td> Chunk X
+</td>
+<td> VarInt
+</td>
+<td> Chunk coordinate (block coordinate divided by 16, rounded down)
+</td></tr>
+<tr>
+<td> Chunk Z
+</td>
+<td> VarInt
+</td>
+<td> Chunk coordinate (block coordinate divided by 16, rounded down)
+</td></tr>
+<tr>
+<td> Sky Light Mask
+</td>
+<td> VarInt
+</td>
+<td> Mask containing 18 bits, with the lowest bit corresponding to chunk section -1 (in the void, y=-16 to y=-1) and the highest bit for chunk section 16 (above the world, y=256 to y=271)
+</td></tr>
+<tr>
+<td> Block Light Mask
+</td>
+<td> VarInt
+</td>
+<td> Mask containing 18 bits, with the same order as sky light
+</td></tr>
+<tr>
+<td> Sky Light arrays
+</td>
+<td> Array of arrays of 2048 bytes
+</td>
+<td> There is 1 array for each bit set to true in the sky light mask, starting with the lowest value.  Half a byte per light value.
+</td></tr>
+<tr>
+<td> Block Light arrays
+</td>
+<td> Array of arrays of 2048 bytes
+</td>
+<td> There is 1 array for each bit set to true in the block light mask, starting with the lowest value.  Half a byte per light value.
+</td></tr></table>
+<p>Individual block or sky light arrays are is given for each block with increasing x coordinates, within rows of increasing z coordinates, within layers of increasing y coordinates. Even-indexed items (those with an even x coordinate, starting at 0) are packed into the low bits, odd-indexed into the high bits.
+</p>
+<h3><span class="mw-headline" id="Serverbound">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Handshaking">Handshaking</span></h2>
+<h3><span class="mw-headline" id="Clientbound_2">Clientbound</span></h3>
+<p>There are no clientbound packets in the Handshaking state, since the protocol immediately switches to a different state after the client sends the first packet. 
+</p>
+<h3><span class="mw-headline" id="Serverbound_2">Serverbound</span></h3>
+<h4><span class="mw-headline" id="Handshake">Handshake</span></h4>
+<p>This causes the server to switch into the target state.
+</p>
+<table class="wikitable">
+<tr>
+<th> Packet ID
+</th>
+<th> State
+</th>
+<th> Bound To
+</th>
+<th> Field Name
+</th>
+<th> Field Type
+</th>
+<th> Notes
+</th></tr>
+<tr>
+<td rowspan="4"> 0x00
+</td>
+<td rowspan="4"> Handshaking
+</td>
+<td rowspan="4"> Server
+</td>
+<td> Protocol Version
+</td>
+<td> VarInt
+</td>
+<td> See <a href="/Protocol_version_numbers" title="Protocol version numbers">protocol version numbers</a> (currently <del style="background-color: #f4cccc; text-decoration: line-through;">404</del>&#x20;<ins style="background-color: #d9ead3;">441</ins>)
+</td></tr>
+<tr>
+<td> Server Address
+</td>
+<td> String
+</td>
+<td> Hostname or IP, e.g. localhost or 127.0.0.1, that was used to connect.  The Notchian server does not use this information.
+</td></tr>
+<tr>
+<td> Server Port
+</td>
+<td> Unsigned Short
+</td>
+<td> Default is 25565.  The Notchian server does not use this information.
+</td></tr>
+<tr>
+<td> Next State
+</td>
+<td> VarInt Enum
+</td>
+<td> 1 for <a href="#Status">status</a>, 2 for <a href="#Login">login</a>
+</td></tr></table>
+<h2><span class="mw-headline" id="Status">Status</span></h2>
+<h3><span class="mw-headline" id="Clientbound_3">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound_3">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Login">Login</span></h2>
+<h3><span class="mw-headline" id="Clientbound_4">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound_4">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190502113402
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.073 seconds
+Real time usage: 0.082 seconds
+Preprocessor visited node count: 766/1000000
+Preprocessor generated node count: 1394/1000000
+Post‐expand include size: 8157/2097152 bytes
+Template argument size: 2383/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   56.254      1 - -total
+ 63.12%   35.510     12 - Template:PacketList
+ 40.49%   22.780     11 - Template:Change
+ 18.07%   10.166      1 - Template:See_also
+  6.98%    3.924      1 - Template:Minecraft_Wiki
+  4.00%    2.248      1 - Template:Main
+  3.89%    2.186     14 - Template:Added
+  3.64%    2.050     13 - Template:Removed
+  3.59%    2.022      1 - Template:Plainlink
+-->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.vg/index.php?title=Pre-release_protocol&amp;oldid=14381">https://wiki.vg/index.php?title=Pre-release_protocol&amp;oldid=14381</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Category:Minecraft_Modern" title="Category:Minecraft Modern">Minecraft Modern</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Pre-release+protocol&amp;returntoquery=oldid%3D14381" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Pre-release+protocol&amp;returntoquery=oldid%3D14381" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/Pre-release_protocol"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk"><span><a href="/Talk:Pre-release_protocol"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/Pre-release_protocol" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Pre-release_protocol&amp;action=edit&amp;oldid=14381"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Pre-release_protocol&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search wiki.vg" title="Search wiki.vg [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Pre-release_protocol" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Pre-release_protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Pre-release_protocol&amp;oldid=14381&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Pre-release_protocol&amp;oldid=14381" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Pre-release_protocol&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share Alike</a> unless otherwise noted.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/wikivg:Privacy_policy" title="wikivg:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wikivg:About" title="wikivg:About">About wiki.vg</a></li>
+											<li id="footer-places-disclaimer"><a href="/wikivg:General_disclaimer" title="wikivg:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons Attribution Share Alike" width="88" height="31"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"]);});</script><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-11145163-13");
+pageTracker._trackPageview();
+</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":252});});</script>
+	</body>
+</html>

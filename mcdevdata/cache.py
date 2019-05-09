@@ -3,7 +3,8 @@ import os.path
 import pickle
 import traceback
 import inspect
-import sys
+import sys 
+import math
 
 import bs4
 
@@ -13,6 +14,8 @@ from .util import get_url_hash
 __all__ = ('get_page', 'from_page', 'get_soup', 'refresh_names', 'get_cacheable',
            'unused_func_cache_files', 'unused_www_cache_files')
 
+refresh_min_proto = -math.inf
+refresh_max_proto =  math.inf
 refresh_names = set()
 
 
