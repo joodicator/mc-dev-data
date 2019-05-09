@@ -99,7 +99,7 @@ def matrix_html(show_versions=None, pycraft_only=False):
                     classes.append('pycraft-version')
                 if packet_class in pycraft_classes:
                     classes.append('pycraft-pkt-cls')
-                    if show_versions[i] in pycraft_classes[packet_class]:
+                    if show_versions[i] in pycraft_classes[packet_class].versions:
                         classes.append('pycraft-pkt')
 
                 content = '0x%02X' % cell.id
@@ -118,10 +118,15 @@ def matrix_html(show_versions=None, pycraft_only=False):
     for packet_class in packet_classes:
         classes = ['state-%s' % packet_class.state.lower(),
                    'bound-%s' % packet_class.bound.lower()]
+        title = None
         if packet_class in pycraft_classes:
             classes.append('pycraft-pkt-cls')
-        print('          <tr><th class="%s">%s</th></tr>' % (
-            ' '.join(classes), packet_class.name), end='')
+            title = pycraft_classes[packet_class].py_name
+        print('          <tr><th class="%s"%s>%s</th></tr>' % (
+            ' '.join(classes),
+            (' title="%s"' % title) if title is not None else '',
+            packet_class.name),
+        end='')
     print('      </table>')
 
     print('      <table class="pkt-grid legend-min">')

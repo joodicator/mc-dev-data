@@ -2,16 +2,16 @@
 
 import inspect
 import sys
-import math
 
 from mcdevdata.sources import version_urls
 from mcdevdata.util import get_url_hash
 from mcdevdata.cache import unused_www_cache_files, unused_func_cache_files
 from mcdevdata.cache import refresh_names, get_cacheable
 from mcdevdata.html_out import matrix_html
+import mcdevdata.cache
 
-refresh_min_proto, refresh_min_proto_arg = -math.inf, '--r-min-proto='
-refresh_max_proto, refresh_max_proto_arg =  math.inf, '--r-max-proto='
+refresh_min_proto_arg = '--r-min-proto='
+refresh_max_proto_arg = '--r-max-proto='
 
 if __name__ == '__main__':
     if '-h' in sys.argv[1:] or '--help' in sys.argv[1:]:
@@ -53,9 +53,9 @@ if __name__ == '__main__':
     pycraft_only = False
     for arg in sys.argv[1:]:
         if arg.startswith(refresh_min_proto_arg):
-            refresh_min_proto = int(arg[len(refresh_min_proto_arg):])
+            cache.refresh_min_proto = int(arg[len(refresh_min_proto_arg):])
         elif arg.startswith(refresh_max_proto_arg):
-            refresh_max_proto = int(arg[len(refresh_max_proto_arg):])
+            cache.refresh_max_proto = int(arg[len(refresh_max_proto_arg):])
         elif arg.startswith('-r'):
             refresh_names.add(arg[2:])
         elif arg in ('-p', '--pycraft-only'):
@@ -78,7 +78,7 @@ if __name__ == '__main__':
                 start = protocol(arg)
                 end = start
 
-            for ver in version_urls.keys():
+            for ver in sorted(version_urls.keys(), key=lambda v: -v.protocol):
                 if ver.protocol > end: continue
                 if ver.protocol < start: break
                 show_versions.append(ver)

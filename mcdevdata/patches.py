@@ -7,7 +7,8 @@ __all__ = ('patch', 'norm_packet_name')
    Instead of just a name, the key may also be a `(name, context)' pair,
    where `context' is one of PACKET_STATE_VALUES or PACKET_BOUND_VALUES."""
 norm_packet_name_dict = {
-    'Maps':                                 'Map',
+    'Maps':                                 'Map Data',
+    'Map':                                  'Map Data',
     'Chunk data':                           'Chunk Data',
     'Entity effect':                        'Entity Effect',
     'Confirm Transation (clientbound)':     'Confirm Transaction (clientbound)',
@@ -24,6 +25,9 @@ norm_packet_name_dict = {
     'Plugin message (serverbound)':         'Plugin Message (serverbound)',
     'Login Plugin Message (clientbound)':   'Login Plugin Request',
     'Login Plugin Message (serverbound)':   'Login Plugin Response',
+    'Player List Item':                     'Player Info',
+    'Change Difficulty':                    'Set Difficulty',
+    'Enchant Item':                         'Click Window Button',
 }
 
 for name in 'Animation', 'Chat Message', 'Keep Alive', 'Plugin Message', \
@@ -92,33 +96,33 @@ patch = {
     (Vsn('17w13b', 319), PrePacket('Unknown', None, 0x01, True, 'Play', 'Server')):
                          PrePacket('Craft Recipe Request', None, 0x01, True, 'Play', 'Server'),
     (Vsn('17w13a', 318), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                         PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w13b', 319), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                         PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w14a', 320), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                         PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w15a', 321), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                         PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w16a', 322), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                         PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w16b', 323), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                         PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w17a', 324), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                         PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w17b', 325), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                         PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w18a', 326), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                         PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w18b', 327), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                         PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                         PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('1.12-pre1', 328), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                            PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                            PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('1.12-pre2', 329), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                            PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                            PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('1.12-pre3', 330), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                            PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                            PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('1.12-pre4', 331), PrePacket('Spawn Particle', 0x24, 0x25, False, 'Play', 'Client')):
-                            PrePacket('Map',      0x24, 0x25, False, 'Play', 'Client'),
+                            PrePacket('Map Data',      0x24, 0x25, False, 'Play', 'Client'),
     (Vsn('17w31a', 336), PrePacket('Craft Recipe Request', 0x01, None, True, 'Play', 'Server')):
                          None,
     (Vsn('17w31a', 336), PrePacket('Unknown (serverbound)', None, 0x12, True, 'Play', 'Server')):
@@ -137,8 +141,61 @@ patch = {
                          None,
     (Vsn('1.12.1', 338), PrePacket('Craft Recipe Request', None, 0x12, True, 'Play', 'Server')):
                          PrePacket('Craft Recipe Request', 0x01, 0x12, True, 'Play', 'Server'),
+    (Vsn('19w03c', 455), VersionDiff(Vsn('1.13.2', 404), Vsn('19w03b', 455))):
+                         VersionDiff(Vsn('1.13.2', 404), Vsn('19w03c', 455)),
 }
-
+patch.update({
+    (Vsn('1.14 Pre-Release %d' % n, pv),
+     VersionDiff(Vsn('1.13.2', 404), Vsn('1.14-pre%d' % n, pv))):
+     VersionDiff(Vsn('1.13.2', 404), Vsn('1.14 Pre-Release %d' % n, pv))
+    for (n, pv) in zip(range(1, 6), range(472, 477))
+})
+patch.update({
+    (vsn, PrePacket(name, pkid, pkid, True, 'Play', bound)):
+          PrePacket(name, None, pkid, True, 'Play', bound)
+    for vsn in (Vsn('19w14b', 471), Vsn('1.14 Pre-Release 1', 472),
+                Vsn('1.14 Pre-Release 2', 473), Vsn('1.14 Pre-Release 3', 474),
+                Vsn('1.14 Pre-Release 4', 475), Vsn('1.14 Pre-Release 5', 476),
+                Vsn('1.14', 477))
+    for (name, pkid, bound) in (
+        ('Open Horse Window',   0x1F,                        'Client'),
+        ('Update Light',        0x24,                        'Client'),
+        ('Trade List',          0x27,                        'Client'),
+        ('Open Book',           (0x2F, 0x2D)[vsn[1] >= 475], 'Client'),
+        ('Entity Sound Effect', 0x50,                        'Client'),
+        ('Set Difficulty',      0x02,                        'Server'),
+        ('Lock Difficulty',     0x10,                        'Server'),
+    )
+    if (name, vsn) not in (('Update Light', Vsn('1.14', 477)),)
+})
+patch.update({
+    (vsn, PrePacket('Plugin Message (clientbound)', 0x19, 0x18, True, 'Play', 'Client')):
+          PrePacket('Plugin Message (clientbound)', 0x19, 0x18, False, 'Play', 'Client')
+    for vsn in (Vsn('19w14b', 471), Vsn('1.14 Pre-Release 1', 472),
+                Vsn('1.14 Pre-Release 2', 473), Vsn('1.14 Pre-Release 3', 474),
+                Vsn('1.14 Pre-Release 4', 475), Vsn('1.14 Pre-Release 5', 476),
+                Vsn('1.14', 477))
+})
+patch.update({
+    (Vsn('19w13a', 468), PrePacket('Unknown 1', None, 0x5A, True, 'Play', 'Client')):
+                         PrePacket('Update View Distance', None, 0x5A, True, 'Play', 'Client'),
+    (Vsn('19w13a', 468), PrePacket('Unknown 2', None, 0x27, True, 'Play', 'Server')):
+                         PrePacket('Update Jigsaw Block', None, 0x27, True, 'Play', 'Server'),
+    (Vsn('19w13b', 469), PrePacket('Unknown 1', None, 0x5A, True, 'Play', 'Client')):
+                         PrePacket('Update View Distance', None, 0x5A, True, 'Play', 'Client'),
+    (Vsn('19w13b', 469), PrePacket('Unknown 2', None, 0x27, True, 'Play', 'Server')):
+                         PrePacket('Update Jigsaw Block', None, 0x27, True, 'Play', 'Server'),
+    (Vsn('19w14a', 470), PrePacket('Unknown 1', None, 0x5A, True, 'Play', 'Client')):
+                         PrePacket('Update View Distance', None, 0x5A, True, 'Play', 'Client'),
+    (Vsn('19w14a', 470), PrePacket('Unknown 2', None, 0x27, True, 'Play', 'Server')):
+                         PrePacket('Update Jigsaw Block', None, 0x27, True, 'Play', 'Server'),
+    (Vsn('19w14b', 471), PrePacket('Unknown 1', None, 0x40, True, 'Play', 'Client')):
+                         PrePacket('Update View Position', None, 0x40, True, 'Play', 'Client'),
+    (Vsn('19w14b', 471), PrePacket('Unknown 2', None, 0x41, True, 'Play', 'Client')):
+                         PrePacket('Update View Distance', None, 0x41, True, 'Play', 'Client'),
+    (Vsn('19w14b', 471), PrePacket('Unknown 3', None, 0x27, True, 'Play', 'Server')):
+                         PrePacket('Update Jigsaw Block', None, 0x27, True, 'Play', 'Server'),
+})
 
 """A dict mapping `(version, url_fragment)' pairs to corrected URL fragments,
    to patch errors occurring in section hyperlinks. If `version' is None, the
@@ -166,4 +223,13 @@ patch_links = {
                                                         '#Login_Plugin_Message_.28serverbound.29',
     (None, '#Login_Plugin_Message_.28clientbound.29'):  '#Login_Plugin_Request',
     (None, '#Login_Plugin_Message_.28serverbound.29'):  '#Login_Plugin_Response',
+    (None, '#Change_Difficulty'):                       '#Set_Difficulty',
+    (Vsn('19w14b', 471), '#Plugin_Message_.28clientbound.29'): None,
+    (Vsn('19w14b', 471), '#Unknown_3'):                 '#Unknown_2_2',
+    (Vsn('1.14 Pre-Release 1', 472), '#Plugin_Message_.28clientbound.29'): None,
+    (Vsn('1.14 Pre-Release 2', 473), '#Plugin_Message_.28clientbound.29'): None,
+    (Vsn('1.14 Pre-Release 3', 474), '#Plugin_Message_.28clientbound.29'): None,
+    (Vsn('1.14 Pre-Release 4', 475), '#Plugin_Message_.28clientbound.29'): None,
+    (Vsn('1.14 Pre-Release 5', 476), '#Plugin_Message_.28clientbound.29'): None,
+    (Vsn('1.14', 477), '#Plugin_Message_.28clientbound.29'): None,
 }

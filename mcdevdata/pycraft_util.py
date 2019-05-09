@@ -1,3 +1,4 @@
+from collections import namedtuple
 import re
 
 import minecraft as pycraft
@@ -11,13 +12,17 @@ from .matrix import version_packet_ids
 __all__ = ('pycraft_packet_classes',)
 
 
+PyClassInfo = namedtuple('PyClassInfo', ('versions', 'py_name'))
+
 @from_page(version_packet_ids, rdoc=
     'Recalculate pyCraft data. Give if the local pyCraft version\n'
     'or the code of pycraft_packet_classes() have changed.', doc_order=-1)
 def pycraft_packet_classes(matrix):
-    """Returns a dict mapping `PacketClass' instances to sets of `Ver` instances
-       giving the protocol versions for which each packet class is supported by
-       the locally installed version of the pyCraft library."""
+    """Returns a dict mapping `PacketClass' instances to `PyClassInfo' tuples,
+       where `versions' is a set of `Ver` instances giving the protocol versions
+       for which each packet class is supported by the locally installed version
+       of the pyCraft library, and `py_name' is the name of the corresponding
+       pyCraft class, as it occurs in the code, including two parent modules."""
     classes = {}
     all_packets = set()
     errors = []
@@ -48,8 +53,12 @@ def pycraft_packet_classes(matrix):
                             ((ver.name,) + actual + (matrix_id.id, packet_class.name))
                     if error not in pycraft_ignore_errors: errors.append(error)
                     continue
-                if packet_class not in classes: classes[packet_class] = set()
-                classes[packet_class].add(ver)
+                if packet_class not in classes:
+                    classes[packet_class] = PyClassInfo(
+                        versions = set(),
+                        py_name  = pycraft_packet_name_ext(packet_class),
+                    )
+                classes[packet_class].versions.add(ver)
 
     errors.extend('Packet not accounted for: %r' % p for p in all_packets)
     assert not errors, 'Errors found with pyCraft packets:\n' + '\n'.join(errors)
@@ -77,8 +86,18 @@ def pycraft_packet_name(name):
         'Pong':                                   'PingResponse',
         'Login Plugin Request':                   'PluginRequest',
         'Login Plugin Response':                  'PluginResponse',
+        'Player Info':                            'PlayerListItem',
+        'Map Data':                               'Map',
     }.get(name, name)
     return '%sPacket' % re.sub(r' +|\([^)]+\)$', '', name)
+
+
+def pycraft_packet_name_ext(packet_class):
+    return '.'.join((
+        pycraft_packet_category(packet_class.bound),
+        pycraft_packet_category(packet_class.state),
+        pycraft_packet_name(packet_class.name),
+    ))
 
 
 """A set of error strings regarding discrepancies between pyCraft and the wiki
@@ -118,9 +137,9 @@ pycraft_ignore_errors = {
     "[1.12-pre4] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
     "[1.12-pre4] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
     "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity')",
-    "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map')",
+    "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map Data')",
     "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity')",
-    "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map')",
+    "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map Data')",
     "[17w13a] pyCraft: (0x47, 'PlayerListHeaderAndFooterPacket'), wiki: (0x47, 'Title')",
     "[17w13a] pyCraft: (0x47, 'PlayerListHeaderAndFooterPacket'), wiki: (0x49, 'Player List Header And Footer')",
     "[17w13b] pyCraft: (0x47, 'PlayerListHeaderAndFooterPacket'), wiki: (0x47, 'Title')",
