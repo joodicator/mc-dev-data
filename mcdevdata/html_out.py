@@ -13,7 +13,7 @@ def matrix_html(show_versions=None, pycraft_only=False):
        with each row giving a packet class and each column giving a version."""
     with get_page('__global__') as page:
         matrix = version_packet_ids(page)
-        pycraft_classes = pycraft_packet_classes(page)
+        pycraft_classes = pycraft_packet_classes(page, show_versions)
 
     versions = sorted(matrix.keys(), key=lambda v: v.protocol, reverse=True)
     if show_versions is None: show_versions = versions

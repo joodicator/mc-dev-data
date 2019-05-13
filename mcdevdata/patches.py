@@ -156,7 +156,8 @@ patch.update({
     for vsn in (Vsn('19w14b', 471), Vsn('1.14 Pre-Release 1', 472),
                 Vsn('1.14 Pre-Release 2', 473), Vsn('1.14 Pre-Release 3', 474),
                 Vsn('1.14 Pre-Release 4', 475), Vsn('1.14 Pre-Release 5', 476),
-                Vsn('1.14', 477))
+                Vsn('1.14', 477), Vsn('1.14.1 Pre-Release 1', 478),
+                Vsn('1.14.1 Pre-Release 2', 479), Vsn('1.14.1', 480))
     for (name, pkid, bound) in (
         ('Open Horse Window',   0x1F,                        'Client'),
         ('Update Light',        0x24,                        'Client'),
@@ -166,7 +167,12 @@ patch.update({
         ('Set Difficulty',      0x02,                        'Server'),
         ('Lock Difficulty',     0x10,                        'Server'),
     )
-    if (name, vsn) not in (('Update Light', Vsn('1.14', 477)),)
+    if (name, vsn) not in (
+        ('Update Light', Vsn('1.14', 477)),
+        ('Update Light', Vsn('1.14.1 Pre-Release 1', 478)),
+        ('Update Light', Vsn('1.14.1 Pre-Release 2', 479)),
+        ('Update Light', Vsn('1.14.1', 480)),
+    )
 })
 patch.update({
     (vsn, PrePacket('Plugin Message (clientbound)', 0x19, 0x18, True, 'Play', 'Client')):
@@ -174,7 +180,8 @@ patch.update({
     for vsn in (Vsn('19w14b', 471), Vsn('1.14 Pre-Release 1', 472),
                 Vsn('1.14 Pre-Release 2', 473), Vsn('1.14 Pre-Release 3', 474),
                 Vsn('1.14 Pre-Release 4', 475), Vsn('1.14 Pre-Release 5', 476),
-                Vsn('1.14', 477))
+                Vsn('1.14', 477), Vsn('1.14.1 Pre-Release 1', 478),
+                Vsn('1.14.1 Pre-Release 2', 479), Vsn('1.14.1', 480))
 })
 patch.update({
     (Vsn('19w13a', 468), PrePacket('Unknown 1', None, 0x5A, True, 'Play', 'Client')):
@@ -232,4 +239,7 @@ patch_links = {
     (Vsn('1.14 Pre-Release 4', 475), '#Plugin_Message_.28clientbound.29'): None,
     (Vsn('1.14 Pre-Release 5', 476), '#Plugin_Message_.28clientbound.29'): None,
     (Vsn('1.14', 477), '#Plugin_Message_.28clientbound.29'): None,
+    (Vsn('1.14.1 Pre-Release 1', 478), '#Plugin_Message_.28clientbound.29'): None,
+    (Vsn('1.14.1 Pre-Release 2', 479), '#Plugin_Message_.28clientbound.29'): None,
+    (Vsn('1.14.1', 480), '#Plugin_Message_.28clientbound.29'): None,
 }

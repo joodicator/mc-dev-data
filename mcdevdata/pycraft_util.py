@@ -17,7 +17,7 @@ PyClassInfo = namedtuple('PyClassInfo', ('versions', 'py_name'))
 @from_page(version_packet_ids, rdoc=
     'Recalculate pyCraft data. Give if the local pyCraft version\n'
     'or the code of pycraft_packet_classes() have changed.', doc_order=-1)
-def pycraft_packet_classes(matrix):
+def pycraft_packet_classes(matrix, versions):
     """Returns a dict mapping `PacketClass' instances to `PyClassInfo' tuples,
        where `versions' is a set of `Ver` instances giving the protocol versions
        for which each packet class is supported by the locally installed version
@@ -26,7 +26,9 @@ def pycraft_packet_classes(matrix):
     classes = {}
     all_packets = set()
     errors = []
-    for ver, ver_matrix in matrix.items():
+    for ver in matrix.keys() if versions is None else versions:
+        ver_matrix = matrix[ver]
+
         if ver.protocol not in pycraft.SUPPORTED_PROTOCOL_VERSIONS: continue
         assert pycraft.SUPPORTED_MINECRAFT_VERSIONS[ver.name] == ver.protocol
 
