@@ -143,6 +143,9 @@ patch = {
                          PrePacket('Craft Recipe Request', 0x01, 0x12, True, 'Play', 'Server'),
     (Vsn('19w03c', 455), VersionDiff(Vsn('1.13.2', 404), Vsn('19w03b', 455))):
                          VersionDiff(Vsn('1.13.2', 404), Vsn('19w03c', 455)),
+    (Vsn('1.14.2 Pre-Release 4', 484),
+        VersionDiff(Vsn('1.13.2', 404), Vsn('1.14.2 Pre-Release 3', 484))):
+        VersionDiff(Vsn('1.13.2', 404), Vsn('1.14.2 Pre-Release 4', 484)),
 }
 patch.update({
     (Vsn('1.14 Pre-Release %d' % n, pv),
@@ -157,7 +160,10 @@ patch.update({
                 Vsn('1.14 Pre-Release 2', 473), Vsn('1.14 Pre-Release 3', 474),
                 Vsn('1.14 Pre-Release 4', 475), Vsn('1.14 Pre-Release 5', 476),
                 Vsn('1.14', 477), Vsn('1.14.1 Pre-Release 1', 478),
-                Vsn('1.14.1 Pre-Release 2', 479), Vsn('1.14.1', 480))
+                Vsn('1.14.1 Pre-Release 2', 479), Vsn('1.14.1', 480),
+                Vsn('1.14.2 Pre-Release 1', 481), Vsn('1.14.2 Pre-Release 2', 482),
+                Vsn('1.14.2 Pre-Release 3', 483), Vsn('1.14.2 Pre-Release 4', 484),
+                Vsn('1.14.2', 485))
     for (name, pkid, bound) in (
         ('Open Horse Window',   0x1F,                        'Client'),
         ('Update Light',        0x24,                        'Client'),
@@ -167,12 +173,9 @@ patch.update({
         ('Set Difficulty',      0x02,                        'Server'),
         ('Lock Difficulty',     0x10,                        'Server'),
     )
-    if (name, vsn) not in (
-        ('Update Light', Vsn('1.14', 477)),
-        ('Update Light', Vsn('1.14.1 Pre-Release 1', 478)),
-        ('Update Light', Vsn('1.14.1 Pre-Release 2', 479)),
-        ('Update Light', Vsn('1.14.1', 480)),
-    )
+    if not (name == 'Update Light' and vsn.protocol >= 477
+    or name in ('Open Horse Window', 'Trade List', 'Open Book')
+    and vsn.protocol >= 481)
 })
 patch.update({
     (vsn, PrePacket('Plugin Message (clientbound)', 0x19, 0x18, True, 'Play', 'Client')):
@@ -181,7 +184,10 @@ patch.update({
                 Vsn('1.14 Pre-Release 2', 473), Vsn('1.14 Pre-Release 3', 474),
                 Vsn('1.14 Pre-Release 4', 475), Vsn('1.14 Pre-Release 5', 476),
                 Vsn('1.14', 477), Vsn('1.14.1 Pre-Release 1', 478),
-                Vsn('1.14.1 Pre-Release 2', 479), Vsn('1.14.1', 480))
+                Vsn('1.14.1 Pre-Release 2', 479), Vsn('1.14.1', 480),
+                Vsn('1.14.2 Pre-Release 1', 481), Vsn('1.14.2 Pre-Release 2', 482),
+                Vsn('1.14.2 Pre-Release 3', 483), Vsn('1.14.2 Pre-Release 4', 484),
+                Vsn('1.14.2', 485))
 })
 patch.update({
     (Vsn('19w13a', 468), PrePacket('Unknown 1', None, 0x5A, True, 'Play', 'Client')):
@@ -231,15 +237,17 @@ patch_links = {
     (None, '#Login_Plugin_Message_.28clientbound.29'):  '#Login_Plugin_Request',
     (None, '#Login_Plugin_Message_.28serverbound.29'):  '#Login_Plugin_Response',
     (None, '#Change_Difficulty'):                       '#Set_Difficulty',
-    (Vsn('19w14b', 471), '#Plugin_Message_.28clientbound.29'): None,
     (Vsn('19w14b', 471), '#Unknown_3'):                 '#Unknown_2_2',
-    (Vsn('1.14 Pre-Release 1', 472), '#Plugin_Message_.28clientbound.29'): None,
-    (Vsn('1.14 Pre-Release 2', 473), '#Plugin_Message_.28clientbound.29'): None,
-    (Vsn('1.14 Pre-Release 3', 474), '#Plugin_Message_.28clientbound.29'): None,
-    (Vsn('1.14 Pre-Release 4', 475), '#Plugin_Message_.28clientbound.29'): None,
-    (Vsn('1.14 Pre-Release 5', 476), '#Plugin_Message_.28clientbound.29'): None,
-    (Vsn('1.14', 477), '#Plugin_Message_.28clientbound.29'): None,
-    (Vsn('1.14.1 Pre-Release 1', 478), '#Plugin_Message_.28clientbound.29'): None,
-    (Vsn('1.14.1 Pre-Release 2', 479), '#Plugin_Message_.28clientbound.29'): None,
-    (Vsn('1.14.1', 480), '#Plugin_Message_.28clientbound.29'): None,
 }
+patch_links.update({
+    (v, '#Plugin_Message_.28clientbound.29'): None for v in (
+        Vsn('19w14b', 471), Vsn('1.14 Pre-Release 1', 472),
+        Vsn('1.14 Pre-Release 2', 473), Vsn('1.14 Pre-Release 3', 474),
+        Vsn('1.14 Pre-Release 4', 475), Vsn('1.14 Pre-Release 5', 476),
+        Vsn('1.14', 477), Vsn('1.14.1 Pre-Release 1', 478),
+        Vsn('1.14.1 Pre-Release 2', 479), Vsn('1.14.1', 480),
+        Vsn('1.14.2 Pre-Release 1', 481), Vsn('1.14.2 Pre-Release 2', 482),
+        Vsn('1.14.2 Pre-Release 3', 483), Vsn('1.14.2 Pre-Release 4', 484),
+        Vsn('1.14.2', 485),
+    )
+})
