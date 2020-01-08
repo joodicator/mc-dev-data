@@ -154,6 +154,12 @@ patch.update({
     for (n, pv) in zip(range(1, 6), range(472, 477))
 })
 patch.update({
+    (Vsn('1.14.4-pre%d' % n, pv),
+     VersionDiff(Vsn('1.13.2', 404), Vsn('1.14.4 Pre-Release %d' % n, pv))):
+     VersionDiff(Vsn('1.13.2', 404), Vsn('1.14.4-pre%d' % n, pv))
+    for (n, pv) in zip(range(1, 8), range(491, 498))
+})
+patch.update({
     (vsn, PrePacket(name, pkid, pkid, True, 'Play', bound)):
           PrePacket(name, None, pkid, True, 'Play', bound)
     for vsn in (Vsn('19w14b', 471), Vsn('1.14 Pre-Release 1', 472),
@@ -176,6 +182,22 @@ patch.update({
     if not (name == 'Update Light' and vsn.protocol >= 477
     or name in ('Open Horse Window', 'Trade List', 'Open Book')
     and vsn.protocol >= 481)
+})
+patch.update({
+    (vsn, PrePacket(name, pkid, pkid, True, 'Play', bound)):
+          PrePacket(name, None, pkid, True, 'Play', bound)
+    for vsn in (Vsn('1.14.3-pre1', 486), Vsn('1.14.3-pre2', 487),
+                Vsn('1.14.3-pre3', 488), Vsn('1.14.3-pre4', 489),
+                Vsn('1.14.3',      490), Vsn('1.14.4-pre1', 491),
+                Vsn('1.14.4-pre2', 492), Vsn('1.14.4-pre3', 493),
+                Vsn('1.14.4-pre4', 494), Vsn('1.14.4-pre5', 495),
+                Vsn('1.14.4-pre6', 496), Vsn('1.14.4-pre7', 497))
+    for (name, pkid, bound) in (
+        ('Entity Sound Effect', 0x50,                        'Client'),
+        ('Set Difficulty',      0x02,                        'Server'),
+        ('Lock Difficulty',     0x10,                        'Server'),
+    )
+    if not (name == 'Entity Sound Effect' and vsn.protocol >= 494)
 })
 patch.update({
     (vsn, PrePacket('Plugin Message (clientbound)', 0x19, 0x18, True, 'Play', 'Client')):
@@ -248,6 +270,11 @@ patch_links.update({
         Vsn('1.14.1 Pre-Release 2', 479), Vsn('1.14.1', 480),
         Vsn('1.14.2 Pre-Release 1', 481), Vsn('1.14.2 Pre-Release 2', 482),
         Vsn('1.14.2 Pre-Release 3', 483), Vsn('1.14.2 Pre-Release 4', 484),
-        Vsn('1.14.2', 485),
+        Vsn('1.14.2', 485), Vsn('1.14.3-pre1', 486), Vsn('1.14.3-pre2', 487),
+        Vsn('1.14.3-pre3', 488), Vsn('1.14.3-pre4', 489), Vsn('1.14.3', 490),
+        Vsn('1.14.4 Pre-Release 1', 491), Vsn('1.14.4 Pre-Release 2', 492),
+        Vsn('1.14.4 Pre-Release 3', 493), Vsn('1.14.4 Pre-Release 4', 494),
+        Vsn('1.14.4 Pre-Release 5', 495), Vsn('1.14.4 Pre-Release 6', 496),
+        Vsn('1.14.4 Pre-Release 7', 497)
     )
 })

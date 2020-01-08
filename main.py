@@ -53,9 +53,9 @@ if __name__ == '__main__':
     pycraft_only = False
     for arg in sys.argv[1:]:
         if arg.startswith(refresh_min_proto_arg):
-            cache.refresh_min_proto = int(arg[len(refresh_min_proto_arg):])
+            mcdevdata.cache.refresh_min_proto = int(arg[len(refresh_min_proto_arg):])
         elif arg.startswith(refresh_max_proto_arg):
-            cache.refresh_max_proto = int(arg[len(refresh_max_proto_arg):])
+            mcdevdata.cache.refresh_max_proto = int(arg[len(refresh_max_proto_arg):])
         elif arg.startswith('-r'):
             refresh_names.add(arg[2:])
         elif arg in ('-p', '--pycraft-only'):
