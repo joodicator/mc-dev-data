@@ -5,15 +5,22 @@ __all__ = ('version_urls',)
 
 """A dict mapping each Minecraft version to the URL of the corresponding
    pre-release or release wiki page. Pre-release pages are preferred, when
-   available, as they contain more information about protocol changes."""
+   available, as they contain more information about protocol changes.
+
+   Each key is of the form `Vsn(version_id_string, protocol_version_int)',
+   where `version_id_string' is the key used to identify this version in
+   <https://launchermeta.mojang.com/mc/game/version_manifest.json>, which
+   for later versions also occurs as the 'id' key in version.json in the
+   corresponding .jar file distributed by Mojang. (This is the same version
+   string as used by pyCraft, and is used for pyCraft interoperation.)"""
 version_urls = {
-    Vsn('1.14.4 Pre-Release 7', 497): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14868',
-    Vsn('1.14.4 Pre-Release 6', 496): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14864',
-    Vsn('1.14.4 Pre-Release 5', 495): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14862',
-    Vsn('1.14.4 Pre-Release 4', 494): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14856',
-    Vsn('1.14.4 Pre-Release 3', 493): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14849',
-    Vsn('1.14.4 Pre-Release 2', 492): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14837',
-    Vsn('1.14.4 Pre-Release 1', 491): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14835',
+    Vsn('1.14.4-pre7',          497): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14868',
+    Vsn('1.14.4-pre6',          496): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14864',
+    Vsn('1.14.4-pre5',          495): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14862',
+    Vsn('1.14.4-pre4',          494): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14856',
+    Vsn('1.14.4-pre3',          493): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14849',
+    Vsn('1.14.4-pre2',          492): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14837',
+    Vsn('1.14.4-pre1',          491): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14835',
     Vsn('1.14.3',               490): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14826',
     Vsn('1.14.3-pre4',          489): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14824',
     Vsn('1.14.3-pre3',          488): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=14820',
