@@ -29,7 +29,7 @@ def pre_versions(soup, vsn):
     """Return a VersionDiff instance containing the old and new versions
        being compared in this pre-release protocol wiki page."""
     vs = []
-    para = soup.find(id='mw-content-text').find('p', recursive=False)
+    para = soup.find(id='mw-content-text').find('p')
     for a in para.findAll('a'):
         m = PRE_VER_RE.match(a.text.strip())
         if m is None: continue

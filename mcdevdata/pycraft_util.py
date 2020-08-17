@@ -90,6 +90,8 @@ def pycraft_packet_name(name):
         'Login Plugin Response':                  'PluginResponse',
         'Player Info':                            'PlayerListItem',
         'Map Data':                               'Map',
+        'Player Movement':                        'Player',
+        'Entity Relative Move':                   'EntityPositionDelta',
     }.get(name, name)
     return '%sPacket' % re.sub(r' +|\([^)]+\)$', '', name)
 
@@ -138,9 +140,9 @@ pycraft_ignore_errors = {
     "[1.12-pre3] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
     "[1.12-pre4] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3B, 'Entity Metadata')",
     "[1.12-pre4] pyCraft: (0x3B, 'EntityVelocityPacket'), wiki: (0x3D, 'Entity Velocity')",
-    "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity')",
+    "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity Movement')",
     "[1.12-pre5] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map Data')",
-    "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity')",
+    "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x25, 'Entity Movement')",
     "[1.12-pre6] pyCraft: (0x25, 'MapPacket'), wiki: (0x24, 'Map Data')",
     "[17w13a] pyCraft: (0x47, 'PlayerListHeaderAndFooterPacket'), wiki: (0x47, 'Title')",
     "[17w13a] pyCraft: (0x47, 'PlayerListHeaderAndFooterPacket'), wiki: (0x49, 'Player List Header And Footer')",

@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Pre-release protocol - wiki.vg</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Pre-release_protocol","wgTitle":"Pre-release protocol","wgCurRevisionId":15918,"wgRevisionId":15382,"wgArticleId":123,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Minecraft Modern"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Pre-release_protocol","wgRelevantArticleId":123,"wgRequestId":"b037d006a84f66d572f94ca9","wgCSPNonce":!1,"wgIsProbablyEditable":!1,
+"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.1"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="wiki.vg (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.vg/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="wiki.vg Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Pre-release_protocol rootpage-Pre-release_protocol skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Pre-release protocol</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From wiki.vg</div>
+		<div id="contentSub"><div class="mw-revision warningbox"><div id="mw-revision-info">Revision as of 00:34, 26 March 2020 by <a href="/User:Pokechu22" class="mw-userlink" title="User:Pokechu22"><bdi>Pokechu22</bdi></a> <span class="mw-usertoollinks">(<a href="/User_talk:Pokechu22" class="mw-usertoollinks-talk" title="User talk:Pokechu22">talk</a> | <a href="/Special:Contributions/Pokechu22" class="mw-usertoollinks-contribs" title="Special:Contributions/Pokechu22">contribs</a>)</span> <span class="comment">(<span dir="auto"><span class="autocomment"><a href="#Piglin">→‎Piglin</a>: </span> also {{added}}</span>)</span></div><div id="mw-revision-nav">(<a href="/index.php?title=Pre-release_protocol&amp;diff=prev&amp;oldid=15382" title="Pre-release protocol">diff</a>) <a href="/index.php?title=Pre-release_protocol&amp;direction=prev&amp;oldid=15382" title="Pre-release protocol">← Older revision</a> | <a href="/Pre-release_protocol" title="Pre-release protocol">Latest revision</a> (<a href="/index.php?title=Pre-release_protocol&amp;diff=cur&amp;oldid=15382" title="Pre-release protocol">diff</a>) | <a href="/index.php?title=Pre-release_protocol&amp;direction=next&amp;oldid=15382" title="Pre-release protocol">Newer revision →</a> (<a href="/index.php?title=Pre-release_protocol&amp;diff=next&amp;oldid=15382" title="Pre-release protocol">diff</a>)</div></div></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>This page documents the changes from the <a href="/Protocol" title="Protocol">last stable Minecraft release</a> (currently <a href="/Protocol_version_numbers" title="Protocol version numbers">1.15.2, protocol 578</a>) to the current pre-release (currently <a href="/Protocol_version_numbers" title="Protocol version numbers">20w13a, protocol 708</a>). Note that this page contains bleeding-edge information that may not be completely or correctly documented.
+</p><p>One who wishes to commandeer the merging of this into <a href="/Protocol" title="Protocol">Protocol</a> when an update is made must be sure to respect any changes that may have occurred to the respective packets there.
+</p>
+<h2><span class="mw-headline" id="Contents">Contents</span></h2>
+<div style="float:right;"><div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Contents"><span class="tocnumber">1</span> <span class="toctext">Contents</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Data_types"><span class="tocnumber">1.1</span> <span class="toctext">Data types</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Packets"><span class="tocnumber">1.2</span> <span class="toctext">Packets</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#New.2Fmodified_data_types"><span class="tocnumber">2</span> <span class="toctext">New/modified data types</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Entity_Metadata"><span class="tocnumber">3</span> <span class="toctext">Entity Metadata</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#FishingHook"><span class="tocnumber">3.1</span> <span class="toctext">FishingHook</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Abstract_Arrow"><span class="tocnumber">3.2</span> <span class="toctext">Abstract Arrow</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Tipped_Arrow"><span class="tocnumber">3.3</span> <span class="toctext">Tipped Arrow</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Spectral_Arrow"><span class="tocnumber">3.4</span> <span class="toctext">Spectral Arrow</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Trident"><span class="tocnumber">3.5</span> <span class="toctext">Trident</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Strider"><span class="tocnumber">3.6</span> <span class="toctext">Strider</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Hoglin"><span class="tocnumber">3.7</span> <span class="toctext">Hoglin</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Piglin"><span class="tocnumber">3.8</span> <span class="toctext">Piglin</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Zombie_Pigman_Zombified_Piglin"><span class="tocnumber">3.9</span> <span class="toctext">Zombie Pigman&#x20;Zombified Piglin</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Block_Actions"><span class="tocnumber">4</span> <span class="toctext">Block Actions</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Inventories"><span class="tocnumber">5</span> <span class="toctext">Inventories</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Plugin_Channels"><span class="tocnumber">6</span> <span class="toctext">Plugin Channels</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Play"><span class="tocnumber">7</span> <span class="toctext">Play</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Clientbound"><span class="tocnumber">7.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Serverbound"><span class="tocnumber">7.2</span> <span class="toctext">Serverbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="#Update_Jigsaw_Block"><span class="tocnumber">7.2.1</span> <span class="toctext">Update Jigsaw Block</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#Handshaking"><span class="tocnumber">8</span> <span class="toctext">Handshaking</span></a>
+<ul>
+<li class="toclevel-2 tocsection-23"><a href="#Clientbound_2"><span class="tocnumber">8.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Serverbound_2"><span class="tocnumber">8.2</span> <span class="toctext">Serverbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-25"><a href="#Handshake"><span class="tocnumber">8.2.1</span> <span class="toctext">Handshake</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="#Status"><span class="tocnumber">9</span> <span class="toctext">Status</span></a>
+<ul>
+<li class="toclevel-2 tocsection-27"><a href="#Clientbound_3"><span class="tocnumber">9.1</span> <span class="toctext">Clientbound</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Serverbound_3"><span class="tocnumber">9.2</span> <span class="toctext">Serverbound</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-29"><a href="#Login"><span class="tocnumber">10</span> <span class="toctext">Login</span></a>
+<ul>
+<li class="toclevel-2 tocsection-30"><a href="#Clientbound_4"><span class="tocnumber">10.1</span> <span class="toctext">Clientbound</span></a>
+<ul>
+<li class="toclevel-3 tocsection-31"><a href="#Login_Success"><span class="tocnumber">10.1.1</span> <span class="toctext">Login Success</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-32"><a href="#Serverbound_4"><span class="tocnumber">10.2</span> <span class="toctext">Serverbound</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<h3><span class="mw-headline" id="Data_types">Data types</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Packets">Packets</span></h3>
+<table class="wikitable">
+<tbody><tr>
+<th>ID
+</th>
+<th>Packet name
+</th>
+<th colspan="2">Documentation
+</th></tr>
+<tr>
+<th colspan="4">Handshaking serverbound
+</th></tr>
+<tr>
+<td>0x00</td>
+<td>Handshake</td>
+<td><a href="/Protocol#Handshake" title="Protocol">Current</a></td>
+<td><a href="/Pre-release_protocol#Handshake" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<th colspan="4">Play clientbound
+</th></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x4E</del>&#x20;<ins style="background-color: #d9ead3;">0x43</ins></td>
+<td>Spawn Position</td>
+<td><a href="/Protocol#Spawn_Position" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x43</del>&#x20;<ins style="background-color: #d9ead3;">0x44</ins></td>
+<td>Display Scoreboard</td>
+<td><a href="/Protocol#Display_Scoreboard" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x44</del>&#x20;<ins style="background-color: #d9ead3;">0x45</ins></td>
+<td>Entity Metadata</td>
+<td><a href="/Protocol#Entity_Metadata" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x45</del>&#x20;<ins style="background-color: #d9ead3;">0x46</ins></td>
+<td>Attach Entity</td>
+<td><a href="/Protocol#Attach_Entity" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x46</del>&#x20;<ins style="background-color: #d9ead3;">0x47</ins></td>
+<td>Entity Velocity</td>
+<td><a href="/Protocol#Entity_Velocity" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x47</del>&#x20;<ins style="background-color: #d9ead3;">0x48</ins></td>
+<td>Entity Equipment</td>
+<td><a href="/Protocol#Entity_Equipment" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x48</del>&#x20;<ins style="background-color: #d9ead3;">0x49</ins></td>
+<td>Set Experience</td>
+<td><a href="/Protocol#Set_Experience" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x49</del>&#x20;<ins style="background-color: #d9ead3;">0x4A</ins></td>
+<td>Update Health</td>
+<td><a href="/Protocol#Update_Health" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x4A</del>&#x20;<ins style="background-color: #d9ead3;">0x4B</ins></td>
+<td>Scoreboard Objective</td>
+<td><a href="/Protocol#Scoreboard_Objective" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x4B</del>&#x20;<ins style="background-color: #d9ead3;">0x4C</ins></td>
+<td>Set Passengers</td>
+<td><a href="/Protocol#Set_Passengers" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x4C</del>&#x20;<ins style="background-color: #d9ead3;">0x4D</ins></td>
+<td>Teams</td>
+<td><a href="/Protocol#Teams" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">0x4D</del>&#x20;<ins style="background-color: #d9ead3;">0x4E</ins></td>
+<td>Update Score</td>
+<td><a href="/Protocol#Update_Score" title="Protocol">Current</a></td>
+<td>(unchanged)
+</td></tr>
+<tr>
+<th colspan="4">Play serverbound
+</th></tr>
+<tr>
+<td>0x27</td>
+<td>Update Jigsaw Block</td>
+<td><a href="/Protocol#Update_Jigsaw_Block" title="Protocol">Current</a></td>
+<td><a href="/Pre-release_protocol#Update_Jigsaw_Block" title="Pre-release protocol">Pre</a>
+</td></tr>
+<tr>
+<th colspan="4">Login clientbound
+</th></tr>
+<tr>
+<td>0x02</td>
+<td>Login Success</td>
+<td><a href="/Protocol#Login_Success" title="Protocol">Current</a></td>
+<td><a href="/Pre-release_protocol#Login_Success" title="Pre-release protocol">Pre</a>
+</td></tr></tbody></table>
+<h2><span id="New/modified_data_types"></span><span class="mw-headline" id="New.2Fmodified_data_types">New/modified data types</span></h2>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Entity_Metadata">Entity Metadata</span></h2>
+<h3><span class="mw-headline" id="FishingHook">FishingHook</span></h3>
+<p>Extends <a href="#Entity">Entity</a>.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Index
+</th>
+<th>Type
+</th>
+<th style="width: 250px;" colspan="2">Meaning
+</th>
+<th>Default
+</th></tr>
+<tr>
+<td>7
+</td>
+<td>VarInt
+</td>
+<td colspan="2">Hooked entity id + 1, or 0 if there is no hooked entity
+</td>
+<td>0
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td><ins style="background-color: #d9ead3;">8</ins>
+</td>
+<td>Boolean
+</td>
+<td colspan="2">Is catchable
+</td>
+<td>False
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Abstract_Arrow">Abstract Arrow</span></h3>
+<p>Extends <a href="#Entity">Entity</a>.
+</p><p>Abstract base class for <a href="#Tipped_Arrow">Tipped Arrow</a> (which is used for regular arrows as well as tipped ones) and <a href="#Spectral_Arrow">Spectral Arrow</a>.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Index
+</th>
+<th>Type
+</th>
+<th style="width: 250px;" colspan="2">Meaning
+</th>
+<th>Default
+</th></tr>
+<tr>
+<td rowspan="3">7
+</td>
+<td rowspan="3">Byte
+</td>
+<th>Bit mask
+</th>
+<th>Meaning
+</th>
+<td rowspan="3">0
+</td></tr>
+<tr>
+<td>0x01
+</td>
+<td>Is critical
+</td></tr>
+<tr>
+<td>0x02
+</td>
+<td>Is noclip (used by loyalty tridents when returning)
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">8</del>
+</td>
+<td>OptUUID
+</td>
+<td colspan="2">Unused
+</td>
+<td>Empty
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">9</del>&#x20;<ins style="background-color: #d9ead3;">8</ins>
+</td>
+<td>Byte
+</td>
+<td colspan="2">Peircing level
+</td>
+<td>0
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Tipped_Arrow">Tipped Arrow</span></h3>
+<p>Extends <a href="/Entity_metadata#Abstract_Arrow" title="Entity metadata">Abstract Arrow</a>.
+</p><p>Used for both tipped and regular arrows.  If not tipped, then color is set to -1 and no tipped arrow particles are used.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Index
+</th>
+<th>Type
+</th>
+<th style="width: 250px;" colspan="2">Meaning
+</th>
+<th>Default
+</th></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">10</del>&#x20;<ins style="background-color: #d9ead3;">9</ins>
+</td>
+<td>VarInt
+</td>
+<td colspan="2">Color (-1 for no particles)
+</td>
+<td>-1
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Spectral_Arrow">Spectral Arrow</span></h3>
+<p>Extends <a href="/Entity_metadata#Abstract_Arrow" title="Entity metadata">Abstract Arrow</a>.
+</p><p>No additional metadata.
+</p>
+<h3><span class="mw-headline" id="Trident">Trident</span></h3>
+<p>Extends <a href="/Entity_metadata#Abstract_Arrow" title="Entity metadata">Abstract Arrow</a>.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Index
+</th>
+<th>Type
+</th>
+<th style="width: 250px;" colspan="2">Meaning
+</th>
+<th>Default
+</th></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">10</del>&#x20;<ins style="background-color: #d9ead3;">9</ins>
+</td>
+<td>VarInt
+</td>
+<td colspan="2">Loyalty level (enchantment)
+</td>
+<td>0
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">11</del>&#x20;<ins style="background-color: #d9ead3;">10</ins>
+</td>
+<td>Boolean
+</td>
+<td colspan="2">Has enchantment glint
+</td>
+<td>False
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Strider">Strider</span></h3>
+<p>Extends <a href="#Animal">Animal</a>.
+</p>
+<table class="wikitable" style="background-color: #d9ead3;">
+<tbody><tr>
+<th>Index
+</th>
+<th>Type
+</th>
+<th style="width: 250px;" colspan="2">Meaning
+</th>
+<th>Default
+</th></tr>
+<tr>
+<td>16
+</td>
+<td>VarInt
+</td>
+<td colspan="2">Total time to "boost" with warped fungi for
+</td>
+<td>0
+</td></tr>
+<tr>
+<td>17
+</td>
+<td>Boolean
+</td>
+<td colspan="2">Should display name tag (true unless riding a vehicle or on or in a block tagged with strider_warm_blocks (default: lava))
+</td>
+<td>false
+</td></tr>
+<tr>
+<td>18
+</td>
+<td>Boolean
+</td>
+<td colspan="2">Has saddle
+</td>
+<td>false
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Hoglin">Hoglin</span></h3>
+<p>Extends <a href="#Animal">Animal</a>.
+</p><p>No additional metadata.
+</p>
+<h3><span class="mw-headline" id="Piglin">Piglin</span></h3>
+<p>Extends <a href="#Monster">Monster</a>.
+</p>
+<table class="wikitable" style="background-color: #d9ead3;">
+<tbody><tr>
+<th>Index
+</th>
+<th>Type
+</th>
+<th style="width: 250px;" colspan="2">Meaning
+</th>
+<th>Default
+</th></tr>
+<tr>
+<td>15
+</td>
+<td>Boolean
+</td>
+<td colspan="2">Is baby
+</td>
+<td>false
+</td></tr>
+<tr>
+<td>16
+</td>
+<td>Boolean
+</td>
+<td colspan="2">Is immune to zombification
+</td>
+<td>false
+</td></tr>
+<tr>
+<td>17
+</td>
+<td>Boolean
+</td>
+<td colspan="2">Is charging crossbow
+</td>
+<td>false
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Zombie_Pigman_Zombified_Piglin"><del style="background-color: #f4cccc; text-decoration: line-through;">Zombie Pigman</del>&#x20;<ins style="background-color: #d9ead3;">Zombified Piglin</ins></span></h3>
+<p>Extends <a href="#Zombie">Zombie</a>.
+</p><p>No additional metadata.
+</p>
+<h2><span class="mw-headline" id="Block_Actions">Block Actions</span></h2>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Inventories">Inventories</span></h2>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Plugin_Channels">Plugin Channels</span></h2>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Play">Play</span></h2>
+<h3><span class="mw-headline" id="Clientbound">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound">Serverbound</span></h3>
+<h4><span class="mw-headline" id="Update_Jigsaw_Block">Update Jigsaw Block</span></h4>
+<p>Sent when Done is pressed on the <span class="plainlinks"><a rel="nofollow" class="external text" href="http://minecraft.gamepedia.com/Jigsaw_Block">Jigsaw Block</a></span> interface.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Packet ID
+</th>
+<th>State
+</th>
+<th>Bound To
+</th>
+<th>Field Name
+</th>
+<th>Field Type
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td rowspan="7">0x27
+</td>
+<td rowspan="7">Play
+</td>
+<td rowspan="7">Server
+</td>
+<td>Location
+</td>
+<td>Position
+</td>
+<td>Block entity location
+</td></tr>
+<tr style="background-color: #f4cccc; text-decoration: line-through;">
+<td>Attachment type
+</td>
+<td>Identifier
+</td>
+<td>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td>Name
+</td>
+<td>Identifier
+</td>
+<td>
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td>Target
+</td>
+<td>Identifier
+</td>
+<td>
+</td></tr>
+<tr>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">Target pool</del>&#x20;<ins style="background-color: #d9ead3;">Pool</ins>
+</td>
+<td>Identifier
+</td>
+<td>
+</td></tr>
+<tr>
+<td>Final state
+</td>
+<td>String
+</td>
+<td>"Turns into" on the GUI, <code>final_state</code> in NBT
+</td></tr>
+<tr style="background-color: #d9ead3;">
+<td>Joint type
+</td>
+<td>String
+</td>
+<td><code>rollable</code> if the attached piece can be rotated, else <code>aligned</code>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Handshaking">Handshaking</span></h2>
+<h3><span class="mw-headline" id="Clientbound_2">Clientbound</span></h3>
+<p>There are no clientbound packets in the Handshaking state, since the protocol immediately switches to a different state after the client sends the first packet. 
+</p>
+<h3><span class="mw-headline" id="Serverbound_2">Serverbound</span></h3>
+<h4><span class="mw-headline" id="Handshake">Handshake</span></h4>
+<p>This causes the server to switch into the target state.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Packet ID
+</th>
+<th>State
+</th>
+<th>Bound To
+</th>
+<th>Field Name
+</th>
+<th>Field Type
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td rowspan="4">0x00
+</td>
+<td rowspan="4">Handshaking
+</td>
+<td rowspan="4">Server
+</td>
+<td>Protocol Version
+</td>
+<td>VarInt
+</td>
+<td>See <a href="/Protocol_version_numbers" title="Protocol version numbers">protocol version numbers</a> (currently <del style="background-color: #f4cccc; text-decoration: line-through;">578</del>&#x20;<ins style="background-color: #d9ead3;">708</ins>)
+</td></tr>
+<tr>
+<td>Server Address
+</td>
+<td>String
+</td>
+<td>Hostname or IP, e.g. localhost or 127.0.0.1, that was used to connect. The Notchian server does not use this information. Note that SRV records are a complete redirect, e.g. if _minecraft._tcp.example.com points to mc.example.org, users connecting to example.com will provide mc.example.org as server address in addition to connecting to it.
+</td></tr>
+<tr>
+<td>Server Port
+</td>
+<td>Unsigned Short
+</td>
+<td>Default is 25565.  The Notchian server does not use this information.
+</td></tr>
+<tr>
+<td>Next State
+</td>
+<td>VarInt Enum
+</td>
+<td>1 for <a href="#Status">status</a>, 2 for <a href="#Login">login</a>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Status">Status</span></h2>
+<h3><span class="mw-headline" id="Clientbound_3">Clientbound</span></h3>
+<p>No changes so far.
+</p>
+<h3><span class="mw-headline" id="Serverbound_3">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<h2><span class="mw-headline" id="Login">Login</span></h2>
+<h3><span class="mw-headline" id="Clientbound_4">Clientbound</span></h3>
+<h4><span class="mw-headline" id="Login_Success">Login Success</span></h4>
+<table class="wikitable">
+<tbody><tr>
+<th>Packet ID
+</th>
+<th>State
+</th>
+<th>Bound To
+</th>
+<th>Field Name
+</th>
+<th>Field Type
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td rowspan="2">0x02
+</td>
+<td rowspan="2">Login
+</td>
+<td rowspan="2">Client
+</td>
+<td>UUID
+</td>
+<td><del style="background-color: #f4cccc; text-decoration: line-through;">String (36)</del>&#x20;<ins style="background-color: #d9ead3;">Int array (4)</ins>
+</td>
+<td>Unlike in other packets, this field contains the UUID as <del style="background-color: #f4cccc; text-decoration: line-through;">a string with hyphens</del>&#x20;<ins style="background-color: #d9ead3;">a fixed length int array</ins>.
+<p><ins style="background-color: #d9ead3;">The UUID is encoded and decoded as follows, where the int array for decoding is read in the order the bytes are received:
+</ins></p>
+<pre> public static UUID decodeUuid(int[] is) {
+   return new UUID((long)is[0] &lt;&lt; 32 | (long)is[1] &amp; 4294967295L, (long)is[2] &lt;&lt; 32 | (long)is[3] &amp; 4294967295L);
+ }
+ public static int[] encodeUuid(long mostSignificantBits, long leastSignificantBits) {
+   return new int[]{
+       (int)(mostSignificantBits &gt;&gt; 32),
+       (int)mostSignificantBits,
+       (int)(leastSignificantBits &gt;&gt; 32),
+       (int)leastSignificantBits
+   };
+ }
+</pre>
+<p class="mw-empty-elt">
+</p>
+</td></tr>
+<tr>
+<td>Username
+</td>
+<td>String (16)
+</td>
+<td>
+</td></tr></tbody></table>
+<p>This packet switches the connection state to <a href="#Play">play</a>.
+</p>
+<h3><span class="mw-headline" id="Serverbound_4">Serverbound</span></h3>
+<p>No changes so far.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20200709163042
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.090 seconds
+Real time usage: 0.146 seconds
+Preprocessor visited node count: 2132/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 19461/2097152 bytes
+Template argument size: 5963/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 2/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   77.408      1 -total
+ 38.67%   29.932     15 Template:PacketList
+ 29.64%   22.940     25 Template:Change
+ 21.66%   16.769     14 Template:Metadata_id
+ 16.76%   12.975      9 Template:Metadata_inherit
+ 12.28%    9.508      1 Template:Minecraft_Wiki
+  6.17%    4.776     25 Template:Removed
+  5.49%    4.250     30 Template:Added
+  5.31%    4.109      1 Template:Plainlink
+-->
+</div></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://wiki.vg/index.php?title=Pre-release_protocol&amp;oldid=15382">https://wiki.vg/index.php?title=Pre-release_protocol&amp;oldid=15382</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Category:Minecraft_Modern" title="Category:Minecraft Modern">Minecraft Modern</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Pre-release+protocol&amp;returntoquery=oldid%3D15382" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Pre-release+protocol&amp;returntoquery=oldid%3D15382" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/Pre-release_protocol" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk"><span><a href="/Talk:Pre-release_protocol" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/Pre-release_protocol">Read</a></span></li><li id="ca-viewsource" class="collapsible"><span><a href="/index.php?title=Pre-release_protocol&amp;action=edit&amp;oldid=15382" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li><li id="ca-history" class="collapsible"><span><a href="/index.php?title=Pre-release_protocol&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search wiki.vg" title="Search wiki.vg [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Minecraft"><a href="/Main_Page">Minecraft</a></li><li id="n-Unreal-Engine"><a href="/Unreal:Main_Page">Unreal Engine</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li><li id="n-Donate"><a href="/Donate">Donate</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Pre-release_protocol" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Pre-release_protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Pre-release_protocol&amp;oldid=15382&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Pre-release_protocol&amp;oldid=15382" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Pre-release_protocol&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share Alike</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="/wikivg:Privacy_policy" title="wikivg:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wikivg:About" title="wikivg:About">About wiki.vg</a></li>
+								<li id="footer-places-disclaimer"><a href="/wikivg:General_disclaimer" title="wikivg:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons Attribution Share Alike" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.090","walltime":"0.146","ppvisitednodes":{"value":2132,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":19461,"limit":2097152},"templateargumentsize":{"value":5963,"limit":2097152},"expansiondepth":{"value":9,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":2,"limit":5000000},"timingprofile":["100.00%   77.408      1 -total"," 38.67%   29.932     15 Template:PacketList"," 29.64%   22.940     25 Template:Change"," 21.66%   16.769     14 Template:Metadata_id"," 16.76%   12.975      9 Template:Metadata_inherit"," 12.28%    9.508      1 Template:Minecraft_Wiki","  6.17%    4.776     25 Template:Removed","  5.49%    4.250     30 Template:Added","  5.31%    4.109      1 Template:Plainlink"]},"cachereport":{"timestamp":"20200709163042","ttl":86400,"transientcontent":false}}});});</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-11145163-13");
+pageTracker._trackPageview();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":387});});</script>
+</body>
+</html>

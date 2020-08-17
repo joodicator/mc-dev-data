@@ -53,9 +53,16 @@ def version_packet_ids():
                         assert packet_class not in matrix[from_v], \
                                '[%s] %r in matrix[%r]' % (v.name, packet_class, from_v)
                     else:
-                        assert packet_class in matrix[from_v], \
-                            '[%s] [0x%02X] %r not in matrix[%r]' % (
-                            v.name, packet.old_id, packet_class, from_v)
+                        if packet_class not in matrix[from_v]:
+                            msg = '[%s] [0x%02X] %r not in matrix[%r]' % (
+                                  v.name, packet.old_id, packet_class, from_v)
+                            for from_pcls, from_mid in matrix[from_v].items():
+                                if (from_pcls.state, from_pcls.bound, from_mid.id) \
+                                == (packet_class.state, packet_class.bound, packet.old_id):
+                                    msg += '\n(however, matrix[%r][%r].id == 0x%02X)' % (
+                                           from_v, from_pcls, packet.old_id)
+                                    break
+                            raise AssertionError(msg)
                         assert packet.old_id == matrix[from_v][packet_class].id, \
                             '[%s] 0x%02x != matrix[%r][%r].id == 0x%02x' % (
                             v.name, packet.old_id, from_v, packet_class,

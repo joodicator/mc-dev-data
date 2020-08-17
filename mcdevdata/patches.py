@@ -30,6 +30,20 @@ norm_packet_name_dict = {
     'Change Difficulty':                    'Set Difficulty',
     'Enchant Item':                         'Click Window Button',
     ('Player Digging', 'Client'):           'Acknowledge Player Digging',
+    'Player Position And Rotation (serverbound)': 'Player Position And Look (serverbound)',
+    'Player Position And Rotation (clientbound)': 'Player Position And Look (clientbound)',
+    'Player Rotation':                      'Player Look',
+    'Player':                               'Player Movement',
+    'Spawn Weather Entity':                 'Spawn Global Entity',
+    'Spawn Living Entity':                  'Spawn Mob',
+    'Entity Animation (clientbound)':       'Animation (clientbound)',
+    'Block Entity Data':                    'Update Block Entity',
+    'Window Confirmation (clientbound)':    'Confirm Transaction (clientbound)',
+    'Entity Position':                      'Entity Relative Move',
+    'Entity Position and Rotation':         'Entity Look And Relative Move',
+    'Entity Rotation':                      'Entity Look',
+    'Entity':                               'Entity Movement',
+    'Interact Entity':                      'Use Entity',
 }
 
 for name in 'Animation', 'Chat Message', 'Keep Alive', 'Plugin Message', \
@@ -148,6 +162,10 @@ patch = {
     (Vsn('1.14.2 Pre-Release 4', 484),
         VersionDiff(Vsn('1.13.2', 404), Vsn('1.14.2 Pre-Release 3', 484))):
         VersionDiff(Vsn('1.13.2', 404), Vsn('1.14.2 Pre-Release 4', 484)),
+    (Vsn('1.16-pre7', 732), PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Server')):
+                            PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Client'),
+    (Vsn('1.16-pre8', 733), PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Server')):
+                            PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Client'),
 }
 patch.update({
     (Vsn('1.14 Pre-Release %d' % n, pv),
