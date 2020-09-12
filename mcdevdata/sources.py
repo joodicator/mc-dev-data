@@ -14,6 +14,8 @@ __all__ = ('version_urls',)
    corresponding .jar file distributed by Mojang. (This is the same version
    string as used by pyCraft, and is used for pyCraft interoperation.)"""
 version_urls = {
+    Vsn('1.16.3',               753): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16039',
+    Vsn('1.16.3-rc1',           752): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16029',
     Vsn('1.16.2',               751): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=15980',
     Vsn('1.16.2-rc2',           750): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=15972',
     Vsn('1.16.2-rc1',           749): 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=15967',
