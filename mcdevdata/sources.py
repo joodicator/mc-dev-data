@@ -1,8 +1,8 @@
 from collections import OrderedDict
 
-from .types import Vsn
+from .types import PRE, Vsn
 
-__all__ = ('version_urls', 'protocols')
+__all__ = ('version_urls', 'versions', 'protocols')
 
 
 """An OrderedDict mapping each Minecraft version to the URL of the corresponding
@@ -16,7 +16,15 @@ __all__ = ('version_urls', 'protocols')
    for later versions also occurs as the 'id' key in version.json in the
    corresponding .jar file distributed by Mojang. (This is the same version
    string as used by pyCraft, and is used for pyCraft interoperation.)"""
+
 version_urls = OrderedDict((
+    (Vsn('20w48a',             PRE|7), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16152'),
+    (Vsn('20w46a',             PRE|6), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16137'),
+    (Vsn('20w45a',             PRE|5), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16119'),
+    (Vsn('1.16.4',               754), 'https://wiki.vg/index.php?title=Protocol&oldid=16144'),
+    (Vsn('1.16.4-rc1',         PRE|3), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16095'),
+    (Vsn('1.16.4-pre2',        PRE|2), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16088'),
+    (Vsn('1.16.4-pre1',        PRE|1), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16071'),
     (Vsn('1.16.3',               753), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16039'),
     (Vsn('1.16.3-rc1',           752), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16029'),
     (Vsn('1.16.2',               751), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=15980'),

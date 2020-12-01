@@ -59,7 +59,7 @@ def from_page(*page_args, dep=(), no_cache=False, rdoc=None, doc_order=0, **page
             if any(dep in refresh_names for dep in from_page_func.depends):
                 bound_args = inspect.signature(func).bind(*(page_args+args), **kwds)
                 vsn = bound_args.arguments.get('vsn')
-                refresh = refresh_version_allowed(vsn)
+                refresh = vsn is None or refresh_version_allowed(vsn)
 
             if func.__name__ not in page or refresh \
             and func.__name__ not in page.get('__refreshed__', set()):

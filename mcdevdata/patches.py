@@ -1,5 +1,5 @@
 from .types import Vsn, VersionDiff, RelPacket, PrePacket
-from .sources import version_urls 
+from .sources import PRE, version_urls 
 
 __all__ = ('patch', 'norm_packet_name')
 
@@ -44,6 +44,8 @@ norm_packet_name_dict = {
     'Entity Rotation':                      'Entity Look',
     'Entity':                               'Entity Movement',
     'Interact Entity':                      'Use Entity',
+    'Spawn Entity':                         'Spawn Object',
+    'Window Confirmation (serverbound)':    'Confirm Transaction (serverbound)',
 }
 
 for name in 'Animation', 'Chat Message', 'Keep Alive', 'Plugin Message', \
@@ -166,6 +168,20 @@ patch = {
                             PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Client'),
     (Vsn('1.16-pre8', 733), PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Server')):
                             PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Client'),
+    (Vsn('20w45a', PRE|5), PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Server')):
+                           PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Client'),
+    (Vsn('20w45a', PRE|5), PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Server')):
+                           PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Client'),
+    (Vsn('20w45a', PRE|5), PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Server')):
+                           PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Client'),
+    (Vsn('20w46a', PRE|6), PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Server')):
+                           PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Client'),
+    (Vsn('20w46a', PRE|6), PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Server')):
+                           PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Client'),
+    (Vsn('20w46a', PRE|6), PrePacket('Map Data', 0x25, 0x25, True, 'Play', 'Server')):
+                           PrePacket('Map Data', 0x25, 0x25, True, 'Play', 'Client'),
+    (Vsn('20w46a', PRE|6), PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Server')):
+                           PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Client'),
 }
 patch.update({
     (Vsn('1.14 Pre-Release %d' % n, pv),
