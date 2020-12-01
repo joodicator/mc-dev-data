@@ -4,6 +4,7 @@ from .cache import get_page
 from .matrix import version_packet_ids
 from .sources import version_urls, versions
 from .pycraft_util import pycraft_packet_classes
+from .types import Vsn
 
 __all__ = ('matrix_html',)
 
@@ -38,7 +39,8 @@ def matrix_html(show_versions=None, pycraft_only=False):
     for version in show_versions:
         psv = version.protocol in pycraft.SUPPORTED_PROTOCOL_VERSIONS
         print(' <th%(c)s><a href="%(u)s" title="%(n)s">%(n)s</a><br>%(v)s</th>'
-            % {'u':version_urls[version], 'n':version.name, 'v':version.protocol,
+            % {'u': version_urls[version], 'n': version.name,
+               'v': Vsn.protocol_repr(version.protocol),
                'c':' class="pycraft-version"' if psv else ''}, end='')
     print(' </tr>')
     print('      </table>')

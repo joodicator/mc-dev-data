@@ -2,7 +2,7 @@ from collections import namedtuple
 
 from .util import id_str
 
-__all__ = ('MatrixID', 'Vsn', 'VersionDiff', 'PrePacket', 'RelPacket',
+__all__ = ('MatrixID', 'PRE', 'Vsn', 'VersionDiff', 'PrePacket', 'RelPacket',
            'PacketClass')
 
 class MatrixID(namedtuple('MatrixID', (
@@ -25,8 +25,20 @@ class MatrixID(namedtuple('MatrixID', (
         return 'MatrixID(id=%s, base_ver=%r, changed=%r)' % (
             id_str(r.id), r.base_ver, r.changed)
 
-Vsn = namedtuple('Vsn', ('name', 'protocol'))
-Vsn.__doc__ = "Represents a named Minecraft version with a protocol number."
+# This bit flag occurs in the protocol version numbers of pre-release versions after 1.16.3.
+PRE = 1 << 30
+
+class Vsn(namedtuple('Vsn', ('name', 'protocol'))):
+    """Represents a named Minecraft version with a protocol number."""
+    def __repr__(r):
+        return 'Vsn(%r, %s)' % (r.name, self.protocol_repr(r.protocol))
+
+    @staticmethod
+    def protocol_repr(protocol):
+        if protocol & PRE:
+            return 'PRE|%d' % (protocol & ~PRE)
+        else:
+            return repr(protocol)
 
 VersionDiff = namedtuple('VersionDiff', ('old', 'new'))
 VersionDiff.__doc__ = "Represents two Minecraft versions being compared."
