@@ -23,9 +23,11 @@ if __name__ == '__main__':
               '\n'
               'VERSIONS: to restrict the displayed Minecraft versions to a subset of those,\n'
               'available, version names or protocol numbers, or ranges of the form START..END,\n'
-              'may be given on the command line. E.g. "main.py 1.12.2 1.13" shows only the\n'
-              'difference between releases 1.12.2 and 1.13; and "main.py 315..340" shows all\n'
-              'versions with protocol numbers between 315 and 340, inclusive.\n'
+              'may be given on the command line. Protocol versions are ordered chronologically\n'
+              'by their publication time and not necessarily in order of the protocol numbers.\n'
+              'E.g. "main.py 1.12.2 1.13" shows only the difference between releases\n'
+              '1.12.2 and 1.13; and "main.py 315..340" shows all versions published between\n'
+              'protocols 315 and 340, inclusive.\n'
               '\n'
               'RFLAGS: To save time, intermediate data are saved under the "func-cache"\n'
               'directory. When the script or source data are changed, RFLAGS may be given to\n'
@@ -40,9 +42,9 @@ if __name__ == '__main__':
             if getattr(val, 'refreshable', False)
         ] + [
             (1, refresh_min_proto_arg + 'VER',
-             'Recalculate only for protocol versions >= this value.'),
+             'Recalculate only for this protocol and versions published after it.'),
             (2, refresh_max_proto_arg + 'VER',
-             'Recalculate only for protocol versions <= this value.')
+             'Recalculate only for this protocol and versions published before it.')
         ]
         for _, arg, doc in sorted(a for a in rflags if a[0] is not None):
             print(' '*3 + '\33[1m%s\33[0m' % arg, file=sys.stderr)
@@ -78,14 +80,19 @@ if __name__ == '__main__':
                 start = protocol(arg)
                 end = start
 
-            for ver in sorted(version_urls.keys(), key=lambda v: -v.protocol):
-                if ver.protocol > end: continue
-                if ver.protocol < start: break
-                show_versions.append(ver)
+            found = False
+            for ver in version_urls.keys():
+                if not found and ver.protocol == end:
+                    found = True
+                if found:
+                    show_versions.append(ver)
+                    if ver.protocol == start:
+                        break
+            else:
+                print('Error: unrecognised protocol version(s): %s.' % arg)
+                sys.exit(2)
 
-    show_versions = sorted(show_versions, key=lambda v: v.protocol,
-                           reverse=True) if show_versions else None
-    matrix_html(show_versions=show_versions, pycraft_only=pycraft_only)
+    matrix_html(show_versions=show_versions or None, pycraft_only=pycraft_only)
 
     for vsn, url in version_urls.items():
         unused_func_cache_files.discard(get_url_hash(url))

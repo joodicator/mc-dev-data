@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 from .types import Vsn, MatrixID, PacketClass
 from .patches import patch
 from .cache import from_page, get_page
@@ -18,9 +20,9 @@ def version_packet_ids():
        they vary across packets and across protocol versions."""
     used_patches = set()
     packet_classes = {}
-    matrix = {}
+    matrix = OrderedDict()
     prev_v = None
-    for v, url in sorted(version_urls.items(), key=lambda i: i[0].protocol):
+    for v, url in reversed(version_urls.items()):
         with get_page(url) as page:
             heading = first_heading(page)
             if heading == 'Pre-release protocol':
@@ -31,6 +33,7 @@ def version_packet_ids():
                 from_v, to_v = vdiff
                 assert v == to_v, '%r != %r' % (v, to_v)
                 matrix[v] = {}
+                matrix.move_to_end(v, last=False)
                 seen_names = {}
                 for packet in pre_packets(page, v):
                     if (v, packet) in patch:

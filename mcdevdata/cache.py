@@ -9,15 +9,21 @@ import math
 import bs4
 
 from .util import get_url_hash
+from .sources import versions, protocols
 
 
 __all__ = ('get_page', 'from_page', 'get_soup', 'refresh_names', 'get_cacheable',
            'unused_func_cache_files', 'unused_www_cache_files')
 
-refresh_min_proto = -math.inf
-refresh_max_proto =  math.inf
+refresh_min_proto = None
+refresh_max_proto = None
 refresh_names = set()
 
+def refresh_version_allowed(vsn):
+    return (refresh_min_proto is None or
+            versions.index(vsn) <= protocols.index(refresh_min_proto)) and \
+           (refresh_max_proto is None or
+            versions.index(vsn) >= protocols.index(refresh_max_proto))
 
 def get_cacheable():
     from . import parsers, matrix, pycraft_util
@@ -53,8 +59,7 @@ def from_page(*page_args, dep=(), no_cache=False, rdoc=None, doc_order=0, **page
             if any(dep in refresh_names for dep in from_page_func.depends):
                 bound_args = inspect.signature(func).bind(*(page_args+args), **kwds)
                 vsn = bound_args.arguments.get('vsn')
-                refresh = not vsn or (vsn.protocol >= refresh_min_proto and \
-                                      vsn.protocol <= refresh_max_proto)
+                refresh = refresh_version_allowed(vsn)
 
             if func.__name__ not in page or refresh \
             and func.__name__ not in page.get('__refreshed__', set()):

@@ -2,7 +2,7 @@ import minecraft as pycraft
 
 from .cache import get_page
 from .matrix import version_packet_ids
-from .sources import version_urls
+from .sources import version_urls, versions
 from .pycraft_util import pycraft_packet_classes
 
 __all__ = ('matrix_html',)
@@ -15,8 +15,7 @@ def matrix_html(show_versions=None, pycraft_only=False):
         matrix = version_packet_ids(page)
         pycraft_classes = pycraft_packet_classes(page, show_versions)
 
-    versions = sorted(matrix.keys(), key=lambda v: v.protocol, reverse=True)
-    if show_versions is None: show_versions = versions
+    show_versions = versions if show_versions is None else show_versions
 
     packet_classes = sorted({p for ids in matrix.values() for p in ids.keys()
                              if any(p in matrix[v] for v in show_versions)
@@ -74,7 +73,7 @@ def matrix_html(show_versions=None, pycraft_only=False):
                                 else:
                                     changed = True
                             break
-                        elif cell_j.base_ver.protocol >= versions[k].protocol \
+                        elif versions.index(cell_j.base_ver) <= k \
                         and cell_j.base_ver != versions[j]:
                             if cell_j.changed:
                                 changed = True
