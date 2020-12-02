@@ -2,7 +2,7 @@ import minecraft as pycraft
 
 from .cache import get_page
 from .matrix import version_packet_ids
-from .sources import version_urls, versions
+from .sources import version_urls, versions, PRE
 from .pycraft_util import pycraft_packet_classes
 from .types import Vsn
 
@@ -38,10 +38,16 @@ def matrix_html(show_versions=None, pycraft_only=False):
     print('          <tr> <th></th>', end='')
     for version in show_versions:
         psv = version.protocol in pycraft.SUPPORTED_PROTOCOL_VERSIONS
-        print(' <th%(c)s><a href="%(u)s" title="%(n)s">%(n)s</a><br>%(v)s</th>'
-            % {'u': version_urls[version], 'n': version.name,
-               'v': Vsn.protocol_repr(version.protocol),
-               'c':' class="pycraft-version"' if psv else ''}, end='')
+        pv_repr = Vsn.protocol_repr(version.protocol, html=False)
+        pv_html = Vsn.protocol_repr(version.protocol, html=True)
+        print(' <th%(c)s><a href="%(u)s" title="%(n)s">%(n)s</a><br>'
+                        '<span%(w)s>%(v)s</span></th>'
+            % {'u': version_urls[version],
+               'n': version.name,
+               'v': pv_html,
+               'w': (' title="%s = %d"' % (pv_repr, version.protocol))
+                    if pv_repr != str(version.protocol) else '',
+               'c': ' class="pycraft-version"' if psv else ''}, end='')
     print(' </tr>')
     print('      </table>')
 

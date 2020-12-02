@@ -25,7 +25,8 @@ class MatrixID(namedtuple('MatrixID', (
         return 'MatrixID(id=%s, base_ver=%r, changed=%r)' % (
             id_str(r.id), r.base_ver, r.changed)
 
-# This bit flag occurs in the protocol version numbers of pre-release versions after 1.16.3.
+# This bit flag occurs in the protocol version numbers of pre-release versions
+# after 1.16.3.
 PRE = 1 << 30
 
 class Vsn(namedtuple('Vsn', ('name', 'protocol'))):
@@ -34,11 +35,11 @@ class Vsn(namedtuple('Vsn', ('name', 'protocol'))):
         return 'Vsn(%r, %s)' % (r.name, self.protocol_repr(r.protocol))
 
     @staticmethod
-    def protocol_repr(protocol):
+    def protocol_repr(protocol, html=False):
         if protocol & PRE:
-            return 'PRE|%d' % (protocol & ~PRE)
+            return ('2<sup>30</sup>+' if html else '2³⁰+') + str(protocol & ~PRE)
         else:
-            return repr(protocol)
+            return str(protocol)
 
 VersionDiff = namedtuple('VersionDiff', ('old', 'new'))
 VersionDiff.__doc__ = "Represents two Minecraft versions being compared."
