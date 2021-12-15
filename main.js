@@ -20,8 +20,11 @@ window.addEventListener('load', function () {
             var mainRow = main.getElementsByTagName('tr')[index];
             function onmouseover (ev) {
                 if (selectedRowIndex !== null) return;
-                if (ev.relatedTarget &&
-                    ev.relatedTarget.parentNode.onmouseout === onmouseout) return;
+                var related = ev.relatedTarget;
+                while (related !== null) {
+                    if (related.onmouseout === onmouseout) return;
+                    related = related.parentNode;
+                }
                 mainRow.classList.add('highlight');
                 leftRow.classList.add('highlight');
                 ev.stopPropagation();
@@ -29,8 +32,11 @@ window.addEventListener('load', function () {
             leftRow.onmouseover = mainRow.onmouseover = onmouseover;
             function onmouseout (ev) {
                 if (selectedRowIndex !== null) return;
-                if (ev.relatedTarget &&
-                    ev.relatedTarget.parentNode.onmouseover === onmouseover) return;
+                var related = ev.relatedTarget;
+                while (related !== null) {
+                    if (related.onmouseover === onmouseover) return;
+                    related = related.parentNode;
+                }
                 mainRow.classList.remove('highlight');
                 leftRow.classList.remove('highlight');
                 ev.stopPropagation();
@@ -63,16 +69,22 @@ window.addEventListener('load', function () {
 
             function onmouseover (ev) {
                 if (selectedColIndex !== null) return;
-                if (ev.relatedTarget && (ev.relatedTarget.onmouseout === onmouseout
-                    || ev.relatedTarget.parentNode.onmouseout == onmouseout)) return;
+                var related = ev.relatedTarget;
+                while (related !== null) {
+                    if (related.onmouseout === onmouseout) return;
+                    related = related.parentNode;
+                }
                 cells.forEach(function (cell) {
                     cell.classList.add('highlight');
                 })
             }
             function onmouseout (ev) {
                 if (selectedColIndex !== null) return;
-                if (ev.relatedTarget && (ev.relatedTarget.onmouseover === onmouseover
-                    || ev.relatedTarget.parentNode.onmouseover == onmouseover)) return;
+                var related = ev.relatedTarget;
+                while (related !== null) {
+                    if (related.onmouseover === onmouseover) return;
+                    related = related.parentNode;
+                }
                 cells.forEach(function (cell) {
                     cell.classList.remove('highlight');
                 });

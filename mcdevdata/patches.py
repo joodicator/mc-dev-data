@@ -1,7 +1,9 @@
 from .types import Vsn, VersionDiff, RelPacket, PrePacket
 from .sources import PRE, version_urls 
 
-__all__ = ('patch', 'norm_packet_name')
+__all__ = (
+    'patch', 'norm_packet_name', 'patch_pre_body', 'patch_pre_body_min_pv',
+)
 
 
 """A dict mapping variations on certain packet names to the canonical name.
@@ -46,6 +48,12 @@ norm_packet_name_dict = {
     'Interact Entity':                      'Use Entity',
     'Spawn Entity':                         'Spawn Object',
     'Window Confirmation (serverbound)':    'Confirm Transaction (serverbound)',
+    ('Ping', 'Play'):                       'Ping (play)',
+    ('Pong', 'Play'):                       'Pong (play)',
+    ('Ping', 'Status'):                     'Ping (status)',
+    ('Pong', 'Status'):                     'Pong (status)',
+    'Set Title Time':                       'Set Title Times',
+    'Chunk Data and Update Light':          'Chunk Data',
 }
 
 for name in 'Animation', 'Chat Message', 'Keep Alive', 'Plugin Message', \
@@ -161,27 +169,6 @@ patch = {
                          PrePacket('Craft Recipe Request', 0x01, 0x12, True, 'Play', 'Server'),
     (Vsn('19w03c', 455), VersionDiff(Vsn('1.13.2', 404), Vsn('19w03b', 455))):
                          VersionDiff(Vsn('1.13.2', 404), Vsn('19w03c', 455)),
-    (Vsn('1.14.2 Pre-Release 4', 484),
-        VersionDiff(Vsn('1.13.2', 404), Vsn('1.14.2 Pre-Release 3', 484))):
-        VersionDiff(Vsn('1.13.2', 404), Vsn('1.14.2 Pre-Release 4', 484)),
-    (Vsn('1.16-pre7', 732), PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Server')):
-                            PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Client'),
-    (Vsn('1.16-pre8', 733), PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Server')):
-                            PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Client'),
-    (Vsn('20w45a', PRE|5), PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Server')):
-                           PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Client'),
-    (Vsn('20w45a', PRE|5), PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Server')):
-                           PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Client'),
-    (Vsn('20w45a', PRE|5), PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Server')):
-                           PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Client'),
-    (Vsn('20w46a', PRE|6), PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Server')):
-                           PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Client'),
-    (Vsn('20w46a', PRE|6), PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Server')):
-                           PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Client'),
-    (Vsn('20w46a', PRE|6), PrePacket('Map Data', 0x25, 0x25, True, 'Play', 'Server')):
-                           PrePacket('Map Data', 0x25, 0x25, True, 'Play', 'Client'),
-    (Vsn('20w46a', PRE|6), PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Server')):
-                           PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Client'),
 }
 patch.update({
     (Vsn('1.14 Pre-Release %d' % n, pv),
@@ -247,6 +234,29 @@ patch.update({
                          PrePacket('Update View Distance', None, 0x41, True, 'Play', 'Client'),
     (Vsn('19w14b', 471), PrePacket('Unknown 3', None, 0x27, True, 'Play', 'Server')):
                          PrePacket('Update Jigsaw Block', None, 0x27, True, 'Play', 'Server'),
+    (Vsn('1.14.2 Pre-Release 4', 484),
+        VersionDiff(Vsn('1.13.2', 404), Vsn('1.14.2 Pre-Release 3', 484))):
+        VersionDiff(Vsn('1.13.2', 404), Vsn('1.14.2 Pre-Release 4', 484)),
+    (Vsn('1.16-pre7', 732), PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Server')):
+                            PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Client'),
+    (Vsn('1.16-pre8', 733), PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Server')):
+                            PrePacket('Entity Equipment', 0x47, 0x47, True, 'Play', 'Client'),
+    (Vsn('20w45a', PRE|5), PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Server')):
+                           PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Client'),
+    (Vsn('20w45a', PRE|5), PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Server')):
+                           PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Client'),
+    (Vsn('20w45a', PRE|5), PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Server')):
+                           PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Client'),
+    (Vsn('20w46a', PRE|6), PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Server')):
+                           PrePacket('Chunk Data', 0x20, 0x20, True, 'Play', 'Client'),
+    (Vsn('20w46a', PRE|6), PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Server')):
+                           PrePacket('Update Light', 0x23, 0x23, True, 'Play', 'Client'),
+    (Vsn('20w46a', PRE|6), PrePacket('Map Data', 0x25, 0x25, True, 'Play', 'Server')):
+                           PrePacket('Map Data', 0x25, 0x25, True, 'Play', 'Client'),
+    (Vsn('20w46a', PRE|6), PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Server')):
+                           PrePacket('Resource Pack Send', 0x38, 0x38, True, 'Play', 'Client'),
+    (Vsn('21w07a', PRE|15), None): (PrePacket('World Border', 0x3D, None, True, 'Play', 'Client'),),
+    (Vsn('1.17-rc2', PRE|35), None): (PrePacket('World Border', 0x3D, None, True, 'Play', 'Client'),),
 })
 
 """A dict mapping `(version, url_fragment)' pairs to corrected URL fragments,
@@ -282,3 +292,25 @@ patch_links.update({
     (vsn, '#Plugin_Message_.28clientbound.29'): None
     for vsn in version_urls.keys() if 471 <= vsn.protocol <= 575
 })
+
+"""A dict mapping `(version, pre_packet)' pairs to corrected `pre_packet' records
+   to patch errors occuring in the specifications of pre-release packets in the
+   body section of the article, relative to their values as specified under the
+   "Contents" section.
+"""
+patch_pre_body = {
+    (Vsn('21w44a', PRE|48),
+        PrePacket('Chunk Data', 0x20, 0x22, True, 'Play', 'Client')):
+        PrePacket('Chunk Data', 0x22, 0x22, True, 'Play', 'Client'),
+    (Vsn('21w44a', PRE|48),
+        PrePacket('Update Simulation Distance', None, 0x26, True, 'Play', 'Client')):
+        PrePacket('Update Simulation Distance', None, 0x57, True, 'Play', 'Client'),
+    (Vsn('1.18-rc4', PRE|60),
+        PrePacket('Update Simulation Distance', None, 0x26, True, 'Play', 'Client')):
+        PrePacket('Update Simulation Distance', None, 0x57, True, 'Play', 'Client'),
+}
+
+"""Only versions released later than the given protocol number will be subject
+   to `patch_pre_body', or checked for related inconsistencies.
+"""
+patch_pre_body_min_pv = PRE|35

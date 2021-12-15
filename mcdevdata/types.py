@@ -5,8 +5,9 @@ from .util import id_str
 __all__ = ('MatrixID', 'PRE', 'Vsn', 'VersionDiff', 'PrePacket', 'RelPacket',
            'PacketClass')
 
-class MatrixID(namedtuple('MatrixID', (
-'id', 'base_ver', 'changed', 'html', 'url'))):
+class MatrixID(
+    namedtuple('MatrixID', ('id', 'base_ver', 'changed', 'html', 'url'))
+):
     """Represents an individual cell in the matrix of packet IDs per protocol
        version per packet; used to generate a <td> element.
        - 'id'       is an integer giving the packet ID.
@@ -29,15 +30,18 @@ class MatrixID(namedtuple('MatrixID', (
 # after 1.16.3.
 PRE = 1 << 30
 
-class Vsn(namedtuple('Vsn', ('name', 'protocol'))):
+class Vsn(
+    namedtuple('Vsn', ('name', 'protocol'))
+):
     """Represents a named Minecraft version with a protocol number."""
-    def __repr__(r):
-        return 'Vsn(%r, %s)' % (r.name, self.protocol_repr(r.protocol))
+    def __repr__(self):
+        return 'Vsn(%r, %s)' % (self.name, self.protocol_repr(self.protocol, py=True))
 
     @staticmethod
-    def protocol_repr(protocol, html=False):
+    def protocol_repr(protocol, html=False, py=False):
         if protocol & PRE:
-            return ('2<sup>30</sup>+' if html else '2³⁰+') + str(protocol & ~PRE)
+            return ('2<sup>30</sup>+' if html else
+                    'PRE|' if py else '2³⁰+') + str(protocol & ~PRE)
         else:
             return str(protocol)
 
@@ -66,17 +70,19 @@ class PrePacket(namedtuple('PrePacket', (
             name=other.name, old_id=other.old_id, new_id=other.new_id,
             changed=other.changed, state=other.state, bound=other.bound)
 
-class RelPacket(namedtuple('RelPacket', ('name', 'id', 'state', 'bound', 'url'))):
+class RelPacket(
+    namedtuple('RelPacket', ('name', 'id', 'state', 'bound', 'url', 'html'))
+):
     """Represents a packet extracted from a release protocol wiki page."""
-    def __new__(cls, name, id, state, bound, url=None):
-        return super(RelPacket, cls).__new__(cls, name, id, state, bound, url)
+    def __new__(cls, name, id, state, bound, url=None, html=None):
+        return super(RelPacket, cls).__new__(cls, name, id, state, bound, url, html)
     def __eq__(self, other):
         if not isinstance(other, RelPacket): return False
         return super(RelPacket, self._reduce()).__eq__(other._reduce())
     def __hash__(self):
         return super(RelPacket, self._reduce()).__hash__()
     def _reduce(self):
-        return self._replace(url=None)
+        return self._replace(html=None, url=None)
     def __repr__(r):
         return 'RelPacket(name=%r, id=%s, state=%r, bound=%r)' \
                % (r.name, id_str(r.id), r.state, r.bound)

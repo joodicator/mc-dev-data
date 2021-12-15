@@ -6,9 +6,11 @@ __all__ = ('version_urls', 'versions', 'protocols')
 
 
 """An OrderedDict mapping each Minecraft version to the URL of the corresponding
-   pre-release or release wiki page, in reverse-chronological order of
-   publication. Pre-release pages are preferred, when available, as they contain
-   more information about protocol changes.
+   pre-release or release wiki page, in descending order of *maturity*, meaning
+   that versions earlier in the sequence are based on or make changes relative to
+   versions later in the sequence, and notably distinct from chronological or
+   numerical ordering. Pre-release pages are preferred, when available, as they
+   contain more information about protocol changes.
 
    Each key is of the form `Vsn(version_id_string, protocol_version_int)',
    where `version_id_string' is the key used to identify this version in
@@ -18,9 +20,24 @@ __all__ = ('version_urls', 'versions', 'protocols')
    string as used by pyCraft, and is used for pyCraft interoperation.)"""
 
 version_urls = OrderedDict((
+    (Vsn('1.18.1',               757), 'https://wiki.vg/index.php?title=Protocol&oldid=17203'),
+    (Vsn('1.18',                 757), 'https://wiki.vg/index.php?title=Protocol&oldid=17184'),
+    (Vsn('1.18-rc4',          PRE|60), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=17160'),
+    (Vsn('21w44a',            PRE|48), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=17117'),
+    (Vsn('1.17.1',               756), 'https://wiki.vg/index.php?title=Protocol&oldid=16918'),
+    (Vsn('1.17',                 755), 'https://wiki.vg/index.php?title=Protocol&oldid=16725'),
+    (Vsn('1.17-rc2',          PRE|35), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16737'),
+    (Vsn('21w07a',            PRE|15), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16688'),
+    (Vsn('21w06a',            PRE|14), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16383'),
+    (Vsn('21w05b',            PRE|13), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16380'),
+    (Vsn('21w05a',            PRE|12), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16369'),
+    (Vsn('21w03a',            PRE|11), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16342'),
+    (Vsn('20w51a',             PRE|9), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16322'),
+    (Vsn('20w49a',             PRE|8), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16222'),
     (Vsn('20w48a',             PRE|7), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16152'),
     (Vsn('20w46a',             PRE|6), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16137'),
     (Vsn('20w45a',             PRE|5), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16119'),
+    (Vsn('1.16.5',               754), 'https://wiki.vg/index.php?title=Protocol&oldid=16681'),
     (Vsn('1.16.4',               754), 'https://wiki.vg/index.php?title=Protocol&oldid=16144'),
     (Vsn('1.16.4-rc1',         PRE|3), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16095'),
     (Vsn('1.16.4-pre2',        PRE|2), 'https://wiki.vg/index.php?title=Pre-release_protocol&oldid=16088'),

@@ -30,7 +30,8 @@ def pycraft_packet_classes(matrix, versions):
         ver_matrix = matrix[ver]
 
         if ver.protocol not in pycraft.SUPPORTED_PROTOCOL_VERSIONS: continue
-        assert pycraft.SUPPORTED_MINECRAFT_VERSIONS[ver.name] == ver.protocol
+        if ver.name in pycraft.SUPPORTED_MINECRAFT_VERSIONS:
+            assert pycraft.SUPPORTED_MINECRAFT_VERSIONS[ver.name] == ver.protocol
 
         context = pycraft_connection.ConnectionContext()
         context.protocol_version = ver.protocol
@@ -85,7 +86,7 @@ def pycraft_packet_name(name):
         'Handshake':                              'HandShake',
         'Chat Message (serverbound)':             'Chat',
         'Player Position And Look (serverbound)': 'PositionAndLook',
-        'Pong':                                   'PingResponse',
+        'Pong (status)':                          'PingResponse',
         'Login Plugin Request':                   'PluginRequest',
         'Login Plugin Response':                  'PluginResponse',
         'Player Info':                            'PlayerListItem',

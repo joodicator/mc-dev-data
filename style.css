@@ -73,7 +73,7 @@ body {
 }
 
 .pkt-fmt-chg { background-color: #FF8 !important; }
-.pkt-chg-unk { background-color: #EEF !important; }
+.pkt-chg-unk { background-color: #CCF !important; }
 .pkt-added   { background-color: #AFA !important; font-weight: bold; }
 .pkt-removed { background-color: #FAA !important; }
 

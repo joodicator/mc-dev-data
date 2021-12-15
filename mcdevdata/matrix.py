@@ -1,4 +1,5 @@
 from collections import OrderedDict
+from itertools import chain
 
 from .types import Vsn, MatrixID, PacketClass
 from .patches import patch
@@ -35,7 +36,11 @@ def version_packet_ids():
                 matrix[v] = {}
                 matrix.move_to_end(v, last=False)
                 seen_names = {}
-                for packet in pre_packets(page, v):
+                all_pre_packets = pre_packets(page, v)
+                if (v, None) in patch:
+                    all_pre_packets = chain(all_pre_packets, patch[(v, None)])
+                    used_patches.add((v, None))
+                for packet in all_pre_packets:
                     if (v, packet) in patch:
                         used_patches.add((v, packet))
                         packet = packet.patch(patch[v, packet])
@@ -67,7 +72,7 @@ def version_packet_ids():
                                     break
                             raise AssertionError(msg)
                         assert packet.old_id == matrix[from_v][packet_class].id, \
-                            '[%s] 0x%02x != matrix[%r][%r].id == 0x%02x' % (
+                            '[%s] 0x%02X != matrix[%r][%r].id == 0x%02X' % (
                             v.name, packet.old_id, from_v, packet_class,
                             matrix[from_v][packet_class].id)
                     if packet.url is not None:
@@ -91,7 +96,11 @@ def version_packet_ids():
                 assert v == rel_v, '%r != %r' % (v, rel_v)
                 matrix[v] = {}
                 seen_names = {}
-                for packet in rel_packets(page, v):
+                all_rel_packets = rel_packets(page, v)
+                if (v, None) in patch:
+                    all_rel_packets = chain(all_rel_packets, patch[(v, None)])
+                    used_patches.add((v, None))
+                for packet in all_rel_packets:
                     if (v, packet) in patch:
                         used_patches.add((v, packet))
                         packet = packet.patch(patch[v, packet])
@@ -110,7 +119,8 @@ def version_packet_ids():
                         packet_classes[packet.name], packet_class)
 
                     matrix[v][packet_class] = MatrixID(
-                        id=packet.id, base_ver=v, changed=False, url=packet.url)
+                        id=packet.id, base_ver=v, changed=False, url=packet.url,
+                        html=packet.html)
             else:
                 raise AssertionError('Unrecognised article title: %r' % heading)
 
@@ -125,7 +135,7 @@ def version_packet_ids():
             unused_patches = set(k for k in patch.keys() if k[0] == v and k not in used_patches)
             if unused_patches:
                 raise AssertionError('Unused patches:\n'
-                + '\n'.join('%s -> %s' % (p, patch[p]) for p in unused_patches))
+                + '\n'.join('%r -> %r' % (p, patch[p]) for p in unused_patches))
 
         prev_v = v
 
