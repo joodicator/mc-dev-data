@@ -54,6 +54,7 @@ norm_packet_name_dict = {
     ('Pong', 'Status'):                     'Pong (status)',
     'Set Title Time':                       'Set Title Times',
     'Chunk Data and Update Light':          'Chunk Data',
+    'Chunk Data And Update Light':          'Chunk Data',
 }
 
 for name in 'Animation', 'Chat Message', 'Keep Alive', 'Plugin Message', \

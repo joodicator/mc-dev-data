@@ -21,7 +21,8 @@ def matrix_html(show_versions=None, pycraft_only=False, text=False, debug=False)
         matrix = version_packet_ids(page)
         pycraft_classes = pycraft_packet_classes(page, show_versions)
 
-    show_versions = versions if show_versions is None else show_versions
+    show_versions = versions if show_versions is None else \
+                    sorted(show_versions, key=versions.index)
 
     packet_classes = sorted({
         p for ids in matrix.values() for p in ids.keys()
@@ -114,7 +115,7 @@ def matrix_html(show_versions=None, pycraft_only=False, text=False, debug=False)
             return UNK, 'default case'
 
     shape = (len(versions), len(versions), len(packet_classes))
-    vsn_diff = np.empty(shape, np.ubyte)
+    vsn_diff = np.zeros(shape, np.ubyte)
     for p, packet_class in enumerate(packet_classes):
         for i, vsn1 in enumerate(versions):
             cell1 = matrix[vsn1].get(packet_class)

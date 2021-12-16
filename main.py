@@ -8,6 +8,7 @@ from mcdevdata.util import get_url_hash
 from mcdevdata.cache import unused_www_cache_files, unused_func_cache_files
 from mcdevdata.cache import refresh_names, get_cacheable
 from mcdevdata.html_out import matrix_html
+from mcdevdata.types import Vsn
 import mcdevdata.cache
 
 refresh_min_proto_arg = '--r-min-proto='
@@ -86,27 +87,31 @@ if __name__ == '__main__':
             print('Error: unrecognised flag: %s.' % arg, file=sys.stderr)
             sys.exit(2)
         else:
-            def protocol(spec):
+            def parse_version(spec):
                 for ver in version_urls.keys():
-                    if spec in (ver.name, str(ver.protocol)):
-                        return ver.protocol
+                    if spec in (
+                        ver.name,
+                        str(ver.protocol),
+                        Vsn.protocol_repr(ver.protocol, py=True),
+                    ):
+                        return ver
                 print('Error: unrecognised Minecraft version: %s.' % spec,
                       file=sys.stderr)
                 sys.exit(2)
 
             if '..' in arg:
-                start, end = sorted(map(protocol, arg.split('..', 1)))
+                start, end = sorted(map(parse_version, arg.split('..', 1)))
             else:
-                start = protocol(arg)
+                start = parse_version(arg)
                 end = start
 
             found = False
             for ver in version_urls.keys():
-                if not found and ver.protocol == end:
+                if not found and ver == end:
                     found = True
                 if found:
                     show_versions.append(ver)
-                    if ver.protocol == start:
+                    if ver == start:
                         break
             else:
                 print('Error: unrecognised protocol version(s): %s.' % arg)
