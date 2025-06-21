@@ -38,13 +38,12 @@ def matrix_html(show_versions=None, pycraft_only=False):
     print('          <tr> <th></th>', end='')
     for version in show_versions:
         psv = version.protocol in pycraft.SUPPORTED_PROTOCOL_VERSIONS
-        pv_repr = Vsn.protocol_repr(version.protocol, html=False)
-        pv_html = Vsn.protocol_repr(version.protocol, html=True)
+        pv_repr = Vsn.protocol_repr(version.protocol)
         print(' <th%(c)s><a href="%(u)s" title="%(n)s">%(n)s</a><br>'
                         '<span%(w)s>%(v)s</span></th>'
             % {'u': version_urls[version],
                'n': version.name,
-               'v': pv_html,
+               'v': pv_repr,
                'w': (' title="%s = %d"' % (pv_repr, version.protocol))
                     if pv_repr != str(version.protocol) else '',
                'c': ' class="pycraft-version"' if psv else ''}, end='')
